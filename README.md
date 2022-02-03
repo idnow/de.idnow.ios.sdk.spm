@@ -29,11 +29,11 @@ Known topic in progress: arm64 support for simulator - support M1 :pencil2:
 Adding the library required:
 <br>
 
-![swift_package_manager_choose](https://github.com/idnow/de.idnow.ios.sdk.spm/blob/master/images/swift_package_manager.png)
+![swift_package_manager_choose](https://github.com/idnow/de.idnow.ios.sdk.spm/blob/main/images/swift_package_manager.png)
 
 Embedded section:
 <br>
-![swift_package_manager_embedded](https://github.com/idnow/de.idnow.ios.sdk.spm/blob/master/images/swift_package_manager_2.png)
+![swift_package_manager_embedded](https://github.com/idnow/de.idnow.ios.sdk.spm/blob/main/images/swift_package_manager_2.png)
 
 <br>
 
