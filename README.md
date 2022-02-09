@@ -5,6 +5,7 @@
   -  [Run project (with NFC)](#using-the-sdk-and-run-your-project)
 - [Usage](#Usage)
 - [Code Example](#code-example)
+- [Fat Framework Support](#fat-framework-support)
 
 
 # :package: Swift Package Manager :package:
@@ -148,3 +149,7 @@ void (^idnowResultListener)(enum IdentResult identResult, NSString * _Nonnull) =
 [IDNowSDK.shared startWithToken:@"INTERNAL_TOKEN" preferredLanguage:@"en" fromViewController:self listener:idnowResultListener];
 
 ```
+
+### Fat Framework Support
+
+In case you want to continue using fat framework, please get in touch with your IDnow representative.
