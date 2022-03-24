@@ -1,0 +1,11 @@
+framework module IDNowSDKCore {
+  umbrella header "IDNowSDKCore.h"
+
+  export *
+  module * { export * }
+}
+
+module IDNowSDKCore.Swift {
+    header "IDNowSDKCore-Swift.h"
+    requires objc
+}
