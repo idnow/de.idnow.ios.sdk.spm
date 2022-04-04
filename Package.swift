@@ -4,15 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "IDnowSDKCore",
+    name: "IDNowSDKCore",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "IDnowSDKCore-with-NFC",
-            targets: ["IDnowSDKCore-with-NFC", "FaceTecSDK"]),
+            name: "IDNowSDKCore-with-NFC",
+            targets: ["IDNowSDKCore-with-NFC", "FaceTecSDK"]),
         .library(
-            name: "IDnowSDKCore-without-NFC",
-            targets: ["IDnowSDKCore-without-NFC", "FaceTecSDK"]),
+            name: "IDNowSDKCore-without-NFC",
+            targets: ["IDNowSDKCore-without-NFC", "FaceTecSDK"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -22,16 +22,16 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
-            name: "IDnowSDKCore-with-NFC",
-            path: "IDnow-platform-iOS_4.15.0/IDnowSDKCore-with-NFC/IDNowSDKCore.xcframework"
+            name: "IDNowSDKCore-with-NFC",
+            path: "IDNow-platform-iOS_4.16.0/IDNowSDKCore-with-NFC.xcframework"
         ),
         .binaryTarget(
-            name: "IDnowSDKCore-without-NFC",
-            path: "IDnow-platform-iOS_4.15.0/IDnowSDKCore-without-NFC/IDNowSDKCore.xcframework"
+            name: "IDNowSDKCore-without-NFC",
+            path: "IDNow-platform-iOS_4.16.0/IDNowSDKCore-without-NFC.xcframework"
         ),
         .binaryTarget(
             name: "FaceTecSDK",
-            path: "IDnow-platform-iOS_4.15.0/FaceTecSDK.xcframework"
+            path: "IDNow-platform-iOS_4.16.0/FaceTecSDK.xcframework"
         )
     ]
 )
