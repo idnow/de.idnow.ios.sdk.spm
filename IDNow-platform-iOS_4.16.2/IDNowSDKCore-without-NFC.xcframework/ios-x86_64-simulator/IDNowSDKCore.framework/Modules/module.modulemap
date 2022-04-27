@@ -1,0 +1,6 @@
+framework module IDNowSDKCore {
+  umbrella header "IDNowSDKCore.h"
+
+  export *
+  module * { export * }
+}
