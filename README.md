@@ -1,6 +1,5 @@
 # Table of Contents
 - [Swift Package Manager](#swift-package-manager)
-  -  [Further Steps](#further-steps)
   -  [Run project (without NFC)](#using-the-sdk-with-nfc-and-run-your-project)
   -  [Run project (with NFC)](#using-the-sdk-and-run-your-project)
 - [Usage](#Usage)
@@ -22,7 +21,7 @@ Currently the two variants of IDNowSDKCore are available as xcframeworks:
 Please choose the corresponding setup required for your use-cases. If you need NFC please reach out to IDnow to obtain the needed dependencies. (see: [Using the SDK with NFC and run your project](#using-the-sdk-with-nfc-and-run-your-project))
 
 Note: If you see improvements for the Swift Package please let us know in the issues section. Thank for your support! :postbox: \
-Known topic in progress: arm64 support for simulator - support M1 :pencil2:
+ :pencil2:
 
 
 #### Example:
@@ -38,24 +37,6 @@ Embedded section:
 
 <br>
 
-
-### Further steps
-
-The IDnow framework depends on the presence of several other frameworks. The current build tool used is `cocoapods`. That means in order to build an app using the framework it is necessary to add a podfile to the top-level folder of your app project. 
-#### Podfile used to build the current IDnow AutoIdent iOS app:
-
-```
-workspace 'AutoIdent.xcworkspace'
-platform :ios, '10.0'
-use_frameworks!
-
-target 'AutoIdent' do
-  platform :ios, '10.0'
-  pod 'OpenCV2', '~> 3.4.1'
-end
-```
-
-<br>
 
 ### Using the SDK and run your project 
 
