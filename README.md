@@ -1,5 +1,5 @@
 # Table of Contents
-- [Swift Package Manager](#swift-package-manager
+- [Swift Package Manager](#swift-package-manager)
   -  [Run project (without NFC)](#using-the-sdk-with-nfc-and-run-your-project)
   -  [Run project (with NFC)](#using-the-sdk-and-run-your-project)
 - [Usage](#Usage)
@@ -23,7 +23,6 @@ Please choose the corresponding setup required for your use-cases. If you need N
 Note: If you see improvements for the Swift Package please let us know in the issues section. Thank for your support! :postbox: \
 
 
-
 #### Example:
 
 Adding the library required:
@@ -38,6 +37,7 @@ Embedded section:
 <br>
 
 
+<br>
 
 ### Using the SDK and run your project 
 
