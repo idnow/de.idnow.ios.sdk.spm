@@ -1,5 +1,5 @@
 # Table of Contents
-- [Swift Package Manager](#swift-package-manager)
+- [Swift Package Manager](#swift-package-manager
   -  [Run project (without NFC)](#using-the-sdk-with-nfc-and-run-your-project)
   -  [Run project (with NFC)](#using-the-sdk-and-run-your-project)
 - [Usage](#Usage)
@@ -21,7 +21,7 @@ Currently the two variants of IDNowSDKCore are available as xcframeworks:
 Please choose the corresponding setup required for your use-cases. If you need NFC please reach out to IDnow to obtain the needed dependencies. (see: [Using the SDK with NFC and run your project](#using-the-sdk-with-nfc-and-run-your-project))
 
 Note: If you see improvements for the Swift Package please let us know in the issues section. Thank for your support! :postbox: \
- :pencil2:
+
 
 
 #### Example:
@@ -36,6 +36,7 @@ Embedded section:
 ![swift_package_manager_embedded](https://github.com/idnow/de.idnow.ios.sdk.spm/blob/main/images/swift_package_manager_2.png)
 
 <br>
+
 
 
 ### Using the SDK and run your project 
