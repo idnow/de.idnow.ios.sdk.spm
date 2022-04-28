@@ -23,7 +23,6 @@ Please choose the corresponding setup required for your use-cases. If you need N
 Note: If you see improvements for the Swift Package please let us know in the issues section. Thank for your support! :postbox: \
 
 
-
 #### Example:
 
 Adding the library required:
