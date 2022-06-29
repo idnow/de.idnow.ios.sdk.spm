@@ -1,6 +1,12 @@
 ## Changelog
 
 
+### 4.18.0
+Changes:
+-  Improved focus on document capture
+-  Updated Liveness detection
+-  Various bug fixes
+
 ### 4.16.3
 Changes:
 -  Add support of arm64 to enable simulator on M1

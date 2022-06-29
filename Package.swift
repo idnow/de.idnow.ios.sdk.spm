@@ -27,15 +27,15 @@ let package = Package(
         ),
         .binaryTarget(
             name: "IDNowSDKCore-without-NFC",
-            path: "IDNow-platform-iOS_4.16.3/IDNowSDKCore-without-NFC.xcframework"
+            path: "IDNow-platform-iOS_4.18.0/IDNowSDKCore-without-NFC.xcframework"
         ),
         .binaryTarget(
             name: "FaceTecSDK",
-            path: "IDNow-platform-iOS_4.16.3/FaceTecSDK.xcframework"
+            path: "IDNow-platform-iOS_4.18.0/FaceTecSDK.xcframework"
         ),
         .binaryTarget(
             name: "XS2AiOS_UI",
-            path: "IDNow-platform-iOS_4.16.3/XS2AiOS_UI.xcframework"
+            path: "IDNow-platform-iOS_4.18.0/XS2AiOS_UI.xcframework"
         ),
         .binaryTarget(
             name: "XS2AiOSNetService",

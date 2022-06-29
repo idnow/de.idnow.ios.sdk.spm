@@ -18,6 +18,8 @@ Currently the two variants of IDNowSDKCore are available as xcframeworks:
 * [without NFC](#using-the-sdk-and-run-your-project) :package:
 * [with NFC](#using-the-sdk-with-nfc-and-run-your-project) :package:
 
+Note : In order for Video selfie and NFC to have the correct translations You have to localise your app to the desired language(s)
+
 Please choose the corresponding setup required for your use-cases. If you need NFC please reach out to IDnow to obtain the needed dependencies. (see: [Using the SDK with NFC and run your project](#using-the-sdk-with-nfc-and-run-your-project))
 
 Note: If you see improvements for the Swift Package please let us know in the issues section. Thank for your support! :postbox: \
