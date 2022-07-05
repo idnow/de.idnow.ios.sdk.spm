@@ -23,7 +23,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "IDNowSDKCore-with-NFC",
-            path: "IDNow-platform-iOS_4.16.3/IDNowSDKCore-with-NFC.xcframework"
+            path: "IDNow-platform-iOS_4.18.0/IDNowSDKCore-with-NFC.xcframework"
         ),
         .binaryTarget(
             name: "IDNowSDKCore-without-NFC",
@@ -39,7 +39,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "XS2AiOSNetService",
-            path: "IDNow-platform-iOS_4.16.3/XS2AiOSNetService.xcframework"
+            path: "IDNow-platform-iOS_4.18.0/XS2AiOSNetService.xcframework"
         )
     ]
 )
