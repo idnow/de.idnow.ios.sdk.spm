@@ -1,4 +1,0 @@
-framework module XS2AiOS_UI {
-  header "XS2AiOS_UI-Swift.h"
-  requires objc
-}

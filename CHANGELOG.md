@@ -1,5 +1,10 @@
 ## Changelog
 
+### 4.19.0
+Changes:
+-  Added new component for verifying user phone number via OTP
+-  Improved NFC and updated dependency. Please reach out to your CS manager to get the new NFC dependency
+-  Various bug fixes
 
 ### 4.18.0
 Changes:
