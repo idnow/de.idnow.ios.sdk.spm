@@ -22,7 +22,6 @@ import Swift
 import SystemConfiguration
 import UIKit
 import WebKit
-import XS2AiOS_UI
 import _Concurrency
 import zlib
 @_hasMissingDesignatedInitializers public class SecurityFeatureResponsePayload {

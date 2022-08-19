@@ -1,5 +1,11 @@
 ## Changelog
 
+### 4.19.1
+Changes:
+- Updated bank transfer
+- Updated Package.swift to use frameworks dependency from repository, rather than providing it with the package
+- Various bug fixes
+
 ### 4.19.0
 Changes:
 -  Added new component for verifying user phone number via OTP
