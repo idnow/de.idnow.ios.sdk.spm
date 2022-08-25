@@ -9,16 +9,28 @@ let package = Package(
     products: [
         .library(
             name: "IDNowSDKCore-with-NFC",
-            targets: [
-                "IDNowSDKCore-with-NFC", "FaceTecSDK", "XS2AiOSNetService"
-            ]),
+            targets: ["IDNowSDKCore-with-NFC", "DependencyWrapper"]
+        ),
         .library(
             name: "IDNowSDKCore-without-NFC",
-            targets: [
-                "IDNowSDKCore-without-NFC", "FaceTecSDK", "XS2AiOSNetService"
-            ])
+            targets: ["IDNowSDKCore-without-NFC", "DependencyWrapper"]
+        )
     ],
+    dependencies: [
+        .package(
+            name: "XS2AiOSNetService",
+            url: "https://github.com/FinTecSystems/xs2a-ios-netservice.git",
+            revision: "1.0.7"
+        )],
     targets: [
+        // .binaryTarget doesn't support package dependencies so we use a wrapper to fix this
+        .target(
+            name: "DependencyWrapper",
+            dependencies: [
+                "FaceTecSDK", "XS2AiOSNetService"
+            ],
+            path: "DependencyWrapper"
+        ),
         .binaryTarget(
             name: "IDNowSDKCore-with-NFC",
             path: "Frameworks/IDNowSDKCore-with-NFC.xcframework"
@@ -30,12 +42,6 @@ let package = Package(
         .binaryTarget(
             name: "FaceTecSDK",
             path: "Frameworks/FaceTecSDK.xcframework"
-        ),
-        .binaryTarget(
-            name: "XS2AiOSNetService",
-            url: "https://github.com/FinTecSystems/xs2a-ios-netservice/releases/download/1.0.7/XS2AiOSNetService.xcframework.zip",
-            checksum: "987e1e075fc9ca8b2f22cb60b436b84cc1304bb7c03cbce967979b588e5e8868"
-        )
-    ],
+        )],
     swiftLanguageVersions: [.v5]
 )

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "XS2AiOSNetService",
+        "repositoryURL": "https://github.com/FinTecSystems/xs2a-ios-netservice.git",
+        "state": {
+          "branch": "1.0.7",
+          "revision": "ccbaafe8dc0f67e55b8a791d3e96b7dd03bee733",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
