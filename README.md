@@ -4,7 +4,10 @@
   -  [Run project (with NFC)](#using-the-sdk-and-run-your-project)
 - [Usage](#Usage)
 - [Code Example](#code-example)
+- [SDK error codes](#sdk-error-codes)
+  -  [How to deal with errors](#how-to-deal-with-errors)
 - [Fat Framework Support](#fat-framework-support)
+
 
 
 # :package: Swift Package Manager :package:
@@ -96,14 +99,27 @@ public func start(token: String, preferredLanguage: String = default, fromViewCo
 * an IDnowResultListener which gets called once the SDK returns. The possible return codes are:
 ** FINISHED the ident was finished
 ** CANCELLED the user cancelled the ident
-** ERROR an error occurred (e.g. wrong token format, token invalid or incorrect, no internet connection)
+** ERROR an error occurred 
 
 ### Code example
 
-Swift
+
 
 ```
 
+IDNowSDK.shared.start(token: token, preferredLanguage:"en", fromViewController: self, listener:{(result: IDNowSDK.IdentResult.type, statusCode: IDNowSDK.IdentResult.statusCode, message: String) in
+            if result == .ERROR {
+                self.showAlert(text: statusCode.description)
+            } else if result == .FINISHED {
+                
+            }
+        })
+
+```
+
+Code example If you are using an SDK version lower than 5.0.0 
+
+```
 IDNowSDK.shared.start(token: token, preferredLanguage:"en", fromViewController: self, listener:{ (result: IDNowSDK.IdentResult, message: String) in
    if result == IDNowSDK.IdentResult.ERROR {
        self.showAlert(text: message)
@@ -113,27 +129,41 @@ IDNowSDK.shared.start(token: token, preferredLanguage:"en", fromViewController: 
 })
 
 ```
+## SDK error codes
 
-Objective-C
+In case of IDNowSDK.IdentResult.type.ERROR, the possible error codes are below.
+
+```
+"E100" --> Ident code syntax incorrect
+"E101" --> Ident code not found
+"E102" --> Ident code expired
+"E103" --> Ident code already completed
+"E110" --> Get ident info failed; invalid response
+"E111" --> Get ident info failed; server reachability
+"E112" --> Get ident info failed; Internal error
+"E130" --> Get ident resources failed; invalid response
+"E131" --> Get ident resources failed; server reachability
+"E140" --> Get name failed; invalid response
+"E141" --> Get name failed; server reachability
+"E142" --> Get name failed; full name missing
+"E150" --> Start ident failed; invalid response
+"E151" --> Start ident failed; server reachability
+"E152" --> Start ident failed; missing session key
+"E153" --> Start ident failed; wrong ident method
+"E160" --> Get Emirates NFC resources failed; invalid response
+"E161" --> Get Emirates NFC resources failed; server reachability
+"E170" --> Socket connection force closed
+"E171" --> Process force closed
 
 ```
 
+## How to deal with errors
 
-void (^idnowResultListener)(enum IdentResult identResult, NSString * _Nonnull) = ^(enum IdentResult result, NSString* message) {
-    NSLog( @"SDK finished");
+* For E102 it is recommended to create another ident, and restart the process with the new ident code.
+* For E103 it is recommended to show a screen to the user with the message that they have submitted all info needed and that they should wait for the final result.
+* For E170 it is recommended to notify the user that the ident process timed out or was started on a different device and ask them to try again.
+* For all other error codes it is recommended to show a generic error for the user and ask them to try again by restarting the process.
 
-    if (result == IdentResultERROR) {
-        // show result in debug log
-    }
-
-    if( result == IdentResultFINISHED ) {
-        // show result in debug log
-    }
-};
-
-[IDNowSDK.shared startWithToken:@"INTERNAL_TOKEN" preferredLanguage:@"en" fromViewController:self listener:idnowResultListener];
-
-```
 
 ### Fat Framework Support
 

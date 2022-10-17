@@ -38,11 +38,11 @@
 		</data>
 		<key>ConsentViewController.nib/objects-11.0+.nib</key>
 		<data>
-		N6yjY7onOz831UW9+Lg+jppilp8=
+		5UqUeeAEk0UUeIixvlJOLNmrABk=
 		</data>
 		<key>ConsentViewController.nib/runtime.nib</key>
 		<data>
-		Fuu6bsTpD/1B2T4LNe7QMyhNxjY=
+		v0w+WDGwCKfPvU2IQY4X/Ay/VLc=
 		</data>
 		<key>DL_ZOOM.json</key>
 		<data>
@@ -103,6 +103,10 @@
 		<key>IDNowBubbleView.nib</key>
 		<data>
 		KT5WC/yh/4c2zM4014Y1Vkaap58=
+		</data>
+		<key>IDNowCancelUnifiedViewController.nib</key>
+		<data>
+		gq50v/RxAfXJAN0VOppbN8PLfGE=
 		</data>
 		<key>IDNowCaptureDocMessageBottomView.nib/objects-11.0+.nib</key>
 		<data>
@@ -178,11 +182,11 @@
 		</data>
 		<key>IDNowDocumentDataInputOverlay.nib/objects-11.0+.nib</key>
 		<data>
-		tR7Lo1jPyQtjxCZ7dkAiik4fl2s=
+		ztd3kGbWCmLrDWXmUHM6FTkbTD8=
 		</data>
 		<key>IDNowDocumentDataInputOverlay.nib/runtime.nib</key>
 		<data>
-		CYQIV+ppe2gEl1k/r1gE4nbxNEI=
+		wnhv5ydU6pHyaOeBgiDJ04XbhCg=
 		</data>
 		<key>IDNowDocumentImageConfirmationOverlay.nib</key>
 		<data>
@@ -214,11 +218,11 @@
 		</data>
 		<key>IDNowFinishOverlay.nib/objects-11.0+.nib</key>
 		<data>
-		dBPhDwHOot0Khwx/Aos4GdNM6R8=
+		5VFRmlQcp6LkLF1L0WBZNX4e1jA=
 		</data>
 		<key>IDNowFinishOverlay.nib/runtime.nib</key>
 		<data>
-		V30VhFiGtxG7D6RlJkZpobmnOVQ=
+		PvZx4t2FKUrbbLwIm5YCg/IqL4A=
 		</data>
 		<key>IDNowFlashlightOverlay.nib/objects-11.0+.nib</key>
 		<data>
@@ -228,29 +232,21 @@
 		<data>
 		APUdFpLMptjr3okeod9QfEeVhPI=
 		</data>
+		<key>IDNowInstructionAdditionalDocumentNewView.nib/objects-11.0+.nib</key>
+		<data>
+		ds2+AtMsSqqBGEYI20gLpa8RuVo=
+		</data>
+		<key>IDNowInstructionAdditionalDocumentNewView.nib/runtime.nib</key>
+		<data>
+		buh1fDuPy1K6l8sgRh7qu3OXTSc=
+		</data>
 		<key>IDNowIntroItemView.nib/objects-11.0+.nib</key>
 		<data>
-		7zTsrfM3AznPo6bnWv1c6vlNmec=
+		FTanD7OrRE0jllV8/Q3sNcwOh2M=
 		</data>
 		<key>IDNowIntroItemView.nib/runtime.nib</key>
 		<data>
-		9EAHy5mNvpI3AjNLPP0LV2B+if8=
-		</data>
-		<key>IDNowIntroQESItemView.nib/objects-11.0+.nib</key>
-		<data>
-		tePGFjrUvnaTs0IxGhTZQLEwl7U=
-		</data>
-		<key>IDNowIntroQESItemView.nib/runtime.nib</key>
-		<data>
-		6+YFDGyuw7H8+KPM2etT4DhTuBk=
-		</data>
-		<key>IDNowIntroQESViewController.nib/objects-11.0+.nib</key>
-		<data>
-		LOvHvOq0BSPx5Zo7y2fIEKtihaQ=
-		</data>
-		<key>IDNowIntroQESViewController.nib/runtime.nib</key>
-		<data>
-		WfLdY2rzMukL2UOpqnZ/rQF0F5o=
+		wM3C+sAOuEakFACQFgqznJ2dVPk=
 		</data>
 		<key>IDNowIntroViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -395,14 +391,6 @@
 		<key>IDNowProgressbarTitleMessageBottomView.nib/runtime.nib</key>
 		<data>
 		jxgkM79UAEI7GlEKC4vjF//8OYo=
-		</data>
-		<key>IDNowQESFinishOverlay.nib/objects-11.0+.nib</key>
-		<data>
-		THpEWPq65E2HeJYeBMH+0yODXk0=
-		</data>
-		<key>IDNowQESFinishOverlay.nib/runtime.nib</key>
-		<data>
-		NK+zuZkOl70XBrwiw69fuUw1wZA=
 		</data>
 		<key>IDNowResultOverlay.nib/objects-11.0+.nib</key>
 		<data>
@@ -554,7 +542,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		x5Q5ee104NRwE1B+/9b62DouGvs=
+		dICAaB6ykgPIz2LrPstIXXirqvc=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -562,11 +550,11 @@
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jOqXszeT3wPFfo9PrtvL+ofYQWg=
+		HGt0UaheKUtzU5wlqjHM7+g3ePk=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mM7B0IBXG2Em3tnYAhIu/H5LYDg=
+		C/9UhMa/1GdpTZvgTUY1qE5Z3Zw=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -574,11 +562,11 @@
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1TVMCwWtfqRs5H66skAb8E7aQbI=
+		e3t4MMgiZGngDtwfgSfynOXEqWc=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		awwHnwbT85W/OccfcWSoLszlv58=
+		j41PCVxjswIMo1EvWGqvkgW8xJI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -594,11 +582,11 @@
 		</data>
 		<key>PVIDInformationViewController.nib/objects-11.0+.nib</key>
 		<data>
-		921OK1AlZav6EWu4AE/Y3iJE40M=
+		olR9LPYFHZcotxmH8D48JdzkWDY=
 		</data>
 		<key>PVIDInformationViewController.nib/runtime.nib</key>
 		<data>
-		6+02XTrfajkUZh0k7LZJI5VWXLA=
+		KbGf0bioZSeuLq04BImdXMIzsL0=
 		</data>
 		<key>PopupViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -711,6 +699,26 @@
 		<key>animation-nfc.json</key>
 		<data>
 		xeiiMFPtglolV4CND5tw8IYyUq0=
+		</data>
+		<key>animation_intro_bank_transfer.json</key>
+		<data>
+		+TDAStbzQ/uQgnP8hiwgJBF6rvA=
+		</data>
+		<key>animation_intro_id_doc.json</key>
+		<data>
+		64Y01ffQtEpSr+Vpn4w4go1aFKw=
+		</data>
+		<key>animation_intro_lighting.json</key>
+		<data>
+		XOY/wupYKOB8jjfU0jaIkTs3/DM=
+		</data>
+		<key>animation_intro_selfie.json</key>
+		<data>
+		sOqa9gorwvzUEI/glzX8HQkQsV8=
+		</data>
+		<key>animation_intro_sign_document.json</key>
+		<data>
+		XbsjmczOSr4nvphsCQLrbHOYrVk=
 		</data>
 		<key>animation_loading.json</key>
 		<data>
@@ -2069,7 +2077,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7pgpHUuDnaEFlgYC7C659+BgRd8=
+			PQlTOuUQeZwdUJBBj+WkI1BNG/s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2207,6 +2215,30 @@
 		<key>iddoc_intro.json</key>
 		<data>
 		QGHuDuIJz9KjcFRFXK1aVUCuhdc=
+		</data>
+		<key>idnow_static_intro_Screen_Step_1.json</key>
+		<data>
+		hYK8RH1e4mI3sevbzFXwRDx2CKE=
+		</data>
+		<key>idnow_static_intro_Screen_Step_2.json</key>
+		<data>
+		lFmOazDnquMUl7ky18hnDS7d3mo=
+		</data>
+		<key>idnow_static_intro_Screen_Step_3.json</key>
+		<data>
+		DkmP0YbYewoLZRSdZEGMu8HgUTE=
+		</data>
+		<key>idnow_static_intro_Screen_Step_4.json</key>
+		<data>
+		7OX+64eYBk+QbBeOP4aiX80U964=
+		</data>
+		<key>idnow_static_intro_Screen_Step_5.json</key>
+		<data>
+		H2/RxNx7YUJjNL8nXFZFTImzfTg=
+		</data>
+		<key>illustration_hand-utility-bill_S.json</key>
+		<data>
+		3EmhtMTBRs2vH1GJFsJmsNGmChM=
 		</data>
 		<key>it.lproj/FaceTec.strings</key>
 		<dict>
@@ -2555,22 +2587,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N6yjY7onOz831UW9+Lg+jppilp8=
+			5UqUeeAEk0UUeIixvlJOLNmrABk=
 			</data>
 			<key>hash2</key>
 			<data>
-			X1aCsw00QMV5+maBHBWWXDuJoBecvX4HKwchwv7oxV0=
+			nZUoWTzIetwxTYYLhDMyy86opZk9zp+w+Ah+4y5ErWM=
 			</data>
 		</dict>
 		<key>ConsentViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Fuu6bsTpD/1B2T4LNe7QMyhNxjY=
+			v0w+WDGwCKfPvU2IQY4X/Ay/VLc=
 			</data>
 			<key>hash2</key>
 			<data>
-			gAeI+8uXLFzfbp9OEZVHk6IVlisHJwiVRim+WKmF8A8=
+			ykJv5L35vKH9QRS/fHe9WVTFt06eMNzQQ9EnCAnRQus=
 			</data>
 		</dict>
 		<key>DL_ZOOM.json</key>
@@ -2736,6 +2768,17 @@
 			<key>hash2</key>
 			<data>
 			aTPt2xUbOibhUdQbODlJpsJueBZdLswwzdSJneAROw0=
+			</data>
+		</dict>
+		<key>IDNowCancelUnifiedViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gq50v/RxAfXJAN0VOppbN8PLfGE=
+			</data>
+			<key>hash2</key>
+			<data>
+			zt7y/YpaftHgygQo6ky9TB/UQCJXHoiZRrgiCY25cgI=
 			</data>
 		</dict>
 		<key>IDNowCaptureDocMessageBottomView.nib/objects-11.0+.nib</key>
@@ -2940,22 +2983,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tR7Lo1jPyQtjxCZ7dkAiik4fl2s=
+			ztd3kGbWCmLrDWXmUHM6FTkbTD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			XR7SoDrZsk9vH6bdRw0xsQCJxM67L8BnkDGnxyWquS4=
+			dm3FRYQy/Q1+ux2ZxMkr9qx+SPV08XfOUyP3Rhu41V8=
 			</data>
 		</dict>
 		<key>IDNowDocumentDataInputOverlay.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CYQIV+ppe2gEl1k/r1gE4nbxNEI=
+			wnhv5ydU6pHyaOeBgiDJ04XbhCg=
 			</data>
 			<key>hash2</key>
 			<data>
-			/z7FmRGTW+fe4ZJMkMbGXsEbusqs/4NS4MZl4To5cro=
+			J20qD3F5q+WGgXGe13F32cyvgeNSkZr1yy+n54kmNu0=
 			</data>
 		</dict>
 		<key>IDNowDocumentImageConfirmationOverlay.nib</key>
@@ -3039,22 +3082,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dBPhDwHOot0Khwx/Aos4GdNM6R8=
+			5VFRmlQcp6LkLF1L0WBZNX4e1jA=
 			</data>
 			<key>hash2</key>
 			<data>
-			HABt0GsDflXA8f6al2iZx0XTqtjzWXUiXhxFybXQJBM=
+			esK7Kt+t++DpTE7pLot+VSKQBTtnFsf6PoK+fsJmLCo=
 			</data>
 		</dict>
 		<key>IDNowFinishOverlay.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V30VhFiGtxG7D6RlJkZpobmnOVQ=
+			PvZx4t2FKUrbbLwIm5YCg/IqL4A=
 			</data>
 			<key>hash2</key>
 			<data>
-			vh3/RZ/28UBfHQzV6Mr1jt7kBohLDz2r3zvT9YF71cI=
+			74achQdEFWMTqn5YgZx7EsKvnKWUUPs00qn1KhuGYLQ=
 			</data>
 		</dict>
 		<key>IDNowFlashlightOverlay.nib/objects-11.0+.nib</key>
@@ -3079,70 +3122,48 @@
 			5Q2vS5pjXwMk/t5/dJvaubl+/fT62gr/FV+m4zu1PO8=
 			</data>
 		</dict>
+		<key>IDNowInstructionAdditionalDocumentNewView.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ds2+AtMsSqqBGEYI20gLpa8RuVo=
+			</data>
+			<key>hash2</key>
+			<data>
+			7dxu1S+SrekUvyeO226V2Jj9wDwfpCwrN8soJsHsopI=
+			</data>
+		</dict>
+		<key>IDNowInstructionAdditionalDocumentNewView.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			buh1fDuPy1K6l8sgRh7qu3OXTSc=
+			</data>
+			<key>hash2</key>
+			<data>
+			6R+LpDHG8w8tX4AeTbQZdpgWSGAwCENVJ1E4I2IbPow=
+			</data>
+		</dict>
 		<key>IDNowIntroItemView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7zTsrfM3AznPo6bnWv1c6vlNmec=
+			FTanD7OrRE0jllV8/Q3sNcwOh2M=
 			</data>
 			<key>hash2</key>
 			<data>
-			BeXAn3/d/Ks30gO4DHHpFkbo2BKn0kVMA/xgfN5STBY=
+			YXYnmZCQdX9r2qjYOcYrPIVP59igTuyUt8c+sUbR7DQ=
 			</data>
 		</dict>
 		<key>IDNowIntroItemView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9EAHy5mNvpI3AjNLPP0LV2B+if8=
+			wM3C+sAOuEakFACQFgqznJ2dVPk=
 			</data>
 			<key>hash2</key>
 			<data>
-			MEBXaurM41YMhy5zBieaxDD2LOHRr7jOdPfDMx3O548=
-			</data>
-		</dict>
-		<key>IDNowIntroQESItemView.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tePGFjrUvnaTs0IxGhTZQLEwl7U=
-			</data>
-			<key>hash2</key>
-			<data>
-			iWqpMS4giK0MHtw7Uf/bwvGATwGd6Ytv+X6StN5X3WY=
-			</data>
-		</dict>
-		<key>IDNowIntroQESItemView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6+YFDGyuw7H8+KPM2etT4DhTuBk=
-			</data>
-			<key>hash2</key>
-			<data>
-			GgDEwXQS+vTZUGrfp+Bzlnz5jWmSX9AKNfjQFyZs1tw=
-			</data>
-		</dict>
-		<key>IDNowIntroQESViewController.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LOvHvOq0BSPx5Zo7y2fIEKtihaQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			FXKi9ZxKRl03kPYAdb6XvM7VvNyGWVA1ONiOI2RlAqA=
-			</data>
-		</dict>
-		<key>IDNowIntroQESViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WfLdY2rzMukL2UOpqnZ/rQF0F5o=
-			</data>
-			<key>hash2</key>
-			<data>
-			5XfwQrc+wJKUQFzV8Z16jzvzdhcZgYYqvdmohWxNgO4=
+			Mi7oQwRCv5S5dyNaX2iy8FOxk8sYaE1tuvfkfes1rOg=
 			</data>
 		</dict>
 		<key>IDNowIntroViewController.nib/objects-11.0+.nib</key>
@@ -3539,28 +3560,6 @@
 			<key>hash2</key>
 			<data>
 			kIPBQojDLu6jlfsp82qofybOa4XNIr0LqUWvrfrpRUo=
-			</data>
-		</dict>
-		<key>IDNowQESFinishOverlay.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			THpEWPq65E2HeJYeBMH+0yODXk0=
-			</data>
-			<key>hash2</key>
-			<data>
-			HrCaCCYzFOo6T68OwjNV2PzpTiCCwHiF40nl8occvAk=
-			</data>
-		</dict>
-		<key>IDNowQESFinishOverlay.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NK+zuZkOl70XBrwiw69fuUw1wZA=
-			</data>
-			<key>hash2</key>
-			<data>
-			OLA09nLRZkKTBJCv41di7AWqnWpv4TGTfba40Qq4xCg=
 			</data>
 		</dict>
 		<key>IDNowResultOverlay.nib/objects-11.0+.nib</key>
@@ -3985,22 +3984,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jOqXszeT3wPFfo9PrtvL+ofYQWg=
+			HGt0UaheKUtzU5wlqjHM7+g3ePk=
 			</data>
 			<key>hash2</key>
 			<data>
-			KvidXhL/OxMP3DGMe7JhI3nk7y5GfcLcJiFqBCmqdUw=
+			mEiwxbl6Iq9hG3z4ITI8R/J76rwDFPgxwDD/eK9R428=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mM7B0IBXG2Em3tnYAhIu/H5LYDg=
+			C/9UhMa/1GdpTZvgTUY1qE5Z3Zw=
 			</data>
 			<key>hash2</key>
 			<data>
-			SBCo+FSO9YpjyW7XkHR5+h5/9hqNpUWndERpd0T4NSE=
+			LVNfoXQLd46YhigD8HbNuSELiQsd0yO+P8jVAIKUk+4=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -4018,22 +4017,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1TVMCwWtfqRs5H66skAb8E7aQbI=
+			e3t4MMgiZGngDtwfgSfynOXEqWc=
 			</data>
 			<key>hash2</key>
 			<data>
-			8dGyTi3aBkJRMhbL4CrkitwQF5ZTd4RzGpoJjZkQwgE=
+			spG7T2mrptV/Rprf8TqNGlad4J5GMA56Plg9hN5TNoQ=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			awwHnwbT85W/OccfcWSoLszlv58=
+			j41PCVxjswIMo1EvWGqvkgW8xJI=
 			</data>
 			<key>hash2</key>
 			<data>
-			8jglkzBETiIhEHEBqJFfNuWN9tppMXoLyPMkoPtBTBE=
+			W8dsSt9RMGwDCOgROeyooXa75wCtBcYDnHmE5LrH1u0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -4073,22 +4072,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			921OK1AlZav6EWu4AE/Y3iJE40M=
+			olR9LPYFHZcotxmH8D48JdzkWDY=
 			</data>
 			<key>hash2</key>
 			<data>
-			XZQGlEL/KMLT/fPJ+5HetSbSkPUgB4FT8GlwuHJBF1g=
+			a2cqm3Bx1JKg5fsW60aG3nrnTlXffdiUXaGQhNaoyOE=
 			</data>
 		</dict>
 		<key>PVIDInformationViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6+02XTrfajkUZh0k7LZJI5VWXLA=
+			KbGf0bioZSeuLq04BImdXMIzsL0=
 			</data>
 			<key>hash2</key>
 			<data>
-			LEHuLcCmsmimz3iP4t+H41cisRAElLwxRFdPUAODnqQ=
+			QQ78v9kokWPpqr4l3CHEqoApHbKOi3VXErsKEcrGCeQ=
 			</data>
 		</dict>
 		<key>PopupViewController.nib/objects-11.0+.nib</key>
@@ -4397,6 +4396,61 @@
 			<key>hash2</key>
 			<data>
 			+yaMu8NxCDd+P0hyVDNLRWO2kNOTFSx5NMA47Owvud4=
+			</data>
+		</dict>
+		<key>animation_intro_bank_transfer.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+TDAStbzQ/uQgnP8hiwgJBF6rvA=
+			</data>
+			<key>hash2</key>
+			<data>
+			ILHHEHqfkBvP6aDtAFFz/wP8Ijxp4cGF5Pjs4H9UYVE=
+			</data>
+		</dict>
+		<key>animation_intro_id_doc.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			64Y01ffQtEpSr+Vpn4w4go1aFKw=
+			</data>
+			<key>hash2</key>
+			<data>
+			YvpIae5UDCBgcHzGiK26Vmn4pKs6yVcIFcgV56BX0rQ=
+			</data>
+		</dict>
+		<key>animation_intro_lighting.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XOY/wupYKOB8jjfU0jaIkTs3/DM=
+			</data>
+			<key>hash2</key>
+			<data>
+			Gkuwx0xQdS/rmoWdU9PWnOPyFWw9yMC2JJ/5r2+ioSI=
+			</data>
+		</dict>
+		<key>animation_intro_selfie.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sOqa9gorwvzUEI/glzX8HQkQsV8=
+			</data>
+			<key>hash2</key>
+			<data>
+			ws4en4qrvrsOHBDuiweWcC75H02HK1bTQ8mHJCEwKXI=
+			</data>
+		</dict>
+		<key>animation_intro_sign_document.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XbsjmczOSr4nvphsCQLrbHOYrVk=
+			</data>
+			<key>hash2</key>
+			<data>
+			aHpaQhSdySFzb6zL2W4FRO7JSrvyVV9Pv+0U4UGw3iE=
 			</data>
 		</dict>
 		<key>animation_loading.json</key>
@@ -8018,11 +8072,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7pgpHUuDnaEFlgYC7C659+BgRd8=
+			PQlTOuUQeZwdUJBBj+WkI1BNG/s=
 			</data>
 			<key>hash2</key>
 			<data>
-			t94nLHyXsjhdK/uZRqb0oerDwxVQ2EPsT9jXhSn4ykU=
+			YpS/6xJBqeeLNhC8adBIy6GrqiIRFelG1jH3X4NijeU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -8229,6 +8283,72 @@
 			<key>hash2</key>
 			<data>
 			E61Z2kq4b6gz71tgU5S/ZNXlqZsHeNmDabMIJQw9sMw=
+			</data>
+		</dict>
+		<key>idnow_static_intro_Screen_Step_1.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hYK8RH1e4mI3sevbzFXwRDx2CKE=
+			</data>
+			<key>hash2</key>
+			<data>
+			sBFDAtHDpXAZp6ml/8tgn47jscHdwICYugU2tVYX0s8=
+			</data>
+		</dict>
+		<key>idnow_static_intro_Screen_Step_2.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lFmOazDnquMUl7ky18hnDS7d3mo=
+			</data>
+			<key>hash2</key>
+			<data>
+			jnZ2KM+2ZkIQVSphZPdwhRKEW+rPPYCC36xKw5OAp+A=
+			</data>
+		</dict>
+		<key>idnow_static_intro_Screen_Step_3.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DkmP0YbYewoLZRSdZEGMu8HgUTE=
+			</data>
+			<key>hash2</key>
+			<data>
+			PhFwuOOGMrd6Zf4TnOcCOhIA+hgfpn8y2mP/CdWYwpY=
+			</data>
+		</dict>
+		<key>idnow_static_intro_Screen_Step_4.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7OX+64eYBk+QbBeOP4aiX80U964=
+			</data>
+			<key>hash2</key>
+			<data>
+			8IB/D45Dkgv2MlRgniPpizy1R0NlUguvLB9kkOljxFI=
+			</data>
+		</dict>
+		<key>idnow_static_intro_Screen_Step_5.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H2/RxNx7YUJjNL8nXFZFTImzfTg=
+			</data>
+			<key>hash2</key>
+			<data>
+			Dkzj1+c1vHZuGaoweQxNPjPZkOAFobCY9BepnAA1/ZU=
+			</data>
+		</dict>
+		<key>illustration_hand-utility-bill_S.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3EmhtMTBRs2vH1GJFsJmsNGmChM=
+			</data>
+			<key>hash2</key>
+			<data>
+			56R1rmBZEJpACCkwMoU+31idW1S1uF9joNM8g6NSlno=
 			</data>
 		</dict>
 		<key>it.lproj/FaceTec.strings</key>

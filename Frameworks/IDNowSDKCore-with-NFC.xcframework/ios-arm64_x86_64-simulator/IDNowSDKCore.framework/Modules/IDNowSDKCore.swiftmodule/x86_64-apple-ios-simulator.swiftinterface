@@ -12,6 +12,7 @@ import FaceTecSDK
 import Foundation
 @_exported import IDNowSDKCore
 import ImageIO
+import PDFKit
 import QuartzCore
 import ReadID
 import ReadID_UI
@@ -21,6 +22,7 @@ import StoreKit
 import Swift
 import SystemConfiguration
 import UIKit
+import UniformTypeIdentifiers
 import WebKit
 import _Concurrency
 import zlib
@@ -68,6 +70,12 @@ extension Swift.Int {
   public func packed() -> Foundation.Data
   @objc deinit
 }
+@objc @_hasMissingDesignatedInitializers public class IntroItem : ObjectiveC.NSObject {
+  public var title: Swift.String?
+  public var rank: Swift.Int?
+  public var lottieName: Swift.String?
+  @objc deinit
+}
 infix operator +| : DefaultPrecedence
 infix operator +- : DefaultPrecedence
 extension UIKit.UIFont {
@@ -110,12 +118,6 @@ extension IDNowSDKCore.DocumentType {
 }
 @_hasMissingDesignatedInitializers public class StartRequestPayload {
   public func packed() -> Foundation.Data
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers public class IntroItem : ObjectiveC.NSObject {
-  public var title: Swift.String?
-  public var imageUrl: Swift.String?
-  public var order: Swift.Int?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class StartDocumentComponentResponsePayload {
@@ -177,7 +179,7 @@ extension UIKit.UIImage {
   @objc deinit
 }
 public protocol IDNowFinishDelegate {
-  func finishIDNowFlow(result: IDNowSDKCore.IDNowSDK.IdentResult, message: Swift.String)
+  func finishIDNowFlow(result: IDNowSDKCore.IDNowSDK.IdentResult.type, message: Swift.String)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class IDNowInitialViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) convenience public init(token: Swift.String, preferredLanguage: Swift.String = "", delegate: IDNowSDKCore.IDNowFinishDelegate)
@@ -187,13 +189,6 @@ public protocol IDNowFinishDelegate {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
-}
-public enum NetworkingError : Swift.Error {
-  case invalidResponse
-  case requestFailed(Foundation.URL?, Swift.Error)
-  case selfDeallocated
-  case maxRetryTimeExceeded
-  case invalidRequest
 }
 @_hasMissingDesignatedInitializers public class EsigningGetApprovalPhrasesResponsePayload {
   @objc deinit
@@ -343,11 +338,9 @@ public enum IDNowSDKFeature {
   public func isEnabled(feature: IDNowSDKCore.IDNowSDKFeature) -> Swift.Bool
   public func getSuccessURL() -> Swift.String
   public func setSuccessURL(url: Swift.String)
-  public func getDelayBeforeUrlAutoRedirect() -> Swift.Int
-  public func setDelayBeforeUrlAutoRedirect(delay: Swift.Int)
   public func getRedirectLink() -> Swift.String
   public func setRedirectLink(url: Swift.String)
-  public func getRatingWaitingTime() -> Swift.Int
+  public func getRatingWaitingTime() -> Swift.Double
   public func setRatingWaitingTime(value: Swift.Int)
   public func getSessionTimeout() -> Swift.Int
   public func setSessionTimeout(value: Swift.Int)
@@ -380,19 +373,34 @@ public enum IDNowSDKFeature {
 @_hasMissingDesignatedInitializers public class StartNfcComponentResponsePayload {
   @objc deinit
 }
-public typealias IDNowSDKResultListener = (IDNowSDKCore.IDNowSDK.IdentResult, Swift.String) -> Swift.Void
+public typealias IDNowSDKResultListener = (IDNowSDKCore.IDNowSDK.IdentResult.type, IDNowSDKCore.IDNowSDK.IdentResult.statusCode, Swift.String) -> Swift.Void
 @_inheritsConvenienceInitializers @objc public class IDNowSDK : ObjectiveC.NSObject {
-  @objc public enum IdentResult : Swift.Int {
-    case FINISHED, CANCELLED, ERROR
-    public init?(rawValue: Swift.Int)
-    public typealias RawValue = Swift.Int
-    public var rawValue: Swift.Int {
-      get
+  @_inheritsConvenienceInitializers @objc public class IdentResult : ObjectiveC.NSObject {
+    @objc public enum type : Swift.Int {
+      case FINISHED, CANCELLED, ERROR
+      public init?(rawValue: Swift.Int)
+      public typealias RawValue = Swift.Int
+      public var rawValue: Swift.Int {
+        get
+      }
     }
+    @objc public enum statusCode : Swift.Int {
+      case E10 = 10, E100 = 100, E101 = 101, E102 = 102, E103 = 103, E110 = 110, E111 = 111, E120 = 120, E121 = 121, E130 = 130, E131 = 131, E140 = 140, E141 = 141, E142 = 142, E150 = 150, E151 = 151, E152 = 152, E153 = 153, E160 = 160, E161 = 161, E170 = 170, E171 = 171, EUnreachable = 1000
+      public var description: Swift.String {
+        get
+      }
+      public init?(rawValue: Swift.Int)
+      public typealias RawValue = Swift.Int
+      public var rawValue: Swift.Int {
+        get
+      }
+    }
+    @objc override dynamic public init()
+    @objc deinit
   }
   @objc public static let shared: IDNowSDKCore.IDNowSDK
   weak public var eventListener: IDNowSDKCore.IDNowSDKEventListener?
-  @objc public func start(token: Swift.String, preferredLanguage: Swift.String = "", fromViewController: UIKit.UIViewController, listener: @escaping IDNowSDKCore.IDNowSDKResultListener)
+  @objc public func start(token: Swift.String, isUnified: Swift.Bool = false, isRoutedSession: Swift.Bool = false, preferredLanguage: Swift.String = "", bindingKey: Swift.String? = nil, fromViewController: UIKit.UIViewController, listener: @escaping IDNowSDKCore.IDNowSDKResultListener)
   public func useConfig(config: IDNowSDKCore.IDNowSDKConfig)
   @objc override dynamic public init()
   @objc deinit
@@ -470,6 +478,9 @@ extension IDNowSDKCore.CameraPosition : Swift.Equatable {}
 extension IDNowSDKCore.CameraPosition : Swift.Hashable {}
 extension IDNowSDKCore.IDNowSDKFeature : Swift.Equatable {}
 extension IDNowSDKCore.IDNowSDKFeature : Swift.Hashable {}
-extension IDNowSDKCore.IDNowSDK.IdentResult : Swift.Equatable {}
-extension IDNowSDKCore.IDNowSDK.IdentResult : Swift.Hashable {}
-extension IDNowSDKCore.IDNowSDK.IdentResult : Swift.RawRepresentable {}
+extension IDNowSDKCore.IDNowSDK.IdentResult.type : Swift.Equatable {}
+extension IDNowSDKCore.IDNowSDK.IdentResult.type : Swift.Hashable {}
+extension IDNowSDKCore.IDNowSDK.IdentResult.type : Swift.RawRepresentable {}
+extension IDNowSDKCore.IDNowSDK.IdentResult.statusCode : Swift.Equatable {}
+extension IDNowSDKCore.IDNowSDK.IdentResult.statusCode : Swift.Hashable {}
+extension IDNowSDKCore.IDNowSDK.IdentResult.statusCode : Swift.RawRepresentable {}
