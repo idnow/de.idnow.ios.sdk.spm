@@ -1,5 +1,12 @@
 ## Changelog
 
+### 5.0.0
+Changes:
+- BREAKING CHANGE: Added new ERROR codes for SDK callback
+- Updated introduction screen UI
+- Enabled upload option on additional document step
+- Various bug fixes
+
 ### 4.19.1
 Changes:
 - Updated bank transfer
