@@ -1,5 +1,9 @@
 ## Changelog
 
+### 5.0.1
+Changes:
+- Various bug fixes and improvements
+
 ### 5.0.0
 Changes:
 - BREAKING CHANGE: Added new ERROR codes for SDK callback
