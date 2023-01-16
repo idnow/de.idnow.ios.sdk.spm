@@ -1,13 +1,13 @@
 ## Changelog
 
-### 5.0.1
+### 5.0.4
 Changes:
 - Updated liveness solution
 - Translations update for Turkish
 - Bug Fixes
 
 
-### 5.0.4
+### 5.0.1
 Changes:
 - Various bug fixes and improvements
 
