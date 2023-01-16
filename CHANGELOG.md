@@ -2,6 +2,13 @@
 
 ### 5.0.1
 Changes:
+- Updated liveness solution
+- Translations update for Turkish
+- Bug Fixes
+
+
+### 5.0.4
+Changes:
 - Various bug fixes and improvements
 
 ### 5.0.0

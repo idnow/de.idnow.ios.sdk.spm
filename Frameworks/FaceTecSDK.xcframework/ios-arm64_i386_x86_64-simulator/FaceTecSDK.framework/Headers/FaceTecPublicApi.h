@@ -45,6 +45,12 @@ typedef NS_ENUM(NSInteger, FaceTecVocalGuidanceMode) {
     FaceTecVocalGuidanceModeFullVocalGuidance = 2,
 };
 
+/** Max Audit Trail Images To Return . By default one audit trail image will be returned*/
+typedef NS_ENUM(NSInteger, FaceTecAuditTrailImagesToReturn) {
+    FaceTecAuditTrailImagesToReturnOne = 0,
+    FaceTecAuditTrailImagesToReturnUpToSix = 1
+};
+
 @protocol FaceTecSDKProtocol;
 
 __attribute__((visibility("default")))
@@ -81,12 +87,31 @@ typedef NS_ENUM(NSInteger, FaceTecCameraPermissionStatus) {
 @class FaceTecOCRConfirmationCustomization;
 @class FaceTecSessionTimerCustomization;
 @class FaceTecVocalGuidanceCustomization;
+@class FaceTecInitialLoadingAnimationCustomization;
 
 @protocol FaceTecCustomAnimationDelegate;
 /**
  Applications should implement this delegate to configure custom UIViews to display for specific interface animations.
  */
 @protocol FaceTecCustomAnimationDelegate <NSObject>
+/**
+ Configure a custom UIView to display on the OCR Confirmation Screen's scroll indicator.
+ This method will be called every time that the OCR Confirmation Screen is displayed.
+ Sizing of the UIView's contents should be calculated relative to the UIView's bounds. Animations should be setup to start in the UIView's didMoveToSuperview method.
+ Note: The scroll indicator animation is displayed indefinitely until user action, so the custom animation should be set to loop/repeat infinitely.
+ If this returns nil, the default animation will be used.
+ */
+@optional
+- (UIView * _Nullable)onCreateOCRConfirmationScrollIndicatorAnimationView NS_SWIFT_NAME(onCreateOCRConfirmationScrollIndicatorAnimationView());
+/**
+ Configure a custom UIView to display on the Securing Camera Screen for the animation during camera loading.
+ This method will be called every time that the Securing Camera Screen is displayed.
+ Sizing of the UIView's contents should be calculated relative to the UIView's bounds. Animations should be setup to start in the UIView's didMoveToSuperview method.
+ Note: The activity indicator animation is displayed indefinitely during the server-side work, so the custom animation should be set to loop/repeat infinitely.
+ If this returns nil, the default animation will be used.
+ */
+@optional
+- (UIView * _Nullable)onCreateInitialLoadingAnimationView NS_SWIFT_NAME(onCreateInitialLoadingAnimationView());
 /**
  Configure a custom UIView to display on the Result Screen for the activity indicator animation during server-side work.
  This method will be called every time that the Result Screen is displayed after completing the and/or ID Scan process.
@@ -161,6 +186,16 @@ typedef NS_ENUM(NSInteger, FaceTecCameraPermissionStatus) {
  */
 @optional
 - (UIView * _Nullable)onCreateNFCSkipOrErrorAnimationView NS_SWIFT_NAME(onCreateNFCSkipOrErrorAnimationView());
+/**
+ Configure a custom UIView to display on the ID Scan Additional Review Screen.
+ This method will be called when we show the ID Scan Additional Review Screen.
+ Sizing of the UIView's contents should be calculated relative to the UIView's bounds. Animations should be setup to start in the UIView's didMoveToSuperview method.
+ Note: The  animation is displayed for 2 seconds, so custom animation timing should be configured accordingly.
+ If this retuns a UIView instance, the UIView supplied will be used instead of the default internal UIView.
+ If this returns nil, the default internal UIView will be used.
+ */
+@optional
+- (UIView * _Nullable)onCreateAdditionalReviewScreenAnimationView NS_SWIFT_NAME(onCreateAdditionalReviewScreenAnimationView());
 @end
 
 /**
@@ -194,9 +229,10 @@ __attribute__((visibility("default")))
 @property (nonatomic, strong) id<FaceTecCustomAnimationDelegate> _Nullable customAnimationDelegate;
 /** Customize the FaceTec Security Watermark Image by selecting from 1 of the 3 available FaceTec watermarks. */
 @property (nonatomic) enum FaceTecSecurityWatermarkImage securityWatermarkImage;
-
 /** Customize FaceTec Vocal Guidance feature like settings run mode or providing sound files.*/
 @property (nonatomic, strong) FaceTecVocalGuidanceCustomization * _Nonnull vocalGuidanceCustomization;
+/** Customize the Securing Camera Screen. */
+@property (nonatomic, strong) FaceTecInitialLoadingAnimationCustomization * _Nonnull initialLoadingAnimationCustomization;
 
 /**
  * Customize the transition out animation for an unsuccessful Session.
@@ -222,7 +258,20 @@ __attribute__((visibility("default")))
  * This function allows special runtime control of the various possible result messages shown when the result animation occurs for an ID Scan Session.
  * Please note that you can also customize these strings via the standard customization/localization methods provided.
  */
-+ (void) setIDScanResultScreenMessageOverridesForSuccessFrontSide:(NSString * _Nonnull)successFrontSide successFrontSideBackNext:(NSString * _Nonnull)successFrontSideBackNext successBackSide:(NSString * _Nonnull)successBackSide successUserConfirmation:(NSString * _Nonnull)successUserConfirmation successNFC:(NSString * _Nonnull)successNFC retryFaceDidNotMatch:(NSString * _Nonnull)retryFaceDidNotMatch retryIDNotFullyVisible:(NSString * _Nonnull)retryIDNotFullyVisible retryOCRResultsNotGoodEnough:(NSString * _Nonnull)retryOCRResultsNotGoodEnough retryIDTypeNotSupported:(NSString * _Nonnull)retryIDTypeNotSupported skipOrErrorNFC:(NSString * _Nonnull)skipOrErrorNFC NS_SWIFT_NAME(setIDScanResultScreenMessageOverrides(successFrontSide:successFrontSideBackNext:successBackSide:successUserConfirmation:successNFC:retryFaceDidNotMatch:retryIDNotFullyVisible:retryOCRResultsNotGoodEnough:retryIDTypeNotSupported:skipOrErrorNFC:));
++ (void) setIDScanResultScreenMessageOverridesForSuccessFrontSide:(NSString * _Nonnull)successFrontSide successFrontSideBackNext:(NSString * _Nonnull)successFrontSideBackNext successFrontSideNFCNext:(NSString * _Nonnull)successFrontSideNFCNext successBackSide:(NSString * _Nonnull)successBackSide successBackSideNFCNext:(NSString * _Nonnull)successBackSideNFCNext successPassport:(NSString * _Nonnull)successPassport successPassportNFCNext:(NSString * _Nonnull)successPassportNFCNext successUserConfirmation:(NSString * _Nonnull)successUserConfirmation successNFC:(NSString * _Nonnull)successNFC retryFaceDidNotMatch:(NSString * _Nonnull)retryFaceDidNotMatch retryIDNotFullyVisible:(NSString * _Nonnull)retryIDNotFullyVisible retryOCRResultsNotGoodEnough:(NSString * _Nonnull)retryOCRResultsNotGoodEnough retryIDTypeNotSupported:(NSString * _Nonnull)retryIDTypeNotSupported skipOrErrorNFC:(NSString * _Nonnull)skipOrErrorNFC NS_SWIFT_NAME(setIDScanResultScreenMessageOverrides(successFrontSide:successFrontSideBackNext:successFrontSideNFCNext:successBackSide:successBackSideNFCNext:successPassport:successPassportNFCNext:successUserConfirmation:successNFC:retryFaceDidNotMatch:retryIDNotFullyVisible:retryOCRResultsNotGoodEnough:retryIDTypeNotSupported:skipOrErrorNFC:));
+
+/**
+ * @deprecated - This API method is deprecated and will be removed in an upcoming release of the iOS SDK. Use the non-deprecated setIDScanResultScreenMessageOverrides API method instead.
+ * This function allows special runtime control of the various possible result messages shown when the result animation occurs for an ID Scan Session.
+ * Please note that you can also customize these strings via the standard customization/localization methods provided.
+ */
++ (void) setIDScanResultScreenMessageOverridesForSuccessFrontSide:(NSString * _Nonnull)successFrontSide successFrontSideBackNext:(NSString * _Nonnull)successFrontSideBackNext successFrontSideNFCNext:(NSString * _Nonnull)successFrontSideNFCNext successBackSide:(NSString * _Nonnull)successBackSide successBackSideNFCNext:(NSString * _Nonnull)successBackSideNFCNext successUserConfirmation:(NSString * _Nonnull)successUserConfirmation successNFC:(NSString * _Nonnull)successNFC retryFaceDidNotMatch:(NSString * _Nonnull)retryFaceDidNotMatch retryIDNotFullyVisible:(NSString * _Nonnull)retryIDNotFullyVisible retryOCRResultsNotGoodEnough:(NSString * _Nonnull)retryOCRResultsNotGoodEnough retryIDTypeNotSupported:(NSString * _Nonnull)retryIDTypeNotSupported skipOrErrorNFC:(NSString * _Nonnull)skipOrErrorNFC NS_SWIFT_NAME(setIDScanResultScreenMessageOverrides(successFrontSide:successFrontSideBackNext:successFrontSideNFCNext:successBackSide:successBackSideNFCNext:successUserConfirmation:successNFC:retryFaceDidNotMatch:retryIDNotFullyVisible:retryOCRResultsNotGoodEnough:retryIDTypeNotSupported:skipOrErrorNFC:)) DEPRECATED_MSG_ATTRIBUTE("This API method is deprecated and will be removed in an upcoming release of the iOS SDK. Use the non-deprecated setIDScanResultScreenMessageOverrides API method instead.");
+/**
+ * @deprecated - This API method is deprecated and will be removed in an upcoming release of the iOS SDK. Use the non-deprecated setIDScanResultScreenMessageOverrides API method instead.
+ * This function allows special runtime control of the various possible result messages shown when the result animation occurs for an ID Scan Session.
+ * Please note that you can also customize these strings via the standard customization/localization methods provided.
+ */
++ (void) setIDScanResultScreenMessageOverridesForSuccessFrontSide:(NSString * _Nonnull)successFrontSide successFrontSideBackNext:(NSString * _Nonnull)successFrontSideBackNext successBackSide:(NSString * _Nonnull)successBackSide successUserConfirmation:(NSString * _Nonnull)successUserConfirmation successNFC:(NSString * _Nonnull)successNFC retryFaceDidNotMatch:(NSString * _Nonnull)retryFaceDidNotMatch retryIDNotFullyVisible:(NSString * _Nonnull)retryIDNotFullyVisible retryOCRResultsNotGoodEnough:(NSString * _Nonnull)retryOCRResultsNotGoodEnough retryIDTypeNotSupported:(NSString * _Nonnull)retryIDTypeNotSupported skipOrErrorNFC:(NSString * _Nonnull)skipOrErrorNFC NS_SWIFT_NAME(setIDScanResultScreenMessageOverrides(successFrontSide:successFrontSideBackNext:successBackSide:successUserConfirmation:successNFC:retryFaceDidNotMatch:retryIDNotFullyVisible:retryOCRResultsNotGoodEnough:retryIDTypeNotSupported:skipOrErrorNFC:)) DEPRECATED_MSG_ATTRIBUTE("This API method is deprecated and will be removed in an upcoming release of the iOS SDK. Use the non-deprecated setIDScanResultScreenMessageOverrides API method instead.");
 /**
  * @deprecated - This API method is deprecated and will be removed in an upcoming release of the iOS SDK. Use the non-deprecated setIDScanResultScreenMessageOverrides API method instead.
  * This function allows special runtime control of the various possible result messages shown when the result animation occurs for an ID Scan Session.
@@ -242,14 +291,14 @@ __attribute__((visibility("default")))
  * If this method is used, any values configured with FaceTecIDScanResultCallback.onIDScanUploadMessageOverride will be overridden with the applicable value configured with this method.
  * Please note that for proper behavior of these dynamic upload message values, it is required that there is appropriate use of FaceTecIDScanResultCallback.onIDScanUploadProgress to track the progress of the request body being uploaded to the Sever.
  */
-+ (void) setIDScanUploadMessageOverridesForFrontSideUploadStarted:(NSString * _Nonnull)frontSideUploadStarted frontSideStillUploading:(NSString * _Nonnull)frontSideStillUploading frontSideUploadCompleteAwaitingResponse:(NSString * _Nonnull)frontSideUploadCompleteAwaitingResponse frontSideUploadCompleteAwaitingProcessing:(NSString * _Nonnull)frontSideUploadCompleteAwaitingProcessing backSideUploadStarted:(NSString * _Nonnull)backSideUploadStarted backSideStillUploading:(NSString * _Nonnull)backSideStillUploading backSideUploadCompleteAwaitingResponse:(NSString * _Nonnull)backSideUploadCompleteAwaitingResponse backSideUploadCompleteAwaitingProcessing:(NSString * _Nonnull)backSideUploadCompleteAwaitingProcessing userConfirmedInfoUploadStarted:(NSString * _Nonnull)userConfirmedInfoUploadStarted userConfirmedInfoStillUploading:(NSString * _Nonnull)userConfirmedInfoStillUploading userConfirmedInfoUploadCompleteAwaitingResponse:(NSString * _Nonnull)userConfirmedInfoUploadCompleteAwaitingResponse userConfirmedInfoUploadCompleteAwaitingProcessing:(NSString * _Nonnull)userConfirmedInfoUploadCompleteAwaitingProcessing nfcUploadStarted:(NSString *_Nonnull)nfcUploadStarted nfcStillUploading:(NSString *_Nonnull)nfcStillUploading nfcUploadCompleteAwaitingResponse:(NSString *_Nonnull)nfcUploadCompleteAwaitingResponse nfcUploadCompleteAwaitingProcessing:(NSString *_Nonnull)nfcUploadCompleteAwaitingProcessing NS_SWIFT_NAME(setIDScanUploadMessageOverrides(frontSideUploadStarted:frontSideStillUploading:frontSideUploadCompleteAwaitingResponse:frontSideUploadCompleteAwaitingProcessing:backSideUploadStarted:backSideStillUploading:backSideUploadCompleteAwaitingResponse:backSideUploadCompleteAwaitingProcessing:userConfirmedInfoUploadStarted:userConfirmedInfoStillUploading:userConfirmedInfoUploadCompleteAwaitingResponse:userConfirmedInfoUploadCompleteAwaitingProcessing:nfcUploadStarted:nfcStillUploading:nfcUploadCompleteAwaitingResponse:nfcUploadCompleteAwaitingProcessing:));
++ (void) setIDScanUploadMessageOverridesForFrontSideUploadStarted:(NSString * _Nonnull)frontSideUploadStarted frontSideStillUploading:(NSString * _Nonnull)frontSideStillUploading frontSideUploadCompleteAwaitingResponse:(NSString * _Nonnull)frontSideUploadCompleteAwaitingResponse frontSideUploadCompleteAwaitingProcessing:(NSString * _Nonnull)frontSideUploadCompleteAwaitingProcessing backSideUploadStarted:(NSString * _Nonnull)backSideUploadStarted backSideStillUploading:(NSString * _Nonnull)backSideStillUploading backSideUploadCompleteAwaitingResponse:(NSString * _Nonnull)backSideUploadCompleteAwaitingResponse backSideUploadCompleteAwaitingProcessing:(NSString * _Nonnull)backSideUploadCompleteAwaitingProcessing userConfirmedInfoUploadStarted:(NSString * _Nonnull)userConfirmedInfoUploadStarted userConfirmedInfoStillUploading:(NSString * _Nonnull)userConfirmedInfoStillUploading userConfirmedInfoUploadCompleteAwaitingResponse:(NSString * _Nonnull)userConfirmedInfoUploadCompleteAwaitingResponse userConfirmedInfoUploadCompleteAwaitingProcessing:(NSString * _Nonnull)userConfirmedInfoUploadCompleteAwaitingProcessing nfcUploadStarted:(NSString *_Nonnull)nfcUploadStarted nfcStillUploading:(NSString *_Nonnull)nfcStillUploading nfcUploadCompleteAwaitingResponse:(NSString *_Nonnull)nfcUploadCompleteAwaitingResponse nfcUploadCompleteAwaitingProcessing:(NSString *_Nonnull)nfcUploadCompleteAwaitingProcessing skippedNFCUploadStarted:(NSString *_Nonnull)skippedNFCUploadStarted skippedNFCStillUploading:(NSString *_Nonnull)skippedNFCStillUploading skippedNFCUploadCompleteAwaitingResponse:(NSString *_Nonnull)skippedNFCUploadCompleteAwaitingResponse skippedNFCUploadCompleteAwaitingProcessing:(NSString *_Nonnull)skippedNFCUploadCompleteAwaitingProcessing NS_SWIFT_NAME(setIDScanUploadMessageOverrides(frontSideUploadStarted:frontSideStillUploading:frontSideUploadCompleteAwaitingResponse:frontSideUploadCompleteAwaitingProcessing:backSideUploadStarted:backSideStillUploading:backSideUploadCompleteAwaitingResponse:backSideUploadCompleteAwaitingProcessing:userConfirmedInfoUploadStarted:userConfirmedInfoStillUploading:userConfirmedInfoUploadCompleteAwaitingResponse:userConfirmedInfoUploadCompleteAwaitingProcessing:nfcUploadStarted:nfcStillUploading:nfcUploadCompleteAwaitingResponse:nfcUploadCompleteAwaitingProcessing:skippedNFCUploadStarted:skippedNFCStillUploading:skippedNFCUploadCompleteAwaitingResponse:skippedNFCUploadCompleteAwaitingProcessing:));
 /**
  * @deprecated - This API method is deprecated and will be removed in an upcoming release of the iOS SDK. Use the non-deprecated setIDScanUploadMessageOverrides API method instead.
  * This function allows special runtime control of the various possible upload messages shown when the Result Screen's upload progress content is shown for an ID Scan Session.
  * If this method is used, any values configured with FaceTecIDScanResultCallback.onIDScanUploadMessageOverride will be overridden with the applicable value configured with this method.
  * Please note that for proper behavior of these dynamic upload message values, it is required that there is appropriate use of FaceTecIDScanResultCallback.onIDScanUploadProgress to track the progress of the request body being uploaded to the Sever.
  */
-+ (void) setIDScanUploadMessageOverridesForFrontSideUploadStarted:(NSString * _Nonnull)frontSideUploadStarted frontSideStillUploading:(NSString * _Nonnull)frontSideStillUploading frontSideUploadCompleteAwaitingResponse:(NSString * _Nonnull)frontSideUploadCompleteAwaitingResponse frontSideUploadCompleteAwaitingProcessing:(NSString * _Nonnull)frontSideUploadCompleteAwaitingProcessing backSideUploadStarted:(NSString * _Nonnull)backSideUploadStarted backSideStillUploading:(NSString * _Nonnull)backSideStillUploading backSideUploadCompleteAwaitingResponse:(NSString * _Nonnull)backSideUploadCompleteAwaitingResponse backSideUploadCompleteAwaitingProcessing:(NSString * _Nonnull)backSideUploadCompleteAwaitingProcessing userConfirmedInfoUploadStarted:(NSString * _Nonnull)userConfirmedInfoUploadStarted userConfirmedInfoStillUploading:(NSString * _Nonnull)userConfirmedInfoStillUploading userConfirmedInfoUploadCompleteAwaitingResponse:(NSString * _Nonnull)userConfirmedInfoUploadCompleteAwaitingResponse userConfirmedInfoUploadCompleteAwaitingProcessing:(NSString * _Nonnull)userConfirmedInfoUploadCompleteAwaitingProcessing NS_SWIFT_NAME(setIDScanUploadMessageOverrides(frontSideUploadStarted:frontSideStillUploading:frontSideUploadCompleteAwaitingResponse:frontSideUploadCompleteAwaitingProcessing:backSideUploadStarted:backSideStillUploading:backSideUploadCompleteAwaitingResponse:backSideUploadCompleteAwaitingProcessing:userConfirmedInfoUploadStarted:userConfirmedInfoStillUploading:userConfirmedInfoUploadCompleteAwaitingResponse:userConfirmedInfoUploadCompleteAwaitingProcessing:)) DEPRECATED_MSG_ATTRIBUTE("This API method is deprecated and will be removed in an upcoming release of the iOS SDK. Use the non-deprecated setIDScanUploadMessageOverrides API method instead.");
++ (void) setIDScanUploadMessageOverridesForFrontSideUploadStarted:(NSString * _Nonnull)frontSideUploadStarted frontSideStillUploading:(NSString * _Nonnull)frontSideStillUploading frontSideUploadCompleteAwaitingResponse:(NSString * _Nonnull)frontSideUploadCompleteAwaitingResponse frontSideUploadCompleteAwaitingProcessing:(NSString * _Nonnull)frontSideUploadCompleteAwaitingProcessing backSideUploadStarted:(NSString * _Nonnull)backSideUploadStarted backSideStillUploading:(NSString * _Nonnull)backSideStillUploading backSideUploadCompleteAwaitingResponse:(NSString * _Nonnull)backSideUploadCompleteAwaitingResponse backSideUploadCompleteAwaitingProcessing:(NSString * _Nonnull)backSideUploadCompleteAwaitingProcessing userConfirmedInfoUploadStarted:(NSString * _Nonnull)userConfirmedInfoUploadStarted userConfirmedInfoStillUploading:(NSString * _Nonnull)userConfirmedInfoStillUploading userConfirmedInfoUploadCompleteAwaitingResponse:(NSString * _Nonnull)userConfirmedInfoUploadCompleteAwaitingResponse userConfirmedInfoUploadCompleteAwaitingProcessing:(NSString * _Nonnull)userConfirmedInfoUploadCompleteAwaitingProcessing nfcUploadStarted:(NSString *_Nonnull)nfcUploadStarted nfcStillUploading:(NSString *_Nonnull)nfcStillUploading nfcUploadCompleteAwaitingResponse:(NSString *_Nonnull)nfcUploadCompleteAwaitingResponse nfcUploadCompleteAwaitingProcessing:(NSString *_Nonnull)nfcUploadCompleteAwaitingProcessing NS_SWIFT_NAME(setIDScanUploadMessageOverrides(frontSideUploadStarted:frontSideStillUploading:frontSideUploadCompleteAwaitingResponse:frontSideUploadCompleteAwaitingProcessing:backSideUploadStarted:backSideStillUploading:backSideUploadCompleteAwaitingResponse:backSideUploadCompleteAwaitingProcessing:userConfirmedInfoUploadStarted:userConfirmedInfoStillUploading:userConfirmedInfoUploadCompleteAwaitingResponse:userConfirmedInfoUploadCompleteAwaitingProcessing:nfcUploadStarted:nfcStillUploading:nfcUploadCompleteAwaitingResponse:nfcUploadCompleteAwaitingProcessing:)) DEPRECATED_MSG_ATTRIBUTE("This API method is deprecated and will be removed in an upcoming release of the iOS SDK. Use the non-deprecated setIDScanUploadMessageOverrides API method instead.");
 + (NSDictionary * _Nullable) idScanUploadMessageOverrides;
 
 @property (nonatomic) NSDictionary* _Nullable featureFlagsMap;
@@ -476,6 +525,75 @@ __attribute__((visibility("default")))
  * Default is dynamically configured per device at runtime.
  */
 @property (nonatomic) int buttonCornerRadius;
+/**
+ * Color of the scroll indicator's background during the User OCR Confirmation Screen.
+ * Default is custom color.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull scrollIndicatorBackgroundNormalColor;
+/**
+ * Color of the scroll indicator's background when the button is pressed during the User OCR Confirmation Screen.
+ * Default is custom color.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull scrollIndicatorBackgroundHighlightColor;
+/**
+ * Color of the scroll indicator's text and default image tint during the User OCR Confirmation Screen.
+ * Default is white.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull scrollIndicatorForegroundNormalColor;
+/**
+ * Color of the scroll indicator's text and default image tint when the button is pressed during the User OCR Confirmation Screen.
+ * Default is white.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull scrollIndicatorForegroundHighlightColor;
+/**
+ * Color of the scroll indicator's border during the User OCR Confirmation Screen.
+ * Default is transparent.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull scrollIndicatorBorderColor;
+/**
+ * Thickness of the scroll indicator's border during theUser OCR Confirmation Screen.
+ * Default is dynamically configured per device at runtime.
+ */
+@property (nonatomic) int scrollIndicatorBorderWidth;
+/**
+ * Corner radius of the scroll indicator's border on the User OCR Confirmation Screen.
+ * If this value is set to -1, the corner radius will be set to half the height of the scroll indicator.
+ * Default is -1.
+ */
+@property (nonatomic) int scrollIndicatorCornerRadius;
+/**
+ * Font of the scroll indicator's text on the User OCR Confirmation Screen.
+ * If this value is null, FaceTec's default Typeface will be used.
+ * Default is null.
+ */
+@property (nonatomic, strong) UIFont * _Nullable scrollIndicatorFont;
+/**
+ * Shadow displayed behind the scroll indicator on the User OCR Confirmation Screen.
+ * This customization can be set to nil for no shadow, or it can be set to an instance of FaceTecShadow.
+ * Note: FaceTecShadow's configurable properties correlate to the shadow-related attributes available for CALayer objects.
+ * Default is a custom shadow.
+ */
+@property (nonatomic) FaceTecShadow * _Nullable scrollIndicatorShadow;
+/**
+ * Control whether to show the scroll indicator on the User OCR Confirmation Screen when there is scrollable content.
+ * Default is true (enabled).
+ */
+@property (nonatomic) BOOL enableScrollIndicator;
+/**
+ * Control whether to animate the text of the scroll indicator on the User OCR Confirmation Screen.
+ * Default is true (enabled).
+ */
+@property (nonatomic) BOOL enableScrollIndicatorTextAnimation;
+/**
+ * Control whether to place the User OCR Confirmation Screen action button at the bottom of the scrollable content, or fixed to the bottom of the screen (always visible).
+ * Default is false (button is below the scrollable content).
+ */
+@property (nonatomic) BOOL enableFixedConfirmButton;
+/**
+ * Control whether to show the animate-able image on the scroll indicator on the User OCR Confirmation Screen.
+ * Default is true (shown).
+ */
+@property (nonatomic) BOOL showScrollIndicatorImage;
 
 @end
 
@@ -673,7 +791,41 @@ __attribute__((visibility("default")))
  * Default is configured to use image named 'FaceTec_inactive_torch' located in application's Assets folder.
  */
 @property (nonatomic, strong) UIImage * _Nullable inactiveTorchButtonImage;
-
+/**
+ * Color of the Additional Review Screen background.
+ * Default is white.
+ */
+@property (nonatomic, copy) NSArray<UIColor *> * _Nonnull additionalReviewScreenBackgroundColors;
+/**
+ * Color of the text displayed on the Additional Review Screen (not including the action button text).
+ * Default is custom color.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull additionalReviewScreenForegroundColor;
+/**
+ * Image displayed on the ID Scan Additional Review Screen.
+ * Default is configured to use image named 'FaceTec_review' located in application's Assets folder.
+ */
+@property (nonatomic, strong) UIImage * _Nullable additionalReviewScreenScreenImage;
+/**
+ * Controls whether to show the 'FaceTec_face_match_to_id_branding_logo' image (or image configured with .faceMatchToIDBrandingImage) on the ID Scan Capture Screen for Face Match to ID Sessions.
+ * Default is false (hidden).
+ */
+@property (nonatomic) BOOL showFaceMatchToIDBrandingImage;
+/**
+ * Image displayed on the ID Scan Capture Screen for Face Match To ID Sessions.
+ * Default is configured to use image named 'FaceTec_face_match_to_id_branding_logo' located in application's Assets folder.
+ */
+@property (nonatomic, strong) UIImage * _Nullable faceMatchToIDBrandingImage;
+/**
+ * Image displayed on the ID Scan Capture Screen for standalone ID Scan Sessions.
+ * Default is configured to use image named 'FaceTec_standalone_id_scan_watermark' located in application's Assets folder.
+ */
+@property (nonatomic, strong) UIImage * _Nullable standaloneIDScanWatermark;
+/**
+ * Controls whether to show the Additional Review Screen at the end of an ID Scan Session if there was an issue with scanning part of the ID.
+ * Default is false (shown).
+ */
+@property (nonatomic) BOOL disableAdditionalReviewScreen;
 @end
 
 /**
@@ -1208,6 +1360,48 @@ __attribute__((visibility("default")))
 - (nonnull instancetype) init;
 @end
 
+/**
+ * Customize the Securing Camera Screen.
+ * Shown when securely loading and opening the camera before a Session.
+ * Note: This is currently only shown when doing a Photo ID Scan Only Session.
+ */
+__attribute__((visibility("default")))
+@interface FaceTecInitialLoadingAnimationCustomization : NSObject
+/**
+ * Control the size of the animation displayed on the Securing Camera Screen.
+ * This value represents the scaling factor that will be applied to the default animation bounds.
+ * This value has to be between 0.5 and 1.5. If it’s lower than 0.5 or higher than 1.5, it will be defaulted to 0.5 or 1.5 respectively.
+ * Default value is 1.
+ */
+@property (nonatomic) float animationRelativeScale;
+/**
+ * Color of the Securing Camera Screen's background.
+ * Default is white.
+ */
+@property (nonatomic, copy) NSArray<UIColor *> * _Nonnull backgroundColors;
+/**
+ * Color of the text displayed on the Securing Camera Screen.
+ * Default is custom color.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull foregroundColor;
+/**
+ * Font of the message text displayed on the Securing Camera Screen.
+ * Default is a system font.
+ */
+@property (nonatomic, strong) UIFont * _Nonnull messageFont;
+/**
+ * Color of the Securing Camera animation's background.
+ * Default is off-white  color.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull defaultAnimationBackgroundColor;
+/**
+ * Color of the Securing Camera animation's accent color.
+ * Default is custom color.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull defaultAnimationForegroundColor;
+- (nonnull instancetype) init;
+@end
+
 enum FaceTecSDKStatus : NSInteger;
 enum FaceTecSessionStatus: NSInteger;
 enum FaceTecIDScanStatus: NSInteger;
@@ -1336,6 +1530,13 @@ enum FaceTecIDScanNextStep: NSInteger;
  */
 @property (nonatomic, readonly, copy) NSString * _Nonnull version;
 
+
+/**
+ * Max Audit Trail Images To Return
+ * By default one audit trail image will be returned
+ */
+- (void)setMaxAuditTrailImages:(FaceTecAuditTrailImagesToReturn)auditTrailImagesToReturn;
+
 /**
  * Method to create a valid string to pass as the value for the User-Agent header when calling the FaceTec Managed API.
  * @param sessionId Unique Id for a session. This can be obtained from FaceTecSessionResult.
@@ -1353,6 +1554,15 @@ enum FaceTecIDScanNextStep: NSInteger;
     NS_SWIFT_NAME(createSessionVC(faceScanProcessorDelegate:));
 
 /**
+ Configures and returns a new UIViewController for a session with a FaceTecIDScanProcessorDelegate.
+ Caller should call presentViewController on returned object only once.
+
+ @param idScanProcessorDelegate The delegate to process IDScan
+*/
+- (UIViewController * _Nonnull)createSessionVCWithIDScanProcessor:(id <FaceTecIDScanProcessorDelegate> _Nullable)idScanProcessorDelegate
+    NS_SWIFT_NAME(createSessionVC(idScanProcessorDelegate:));
+
+/**
  Configures and returns a new UIViewController for a session with a FaceTecFaceScanProcessor.
  Caller should call presentViewController on returned object only once.
 
@@ -1361,6 +1571,16 @@ enum FaceTecIDScanNextStep: NSInteger;
 */
 - (UIViewController * _Nonnull)createSessionVCWithFaceScanProcessor:(id <FaceTecFaceScanProcessorDelegate> _Nullable)faceScanProcessorDelegate sessionToken:(NSString *_Nonnull)sessionToken
     NS_SWIFT_NAME(createSessionVC(faceScanProcessorDelegate:sessionToken:));
+
+/**
+ Configures and returns a new UIViewController for a session with a FaceTecIDScanProcessorDelegate.
+ Caller should call presentViewController on returned object only once.
+
+ @param idScanProcessorDelegate The delegate to process FaceScan.
+ @param sessionToken A Server session token
+*/
+- (UIViewController * _Nonnull)createSessionVCWithIDScanProcessor:(id <FaceTecIDScanProcessorDelegate> _Nullable)idScanProcessorDelegate sessionToken:(NSString *_Nonnull)sessionToken
+    NS_SWIFT_NAME(createSessionVC(idScanProcessorDelegate:sessionToken:));
 
 /**
  Configures and returns a new UIViewController for a session with a FaceTecFaceScanProcessor and FaceTecIDScanProcessor.
@@ -1447,6 +1667,10 @@ enum FaceTecSessionStatus : NSInteger;
  */
 @protocol FaceTecIDScanProcessorDelegate <NSObject>
 - (void)processIDScanWhileFaceTecSDKWaits:(id<FaceTecIDScanResult> _Nonnull)idScanResult idScanResultCallback:(id<FaceTecIDScanResultCallback> _Nonnull)idScanResultCallback NS_SWIFT_NAME(processIDScanWhileFaceTecSDKWaits(idScanResult:idScanResultCallback:));
+/**
+ This method will be called exactly once after the Session has completed and when using the Session constructor with a FaceTecFaceScanProcessor.
+ */
+- (void)onFaceTecSDKCompletelyDone NS_SWIFT_NAME(onFaceTecSDKCompletelyDone());
 @end
 
 
@@ -1643,7 +1867,12 @@ typedef NS_ENUM(NSInteger, FaceTecIDScanStatus) {
     /**
      ID Scan was skipped.
      */
-    FaceTecIDScanStatusSkipped
+    FaceTecIDScanStatusSkipped,
+    /**
+     The camera access is prevented because either the user has explicitly denied permission or the user's device is configured to not allow access by a device policy.
+     For more information on restricted by policy case, please see the the Apple Developer documentation on AVAuthorizationStatus.restricted.
+     */
+    FaceTecIDScanStatusCameraPermissionDenied
 };
 
 /**

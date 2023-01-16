@@ -134,6 +134,8 @@ IDNowSDK.shared.start(token: token, preferredLanguage:"en", fromViewController: 
 In case of IDNowSDK.IdentResult.type.ERROR, the possible error codes are below.
 
 ```
+"EUnreachable" --> No tetwork connection
+"E10" --> General type of error
 "E100" --> Ident code syntax incorrect
 "E101" --> Ident code not found
 "E102" --> Ident code expired
@@ -141,6 +143,8 @@ In case of IDNowSDK.IdentResult.type.ERROR, the possible error codes are below.
 "E110" --> Get ident info failed; invalid response
 "E111" --> Get ident info failed; server reachability
 "E112" --> Get ident info failed; Internal error
+"E120" --> Parsing error
+"E121" --> Server error
 "E130" --> Get ident resources failed; invalid response
 "E131" --> Get ident resources failed; server reachability
 "E140" --> Get name failed; invalid response

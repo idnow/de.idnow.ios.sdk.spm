@@ -6,15 +6,15 @@
 	<dict>
 		<key>AbortReasonPopupViewController.nib</key>
 		<data>
-		HDuBxgLs0VGp10eWgwfa5d5CnN0=
+		mZ380YB+RF3eeeOEEIyQA6S1PDE=
 		</data>
 		<key>AbortTableViewCell.nib</key>
 		<data>
-		ZzaGQuldYclbsMvc6IZND08jm80=
+		siv9WuSoIdP55zYtfeKTKVWIrU4=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		B0o1bSXtcdsqqTUoyF6aGgN6xpM=
+		tzeIcC5CLSs510ytOxh2H/YLwmY=
 		</data>
 		<key>BANK_DOC_nocopy.json</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>BankTransferLandingPage.nib</key>
 		<data>
-		LZINhdRPm3JdieBoQ4TttWU5TjI=
+		leuGN9+QGNoDvPRMOes8yS7dcTY=
 		</data>
 		<key>ConsentItemView.nib</key>
 		<data>
-		+bcYzV5NPtVppQlzrafC11uQJkU=
+		pD8c0c4cyxZ3HXs/txmOoGap+gc=
 		</data>
 		<key>ConsentViewController.nib</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>IDNowApprovalPhrasesOverlayView.nib</key>
 		<data>
-		pj4eEJA+oI3BrQ2UJi37CLiHAR8=
+		RGHNXCkrr7pcR2VI7Gr2S94/mfE=
 		</data>
 		<key>IDNowBaseCardViewOverlay.nib</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>IDNowCancelUnifiedViewController.nib</key>
 		<data>
-		c9YsoQOCoH50GrqdpLUrFTXF91w=
+		gq50v/RxAfXJAN0VOppbN8PLfGE=
 		</data>
 		<key>IDNowCaptureDocMessageBottomView.nib</key>
 		<data>
@@ -94,31 +94,31 @@
 		</data>
 		<key>IDNowClassificationCountryCell.nib</key>
 		<data>
-		jCTk29Q2OgLf7T6+Uuu6hXiy66s=
+		yHWR0srS1kPz/h+cluPbTfg+1lg=
 		</data>
 		<key>IDNowClassificationDocumentTypeCell.nib</key>
 		<data>
-		1YhTt+bxBCZIVp2zyTmhfKczwA0=
+		g43A2k0Tp381306b37Vyq54w5Rg=
 		</data>
 		<key>IDNowClassificationDocumentTypeHeaderCell.nib</key>
 		<data>
-		3+vBST0zn/7guc2zMl2uh64ZDV0=
+		VuIYmk113xg5iiRGd83ccDNp7W0=
 		</data>
 		<key>IDNowClassificationOverlay.nib</key>
 		<data>
-		qLYNPqsEShqJTLFOyWAo6TpihlU=
+		dRMLFpeu0M6wQpheIZmHfmaG5wE=
 		</data>
 		<key>IDNowClassificationV2Overlay.nib</key>
 		<data>
-		DeHqanspn6BwySkYc1SbIHjHofM=
+		hKtQoyKjq7kqXTGipOiaCka159c=
 		</data>
 		<key>IDNowConfirmNameViewController.nib</key>
 		<data>
-		dJgPCi+zrl2f7RdN000yVegsO2s=
+		+HGWNn4rXjf9ElsbGmNCCDVsQdY=
 		</data>
 		<key>IDNowConfirmNumberOverlayView.nib</key>
 		<data>
-		fhTxYvybuxepWobPHLyh2msvfH8=
+		0Auov7ka13KkGZPaOAhAI7AE8gI=
 		</data>
 		<key>IDNowConfirmationMessageOverlay.nib</key>
 		<data>
@@ -134,19 +134,19 @@
 		</data>
 		<key>IDNowDocumentDataInputCell.nib</key>
 		<data>
-		gnQSULoZ4PRwhNocpcBVOfsyeaY=
+		swyOqQlU3UtywGJoS6P/rzw11Pk=
 		</data>
 		<key>IDNowDocumentDataInputOverlay.nib</key>
 		<data>
-		NRiWtk/OOQPsZFfFA79w3m/VjTA=
+		ztd3kGbWCmLrDWXmUHM6FTkbTD8=
 		</data>
 		<key>IDNowDocumentImageConfirmationOverlay.nib</key>
 		<data>
-		3V2ttNd+nWBO8S4r4ggueywaOe8=
+		c1og5Kd+6DB5trO+5WEPHjP5B0Q=
 		</data>
 		<key>IDNowDocumentSignOTPOverlayView.nib</key>
 		<data>
-		ht2URI8+rdk7Eww4JyugbF4szqI=
+		dAgp/I9YT0JRMKYY4rQ0qP3jsgY=
 		</data>
 		<key>IDNowErrorToastView.nib</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>IDNowFinishOverlay.nib</key>
 		<data>
-		WtoKdZzprXDgjmyqmLuOr1Clt5g=
+		8hZoFgALsvAt90ZECc4+vZ6XGnk=
 		</data>
 		<key>IDNowFlashlightOverlay.nib</key>
 		<data>
@@ -170,19 +170,19 @@
 		</data>
 		<key>IDNowInstructionAdditionalDocumentNewView.nib</key>
 		<data>
-		4pH+s83EwrPmNdS0wKGUK24cTeg=
+		ds2+AtMsSqqBGEYI20gLpa8RuVo=
 		</data>
 		<key>IDNowIntroItemView.nib</key>
 		<data>
-		CHnwGSZwnjgzfis0n3T1T3qaTz0=
+		FTanD7OrRE0jllV8/Q3sNcwOh2M=
 		</data>
 		<key>IDNowIntroViewController.nib</key>
 		<data>
-		olwBY2Jm13z09a0v8eLnohGF1yg=
+		tAVyf2jtp1z/9bqQxAux4nDwot4=
 		</data>
 		<key>IDNowLivenessFaceMaskOverlay.nib</key>
 		<data>
-		eGEFxyds+Xp/NjwSTmwTKTgi4xY=
+		yjuxU+hBA6z1lrrw7CLNWm/t7vI=
 		</data>
 		<key>IDNowLivenessMessageBottomView.nib</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>IDNowMessageOverlay.nib</key>
 		<data>
-		0XWd4lK4z/FNg4OBqLkEYuK7Xs0=
+		jFImZ5NHZDxDUvDH/LIlj0r4OkI=
 		</data>
 		<key>IDNowNFCInstructionsOverlayView.nib</key>
 		<data>
@@ -222,11 +222,11 @@
 		</data>
 		<key>IDNowNewUserInstructionsView.nib</key>
 		<data>
-		5Cg2vqlo2I7SPqczatOo2UY2xzI=
+		b0pKh4Er7ZfZRbyaD+WIc07POEM=
 		</data>
 		<key>IDNowOCRConfirmationCell.nib</key>
 		<data>
-		oIqWiOy+/TnVcPhAm4O5w77PZVc=
+		hbg+LV01swd82nUbf0eCatrmJsA=
 		</data>
 		<key>IDNowOCRConfirmationFooter.nib</key>
 		<data>
@@ -234,23 +234,23 @@
 		</data>
 		<key>IDNowOCRConfirmationOverlay.nib</key>
 		<data>
-		YwpW3GA5y92OrvdKhbwr5tEfoaQ=
+		dyaD2rLgnlbCT3amwu5B4afPhwM=
 		</data>
 		<key>IDNowOCRNewUserFeedbackOverlay.nib</key>
 		<data>
-		sGcAbXs3lfBN2XJGCjz3mTMG2YE=
+		eURHRGlubCu6zGKYIhtZ+15V++k=
 		</data>
 		<key>IDNowOCRUserFeedbackOverlay.nib</key>
 		<data>
-		71ZOV/fF+ZyYN3uiWvEeP1zM4Fw=
+		02gb16MOQU2yf3NVkxeTgkT7Tn4=
 		</data>
 		<key>IDNowOTPOverlayView.nib</key>
 		<data>
-		fKtjzosw0bE8oTlL6XBUvgMEmYg=
+		2wXtzQL+QCZz9tGvIvcJZ7Fy3w8=
 		</data>
 		<key>IDNowPreviewDocMessageBottomView.nib</key>
 		<data>
-		BK/GdDi0ITmcQMEKYpEKqtiDRns=
+		45Nx/PkDU0H45KpirQF+HfHs1bI=
 		</data>
 		<key>IDNowProgressOverlay.nib</key>
 		<data>
@@ -262,11 +262,11 @@
 		</data>
 		<key>IDNowResultOverlay.nib</key>
 		<data>
-		hks6iqISk7gSoVJbxa9c2zgkh7U=
+		NzWb2/lFFn7lKMizKiAeMC7w0jc=
 		</data>
 		<key>IDNowResultProgressOverlay.nib</key>
 		<data>
-		xnABDpRdc2n2kU5C7HkatdCguFs=
+		NQnJh8+e/BptQEW4wPNZP1T1EXw=
 		</data>
 		<key>IDNowSecurityProcessingHeaderView.nib</key>
 		<data>
@@ -282,7 +282,7 @@
 		</data>
 		<key>IDNowStageInstructionsOverlay.nib</key>
 		<data>
-		5bGuD15oo/BNI5Siqe4S3znsGJs=
+		VhIsCIcdU6Q1pFsjzGpC8FBbydw=
 		</data>
 		<key>IDNowSuccessMessageBottomView.nib</key>
 		<data>
@@ -310,7 +310,7 @@
 		</data>
 		<key>IDNowUserDocumentInstructionOverlay.nib</key>
 		<data>
-		g1zwtxXK9iebxOjaolljvElv1/c=
+		TgHmWnk6VZHbKShzhnLFtrhQ1Iw=
 		</data>
 		<key>IDNowUserFeedbackView.nib</key>
 		<data>
@@ -318,7 +318,7 @@
 		</data>
 		<key>IDNowUserInstructionsOverlay.nib</key>
 		<data>
-		f+h1/5Wg5i+ItCJnG6i51hx8NwY=
+		fj+VMq5DHIr307faLdRbSPXZRws=
 		</data>
 		<key>IQKeyboardManager.bundle/IQButtonBarArrowDown@2x.png</key>
 		<data>
@@ -354,51 +354,35 @@
 		</data>
 		<key>IdentFailureViewController.nib</key>
 		<data>
-		oekBYPNIObZ+8OltNkyfLI+U2S0=
+		TFf0JaNAk/g5RJzWRPV7tOmvTVY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7QJQdNYxaG1bAOqx/kFc2WGlgtI=
-		</data>
-		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
-		<data>
-		snXTzbavEBaRcYZRpubg4LUGD/k=
-		</data>
-		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
-		<data>
-		0y0VutV5vHx2QwJcEug9eTieBgk=
+		bq0VXTxzO1GH7QZRTeHkzD1u80M=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		KQgUpExuEf5ljN7ZUdY9fYbQLGo=
+		oAR+irQN+gawynIM56KCWixnJko=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0y0VutV5vHx2QwJcEug9eTieBgk=
+		1XwnGq8lPTRxPDs6JG94XC+/Z2I=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7E7D2x/5wNokH0kGiYzXYmx210s=
-		</data>
-		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
-		<data>
-		snXTzbavEBaRcYZRpubg4LUGD/k=
-		</data>
-		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
-		<data>
-		xipMe8UIOJQsS9+4jqAZ0kyIlDE=
+		dEM4/iTfcKzbE7ekab7E06p39Ko=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		1skKKTwKGjK1LcdmQPXk1ZgsHpI=
+		U8/FDyNqjQgq2ERejYQPNEe6pTE=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xipMe8UIOJQsS9+4jqAZ0kyIlDE=
+		xcBBPQ9CPM9sUHPQBzvDd0ijkb0=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XD5VtzoKzRQp9kdpisVAfdWilXE=
+		FX2HrN+Kih0vbifuC2E+2PsjXXQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2286,6 +2270,24 @@
 		<data>
 		qGqngJ5kQmZNMtf35BsgE/X3Tpg=
 		</data>
+		<key>tr.lproj/FaceTec.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uDf/rSatEfLoOlQcuJZulISb/r0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DT/U0jh3ltOMokMZjMPpTUPND1U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/FaceTec.strings</key>
 		<dict>
 			<key>hash</key>
@@ -2315,21 +2317,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xy/nkRhYyk4aDsof/gubO1X1I7Tn68V14no0q/FuWFM=
+			nIjcTJwgp+n1opAEb0Z/W6N14Ksl66wUvYfe5YUGVvY=
 			</data>
 		</dict>
 		<key>AbortTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			36jS238kpK5EWcj1NEjP0uWsmAo6zeJoFQO9qzZBkt0=
+			GgYx0PS6seHav1wF/VfqPdcPAZFoNbpmv72uMPphJ2A=
 			</data>
 		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7RduQhe1Av+8la/D9/1KO0kCweMIFA/G96hTuae1Sg4=
+			1SLPdRBw69yKJDTjq14bUNXbaCRWEAs/hzeiqbOKXaQ=
 			</data>
 		</dict>
 		<key>BANK_DOC_nocopy.json</key>
@@ -2343,14 +2345,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7eZMgX/vDCG76NoJW7tbU+553qvMYhZIOY81TIiuWmw=
+			PRgA7SVq9wP2Dq+KCpFOga+/rg+zCmdHzXdgz0ZSgig=
 			</data>
 		</dict>
 		<key>ConsentItemView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pWau6lna5jTpfSOXEGqkop8CUpyitdYA2b8XDfroTFQ=
+			kKW+2S8YJCZhNNnAMYHelAaMR/LhpaCH6sxwAH+D5/U=
 			</data>
 		</dict>
 		<key>ConsentViewController.nib</key>
@@ -2420,7 +2422,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XfewMCPdVIiVE7b3xTf7td794QBYgtbTGeeMlCT/LsM=
+			UjG85M5pTALofPdzm3gj6N6CdL4BnKn/xPDlYyCx66o=
 			</data>
 		</dict>
 		<key>IDNowBaseCardViewOverlay.nib</key>
@@ -2455,7 +2457,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FLYcECBD26PFPBno5P+hN99wU4FSQ9cAFK+MEQGzJRY=
+			zt7y/YpaftHgygQo6ky9TB/UQCJXHoiZRrgiCY25cgI=
 			</data>
 		</dict>
 		<key>IDNowCaptureDocMessageBottomView.nib</key>
@@ -2469,49 +2471,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vpUqBru7jj5tCe5jeRdN5TGqrEA6bsv0pwLkhU0Wk7U=
+			oouRjD0qCaeu0GS443sZCOoOydaxx4PP0EHKItLNbhQ=
 			</data>
 		</dict>
 		<key>IDNowClassificationDocumentTypeCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nL0SVJHIWRwXbJPK+Z+UHhKD87WZDk2LmhRExC7hqUk=
+			++msr573zNlsHxpH91SSfeJb80dJy4Y/AyjPr1SOyhA=
 			</data>
 		</dict>
 		<key>IDNowClassificationDocumentTypeHeaderCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PHHnKn087kQsn84rmdo3VE1S2MgSPVhL/E9+ygZD544=
+			T0qYdAFT/OdFa/mkNuVtZ5Tlqo4Hi/8cp3l0CuiKd10=
 			</data>
 		</dict>
 		<key>IDNowClassificationOverlay.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XULXXBrIF3lnsodt1dM7rMWZd2pzYGzoxqBUBnRAZ2s=
+			RsxxwdV6X8wAWLbGPVMOkJgKShUNrGBznPskLbbLBQg=
 			</data>
 		</dict>
 		<key>IDNowClassificationV2Overlay.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fu+oaFv8+dkD53BzSz0ci1lwApa6bllbmbYB3tPEmrE=
+			ZwpoTaxWm9rie4VtWPuJuWQJ3iwWbOiI9NsX4W1JYk8=
 			</data>
 		</dict>
 		<key>IDNowConfirmNameViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PA2BXZMGb6BShmFP+d5owpgO1Qtvmk8tf5VgDU/Y+PA=
+			mOKqiZ83CfV/vlZpQykLY3AWJElqCW1flbifGB7aohE=
 			</data>
 		</dict>
 		<key>IDNowConfirmNumberOverlayView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3+P8MOBFH0f5K9vaqHBSLm6ZvDOnQe+kCqJgyEIMjGM=
+			rKg47DAbK1/SYx+xQKUvceFSQoteNxyWSTecNkpKp/M=
 			</data>
 		</dict>
 		<key>IDNowConfirmationMessageOverlay.nib</key>
@@ -2539,28 +2541,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Uimew0jG0oT8yijzX6chytNCu5+Cnw7X3L+ubORjoM=
+			+vHEElVF/swFdd+r3v4JdlJ433Qsc6lqzAo6UN4cifM=
 			</data>
 		</dict>
 		<key>IDNowDocumentDataInputOverlay.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d61tM0odVFByhoea4bDgrSk223mc1QZZ47/4arxgbmQ=
+			dm3FRYQy/Q1+ux2ZxMkr9qx+SPV08XfOUyP3Rhu41V8=
 			</data>
 		</dict>
 		<key>IDNowDocumentImageConfirmationOverlay.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jgji/LM5YI7UDPg0g1UZBlclQAmuj2oaE3ELFbSTDPY=
+			wnnfNTPYlon3cTXxvUPZAmG48GTQHd990Q7agpjKzc4=
 			</data>
 		</dict>
 		<key>IDNowDocumentSignOTPOverlayView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jVnXhSoEx9Vhzx/2ZXQf5T2qNDW+o7XIfs78JQzavmI=
+			pCY1K1QQy/2U9+GX/0SY7JjDvVs2UIMk7jR8gq4R460=
 			</data>
 		</dict>
 		<key>IDNowErrorToastView.nib</key>
@@ -2588,7 +2590,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3SXy7jdRMxaRtH6Vszt2YSLroyaCPilXGR8DGlI7BcU=
+			MoHTyiTNqwNR3AEP3Fbt1ba3/fWOlyALRNNDKg+8l9w=
 			</data>
 		</dict>
 		<key>IDNowFlashlightOverlay.nib</key>
@@ -2602,28 +2604,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MuM6r54d+qzlJR8IuY6jVB2u7QXSoSLO0l5B8yCjcNU=
+			7dxu1S+SrekUvyeO226V2Jj9wDwfpCwrN8soJsHsopI=
 			</data>
 		</dict>
 		<key>IDNowIntroItemView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1JZk5W0lVGt9UhBAB4Cg8iNWigfCMJYye0bIfxaMvLo=
+			YXYnmZCQdX9r2qjYOcYrPIVP59igTuyUt8c+sUbR7DQ=
 			</data>
 		</dict>
 		<key>IDNowIntroViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yvWM0G8GJkbFzWINffolVVtg212YGf6glagb1bOpDIs=
+			cdj3WZdcCFo040ACgMxDnbq2E2WF1dthx1LTkLvE5BU=
 			</data>
 		</dict>
 		<key>IDNowLivenessFaceMaskOverlay.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V9tahYW2SY7Vunr3o0NNOOOWlr7b4IpAFVS4ryEx22Y=
+			dbIoygoy4pF5IhqbAfvBlyP03talzz+FL6BtHAqyo7w=
 			</data>
 		</dict>
 		<key>IDNowLivenessMessageBottomView.nib</key>
@@ -2665,7 +2667,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HcmDyP7O8VF0Xpejwm0UtALZ84EBeGjlbOGsk62bDeE=
+			3MjQhXzmBFoW9JSEpVYtuItTtSrw03AWp06can6cxao=
 			</data>
 		</dict>
 		<key>IDNowNFCInstructionsOverlayView.nib</key>
@@ -2693,14 +2695,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pPPskVyOYcgrwTFgENkLx4TXp9akFycQLRETr2VK3po=
+			JEhp6ppyXMcb4HiDiaD7kJW/LYkQk3HYe7jF58zM/UU=
 			</data>
 		</dict>
 		<key>IDNowOCRConfirmationCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MxGV+u+JjYiCWlGQwFIXO7s9u1XS/B67/d/sk4olLU8=
+			/zgCCdngLjZa/GUM2OBiqk2uEvXkMO7PKIC6ZP1IbnI=
 			</data>
 		</dict>
 		<key>IDNowOCRConfirmationFooter.nib</key>
@@ -2714,35 +2716,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1O4QmwwJp05znt8MpHRtFSydmUjSS+HOejnflkvkxeo=
+			Aa0HQ0KpvI1dOxOurwqx0r8xH55UDhkTFozxEOQy/co=
 			</data>
 		</dict>
 		<key>IDNowOCRNewUserFeedbackOverlay.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Au/I6zPUiOfZxuUWzhhh+PU0wYyy7TzBrvNCOo+YBb8=
+			p+8WGc6w80CKppBderfpiTTOLfcCwAjlslLwMRJIwc4=
 			</data>
 		</dict>
 		<key>IDNowOCRUserFeedbackOverlay.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IrX8+aydOrypkUw3x/FNvOe4GNRToYXPcDfz0j1lVP0=
+			R4/fYZl5WdXGFm1K87eKGyqMA94JFTmeEZyVO8NmYDA=
 			</data>
 		</dict>
 		<key>IDNowOTPOverlayView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cSS/We8PzKHuGqh233zLwEMx/BtdqLSXmfKAppsYMRE=
+			LufbM/J6KB1CiiWFDx9jwy/D+wJdubXCRwqa0NBz0uA=
 			</data>
 		</dict>
 		<key>IDNowPreviewDocMessageBottomView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2DQ6t8YvNnNGRoWx95eTHUTa2XO5hDPhzhid55X152M=
+			YQmT5nwaRDOGL7EHPPt+WFxMn3EZI2AXm/FkXiqjyAQ=
 			</data>
 		</dict>
 		<key>IDNowProgressOverlay.nib</key>
@@ -2763,14 +2765,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tH6EnyhR0NyGZFTUSbqmwSR2zG/SSc3qEem6XWXGwhY=
+			HCThJoiOW/JjJlFC+ZlBtxrBQGuE9mt/4b7GBPlsbx4=
 			</data>
 		</dict>
 		<key>IDNowResultProgressOverlay.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oLx44C37N9pq4dq+Yjx4CLvsAItOSe7mT1xXAC3Gqbw=
+			/wGsWBWaVpvi8ldUgf87c4BDJuya7gnuEuRiMygtmI8=
 			</data>
 		</dict>
 		<key>IDNowSecurityProcessingHeaderView.nib</key>
@@ -2798,7 +2800,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jAD/My8wfb7jmrLk23Ge3dZkBGtFQ8A/UyywlIOQ5Ow=
+			X5P8/J6qlVOs8BCpMb94je2O3yvp67sBh7oC13AhffQ=
 			</data>
 		</dict>
 		<key>IDNowSuccessMessageBottomView.nib</key>
@@ -2847,7 +2849,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aROc4T3ilBYgh1MTeVreINZulwCH+lEQ2Bi7VN5ci3k=
+			3bE1yvTgoIFVL3kFwikIX45OURHvwXRNOVxfgvV4oWQ=
 			</data>
 		</dict>
 		<key>IDNowUserFeedbackView.nib</key>
@@ -2861,7 +2863,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cg65+sYtaWf7g54KYPO8b75kFZk5h5M6lmZD40Ox5jc=
+			KbckkGIR9K7kD4gvVku8WkY0xlgP+upJYosdt6xryvI=
 			</data>
 		</dict>
 		<key>IQKeyboardManager.bundle/IQButtonBarArrowDown@2x.png</key>
@@ -2924,77 +2926,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Czd7oQmMuL6IEH8EUlfaWUsPRGUJoh/oRstCOrIdsIY=
-			</data>
-		</dict>
-		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SYhGhV84eUM1UKE8LOQRyx1XrLPCeO2grGY4iVoz5LA=
-			</data>
-		</dict>
-		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			a8YXMZPa/PeuxgSv3BP0LRTLhYRCr9thpb5BVSxVT4g=
+			QJYr7WMi2U4J8ahfOZ785joLtMt2pTGv5y1rzgAvzPQ=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kY9v+ktjEE7cyxDOxBm7GJezQYRmBkAkfPmfNinCaXc=
+			fWhaI28G0sr0UfAHl2UjjRMMuFLD2yZGi3i1E6406yE=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a8YXMZPa/PeuxgSv3BP0LRTLhYRCr9thpb5BVSxVT4g=
+			V46xBdUUv9LhzBYsGMDFQT7WUKt28FGRUocEUZpPn3M=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mJITZU6uScvFQjb8/GdF9i8s7N/B0XwcLySDf7bUgh8=
-			</data>
-		</dict>
-		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SYhGhV84eUM1UKE8LOQRyx1XrLPCeO2grGY4iVoz5LA=
-			</data>
-		</dict>
-		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			AygHBCSAsCTxhd1APHsHG6f3hdXJi+FosyuluU8RwIc=
+			2kzNJXCOuUOJuXMMfK56dWy2/ejpQpV96O4Qfhy/wLc=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a4LzIdv4FpuhTbd+6/DmsahnBj+xi1n05NN3kdd3K1U=
+			czlDdIVVOOYTGmnMcy89q8G67jCK1TSXEl343q++Cso=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AygHBCSAsCTxhd1APHsHG6f3hdXJi+FosyuluU8RwIc=
+			lsT8ZeAaks32npxy6sy+6hAcFqVjohM8uh+O4Ss7ML4=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l4qKVzZ/o3f7h3pTEy6JaH8onjN7UHwhdhBHjLEZo24=
+			/BkzPjthzSTnWL8QhGsJBqWWC4RDplsRGWggFedPVOg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -6013,6 +5987,24 @@
 			<data>
 			NLj0r5CTW5x4lqTRvoQsfTMSGci5KBxepVHPCTBwyoM=
 			</data>
+		</dict>
+		<key>tr.lproj/FaceTec.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			I1tvzIl8z2RzdqsznnFpp+SeShggT1QcVzDiA0hzXcA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tUgPFDLWfeKPVhjn0Fz8vQOxBPZwdDd3tfrkqAMRBbc=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 		<key>uk.lproj/FaceTec.strings</key>
 		<dict>
