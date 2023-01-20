@@ -1,5 +1,9 @@
 ## Changelog
 
+### 5.0.5
+Changes:
+- Fixed some critical bugs
+
 ### 5.0.4
 Changes:
 - Updated liveness solution
