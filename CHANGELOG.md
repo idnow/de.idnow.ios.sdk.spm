@@ -1,5 +1,15 @@
 ## Changelog
 
+### 5.1.0
+Changes:
+- Improved QES signing flow
+- Configurable abort reasons
+- Option to disable failure screen
+- Contextual failure message on failure screen
+- Support for "${transactionNumber}" variable in success, redirect and failureURLs
+- Updated dependencies for Bank Transfer
+- Bug fixes
+
 ### 5.0.5
 Changes:
 - Fixed some critical bugs

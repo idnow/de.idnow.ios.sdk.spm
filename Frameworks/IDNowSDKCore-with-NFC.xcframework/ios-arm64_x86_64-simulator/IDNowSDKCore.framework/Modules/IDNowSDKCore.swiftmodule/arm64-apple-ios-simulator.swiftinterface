@@ -70,12 +70,6 @@ extension Swift.Int {
   public func packed() -> Foundation.Data
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class IntroItem : ObjectiveC.NSObject {
-  public var title: Swift.String?
-  public var rank: Swift.Int?
-  public var lottieName: Swift.String?
-  @objc deinit
-}
 infix operator +| : DefaultPrecedence
 infix operator +- : DefaultPrecedence
 extension UIKit.UIFont {
@@ -118,6 +112,12 @@ extension IDNowSDKCore.DocumentType {
 }
 @_hasMissingDesignatedInitializers public class StartRequestPayload {
   public func packed() -> Foundation.Data
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class IntroItem : ObjectiveC.NSObject {
+  public var title: Swift.String?
+  public var rank: Swift.Int?
+  public var lottieName: Swift.String?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class StartDocumentComponentResponsePayload {
@@ -229,6 +229,7 @@ public protocol IDNowSDKEventListener : AnyObject {
   public func packed() -> Foundation.Data
   @objc deinit
 }
+infix operator ~= : DefaultPrecedence
 @_hasMissingDesignatedInitializers public class FaceTecLivenessRequestPayload {
   public func packed() -> Foundation.Data
   @objc deinit
@@ -336,12 +337,12 @@ public enum IDNowSDKFeature {
   public func enableFeature(feature: IDNowSDKCore.IDNowSDKFeature)
   public func disableFeature(feature: IDNowSDKCore.IDNowSDKFeature)
   public func isEnabled(feature: IDNowSDKCore.IDNowSDKFeature) -> Swift.Bool
-  public func getSuccessURL() -> Swift.String
-  public func setSuccessURL(url: Swift.String)
-  public func getRedirectLink() -> Swift.String
-  public func setRedirectLink(url: Swift.String)
-  public func getRatingWaitingTime() -> Swift.Double
-  public func setRatingWaitingTime(value: Swift.Int)
+  public func getSuccessURL() -> Foundation.URL?
+  public func setSuccessURL(url: Foundation.URL)
+  public func getFailureURL() -> Foundation.URL?
+  public func setFailureURL(url: Foundation.URL)
+  public func getRedirectLink() -> Foundation.URL?
+  public func setRedirectLink(url: Foundation.URL)
   public func getSessionTimeout() -> Swift.Int
   public func setSessionTimeout(value: Swift.Int)
   public func getShowFinishScreen() -> Swift.Bool
@@ -354,8 +355,7 @@ public enum IDNowSDKFeature {
   public func setAutoHideInstruction(value: Swift.Bool)
   public func getInstructionShowTime() -> Swift.Int
   public func setInstructionShowTime(value: Swift.Int)
-  public func setRatingEnabledAppList(_ appIds: [Swift.String], _ isAppended: Swift.Bool)
-  public func isRatingAppEnabled() -> Swift.Bool
+  public func appSupportsRating() -> Swift.Bool
   public func reset()
   @objc override dynamic public init()
   @objc deinit
@@ -400,14 +400,12 @@ public typealias IDNowSDKResultListener = (IDNowSDKCore.IDNowSDK.IdentResult.typ
   }
   @objc public static let shared: IDNowSDKCore.IDNowSDK
   weak public var eventListener: IDNowSDKCore.IDNowSDKEventListener?
-  @objc public func start(token: Swift.String, isUnified: Swift.Bool = false, isRoutedSession: Swift.Bool = false, preferredLanguage: Swift.String = "", bindingKey: Swift.String? = nil, fromViewController: UIKit.UIViewController, listener: @escaping IDNowSDKCore.IDNowSDKResultListener)
-  public func useConfig(config: IDNowSDKCore.IDNowSDKConfig)
+  @objc public func start(token: Swift.String, isUnified: Swift.Bool = false, isRoutedSession: Swift.Bool = false, preferredLanguage: Swift.String = "en", bindingKey: Swift.String? = nil, fromViewController: UIKit.UIViewController, listener: @escaping IDNowSDKCore.IDNowSDKResultListener)
   @objc override dynamic public init()
   @objc deinit
 }
 extension IDNowSDKCore.IDNowSDK {
   public func autoformatIdentEntry(newContent: Swift.String, performedReplacement: Swift.String) -> Swift.String
-  public func identHasValidFormat(ident: Swift.String) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers public class TrackingConfirmationRequestPayload {
   public func packed() -> Foundation.Data

@@ -7,6 +7,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
+#if (TARGET_OS_IOS || TARGET_OS_TV)
+#import <UIKit/UIKit.h>
+#endif
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 //NOTE: Insights features
@@ -55,11 +60,6 @@ extern INSDeviceIDType const INSDeviceIDTypeTemporary;
 extern INSDeviceIDType const INSDeviceIDTypeIDFV;
 extern INSDeviceIDType const INSDeviceIDTypeNSUUID;
 
-//NOTE: Legacy device ID options
-extern NSString* const INSIDFV DEPRECATED_MSG_ATTRIBUTE("Please use INSDefaultDeviceID instead!");
-extern NSString* const INSIDFA DEPRECATED_MSG_ATTRIBUTE("Please use INSDefaultDeviceID instead!");
-extern NSString* const INSOpenUDID DEPRECATED_MSG_ATTRIBUTE("Please use INSDefaultDeviceID instead!");
-
 //NOTE: Available consents
 typedef NSString* INSConsent NS_EXTENSIBLE_STRING_ENUM;
 extern INSConsent const INSConsentSessions;
@@ -70,8 +70,6 @@ extern INSConsent const INSConsentPushNotifications;
 extern INSConsent const INSConsentLocation;
 extern INSConsent const INSConsentViewTracking;
 extern INSConsent const INSConsentAttribution;
-extern INSConsent const INSConsentStarRating DEPRECATED_MSG_ATTRIBUTE("Please use INSConsentFeedback instead!");
-extern INSConsent const INSConsentAppleWatch;
 extern INSConsent const INSConsentPerformanceMonitoring;
 extern INSConsent const INSConsentFeedback;
 extern INSConsent const INSConsentRemoteConfig;
@@ -95,10 +93,31 @@ extern INSMetricKey const INSMetricKeyLocale;
 extern INSMetricKey const INSMetricKeyHasWatch;
 extern INSMetricKey const INSMetricKeyInstalledWatchApp;
 
+//NOTE: Attribution keys
+typedef NSString* INSAttributionKey NS_EXTENSIBLE_STRING_ENUM;
+extern INSAttributionKey const INSAttributionKeyIDFA;
+extern INSAttributionKey const INSAttributionKeyADID;
+
+//NOTE: Internal log levels
+typedef enum : NSUInteger
+{
+    INSInternalLogLevelNone,
+    INSInternalLogLevelError,
+    INSInternalLogLevelWarning,
+    INSInternalLogLevelInfo,
+    INSInternalLogLevelDebug,
+    INSInternalLogLevelVerbose
+} INSInternalLogLevel;
+
 
 @protocol InsightsLoggerDelegate<NSObject>
-@required
-- (void)internalLog:(NSString *)log;
+- (void)internalLog:(NSString *)log withLevel:(INSInternalLogLevel)level;
+@end
+
+
+@protocol InsightsAutoViewTrackingName
+@optional
+- (NSString *)InsightsAutoViewTrackingName;
 @end
 
 
@@ -127,11 +146,24 @@ extern INSMetricKey const INSMetricKeyInstalledWatchApp;
 @property (nonatomic) BOOL enableDebug;
 
 /**
+ * For ignoring all SSL trust checks by setting server trust as exception.
+ * @discussion Can be used for self-signed certificates.
+ * @discussion Works only for Development environment where @c DEBUG flag is set in Build Settings.
+ */
+@property (nonatomic) BOOL shouldIgnoreTrustCheck;
+
+/**
  * For receiving SDK's internal logs even in production builds.
  * @discussion If set, SDK will forward its internal logs to this delegate object regardless of @c enableDebug initial config value.
- * @discussion @c internalLog: method declared as @c required in @c InsightsLoggerDelegate protocol will be called with log @c NSString.
+ * @discussion @c internalLog:withLevel: method declared as @c required in @c InsightsLoggerDelegate protocol will be called with log @c NSString.
  */
 @property (nonatomic, weak) id <InsightsLoggerDelegate> loggerDelegate;
+
+/**
+ * For deciding which level SDK's internal logs should be printed at.
+ * @discussion Default value is @c INSInternalLogLevelDebug.
+ */
+@property (nonatomic) INSInternalLogLevel internalLogLevel;
 
 #pragma mark -
 
@@ -179,12 +211,6 @@ extern INSMetricKey const INSMetricKeyInstalledWatchApp;
 #pragma mark -
 
 /**
- * @c isTestDevice property is deprecated. Please use @c pushTestMode property instead.
- * @discussion Using this property will have no effect.
- */
-@property (nonatomic) BOOL isTestDevice DEPRECATED_MSG_ATTRIBUTE("Use 'pushTestMode' property instead!");
-
-/**
  * For specifying which test mode Insights Server should use for sending push notifications.
  * @discussion There are 2 test modes:
  * @discussion - @c INSPushTestModeDevelopment: For development/debug builds signed with a development provisioning profile. Insights Server will send push notifications to Sandbox APNs.
@@ -202,7 +228,8 @@ extern INSMetricKey const INSMetricKeyInstalledWatchApp;
 
 /**
  * For disabling automatically showing of message alerts by @c INSPushNotifications feature.
- * @discussion If set, push notifications that contain a message or a URL visit request will not show alerts automatically. Push Open event will be recorded automatically, but Push Action event needs to be recorded manually, as well as displaying the message manually.
+ * @discussion If set, push notifications that contain a message or a URL will not show alerts automatically.
+ * @discussion Push Action event needs to be recorded manually, as well as displaying the message.
  */
 @property (nonatomic) BOOL doNotShowAlertForNotifications;
 
@@ -260,19 +287,6 @@ extern INSMetricKey const INSMetricKeyInstalledWatchApp;
  */
 @property (nonatomic) BOOL resetStoredDeviceID;
 
-/**
- * @c forceDeviceIDInitialization property is deprecated. Please use @c resetStoredDeviceID property instead.
- * @discussion Using this property will have no effect.
- */
-@property (nonatomic) BOOL forceDeviceIDInitialization DEPRECATED_MSG_ATTRIBUTE("Use 'resetStoredDeviceID' property instead!");
-
-/**
- * @c applyZeroIDFAFixFor property is deprecated.
- * @discussion As IDFA is not supported anymore, @c applyZeroIDFAFix is now inoperative.
- * @discussion Using this property will have no effect.
- */
-@property (nonatomic) BOOL applyZeroIDFAFix DEPRECATED_MSG_ATTRIBUTE("As IDFA is not supported anymore, 'applyZeroIDFAFix' is now inoperative!");
-
 #pragma mark -
 
 /**
@@ -283,7 +297,7 @@ extern INSMetricKey const INSMetricKeyInstalledWatchApp;
 
 /**
  * Event send threshold is used for sending queued events to Insights Server when number of recorded events reaches to it, without waiting for next update session defined by @c updateSessionPeriod.
- * @discussion If not set, it will be 10 for @c iOS, @c tvOS & @c macOS, and 3 for @c watchOS by default.
+ * @discussion If not set, it will be 100 by default.
  */
 @property (nonatomic) NSUInteger eventSendThreshold;
 
@@ -294,6 +308,43 @@ extern INSMetricKey const INSMetricKeyInstalledWatchApp;
  * @discussion If not set, it will be 1000 by default.
  */
 @property (nonatomic) NSUInteger storedRequestsLimit;
+
+/**
+ * Limit for the length of all string keys.
+ * @discussion It affects:
+ * @discussion - event names
+ * @discussion - view names
+ * @discussion - APM network trace names
+ * @discussion - APM custom trace names
+ * @discussion - APM custom trace metric keys
+ * @discussion - segmentation keys
+ * @discussion - custom metric keys
+ * @discussion - custom user property keys
+ * @discussion Keys longer than this limit will be truncated.
+ * @discussion If not set, it will be 128 chars by default.
+ */
+@property (nonatomic) NSUInteger maxKeyLength;
+
+/**
+ * Limit for the length of values in all key-value pairs.
+ * @discussion It affects:
+ * @discussion - segmentation values
+ * @discussion - APM custom trace metric values
+ * @discussion - custom crash logs
+ * @discussion - custom metric values
+ * @discussion - custom user property values
+ * @discussion Values longer than this limit will be truncated.
+ * @discussion If not set, it will be 256 chars by default.
+ */
+@property (nonatomic) NSUInteger maxValueLength;
+
+/**
+ * Limit for the number of key-value pairs in segmentations.
+ * @discussion If there are more key-value pairs than this limit, some of them will be removed.
+ * @discussion As obviously there is no order among the keys of an NSDictionary, it is not defined which ones will be removed.
+ * @discussion If not set, it will be 30 by default.
+ */
+@property (nonatomic) NSUInteger maxSegmentationValues;
 
 /**
  * For sending all requests using HTTP POST method.
@@ -309,26 +360,31 @@ extern INSMetricKey const INSMetricKeyInstalledWatchApp;
  */
 @property (nonatomic) BOOL manualSessionHandling;
 
-/**
- * For enabling automatic handling of Apple Watch related features for iOS apps with a watchOS counterpart app.
- * @discussion If set on both iOS and watchOS app, Apple Watch related features such as parent device matching, pairing status, and watch app installing status will be handled automatically.
- * @discussion This flag should not be set on independent watchOS apps.
- */
-@property (nonatomic) BOOL enableAppleWatch;
-
 #pragma mark -
 
 /**
- * For specifying attribution ID (IDFA) for campaign attribution.
+ * For specifying attribution ID (IDFA).
  * @discussion If set, this attribution ID will be sent with all @c begin_session requests.
  */
 @property (nonatomic, copy) NSString* attributionID;
 
 /**
- * @c enableAttribution property is deprecated. Please use @c recordAttributionID method instead.
- * @discussion Using this property will have no effect.
+ * For specifying direct attribution campaign type.
+ * @discussion Currently supported campaign types are "Insights" and "_special_test".
  */
-@property (nonatomic) BOOL enableAttribution DEPRECATED_MSG_ATTRIBUTE("Use 'attributionID' property instead!");
+@property (nonatomic, copy) NSString* campaignType;
+
+/**
+ * For specifying direct attribution campaign data.
+ * @discussion Campaign data has to be in `{"cid":"CAMPAIGN_ID", "cuid":"CAMPAIGN_USER_ID"}` format.
+ */
+@property (nonatomic, copy) NSString* campaignData;
+
+/**
+ * For specifying indirect attribution with given key-value pairs.
+ * @discussion Keys could be a predefined INSAttributionKey or any non-zero length valid string.
+ */
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * indirectAttribution;
 
 #pragma mark -
 
@@ -344,6 +400,7 @@ extern INSMetricKey const INSMetricKeyInstalledWatchApp;
  * Crash log limit is used for limiting the number of crash logs to be stored on the device.
  * @discussion If number of stored crash logs reaches @c crashLogLimit, SDK will start to drop oldest crash log while appending the newest one.
  * @discussion If not set, it will be 100 by default.
+ * @discussion If @c shouldUsePLCrashReporter flag is set on initial config, this limit will not be applied.
  */
 @property (nonatomic) NSUInteger crashLogLimit;
 
@@ -395,20 +452,6 @@ extern INSMetricKey const INSMetricKeyInstalledWatchApp;
  * @discussion e.g. @c myserver.com.cer
  */
 @property (nonatomic, copy) NSArray* pinnedCertificates;
-
-/**
- * Name of the custom HTTP header field to be sent with every request.
- * @discussion e.g. X-My-Secret-Server-Token
- * @discussion If set, every request sent to Insights Server will have this custom HTTP header and its value will be @c customHeaderFieldValue property.
- * @discussion If @c customHeaderFieldValue is not set when Insights is started, requests will not start until it is set using @c setCustomHeaderFieldValue: method later.
- */
-@property (nonatomic, copy) NSString* customHeaderFieldName;
-
-/**
- * Value of the custom HTTP header field to be sent with every request if @c customHeaderFieldName is set.
- * @discussion If not set while @c customHeaderFieldName is set, requests will not start until it is set using @c setCustomHeaderFieldValue: method later.
- */
-@property (nonatomic, copy) NSString* customHeaderFieldValue;
 
 /**
  * Salt value to be used for parameter tampering protection.
@@ -473,6 +516,19 @@ extern INSMetricKey const INSMetricKeyInstalledWatchApp;
  * @discussion If set, Performance Monitoring feature will be started automatically on SDK start.
  */
 @property (nonatomic) BOOL enablePerformanceMonitoring;
+
+#pragma mark -
+
+/**
+ * For enabling automatic user interface orientation tracking.
+ * @discussion If set, user interface orientation tracking feature will be enabled.
+ * @discussion An event will be sent whenever user interface orientation changes.
+ * @discussion Orientation event will not be sent if consent for @c INSConsentUserDetails is not given,
+ * while @c requiresConsent flag is set on initial configuration.
+ * @discussion Automatic user interface orientation tracking is enabled by default.
+ * @discussion For disabling it, please set this flag to @c NO.
+ */
+@property (nonatomic) BOOL enableOrientationTracking;
 NS_ASSUME_NONNULL_END
 
 @end

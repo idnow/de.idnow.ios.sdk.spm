@@ -31,23 +31,38 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)startWithConfig:(InsightsConfig *)config;
 
+
+
+#pragma mark - Override Configuration
+
 /**
- * Sets new app key to be used in following requests.
- * @discussion Before switching to new app key, this method suspends Insights and resumes immediately after.
- * @discussion Requests already queued previously will keep using the old app key.
- * @discussion New app key needs to be a non-zero length string, otherwise it is ignored.
- * @discussion @c recordPushNotificationToken and @c updateRemoteConfigWithCompletionHandler: methods may need to be called again after app key change.
- * @param newAppKey New app key
+ * Sets a new host to be used in requests.
+ * @discussion Requests already queued previously will also be using the new host.
+ * @discussion The new host needs to be a non-zero length string, otherwise it is ignored.
+ * @discussion @c recordPushNotificationToken and @c updateRemoteConfigWithCompletionHandler: methods may need to be called after the host change.
+ * @param newHost The new host
+ */
+- (void)setNewHost:(NSString *)newHost;
+
+/**
+ * Sets a new app key to be used in new requests.
+ * @discussion Before switching to the new app key, this method suspends Insights and resumes it immediately after.
+ * @discussion The requests already queued prior to this method call will keep using the old app key.
+ * @discussion The new app key needs to be a non-zero length string, otherwise it is ignored.
+ * @discussion @c recordPushNotificationToken and @c updateRemoteConfigWithCompletionHandler: methods may need to be called again after the app key change.
+ * @param newAppKey The new app key
  */
 - (void)setNewAppKey:(NSString *)newAppKey;
 
 /**
- * Sets the value of the custom HTTP header field to be sent with every request if @c customHeaderFieldName is set on initial configuration.
- * @discussion If @c customHeaderFieldValue on initial configuration can not be set on app launch, this method can be used to do so later.
- * @discussion Requests not started due to missing @c customHeaderFieldValue since app launch will start hereafter.
- * @param customHeaderFieldValue Custom header field value
+ * Sets a new URL session configuration to be used with all requests.
+ * @param newURLSessionConfiguration The new URL session configuration
  */
-- (void)setCustomHeaderFieldValue:(NSString *)customHeaderFieldValue;
+- (void)setNewURLSessionConfiguration:(NSURLSessionConfiguration *)newURLSessionConfiguration;
+
+
+
+#pragma mark - Queue Operations
 
 /**
  * Flushes request and event queues.
@@ -69,6 +84,19 @@ NS_ASSUME_NONNULL_BEGIN
  * @discussion these requests will be removed from request queue.
  */
 - (void)removeDifferentAppKeysFromQueue;
+
+/**
+ * Adds a direct request to the queue using given key-value pairs as query string pairs.
+ * @discussion requestParameters should be an @c NSDictionary, with keys and values are both @c NSString's only.
+ * @discussion Calls to this method will be ignored if:
+ * @discussion - There are not any consents given while @c requiresConsent flag is set on initial configuration.
+ * @param requestParameters Query string key-value pairs to be used in direct request
+ */
+- (void)addDirectRequest:(NSDictionary<NSString *, NSString *> * _Nullable)requestParameters;
+
+
+
+#pragma mark - Sessions
 
 /**
  * Starts session and sends @c begin_session request with default metrics for manual session handling.
@@ -375,61 +403,71 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)recordLocation:(CLLocationCoordinate2D)location city:(NSString * _Nullable)city ISOCountryCode:(NSString * _Nullable)ISOCountryCode IP:(NSString * _Nullable)IP;
 
 /**
- * Records user's location info to be used for geo-location based push notifications and advanced user segmentation.
- * @discussion By default, Insights Server uses a geo-ip database for acquiring user's location.
- * @discussion If the app uses Core Location services and granted permission, a location with better accuracy can be provided using this method.
- * @discussion This method overrides @c location property specified on initial configuration, and sends an immediate request.
- * @param location User's location with latitude and longitude
- */
-- (void)recordLocation:(CLLocationCoordinate2D)location DEPRECATED_MSG_ATTRIBUTE("Use 'recordLocation:city:ISOCountryCode:IP:' method instead!");
-
-/**
- * Records user's city and country info to be used for geo-location based push notifications and advanced user segmentation.
- * @discussion By default, Insights Server uses a geo-ip database for acquiring user's location.
- * @discussion If the app has information about user's city and/or country, these information can be provided using this method.
- * @discussion This method overrides @c city and @c ISOCountryCode properties specified on initial configuration, and sends an immediate request.
- * @param city User's city
- * @param ISOCountryCode User's ISO country code in ISO 3166-1 alpha-2 format
- */
-- (void)recordCity:(NSString *)city andISOCountryCode:(NSString *)ISOCountryCode DEPRECATED_MSG_ATTRIBUTE("Use 'recordLocation:city:ISOCountryCode:IP:' method instead!");
-
-/**
- * Records user's IP address to be used for geo-location based push notifications and advanced user segmentation.
- * @discussion By default, Insights Server uses a geo-ip database for acquiring user's location.
- * @discussion If the app needs to explicitly specify the IP address due to network requirements, it can be provided using this method.
- * @discussion This method overrides @c IP property specified on initial configuration, and sends an immediate request.
- * @param IP User's explicit IP address
- */
-- (void)recordIP:(NSString *)IP DEPRECATED_MSG_ATTRIBUTE("Use 'recordLocation:city:ISOCountryCode:IP:' method instead!");
-
-/**
  * Disables geo-location based push notifications by clearing all existing location info.
  * @discussion Once disabled, geo-location based push notifications can be enabled again by calling @c recordLocation: or @c recordCity:andISOCountryCode: or @c recordIP: method.
  */
 - (void)disableLocationInfo;
-
-/**
- * @c isGeoLocationEnabled property is deprecated. Please use @c disableLocationInfo method instead.
- * @discussion Using this property will have no effect.
- */
-@property (nonatomic) BOOL isGeoLocationEnabled DEPRECATED_MSG_ATTRIBUTE("Use 'disableLocationInfo' method instead!");
 
 
 
 #pragma mark - Crash Reporting
 
 /**
+ * Records an non-fatal exception.
+ * @discussion A convenience method for @c recordException:isFatal:stackTrace:segmentation:
+ * with isFatal passed as @c NO, stack trace and segmentation are passed as @c nil.
+ * @param exception Exception to be recorded
+ */
+- (void)recordException:(NSException *)exception;
+
+/**
+ * Records an exception with fatality information.
+ * @discussion A convenience method for @c recordException:isFatal:stackTrace:segmentation:
+ * with stack trace and segmentation are passed as @c nil.
+ * @param isFatal Whether the exception is fatal or not
+ */
+- (void)recordException:(NSException *)exception isFatal:(BOOL)isFatal;
+
+/**
+ * Records an exception with fatality information, given stack trace and segmentation.
+ * @discussion For manually recording all exceptions, fatal or not, with an ability to pass custom stack trace and segmentation data.
+ * @param exception Exception to be recorded
+ * @param isFatal Whether the exception is fatal or not
+ * @param stackTrace Stack trace to be recorded
+ * @param segmentation Crash segmentation to override @c crashSegmentation set on initial configuration
+ */
+- (void)recordException:(NSException *)exception isFatal:(BOOL)isFatal stackTrace:(NSArray * _Nullable)stackTrace segmentation:(NSDictionary<NSString *, NSString *> * _Nullable)segmentation;
+
+/**
+ * Records a Swift error with given stack trace.
+ * @discussion For manually recording Swift errors with an ability to pass custom stack trace.
+ * @param errorName A name describing the error to be recorded, a non-zero length valid string
+ * @param stackTrace Stack trace to be recorded
+ */
+- (void)recordError:(NSString *)errorName stackTrace:(NSArray * _Nullable)stackTrace;
+
+/**
+ * Records a Swift error with fatality information, given stack trace and segmentation.
+ * @discussion For manually recording Swift errors with an ability to pass custom stack trace and segmentation data.
+ * @param errorName A name describing the error to be recorded, a non-zero length valid string
+ * @param isFatal Whether the error is fatal or not
+ * @param stackTrace Stack trace to be recorded
+ * @param segmentation Crash segmentation to override @c crashSegmentation set on initial configuration
+ */
+- (void)recordError:(NSString *)errorName isFatal:(BOOL)isFatal stackTrace:(NSArray * _Nullable)stackTrace segmentation:(NSDictionary<NSString *, NSString *> * _Nullable)segmentation;
+
+/**
  * Records a handled exception manually.
  * @param exception Exception to be recorded
  */
-- (void)recordHandledException:(NSException *)exception;
+- (void)recordHandledException:(NSException *)exception DEPRECATED_MSG_ATTRIBUTE("Use 'recordException:' method instead!");
 
 /**
  * Records a handled exception and given stack trace manually.
  * @param exception Exception to be recorded
  * @param stackTrace Stack trace to be recorded
  */
-- (void)recordHandledException:(NSException *)exception withStackTrace:(NSArray * _Nullable)stackTrace;
+- (void)recordHandledException:(NSException *)exception withStackTrace:(NSArray * _Nullable)stackTrace DEPRECATED_MSG_ATTRIBUTE("Use 'recordException:isFatal:stackTrace:segmentation:' method instead! (passing isFatal:NO, segmentation:nil)");
 
 /**
  * Records an unhandled exception and given stack trace manually.
@@ -437,7 +475,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param exception Exception to be recorded
  * @param stackTrace Stack trace to be recorded
  */
-- (void)recordUnhandledException:(NSException *)exception withStackTrace:(NSArray * _Nullable)stackTrace;
+- (void)recordUnhandledException:(NSException *)exception withStackTrace:(NSArray * _Nullable)stackTrace DEPRECATED_MSG_ATTRIBUTE("Use 'recordException:isFatal:stackTrace:segmentation:' method instead! (passing isFatal:YES, segmentation:nil)");
 
 /**
  * Records custom logs to be delivered with crash report.
@@ -447,11 +485,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)recordCrashLog:(NSString *)log;
 
 /**
- * @c crashLog: method is deprecated. Please use @c recordCrashLog: method instead.
- * @discussion Be advised, parameter type changed to plain @c NSString from string format, for better Swift compatibility.
- * @discussion Calling this method will have no effect.
+ * Clears all custom crash logs.
+ * @discussion Custom crash logs recorded using @c recordCrashLog: method so far will be cleared.
  */
-- (void)crashLog:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2) DEPRECATED_MSG_ATTRIBUTE("Use 'recordCrashLog:' method instead!");
+- (void)clearCrashLogs;
 
 
 
@@ -478,7 +515,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)recordView:(NSString *)viewName segmentation:(NSDictionary<NSString *, NSString *> *)segmentation;
 
-#if (TARGET_OS_IOS)
+#if (TARGET_OS_IOS || TARGET_OS_TV)
 /**
  * Adds exception for AutoViewTracking.
  * @discussion @c UIViewControllers with specified title or class name will be ignored by AutoViewTracking and their appearances and disappearances will not be recorded.
@@ -500,12 +537,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic) BOOL isAutoViewTrackingActive;
 
-/**
- * @c isAutoViewTrackingEnabled property is deprecated. Please use @c isAutoViewTrackingActive property instead.
- * @discussion Using this property will have no effect.
- */
-@property (nonatomic) BOOL isAutoViewTrackingEnabled DEPRECATED_MSG_ATTRIBUTE("Use 'isAutoViewTrackingActive' property instead!");
-
 #endif
 
 
@@ -518,20 +549,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (InsightsUserDetails *)user;
 
-/**
- * Handles switching from device ID to custom user ID for logged in users
- * @discussion When a user logs in, this user can be tracked with custom user ID instead of device ID.
- * @discussion This is just a convenience method that handles setting user ID as new device ID and merging existing data on Insights Server.
- * @param userID Custom user ID uniquely defining the logged in user
- */
-- (void)userLoggedIn:(NSString *)userID;
-
-/**
- * Handles switching from custom user ID to device ID for logged out users
- * @discussion When a user logs out, all the data can be tracked with default device ID henceforth.
- * @discussion This is just a convenience method that handles resetting device ID to default one and starting a new session.
- */
-- (void)userLoggedOut;
 
 
 
@@ -560,7 +577,37 @@ NS_ASSUME_NONNULL_BEGIN
  * @param widgetID ID of the feedback widget created on Insights Server.
  * @param completionHandler A completion handler block to be executed when feedback widget is dismissed by user or there is an error.
  */
-- (void)presentFeedbackWidgetWithID:(NSString *)widgetID completionHandler:(void (^)(NSError * __nullable error))completionHandler;
+- (void)presentFeedbackWidgetWithID:(NSString *)widgetID completionHandler:(void (^)(NSError * __nullable error))completionHandler DEPRECATED_MSG_ATTRIBUTE("Use 'presentRatingWidgetWithID:completionHandler' method instead!");
+
+/**
+ * Presents rating widget with given ID in a WKWebView placed in a UIViewController.
+ * @discussion First, the availability of the rating widget will be checked asynchronously.
+ * @discussion If the rating widget with given ID is available, it will be modally presented.
+ * @discussion Otherwise, @c completionHandler will be executed with an @c NSError.
+ * @discussion @c completionHandler will also be executed with @c nil when the rating widget is dismissed by user.
+ * @discussion Calls to this method will be ignored and @c completionHandler will not be executed if:
+ * @discussion - Consent for @c INSConsentFeedback is not given, while @c requiresConsent flag is set on initial configuration.
+ * @discussion - Current device ID is @c INSTemporaryDeviceID.
+ * @discussion - @c widgetID is not a non-zero length valid string.
+ * @discussion This is a legacy method for presenting Rating type feedback widgets only.
+ * @discussion Passing widget ID's of Survey or NPS type feedback widgets will not work.
+ * @param widgetID ID of the rating widget created on Insights Server.
+ * @param completionHandler A completion handler block to be executed when the rating widget is dismissed by user or there is an error.
+ */
+- (void)presentRatingWidgetWithID:(NSString *)widgetID completionHandler:(void (^)(NSError * __nullable error))completionHandler;
+
+/**
+ * Manually records rating widget result with given ID and other info.
+ * @discussion Calls to this method will be ignored if:
+ * @discussion - Consent for @c INSConsentFeedback is not given, while @c requiresConsent flag is set on initial configuration.
+ * @discussion - @c widgetID is not a non-zero length valid string.
+ * @param widgetID ID of the rating widget created on Insights Server
+ * @param rating User's rating
+ * @param email User's e-mail address (optional)
+ * @param comment User's comment (optional)
+ * @param userCanBeContacted User's consent for whether they can be contacted via e-mail or not
+ */
+- (void)recordRatingWidgetWithID:(NSString *)widgetID rating:(NSInteger)rating email:(NSString * _Nullable)email comment:(NSString * _Nullable)comment userCanBeContacted:(BOOL)userCanBeContacted;
 
 /**
  * Fetches a list of available feedback widgets.
@@ -583,11 +630,33 @@ NS_ASSUME_NONNULL_BEGIN
  * Records attribution ID (IDFA) for campaign attribution.
  * @discussion This method overrides @c attributionID property specified on initial configuration, and sends an immediate request.
  * @discussion Also, this attribution ID will be sent with all @c begin_session requests.
+ * @discussion Calls to this method will be ignored if:
+ * @discussion - Consent for @c INSConsentAttribution is not given, while @c requiresConsent flag is set on initial configuration.
  * @param attributionID Attribution ID (IDFA)
  */
 - (void)recordAttributionID:(NSString *)attributionID;
 
+/**
+ * Records direct attribution with campaign type and data.
+ * @discussion Currently supported campaign types are "Insights" and "_special_test".
+ * @discussion Campaign data has to be in `{"cid":"CAMPAIGN_ID", "cuid":"CAMPAIGN_USER_ID"}` format.
+ * @discussion This method sends an immediate request.
+ * @discussion Calls to this method will be ignored if:
+ * @discussion - Consent for @c INSConsentAttribution is not given, while @c requiresConsent flag is set on initial configuration.
+ * @param campaignType Campaign Type
+ * @param campaignData Campaign Data
+ */
+- (void)recordDirectAttributionWithCampaignType:(NSString *)campaignType andCampaignData:(NSString *)campaignData;
 
+/**
+ * Records indirect attribution with given key-value pairs.
+ * @discussion Keys could be a predefined @c INSAttributionKey or any non-zero length valid string.
+ * @discussion This method sends an immediate request.
+ * @discussion Calls to this method will be ignored if:
+ * @discussion - Consent for @c INSConsentAttribution is not given, while @c requiresConsent flag is set on initial configuration.
+ * @param attribution Attribution key-value pairs
+ */
+- (void)recordIndirectAttribution:(NSDictionary<NSString *, NSString *> *)attribution;
 
 #pragma mark - Remote Config
 /**
