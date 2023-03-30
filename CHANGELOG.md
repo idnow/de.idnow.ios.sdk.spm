@@ -1,5 +1,13 @@
 ## Changelog
 
+### 5.2.0
+- Updated language translations for BG, TR, UK, RU, RO, PL, FI
+- Harmonized lottie filenames between Android and iOS
+- Refactored lottie animation loading logic for Additional Document step based on backend config
+- Liveness solution updated to 9.6.22
+- Fixed syntax of variable ${transactionnumber} used in redirect, success and failure URLs
+- Bug fixes
+
 ### 5.1.0
 Changes:
 - Improved QES signing flow
