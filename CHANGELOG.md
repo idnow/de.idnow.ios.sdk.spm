@@ -1,7 +1,7 @@
 ## Changelog
 
-### 5.2.1
-- Bug fixes
+ ### 5.4.0
+- Various Bug fixes
 
 ### 5.2.0
 - Updated language translations for BG, TR, UK, RU, RO, PL, FI
