@@ -1,5 +1,8 @@
 ## Changelog
 
+ ### 5.4.1
+- Fixed naming issue for one of the dependencies
+ 
  ### 5.4.0
 - Various Bug fixes
 
