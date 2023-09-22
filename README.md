@@ -7,6 +7,7 @@
 - [SDK error codes](#sdk-error-codes)
   -  [How to deal with errors](#how-to-deal-with-errors)
 - [Fat Framework Support](#fat-framework-support)
+- [Compatibility, End of Support, End of Life](#compatibility-matrix)
 
 
 
@@ -172,3 +173,7 @@ In case of IDNowSDK.IdentResult.type.ERROR, the possible error codes are below.
 ### Fat Framework Support
 
 In case you want to continue using fat framework, please get in touch with your IDnow representative.
+
+### Compatibility Matrix
+
+Please refer to the following link to find information about compatibility, end-of-support (EOS) and end-of-life (EOL) dates pertaining to our products: [IDnow Compatibility Matrix: Browser & OS Compatibility guide](https://www.idnow.io/developers/compatibility-overview/)
