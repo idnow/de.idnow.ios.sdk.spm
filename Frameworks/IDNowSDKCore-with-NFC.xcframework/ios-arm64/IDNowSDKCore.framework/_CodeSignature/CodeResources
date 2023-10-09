@@ -18,7 +18,7 @@
 		</data>
 		<key>ApprovalPhrasesConsentView.nib</key>
 		<data>
-		qxY/r+LKl2SCIsOAxoeaJGOcCqw=
+		zyD4mjvHZh0XjYityGwsKWHSB7A=
 		</data>
 		<key>Assets.car</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>IDNowErrorToastView.nib</key>
 		<data>
-		0BEtBIJfPMVR6w71A3GToCeCYYs=
+		v99c1x21fGRgl9hVSuwKRs+3axQ=
 		</data>
 		<key>IDNowFaceMaskOverlay.nib</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>IDNowLivenessMessageBottomView.nib</key>
 		<data>
-		RD1W6DP4ASKN93xSoy62AXmuak0=
+		Rwcw8NboBOAQ+xkifh8xNl9klJY=
 		</data>
 		<key>IDNowMRZInstructionsOverlayView.nib</key>
 		<data>
@@ -358,39 +358,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2VXDu4fKU0HwEeElXzrnnIwReGE=
+		VLutxYb9sHE2KZtO1UwsXWymzy4=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		IoyI0oR94ZYQI3fw/RVte//2oAY=
+		bOsqjrd3im7J7EMp50dJ9qmQsB8=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		iggWTh7TgM2thQzrZk8WgFKaHkw=
+		7hkmIdbX9VM/9V2rePuo+8NUht8=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ePCQugg2HEloxpojTMUV4rBhxnQ=
+		MmuUmRdQVCpdU/Zbc3uL1W0tTa4=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		iggWTh7TgM2thQzrZk8WgFKaHkw=
+		7hkmIdbX9VM/9V2rePuo+8NUht8=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		uhGybrbap+rIPmzLPJgx877zMTY=
+		3Uanxu4ZSoCvx1c6KpFboLJDBe4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		y3/n+oqlBAPNCmLFRKjjWD25SUI=
 		</data>
-		<key>NFCPopupViewController.nib</key>
-		<data>
-		N9dTJAY61Mg3T4/WQGsYLAlEfaw=
-		</data>
 		<key>PVIDInformationViewController.nib</key>
 		<data>
-		olR9LPYFHZcotxmH8D48JdzkWDY=
+		On1qduMtjMa+z/UaWomhzZo+d24=
 		</data>
 		<key>PopupWithHeaderViewController.nib</key>
 		<data>
@@ -1958,7 +1954,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7wqUZtDeRkB1axg1+3ZXnq3iXLU=
+			EOq0Zi5xs7nV/p6oZ3ylFKccmno=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2370,7 +2366,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/SNJYLSDgy4XQoGiSswEE3EUuKKerLSrSjuGwGIkrWI=
+			sZ0Ehz9MAokqTGEQgfKY3bA4XvPR0Q4CkfY3g0qq+l0=
 			</data>
 		</dict>
 		<key>Assets.car</key>
@@ -2594,7 +2590,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I8AqJsvhV39s+9nKU+uqKvXZyXwxAUH/njgIUx2DNyU=
+			C5b02lfEBkN9sJyuL/4RJt0uQJuV8QeV/5+5fR+X+PA=
 			</data>
 		</dict>
 		<key>IDNowFaceMaskOverlay.nib</key>
@@ -2657,7 +2653,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ERx8MFM4s5A9Cy5ZnsfJezOUrPNELRqzpg5e5ja3q8k=
+			OYEjkbTgcn84jDyErYQP5lM+atWwutrIyAuO+IH0UEU=
 			</data>
 		</dict>
 		<key>IDNowMRZInstructionsOverlayView.nib</key>
@@ -2965,35 +2961,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			unlIVl47sDJxreDk7nHHygwO7sAJuKCL4r4lg4PBP5E=
+			O8esFK+tdbz4AvVs9Are+bF/EuoWC25Png51RB9Avgo=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OqvfEpcV62WXYEmGvQBrY36K/Wou3qbulADZsqL0UNo=
+			s47S+dnFg+0Zn0MRp/jWcxNmAcDaVkhWFLdd+3LeKXc=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TYWLJ55XRJVLQLVDgE3j2xyLvg/aDxx3enqY6M7fzQY=
+			SRAHWEEKynqKjUdu12DL+tSVJBt3XgPprTBXMHMjkmc=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OqvfEpcV62WXYEmGvQBrY36K/Wou3qbulADZsqL0UNo=
+			s47S+dnFg+0Zn0MRp/jWcxNmAcDaVkhWFLdd+3LeKXc=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FJREMncK1rTqjrDq7YAnNa5PVZlxD13xA0oSIQS1JhY=
+			JyxHRWQ514gdgxN2IWKkOf1+EtDj9MYA59U0UjoS5Yk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3003,18 +2999,11 @@
 			Ad8YvYFXqs07ygo0OC5rTuKSa6OSXPaV0FhLWTIKUdo=
 			</data>
 		</dict>
-		<key>NFCPopupViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6r5hGAfCjbRbtpOiWCEZgAkQrOAdjnl/0h8HGGVYd+s=
-			</data>
-		</dict>
 		<key>PVIDInformationViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a2cqm3Bx1JKg5fsW60aG3nrnTlXffdiUXaGQhNaoyOE=
+			jSnCg0Kel2IFrkq8p38PGg074g26J3RvA4L8cDax/g0=
 			</data>
 		</dict>
 		<key>PopupWithHeaderViewController.nib</key>
@@ -5633,7 +5622,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O3muwIO4FTCrL7xEOk4Xhbg3Fx8eMYYWv1VYYhz2Wd8=
+			4klNdIXcZhzV8CVyu24ShU8EM0ubyrZjj9WOA0r4NJw=
 			</data>
 			<key>optional</key>
 			<true/>

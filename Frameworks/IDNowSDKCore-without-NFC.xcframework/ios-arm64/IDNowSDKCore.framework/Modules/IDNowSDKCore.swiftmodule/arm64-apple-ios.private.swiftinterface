@@ -4,10 +4,11 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import Accelerate
+import Combine
 import CommonCrypto
+import Compression
 import CoreFoundation
 import CoreGraphics
-import CoreMotion
 import CoreText
 import FaceTecSDK
 import Foundation
@@ -20,6 +21,7 @@ import ReplayKit
 import Security
 import StoreKit
 import Swift
+import SwiftUI
 import SystemConfiguration
 import UIKit
 import UniformTypeIdentifiers
@@ -71,11 +73,11 @@ extension Swift.Int {
   public func packed() -> Foundation.Data
   @objc deinit
 }
-infix operator +| : DefaultPrecedence
-infix operator +- : DefaultPrecedence
 extension UIKit.UIFont {
   public static func register(from url: Foundation.URL) throws -> Swift.String?
 }
+infix operator +| : DefaultPrecedence
+infix operator +- : DefaultPrecedence
 @_hasMissingDesignatedInitializers public class AbortRequestPayload {
   public func packed() -> Foundation.Data
   @objc deinit
@@ -407,6 +409,8 @@ public typealias IDNowSDKResultListener = (IDNowSDKCore.IDNowSDK.IdentResult.typ
 }
 extension IDNowSDKCore.IDNowSDK {
   public func autoformatIdentEntry(newContent: Swift.String, performedReplacement: Swift.String) -> Swift.String
+}
+extension Foundation.Bundle : @unchecked Swift.Sendable {
 }
 @_hasMissingDesignatedInitializers public class TrackingConfirmationRequestPayload {
   public func packed() -> Foundation.Data
