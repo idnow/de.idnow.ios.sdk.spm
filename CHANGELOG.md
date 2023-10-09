@@ -1,8 +1,19 @@
 ## Changelog
 
+ ### 5.5.0
+- Updated NFC (ReadID) component
+- Updated Liveness component
+- Support for iOS 17
+- Fix crashes in Liveness recording
+- Memory optimization
+- French Translation fixes in Liveness step
+- Fix blurriness issue in Liveness step
+- Other bug fixes
+
  ### 5.4.1
 - Fixed naming issue for one of the dependencies
 
+ 
  ### 5.4.0
 - Various Bug fixes
 
