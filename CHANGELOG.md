@@ -1,5 +1,8 @@
 ## Changelog
 
+ ### 5.6.0
+- Bug fixes
+
  ### 5.5.0
 - Updated NFC (ReadID) component
 - Updated Liveness component
@@ -13,7 +16,7 @@
  ### 5.4.1
 - Fixed naming issue for one of the dependencies
 
- 
+
  ### 5.4.0
 - Various Bug fixes
 
