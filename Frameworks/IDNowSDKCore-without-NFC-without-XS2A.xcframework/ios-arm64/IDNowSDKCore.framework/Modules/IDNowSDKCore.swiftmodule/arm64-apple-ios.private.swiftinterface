@@ -1,0 +1,489 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IDNowSDKCore
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import Accelerate
+import Combine
+import CommonCrypto
+import Compression
+import CoreFoundation
+import CoreGraphics
+import CoreText
+import FaceTecSDK
+import Foundation
+@_exported import IDNowSDKCore
+import ImageIO
+import PDFKit
+import QuartzCore
+import QuickLook
+import ReplayKit
+import Security
+import StoreKit
+import Swift
+import SwiftUI
+import SystemConfiguration
+import UIKit
+import UniformTypeIdentifiers
+import WebKit
+import _Concurrency
+import _StringProcessing
+import zlib
+@_hasMissingDesignatedInitializers public class SecurityFeatureResponsePayload {
+  @objc deinit
+}
+public enum Platform : Swift.String, Swift.Codable {
+  case UNKNOWN, IOS_IDNOW, IOS_SDK
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension IDNowSDKCore.Platform {
+  public mutating func map(from: IDNowSDKCore.UnpackedObject, key: Swift.String)
+  public mutating func map(from: IDNowSDKCore.UnpackedObject)
+}
+@_hasMissingDesignatedInitializers public class DocumentImageCaptureRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+extension Swift.Dictionary where Key == Swift.AnyHashable, Value == Any? {
+  public func getObject(key: Swift.String) -> IDNowSDKCore.UnpackedObject?
+}
+extension Swift.Float {
+  public mutating func map(from: IDNowSDKCore.UnpackedObject, key: Swift.String)
+}
+extension Swift.Double {
+  public mutating func map(from: IDNowSDKCore.UnpackedObject, key: Swift.String)
+}
+extension Swift.String {
+  public mutating func map(from: IDNowSDKCore.UnpackedObject, key: Swift.String)
+}
+extension Swift.Bool {
+  public mutating func map(from: IDNowSDKCore.UnpackedObject, key: Swift.String)
+}
+extension Swift.Int {
+  public mutating func map(from: IDNowSDKCore.UnpackedObject, key: Swift.String)
+}
+@_hasMissingDesignatedInitializers public class LookRightFaceImageVerificationResponsePayload {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LookRightFaceImageVerificationRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+extension UIKit.UIFont {
+  public static func register(from url: Foundation.URL) throws -> Swift.String?
+}
+infix operator +| : DefaultPrecedence
+infix operator +- : DefaultPrecedence
+@_hasMissingDesignatedInitializers public class AbortRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BankTransferEndRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FrontalFaceImageVerificationResponsePayload {
+  @objc deinit
+}
+public typealias UnpackedObject = [Swift.AnyHashable : Any?]
+@_hasMissingDesignatedInitializers public class ClassificationRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+public enum DocumentType : Swift.String, Swift.Codable, Swift.CaseIterable {
+  case PASSPORT, IDCARD, DRIVERS_LICENSE, DRIVERS_LICENSE_PAPER, RESIDENCE_PERMIT, RESIDENCE_PERMIT_PAPER, IDCARD_PAPER, UNKNOWN
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [IDNowSDKCore.DocumentType]
+  public typealias RawValue = Swift.String
+  public static var allCases: [IDNowSDKCore.DocumentType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension IDNowSDKCore.DocumentType {
+  public mutating func map(from: IDNowSDKCore.UnpackedObject, key: Swift.String)
+  public mutating func map(from: IDNowSDKCore.UnpackedObject)
+}
+@_hasMissingDesignatedInitializers public class EsigningInputMobileNumberResponsePayload {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class StartRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class IntroItem : ObjectiveC.NSObject {
+  public var title: Swift.String?
+  public var rank: Swift.Int?
+  public var lottieName: Swift.String?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class StartDocumentComponentResponsePayload {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SaveDocumentDataRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+public enum ServiceState : Swift.String, Swift.Codable {
+  case INITIAL, STARTED, PREPARE_FOR_RUNNING, RUNNING, WAITING_FOR_INPUT, RESPONSE_RECEIVED, SUCCESS, ADDITIONAL_STEPS_REQUIRED, FAILURE, STOPPED
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class SecurityFeatureShowFrontInstructionResponsePayload {
+  @objc deinit
+}
+extension UIKit.UIImage {
+  public func toGrayScale() -> UIKit.UIImage
+}
+@_hasMissingDesignatedInitializers public class LookLeftFaceImageVerificationRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+extension Foundation.Data {
+  @discardableResult
+  public mutating func pack(_ objects: Any?...) throws -> Foundation.Data
+  @discardableResult
+  public mutating func pack(_ obj: Any?) throws -> Foundation.Data
+  @discardableResult
+  public mutating func pack(boolean bool: Swift.Bool) throws -> Foundation.Data
+}
+@_hasMissingDesignatedInitializers public class AddDocumentImageCaptureResponsePayload {
+  @objc deinit
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public func loadGif(name: Swift.String)
+  @available(iOS 9.0, *)
+  @_Concurrency.MainActor(unsafe) public func loadGif(asset: Swift.String)
+}
+extension UIKit.UIImage {
+  public class func loadGifInfo(data: Foundation.Data) -> (duration: Swift.Int, images: [UIKit.UIImage])?
+  public class func gif(data: Foundation.Data) -> UIKit.UIImage?
+  public class func gif(url: Swift.String) -> UIKit.UIImage?
+  public class func gif(name: Swift.String) -> UIKit.UIImage?
+  @available(iOS 9.0, *)
+  public class func gif(asset: Swift.String) -> UIKit.UIImage?
+}
+@_hasMissingDesignatedInitializers public class ClassificationResponsePayload {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FaceComparisonResponsePayload {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class OcrResponsePayload {
+  @objc deinit
+}
+public protocol IDNowFinishDelegate {
+  func finishIDNowFlow(result: IDNowSDKCore.IDNowSDK.IdentResult.type, message: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class IDNowInitialViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) convenience public init(token: Swift.String, preferredLanguage: Swift.String = "", delegate: IDNowSDKCore.IDNowFinishDelegate)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class EsigningGetApprovalPhrasesResponsePayload {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ShowFacetecInstructionResponsePayload {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LivenessDetectionResponsePayload {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class OcrRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ManualClassificationRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class EsigningConsentScreenAndSendOtpSmsRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class EsigningInputMobileNumberRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+public protocol IDNowSDKEventListener : AnyObject {
+  func didFinishedLoading()
+}
+@_hasMissingDesignatedInitializers public class FinishResponsePayload {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SegmentationRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AddDocumentImageCaptureRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+infix operator ~= : DefaultPrecedence
+@_hasMissingDesignatedInitializers public class FaceTecLivenessRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BankTransferStartResponsePayload {
+  @objc deinit
+}
+public enum CameraPosition {
+  case front
+  case rear
+  case unknown
+  public static func == (a: IDNowSDKCore.CameraPosition, b: IDNowSDKCore.CameraPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class SecurityFeatureRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+public enum MsgPackError : Swift.Error {
+  case invalidEncoding
+  case unexpectedData
+  case dataIsTooBig(Swift.String)
+  case unsupportedValue(Any)
+}
+public enum MsgPackType : Swift.CustomStringConvertible {
+  case uInt64
+  case int64
+  case uInt32
+  case int32
+  case uInt16
+  case int16
+  case uInt8
+  case pFixInt8(value: Swift.Int)
+  case nFixInt(value: Swift.Int)
+  case nInt8
+  case nInt16
+  case nInt32
+  case nInt64
+  case float
+  case double
+  case fixstr
+  case str(length: Swift.Int)
+  case bin8
+  case bin16
+  case bin32
+  case array(items: Swift.Int)
+  case fixarray(items: Swift.Int)
+  case array16
+  case array32
+  case dict(items: Swift.Int)
+  case fixdict(items: Swift.Int)
+  case dict16
+  case dict32
+  case `nil`
+  case boolean(Swift.Bool)
+  public func value() throws -> Swift.UInt8
+  public var description: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class IDNowEndpoint : ObjectiveC.NSObject {
+  public var prefix: Swift.String
+  public var api: Swift.String
+  public var ai: Swift.String
+  public var ws: Swift.String
+  public var pattern: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class OcrConfirmationRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ManualClassificationResponsePayload {
+  @objc deinit
+}
+public enum IDNowSDKFeature {
+  case CONSENT_SCREEN, REDIRECT_LINK, RATING_AFTER_SUCCESS, INTRO_SCREEN
+  public static func == (a: IDNowSDKCore.IDNowSDKFeature, b: IDNowSDKCore.IDNowSDKFeature) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class IDNowSDKConfigBuilder : ObjectiveC.NSObject {
+  public func enable(feature: IDNowSDKCore.IDNowSDKFeature) -> IDNowSDKCore.IDNowSDKConfigBuilder
+  public func disable(feature: IDNowSDKCore.IDNowSDKFeature) -> IDNowSDKCore.IDNowSDKConfigBuilder
+  public func build() -> IDNowSDKCore.IDNowSDKConfig
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class IDNowSDKConfig : ObjectiveC.NSObject {
+  public var isFullFrameForSecurityFeature: Swift.Bool
+  public var shouldSelfieSelectByUser: Swift.Bool
+  public var shouldOCRSelectByUser: Swift.Bool
+  public var shouldChooseAbortReasonByUser: Swift.Bool
+  public var chooseAbortReasonIsMandatory: Swift.Bool
+  public var shouldDisableFlashlightDuringSecurityFeature: Swift.Bool
+  public var showNameConfirmationScreen: Swift.Bool
+  public func setIntroData(_ data: [IDNowSDKCore.IntroItem])
+  public func getIntroData() -> [IDNowSDKCore.IntroItem]
+  public func isEnableIntro() -> Swift.Bool
+  public func enableFeature(feature: IDNowSDKCore.IDNowSDKFeature)
+  public func disableFeature(feature: IDNowSDKCore.IDNowSDKFeature)
+  public func isEnabled(feature: IDNowSDKCore.IDNowSDKFeature) -> Swift.Bool
+  public func getSuccessURL() -> Swift.String?
+  public func setSuccessURL(url: Swift.String)
+  public func getFailureURL() -> Swift.String?
+  public func setFailureURL(url: Swift.String)
+  public func getRedirectLink() -> Swift.String?
+  public func setRedirectLink(url: Swift.String)
+  public func getSessionTimeout() -> Swift.Int
+  public func setSessionTimeout(value: Swift.Int)
+  public func getShowFinishScreen() -> Swift.Bool
+  public func setShowFinishScreen(value: Swift.Bool)
+  public func getFinishButtonVisible() -> Swift.Bool
+  public func setFinishButtonVisibl(value: Swift.Bool)
+  public func getLivenessTurningFaceWaitingTime() -> Swift.Int
+  public func setLivenessTurningFaceWaitingTime(value: Swift.Int)
+  public func getAutoHideInstruction() -> Swift.Bool
+  public func setAutoHideInstruction(value: Swift.Bool)
+  public func getInstructionShowTime() -> Swift.Int
+  public func setInstructionShowTime(value: Swift.Int)
+  public func appSupportsRating() -> Swift.Bool
+  public func reset()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SegmentationResponsePayload {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FaceTecLivenessResponsePayload {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FaceDocumentImageVerificationRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class StartNfcComponentResponsePayload {
+  @objc deinit
+}
+public typealias IDNowSDKResultListener = (IDNowSDKCore.IDNowSDK.IdentResult.type, IDNowSDKCore.IDNowSDK.IdentResult.statusCode, Swift.String) -> Swift.Void
+@_inheritsConvenienceInitializers @objc public class IDNowSDK : ObjectiveC.NSObject {
+  @_inheritsConvenienceInitializers @objc public class IdentResult : ObjectiveC.NSObject {
+    @objc public enum type : Swift.Int {
+      case FINISHED, CANCELLED, ERROR
+      public init?(rawValue: Swift.Int)
+      public typealias RawValue = Swift.Int
+      public var rawValue: Swift.Int {
+        get
+      }
+    }
+    @objc public enum statusCode : Swift.Int {
+      case E10 = 10, E100 = 100, E101 = 101, E102 = 102, E103 = 103, E110 = 110, E111 = 111, E120 = 120, E121 = 121, E130 = 130, E131 = 131, E140 = 140, E141 = 141, E142 = 142, E150 = 150, E151 = 151, E152 = 152, E153 = 153, E160 = 160, E161 = 161, E170 = 170, E171 = 171, EUnreachable = 1000
+      public var description: Swift.String {
+        get
+      }
+      public init?(rawValue: Swift.Int)
+      public typealias RawValue = Swift.Int
+      public var rawValue: Swift.Int {
+        get
+      }
+    }
+    @objc override dynamic public init()
+    @objc deinit
+  }
+  @objc public static let shared: IDNowSDKCore.IDNowSDK
+  weak public var eventListener: IDNowSDKCore.IDNowSDKEventListener?
+  @objc public func start(token: Swift.String, isUnified: Swift.Bool = false, isRoutedSession: Swift.Bool = false, preferredLanguage: Swift.String = "", bindingKey: Swift.String? = nil, fromViewController: UIKit.UIViewController, listener: @escaping IDNowSDKCore.IDNowSDKResultListener)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension IDNowSDKCore.IDNowSDK {
+  public func autoformatIdentEntry(newContent: Swift.String, performedReplacement: Swift.String) -> Swift.String
+}
+extension Foundation.Bundle : @unchecked Swift.Sendable {
+}
+@_hasMissingDesignatedInitializers public class TrackingConfirmationRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FrontalFaceImageVerificationRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LookLeftFaceImageVerificationResponsePayload {
+  @objc deinit
+}
+extension UIKit.UIImage {
+  public func rotated(degrees: CoreFoundation.CGFloat) -> UIKit.UIImage
+}
+extension Foundation.Data {
+  public func saveToDocuments(filename: Swift.String)
+}
+extension Foundation.NSData {
+  public func saveToDocuments(filename: Swift.String)
+}
+@_hasMissingDesignatedInitializers public class DocumentImageVerificationResponsePayload {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class IDNowReachability {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DocumentImageConfirmationRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class DocumentOption : ObjectiveC.NSObject {
+  public var countryCode: Swift.String
+  public var documentTypes: [IDNowSDKCore.DocumentType]
+  public var countryName: Swift.String
+  public func map(from: IDNowSDKCore.UnpackedObject)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DocumentImageVerificationRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class EsigningEnterOtpRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class GenerateOauthTokenResponsePayload {
+  @objc deinit
+}
+extension Foundation.Data {
+  public func unpack() throws -> Any?
+}
+@_hasMissingDesignatedInitializers public class DocumentSupportsNfcRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+extension IDNowSDKCore.Platform : Swift.Equatable {}
+extension IDNowSDKCore.Platform : Swift.Hashable {}
+extension IDNowSDKCore.Platform : Swift.RawRepresentable {}
+extension IDNowSDKCore.DocumentType : Swift.Equatable {}
+extension IDNowSDKCore.DocumentType : Swift.Hashable {}
+extension IDNowSDKCore.DocumentType : Swift.RawRepresentable {}
+extension IDNowSDKCore.ServiceState : Swift.Equatable {}
+extension IDNowSDKCore.ServiceState : Swift.Hashable {}
+extension IDNowSDKCore.ServiceState : Swift.RawRepresentable {}
+extension IDNowSDKCore.CameraPosition : Swift.Equatable {}
+extension IDNowSDKCore.CameraPosition : Swift.Hashable {}
+extension IDNowSDKCore.IDNowSDKFeature : Swift.Equatable {}
+extension IDNowSDKCore.IDNowSDKFeature : Swift.Hashable {}
+extension IDNowSDKCore.IDNowSDK.IdentResult.type : Swift.Equatable {}
+extension IDNowSDKCore.IDNowSDK.IdentResult.type : Swift.Hashable {}
+extension IDNowSDKCore.IDNowSDK.IdentResult.type : Swift.RawRepresentable {}
+extension IDNowSDKCore.IDNowSDK.IdentResult.statusCode : Swift.Equatable {}
+extension IDNowSDKCore.IDNowSDK.IdentResult.statusCode : Swift.Hashable {}
+extension IDNowSDKCore.IDNowSDK.IdentResult.statusCode : Swift.RawRepresentable {}

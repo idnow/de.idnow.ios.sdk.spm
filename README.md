@@ -28,6 +28,9 @@ Please choose the corresponding setup required for your use-cases. If you need N
 
 Note: If you see improvements for the Swift Package please let us know in the issues section. Thank for your support! :postbox: \
 
+### IDnow framework without XS2A dependency
+An additional variant of the IDnow framework is available without Fintec-XS2A in the repository - **IDNowSDKCore-without-NFC-without-XS2A**.
+This is an 1:1 copy of the [variant without NFC](#using-the-sdk-and-run-your-project) :package:, but it does not contain the Fintec-XS2A 3rd party library.
 
 #### Example:
 
