@@ -120,7 +120,6 @@ IDNowSDK.shared.start(token: token, preferredLanguage:"en", fromViewController: 
         })
 
 ```
-
 Code example If you are using an SDK version lower than 5.0.0 
 
 ```
