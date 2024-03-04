@@ -1,5 +1,8 @@
 ## Changelog
 
+ ### 5.7.0
+- Bug fixes
+ 
  ### 5.6.0
 - Bug fixes
 
