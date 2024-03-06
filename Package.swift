@@ -16,6 +16,16 @@ let package = Package(
             name: "IDNowSDKCore-without-NFC",
             targets: [
                 "IDNowSDKCore-without-NFC", "FaceTecSDK", "XS2AiOSNetService"
+            ]),
+        .library(
+            name: "IDNowSDKCore-with-NFC-without-XS2A",
+            targets: [
+                "IDNowSDKCore-with-NFC-without-XS2A", "FaceTecSDK"
+            ]),
+        .library(
+            name: "IDNowSDKCore-without-NFC-without-XS2A",
+            targets: [
+                "IDNowSDKCore-without-NFC-without-XS2A", "FaceTecSDK"
             ])
     ],
     targets: [
@@ -26,6 +36,14 @@ let package = Package(
         .binaryTarget(
             name: "IDNowSDKCore-without-NFC",
             path: "Frameworks/IDNowSDKCore-without-NFC.xcframework"
+        ),
+        .binaryTarget(
+            name: "IDNowSDKCore-with-NFC-without-XS2A",
+            path: "Frameworks/IDNowSDKCore-with-NFC-without-XS2A.xcframework"
+        ),
+        .binaryTarget(
+            name: "IDNowSDKCore-without-NFC-without-XS2A",
+            path: "Frameworks/IDNowSDKCore-without-NFC-without-XS2A.xcframework"
         ),
         .binaryTarget(
             name: "FaceTecSDK",
