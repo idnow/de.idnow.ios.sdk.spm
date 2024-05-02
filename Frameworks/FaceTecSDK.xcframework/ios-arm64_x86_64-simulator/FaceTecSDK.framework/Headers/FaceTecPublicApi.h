@@ -1294,6 +1294,11 @@ __attribute__((visibility("default")))
  * Default is a CGRect at origin 0,0 with a size of 0 by 0.
  */
 @property (nonatomic) CGRect customLocation;
+/**
+ * Control whether to disable and hide the cancel button on the Camera Permissions Screen.
+ * Default is true (hidden).
+ */
+@property (nonatomic) BOOL hideForCameraPermissions;
 
 - (nonnull instancetype) init;
 @end
@@ -1880,6 +1885,10 @@ typedef NS_ENUM(NSInteger, FaceTecIDScanStatus) {
      ID Scan was skipped.
      */
     FaceTecIDScanStatusSkipped,
+    /**
+     ID Scan cancelled because the user was in a locked out state.
+     */
+    FaceTecIDScanStatusLockedOut,
     /**
      The camera access is prevented because either the user has explicitly denied permission or the user's device is configured to not allow access by a device policy.
      For more information on restricted by policy case, please see the the Apple Developer documentation on AVAuthorizationStatus.restricted.

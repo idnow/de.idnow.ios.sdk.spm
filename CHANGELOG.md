@@ -1,5 +1,9 @@
 ## Changelog
 
+### 5.8.2
+- Updated Liveness component
+- Bug fixes
+
  ### 5.7.0
 - Bug fixes
  
