@@ -1,12 +1,16 @@
 ## Changelog
 
+### 5.8.3
+- Privacy manifest updates
+- Bugs and crash fixes
+
 ### 5.8.2
 - Updated Liveness component
 - Bug fixes
 
  ### 5.7.0
 - Bug fixes
- 
+
  ### 5.6.0
 - Bug fixes
 
