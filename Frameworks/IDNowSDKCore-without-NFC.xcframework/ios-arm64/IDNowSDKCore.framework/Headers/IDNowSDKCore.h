@@ -20,4 +20,5 @@ FOUNDATION_EXPORT const unsigned char IDNowSDKCoreVersionString[];
 // https://stackoverflow.com/questions/24875745/xcode-6-beta-4-using-bridging-headers-with-framework-targets-is-unsupported
 #import "IDNowTracker.h"
 #import "Insights.h"
+#import "TFLTaskVision.h"
 

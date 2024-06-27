@@ -1,6 +1,11 @@
 ## Changelog
 
 ### 5.8.3
+- Image quality improvements using TensorFlow
+- Updated NFC scan component
+- Bugfixes
+
+### 5.8.3
 - Privacy manifest updates
 - Bugs and crash fixes
 
