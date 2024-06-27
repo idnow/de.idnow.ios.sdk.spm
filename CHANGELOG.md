@@ -1,6 +1,6 @@
 ## Changelog
 
-### 5.8.3
+### 5.9.0
 - Image quality improvements using TensorFlow
 - Updated NFC scan component
 - Bugfixes
