@@ -486,11 +486,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FQQgIlQcnkMOqw43gzFGrar1Lt4=
+		Df5JY8AxJMB86sUOji9TpZBGPl0=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		OYwBKwTy7jgkRgg/UQTJeTqlDZc=
+		rj6p8ZFEUDyJAVpl9XWQe6B65Zw=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -506,7 +506,7 @@
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YO2DxWOUrKHgJdqW5Q1gYi/xCZI=
+		tERYtBIKsuKzyszDE7ChG0qvzz8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -3345,7 +3345,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OmJ2KY5Q9o1YbdMk6LeYsUxwJym9E3OwO98VoHB9TKQ=
+			hXBDQOI/x6ZiyvaRE2cNT3KJagram/dYd6aSldZaV4w=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -3373,7 +3373,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bufsE+m3j09x0wRVTGdplYI5rPB048/4aa+vIY1PnWw=
+			L30s3hBf+7ncVfsYo4EJ6ppKaU3DC/Q2ixHc/MnIqQw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
