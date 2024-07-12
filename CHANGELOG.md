@@ -1,5 +1,8 @@
 ## Changelog
 
+### 5.9.1
+- Critical hotfix for Ident token issue for IDnow Test environment. Due to a change in the Ident-ID schema for our Test environment, older SDK versions will no longer work with the Test environment. Please use this SDK version (and above) in order to continue using AutoIdent with the IDnow Test environment. There is no impact on the Prod environment.
+
 ### 5.9.0
 - Image quality improvements using TensorFlow
 - Updated NFC scan component

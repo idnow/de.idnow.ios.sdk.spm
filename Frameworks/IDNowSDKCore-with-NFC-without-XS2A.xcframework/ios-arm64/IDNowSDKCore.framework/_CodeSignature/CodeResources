@@ -22,7 +22,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Pn0DZ2mw+HdXx0QHWDcGAe0AXlA=
+		x90kLEKBdmEjOW8l3M0uraJi2m4=
 		</data>
 		<key>BANK_DOC_nocopy.json</key>
 		<data>
@@ -486,11 +486,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/VS9AOf+RgKF9UV1CSC48BBsx+0=
+		TeuMbcoSVX5PnyQ6D46BXEB7PZw=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		It8Y0LGpYlY1SPAsru/gkvvhSzI=
+		xOBUKLD9j/e15G/TOCozDm/BW/k=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -506,7 +506,7 @@
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		VGgCLv965zdhfPxiGNekK6bivIk=
+		Bt8AxSKJq7PlZfn1Uc6fr3cj4yQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2533,7 +2533,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1J2YVGiBml1HndZNy3DYuxdsxkNwIkzPwJ+dHBjE14Y=
+			i3Q3T43+9nCBXUx1wkDShCVck+KvaNKbvHOMzlbU3uo=
 			</data>
 		</dict>
 		<key>BANK_DOC_nocopy.json</key>
@@ -3345,7 +3345,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5Rilg9kkh4JAtx67wVx9vgk5z5vzetSIz/jvxLLzvRs=
+			yOgsGM1TTTLlQ+CCBnYz3cpS9tPz3ssv/r+UJHbyJ18=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -3373,7 +3373,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t9NkPzK794Cs2YFhSS2wkt2Lw2j5j3bQhtJXL6XUumI=
+			ZFYHIunC3ZL5CS7PGg8EBTVzlyIa1bXgsosCprVBGjY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
