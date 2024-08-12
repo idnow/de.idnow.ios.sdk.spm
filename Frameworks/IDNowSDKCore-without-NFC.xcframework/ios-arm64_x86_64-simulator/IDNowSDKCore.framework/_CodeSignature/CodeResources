@@ -22,7 +22,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		YO5tGsZEWyThv5GLMpVFKPX6E3c=
+		x90kLEKBdmEjOW8l3M0uraJi2m4=
 		</data>
 		<key>BANK_DOC_nocopy.json</key>
 		<data>
@@ -44,9 +44,17 @@
 		<data>
 		bdaIMerZ8VeY8bYXvbw55sa1FcE=
 		</data>
+		<key>Headers/GMLImage+Utils.h</key>
+		<data>
+		nL3c3C4SR+/3q9SCewLVcxYF86U=
+		</data>
+		<key>Headers/GMLImage.h</key>
+		<data>
+		cUj7m8EXQ2Ou1DP0RDym/GYXveU=
+		</data>
 		<key>Headers/IDNowSDKCore.h</key>
 		<data>
-		cWvTi60/TX6EX9abGctJlQzsAwE=
+		L0+zsCWoS0ShZ3otvBihSz0YOig=
 		</data>
 		<key>Headers/IDNowTracker.h</key>
 		<data>
@@ -67,6 +75,126 @@
 		<key>Headers/InsightsUserDetails.h</key>
 		<data>
 		FQIlxZi+PvmmG3z8pwrbsh2mC4Y=
+		</data>
+		<key>Headers/TFLBaseOptions+Helpers.h</key>
+		<data>
+		uYTkA8b5XangQyoFt/wKA7OT7Sg=
+		</data>
+		<key>Headers/TFLBaseOptions.h</key>
+		<data>
+		rqdX6nJC4oXvSAQB71ICX6KpxtA=
+		</data>
+		<key>Headers/TFLCategory+Helpers.h</key>
+		<data>
+		MqQrCjCPJYvFsEodVHqiL89wwMM=
+		</data>
+		<key>Headers/TFLCategory.h</key>
+		<data>
+		fY+UN6+vTp6J58F6su4MxC6bPHA=
+		</data>
+		<key>Headers/TFLClassificationOptions+Helpers.h</key>
+		<data>
+		hvKptFOMbUZkluxocbKansZQESg=
+		</data>
+		<key>Headers/TFLClassificationOptions.h</key>
+		<data>
+		v2Du4VjsEw7KndI+W759LMDcebY=
+		</data>
+		<key>Headers/TFLClassificationResult+Helpers.h</key>
+		<data>
+		J+4cOIPIac8ktfNdb8OXWk5u0kQ=
+		</data>
+		<key>Headers/TFLClassificationResult.h</key>
+		<data>
+		QIhyF036CGABHIIYdHcxBS/3qjQ=
+		</data>
+		<key>Headers/TFLCommon.h</key>
+		<data>
+		UakKntvMTQtzfRGTPZsHN0e9YzA=
+		</data>
+		<key>Headers/TFLCommonUtils.h</key>
+		<data>
+		Jgw3Iz4hGFVhooXdPqayY/Mypks=
+		</data>
+		<key>Headers/TFLDetectionResult+Helpers.h</key>
+		<data>
+		aTqD7DU+M6fp26UCKzhyBr3GNdI=
+		</data>
+		<key>Headers/TFLDetectionResult.h</key>
+		<data>
+		JV5Y0W/yb2EvLymzf+fBMsiR5IM=
+		</data>
+		<key>Headers/TFLImageClassifier.h</key>
+		<data>
+		09pyVKyX8gvzYHVKAj9+hBz2HPs=
+		</data>
+		<key>Headers/TFLImageSegmenter.h</key>
+		<data>
+		Z1S0O2bHJcP31J/8BMNGNFWlNOA=
+		</data>
+		<key>Headers/TFLObjectDetector.h</key>
+		<data>
+		Pn2vHcXzfpYCuDvMunKdcVFqLU0=
+		</data>
+		<key>Headers/TFLSegmentationResult+Helpers.h</key>
+		<data>
+		WXj49+pqG/zAVNT/sY1q7DK/hDU=
+		</data>
+		<key>Headers/TFLSegmentationResult.h</key>
+		<data>
+		xlmqyDsuJVbsUDSZlPQ64LKxi3o=
+		</data>
+		<key>Headers/TFLTaskVision.h</key>
+		<data>
+		5xRZcY7pWCQ+1yu5wBOCvmRYEM4=
+		</data>
+		<key>Headers/base_options.h</key>
+		<data>
+		+lJ4Z1EaRQOMQeoSugIA/9+by1c=
+		</data>
+		<key>Headers/bounding_box.h</key>
+		<data>
+		j0L2zlvJdtcmivPox8jkgm8N2OI=
+		</data>
+		<key>Headers/category.h</key>
+		<data>
+		lPmgAFQsGIOPgj30BOWyMZVJx94=
+		</data>
+		<key>Headers/classification_options.h</key>
+		<data>
+		LrvFTnyNHp/vHaQ8RNFbB2n2p54=
+		</data>
+		<key>Headers/classification_result.h</key>
+		<data>
+		8W06iTWcqFf+gdDRjM9h/QzUlAU=
+		</data>
+		<key>Headers/common.h</key>
+		<data>
+		U9YSbYV6kS3jama1hxAxl3e2NcE=
+		</data>
+		<key>Headers/detection_result.h</key>
+		<data>
+		NGF2iEjyVnzWv+2pRDZRPbeflyc=
+		</data>
+		<key>Headers/frame_buffer.h</key>
+		<data>
+		IHlNwbiQEvMNqZlrgwzVk88CTMM=
+		</data>
+		<key>Headers/image_classifier.h</key>
+		<data>
+		i6ZwYkytRPvBE8PhN1PjJqC4Aoo=
+		</data>
+		<key>Headers/image_segmenter.h</key>
+		<data>
+		obgcPzgTN9cfjs3fYCO7k+/YSqU=
+		</data>
+		<key>Headers/object_detector.h</key>
+		<data>
+		YHOuQrPFasxdgjFNJaHRBAu7Da0=
+		</data>
+		<key>Headers/segmentation_result.h</key>
+		<data>
+		a0kByFMm9ZqhgRBMqJAQsT0sTgg=
 		</data>
 		<key>IDNowBaseCardViewOverlay.nib</key>
 		<data>
@@ -358,47 +486,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+G+n05eWsDgaXoV+AhFFXK0XFN4=
+		rND6pYxMc7idjH90hNsW2cijj+U=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		bsw4tkwsICmTs2Htm59yvPJDBO8=
+		t61qPY0ajlISbQA21d89RO8vryU=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		c72uViN1PabGvV7hqNClKkOozCM=
+		C4U65fCji4/EB5CmGa0nDqWZPAg=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		uqUp6IfUPBHdSfUjqclo5KJ/aL8=
+		haIUjMJFM+v1tC4HvA4VSXFyjGE=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		c72uViN1PabGvV7hqNClKkOozCM=
+		C4U65fCji4/EB5CmGa0nDqWZPAg=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qLmVjpSkkeI6/G9OBPKf8En7xLA=
+		qu6YoWirQo/daHl1/5BwSyWlBdQ=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bsw4tkwsICmTs2Htm59yvPJDBO8=
+		t61qPY0ajlISbQA21d89RO8vryU=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qv3ZU7nm9xzzGtXL/rAuPA/+ht0=
+		XAOIGgdKsCum9QjEZ7OcM/HBr/o=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zxmG9o2zJM0QHNyKUTRilXMzMoo=
+		DCQwinsx70Oflyer74jC4GmZd4k=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qv3ZU7nm9xzzGtXL/rAuPA/+ht0=
+		XAOIGgdKsCum9QjEZ7OcM/HBr/o=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Nai/OJvw2ZfE677mLYgtcKpci1Q=
+		z0NX80MW+CAIDqxDdvwmTNjaGlA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -411,6 +539,30 @@
 		<key>PopupWithHeaderViewController.nib</key>
 		<data>
 		bgDKRxOQQBhzD4wZqLqnCeqjRkc=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		ue/rsaauKPl/pbbqF2gxMBWFM6U=
+		</data>
+		<key>PrivacyInfoTF.xcprivacy</key>
+		<data>
+		i3YpomTpJHpRGpdt+oGaesmknBg=
+		</data>
+		<key>TensorFlowLiteC.xcprivacy</key>
+		<data>
+		PFHYbs0V3eUFDWQyYQcwEetuqEk=
+		</data>
+		<key>TensorFlowLiteCCoreML.xcprivacy</key>
+		<data>
+		U7WM6H59FffP9Htm/es+F6Fe4q4=
+		</data>
+		<key>TensorFlowLiteCMetal.xcprivacy</key>
+		<data>
+		PFHYbs0V3eUFDWQyYQcwEetuqEk=
+		</data>
+		<key>TensorFlowLiteSelectTfOps.xcprivacy</key>
+		<data>
+		PFHYbs0V3eUFDWQyYQcwEetuqEk=
 		</data>
 		<key>UploadVideoOverlay.nib</key>
 		<data>
@@ -1974,7 +2126,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JHG7ZKGu6BPE4oPlKW1iP6FEIxU=
+			2lP6Ujm+cPXOgYJsqzLY/p1+4aQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2042,6 +2194,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id_card_model_new.tflite</key>
+		<data>
+		89wbwOlOpVZFMr1E9guvRlKLdrY=
+		</data>
 		<key>iddoc_intro.json</key>
 		<data>
 		QGHuDuIJz9KjcFRFXK1aVUCuhdc=
@@ -2103,6 +2259,10 @@
 		<key>loading.json</key>
 		<data>
 		3peLaByEjVRiuEKlylLHhl+7qxY=
+		</data>
+		<key>model_qualitydetection.tflite</key>
+		<data>
+		38sRZ72N8+ro5m4MCGlcS563zkU=
 		</data>
 		<key>nl.lproj/FaceTec.strings</key>
 		<dict>
@@ -2393,7 +2553,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iEgUlwTyATpn8IhPXItIQUDhkGYrKdR3I9FyswHetSM=
+			i3Q3T43+9nCBXUx1wkDShCVck+KvaNKbvHOMzlbU3uo=
 			</data>
 		</dict>
 		<key>BANK_DOC_nocopy.json</key>
@@ -2431,11 +2591,25 @@
 			fl4fakkRpb7zqn9jvj7nvuKRStlyoLWbtntzRB52ez0=
 			</data>
 		</dict>
+		<key>Headers/GMLImage+Utils.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jrEC1w9+pCPEqGDtJUtPQA6XLs+MrVHz4CunvMTx71g=
+			</data>
+		</dict>
+		<key>Headers/GMLImage.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmFr9+IhW/4OnVUucIxCMF3eKsfPdTovOeX6yw//W8s=
+			</data>
+		</dict>
 		<key>Headers/IDNowSDKCore.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q7nV3FqShXe6AhazkbiO3XdT2h2V7ThPaz1gpAVS9uM=
+			0mNBH3hCPzbgmb23igaxvpXX58Xjtul02mdVvYk9M/c=
 			</data>
 		</dict>
 		<key>Headers/IDNowTracker.h</key>
@@ -2471,6 +2645,216 @@
 			<key>hash2</key>
 			<data>
 			27OsVz6gz60ykzrWbfO7ibPGIrtxLqGzeoqqMl+YPdg=
+			</data>
+		</dict>
+		<key>Headers/TFLBaseOptions+Helpers.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qBQiZBEwMVPhMoZEchdQeIsJH8aTYgqPFGLwRKNZmAk=
+			</data>
+		</dict>
+		<key>Headers/TFLBaseOptions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Pd/+nUs/jg5CgFDAZtpdNXgiBzZTBEUX8JR4uMJ9c9c=
+			</data>
+		</dict>
+		<key>Headers/TFLCategory+Helpers.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8sPnC2MbV0UWIBQmEM5aNHjpUn4F33zDrHxRzzOUY64=
+			</data>
+		</dict>
+		<key>Headers/TFLCategory.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0lBaK+QY/s9xCQZBuX/BC0rovnp0ar/A5sa0R63GH8E=
+			</data>
+		</dict>
+		<key>Headers/TFLClassificationOptions+Helpers.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			a4kgn/iarGnxX3mmKXmlhbnBGhqz9T7gKEwuMq6uLkw=
+			</data>
+		</dict>
+		<key>Headers/TFLClassificationOptions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			STYg5qncO0/O2iCVVTJ/koGcZ7z/7VKdwU3wchrgz4Q=
+			</data>
+		</dict>
+		<key>Headers/TFLClassificationResult+Helpers.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0T6do/tayYJm0hjenpk2lBnWxEUxrZ/fTSliCbl2rfI=
+			</data>
+		</dict>
+		<key>Headers/TFLClassificationResult.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m62O3P2gwZqwibqZ/ucVclMxwPXRWmT4rjbNwCCOoww=
+			</data>
+		</dict>
+		<key>Headers/TFLCommon.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NgPs7sYwf4dg0xO2AUTMWbkIwlu3zxIn5hJApYfVBrM=
+			</data>
+		</dict>
+		<key>Headers/TFLCommonUtils.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CQ3cYo0aWLNk/AG+Dog8bgFtEB/j/dIKTbuP1Iz/77o=
+			</data>
+		</dict>
+		<key>Headers/TFLDetectionResult+Helpers.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9TsazsL4Lv5WgdWusg9b3FYYhxQhgFW87qbcdS/6DLw=
+			</data>
+		</dict>
+		<key>Headers/TFLDetectionResult.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MNLwgldWS2N2koW8snXj9nQ8UyEWWI/3bP/IGHv/OLw=
+			</data>
+		</dict>
+		<key>Headers/TFLImageClassifier.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QFgGOZUUVhE3eRvcH0A0N/8/F4L99wFVRGJLszJ9XFA=
+			</data>
+		</dict>
+		<key>Headers/TFLImageSegmenter.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qee221x538D9gjZ3UwyHHWppbu6V+ocG+K13zjkpQME=
+			</data>
+		</dict>
+		<key>Headers/TFLObjectDetector.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			I54Vctez3lvevfOyJMpUS13L00OmRO9p8k8cvlpAKTg=
+			</data>
+		</dict>
+		<key>Headers/TFLSegmentationResult+Helpers.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Hvr5U2aihbHOp+fjvdCV98RXaeiFWQhHi8PrYYnzT1Q=
+			</data>
+		</dict>
+		<key>Headers/TFLSegmentationResult.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			s7MMxo9sRDc5lrj8hO+n6UQopiLp8vE6FfIFy4gXWDI=
+			</data>
+		</dict>
+		<key>Headers/TFLTaskVision.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5Ekr6W4I+P8uqRIxKKcKVMVotpx6btlAZOSlsuQLiME=
+			</data>
+		</dict>
+		<key>Headers/base_options.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kIEEjyBHN5bWC3tec2G6ATe+vt7Pfd4nMAySGQGtiGM=
+			</data>
+		</dict>
+		<key>Headers/bounding_box.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ot0AjAO/Uav70+95krquLPAx7MXsbJnuDpD5OMuEQAU=
+			</data>
+		</dict>
+		<key>Headers/category.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iIy2s4ZRrOchp82n5aYGPix7vjB4EmdA+eCMDh6luEQ=
+			</data>
+		</dict>
+		<key>Headers/classification_options.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gyc0mL1w0QG1YXKjV8fkqYnalze/fH4N5O48CQur6XA=
+			</data>
+		</dict>
+		<key>Headers/classification_result.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cxvI2N4K0AerZpIX13d1FfrnEVjxobYHt8tZHCLKLso=
+			</data>
+		</dict>
+		<key>Headers/common.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6EOuiHg6CIL/odb4VLHwIZEDsE5cAoJaEun6MmhejgE=
+			</data>
+		</dict>
+		<key>Headers/detection_result.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zw+uhe+Q67v+zp8fFfxqe+NkduPIR4Yadb4+UiU0s9I=
+			</data>
+		</dict>
+		<key>Headers/frame_buffer.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mEZJLg6LkjvkPrMCGFmJnAgy6pWnjXwu2vYWXyJ02Ho=
+			</data>
+		</dict>
+		<key>Headers/image_classifier.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			L7juEHdPKrNvbVk43PtG+7TUCIPGiHYxHcl/zSEISuw=
+			</data>
+		</dict>
+		<key>Headers/image_segmenter.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3N6HARTY40DKIFWrVW8I0i+j36/mfPcMSZslSBjYRbA=
+			</data>
+		</dict>
+		<key>Headers/object_detector.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xRlk1vgS2PLl1yLFSWUwJjw7usTdIdUxp5vSmrAcfsY=
+			</data>
+		</dict>
+		<key>Headers/segmentation_result.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OrhpfmVWXjp/E6GhumAFq4lSI6G/c9KUMBw9atJFN6w=
 			</data>
 		</dict>
 		<key>IDNowBaseCardViewOverlay.nib</key>
@@ -2981,70 +3365,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/bmQn7czcPpcTov9uBasr0dJZInKo6c5a1uagigSuu8=
+			9hGUOvXIPtDXZdbkW5s9PtMxwKmV5PiOJSXObhGUFOE=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XX05Ma9B1qe4IxX8osRefxdhMATD08kvcuHlRiUSkks=
+			GyyVSbMJ+SU4hvGbgK6bJhpar79DKLBwrCZiugBIweM=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QkNfeRqLSWcUp/Ajh940sU1RtY5yQf8X2qj2yflDLow=
+			nZCrpP5kLmTiccaBS4ejpi9+RtYbyS0bQMoQjjGKIxY=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XX05Ma9B1qe4IxX8osRefxdhMATD08kvcuHlRiUSkks=
+			GyyVSbMJ+SU4hvGbgK6bJhpar79DKLBwrCZiugBIweM=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lHBEGbV+bCYCe9yACpbCWYOpkDSBAckTbX3kC6Uu2bU=
+			pbuJj7a9YwYnGSmveIZzkBnyHqI7PXcoG1BmZk3nZ5E=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/bmQn7czcPpcTov9uBasr0dJZInKo6c5a1uagigSuu8=
+			9hGUOvXIPtDXZdbkW5s9PtMxwKmV5PiOJSXObhGUFOE=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aponf7cO188rKaIp9pyw88SiHA40wD3OvlAC/ZWYJsU=
+			mDSKCgPqzWAJcuX89LIWgjTPZtKfSOfKMmws6qsghzI=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LC+3kX1W2bdUyHdVYQmemv6hyzhld+pUUTS/TUPj3Fo=
+			IDRyjEc+uUvl6pEU7NVXVXPSAvOAVRCEZtrS1DoTT44=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aponf7cO188rKaIp9pyw88SiHA40wD3OvlAC/ZWYJsU=
+			mDSKCgPqzWAJcuX89LIWgjTPZtKfSOfKMmws6qsghzI=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ETxXdjV9XH+exebvHi32RgAkHATzMzztTPwXr7r0cW0=
+			LjqkeGKmikWWKZdMEul//+xFZQ8jQldHpgshlFKN9QY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3066,6 +3450,48 @@
 			<key>hash2</key>
 			<data>
 			Sp90uHSP2qMHsWVjN5c69YrVlwye4+9g+P3RBD72ZY0=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n7crVAQOwU4hVxTd/g6XJp1WzkwgdUqSR6FBy4gKfIs=
+			</data>
+		</dict>
+		<key>PrivacyInfoTF.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jWXQtDoSYs/inoM5bACz25T7Eg1E0RiNknNB8UpsIjw=
+			</data>
+		</dict>
+		<key>TensorFlowLiteC.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A7LHCDOjMaKx79Ef8WjtAqjq39Xn0fvzDuzHUJpK6kc=
+			</data>
+		</dict>
+		<key>TensorFlowLiteCCoreML.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SMwLNyeKt9zx4V4Bagi8Dg1kPZyuLQYcTZQlPy1SyIo=
+			</data>
+		</dict>
+		<key>TensorFlowLiteCMetal.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A7LHCDOjMaKx79Ef8WjtAqjq39Xn0fvzDuzHUJpK6kc=
+			</data>
+		</dict>
+		<key>TensorFlowLiteSelectTfOps.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A7LHCDOjMaKx79Ef8WjtAqjq39Xn0fvzDuzHUJpK6kc=
 			</data>
 		</dict>
 		<key>UploadVideoOverlay.nib</key>
@@ -5677,7 +6103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ADB63HJVWgKgLWyOSTPmE6MsVP2BNh/Rd2ZEop2zVo4=
+			Fi+3UByFcxpkG5ZgLbsKFp+R+9R94QSYSOCJigkaiHE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5744,6 +6170,13 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>id_card_model_new.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iNmiUZptr4UqjlMvWSqxkSt/Uq6+hrmMfAG5CdK3AU0=
+			</data>
 		</dict>
 		<key>iddoc_intro.json</key>
 		<dict>
@@ -5838,6 +6271,13 @@
 			<key>hash2</key>
 			<data>
 			62R4Na8pioFdiDblfvPEw7zEUaC4A1D9wmyVQTvPFGU=
+			</data>
+		</dict>
+		<key>model_qualitydetection.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RqvY3DA9gC1gOwvHKOw3WXuNY+XqL/MLmnh5CQh3uzE=
 			</data>
 		</dict>
 		<key>nl.lproj/FaceTec.strings</key>
