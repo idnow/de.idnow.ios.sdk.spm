@@ -12,10 +12,12 @@
  See the License for the specific language governing permissions and
  limitations under the License.
  ==============================================================================*/
+
 #import <Foundation/Foundation.h>
 #import "TFLBaseOptions.h"
 #import "TFLSegmentationResult.h"
 #import "GMLImage.h"
+#if !TARGET_OS_SIMULATOR
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -129,3 +131,4 @@ NS_SWIFT_NAME(ImageSegmenter)
 @end
 
 NS_ASSUME_NONNULL_END
+#endif

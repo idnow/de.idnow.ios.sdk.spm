@@ -12,9 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#if !TARGET_OS_SIMULATOR
 #import <CoreMedia/CoreMedia.h>
 #import <CoreVideo/CoreVideo.h>
 #import <UIKit/UIKit.h>
+#endif
+
+
+#if !TARGET_OS_SIMULATOR
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -94,3 +99,5 @@ NS_SWIFT_NAME(MLImage)
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

@@ -12,8 +12,9 @@
  See the License for the specific language governing permissions and
  limitations under the License.
  ==============================================================================*/
-#import <Foundation/Foundation.h>
 
+#import <Foundation/Foundation.h>
+#if !TARGET_OS_SIMULATOR
 #import "TFLBaseOptions.h"
 #import "TFLClassificationOptions.h"
 #import "TFLClassificationResult.h"
@@ -129,3 +130,4 @@ NS_SWIFT_NAME(ImageClassifier)
 @end
 
 NS_ASSUME_NONNULL_END
+#endif

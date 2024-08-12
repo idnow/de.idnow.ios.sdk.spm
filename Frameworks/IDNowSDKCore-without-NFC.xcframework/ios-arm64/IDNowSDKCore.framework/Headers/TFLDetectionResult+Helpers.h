@@ -12,6 +12,7 @@
  See the License for the specific language governing permissions and
  limitations under the License.
  ==============================================================================*/
+#if !TARGET_OS_SIMULATOR
 #include "detection_result.h"
 #import "TFLDetectionResult.h"
 
@@ -32,3 +33,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+#endif
