@@ -12,8 +12,10 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
+
 #import <Foundation/Foundation.h>
 #include "common.h"
+#if !TARGET_OS_SIMULATOR
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -58,3 +60,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+#endif

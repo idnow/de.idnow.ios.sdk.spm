@@ -12,9 +12,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
+#if !TARGET_OS_SIMULATOR
 #import <Foundation/Foundation.h>
 #import "TFLCategory.h"
+#endif
 
+#if !TARGET_OS_SIMULATOR
 NS_ASSUME_NONNULL_BEGIN
 
 /** Encapsulates list of predicted classes (aka labels) for a given image classifier head. */
@@ -94,3 +97,4 @@ NS_SWIFT_NAME(ClassificationResult)
 @end
 
 NS_ASSUME_NONNULL_END
+#endif
