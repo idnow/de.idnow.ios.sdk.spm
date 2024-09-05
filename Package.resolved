@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "UnisseySdk",
+        "repositoryURL": "https://github.com/unissey/sdk-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "b5df1a56f76fcccca29f3abc1ddf3e4e4e305bf9",
+          "version": "3.1.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
