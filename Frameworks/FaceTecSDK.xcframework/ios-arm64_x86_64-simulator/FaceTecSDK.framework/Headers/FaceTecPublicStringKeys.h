@@ -60,6 +60,7 @@ extern NSString *const FaceTecStringKeyIdscanNfcStatusFinishedWithErrorMessage;
 extern NSString *const FaceTecStringKeyIdscanNfcCardStatusFinishedWithErrorMessage;
 extern NSString *const FaceTecStringKeyIdscanNfcStatusSkippedMessage;
 extern NSString *const FaceTecStringKeyIdscanAdditionalReviewMessage;
+extern NSString *const FaceTecStringKeyIdscanFeedbackFlipIdToBackMessage;
 extern NSString *const FaceTecStringKeyInitializingCamera;
 extern NSString *const FaceTecStringKeyInstructionsHeaderReady1;
 extern NSString *const FaceTecStringKeyInstructionsHeaderReady2;
