@@ -13,25 +13,21 @@
 
 # :package: Swift Package Manager :package:
 
-The IDnow framework can be used to incorporate the IDnow AutoIdent platform into iOS Objective C or Swift apps.
+The IDnow framework can incorporate the IDnow AutoIdent platform into iOS apps.
 
-Since sdk version 4.15.0 (Xcode 13.2) we added support for swift package manager by providing the corresponding xcframeworks as binary targets.
+Since SDK version 4.15.0 (Xcode 13.2) we added support for the swift package manager by providing the corresponding xcframeworks as binary targets.
 To add the swift package to your project please refer to: https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app
 
-Currently the two variants of IDNowSDKCore are available as xcframeworks:
+Currently, the two variants of IDNowSDKCore are available as xcframeworks:
 * [without NFC](#using-the-sdk-and-run-your-project) :package:
 * [with NFC](#using-the-sdk-with-nfc-and-run-your-project) :package:
 
-Note: 3rd Party components such as Video Selfie and NFC scanning do not support the dynamic runtime language customization using the preferredLanguage parameter. These components always use the device_language. 
+Note: 3rd Party components such as Video Selfies and NFC scanning do not support the dynamic runtime language customization using the preferredLanguage parameter. These components always use the device_language. 
 Hence, our recommended best practice for optimal user experience is to allow the SDK to use the device language instead of the preferredlanguage parameter.
 
-Please choose the corresponding setup required for your use-cases. If you need NFC please reach out to IDnow to obtain the needed dependencies. (see: [Using the SDK with NFC and run your project](#using-the-sdk-with-nfc-and-run-your-project))
+Please choose the corresponding setup required for your use cases. If you need NFC please reach out to IDnow to obtain the needed dependencies. (see: [Using the SDK with NFC and run your project](#using-the-sdk-with-nfc-and-run-your-project))
 
-Note: If you see improvements for the Swift Package please let us know in the issues section. Thank for your support! :postbox: \
-
-### IDnow framework without XS2A dependency
-An additional variant of the IDnow framework is available without Fintec-XS2A in the repository - **IDNowSDKCore-without-NFC-without-XS2A**.
-This is an 1:1 copy of the [variant without NFC](#using-the-sdk-and-run-your-project) :package:, but it does not contain the Fintec-XS2A 3rd party library.
+Note: If you see improvements for the Swift Package please let us know in the issues section. Thank you for your support! :postbox: \
 
 #### Example:
 
@@ -65,10 +61,10 @@ Embedded section:
 
 #### New Feature: Reading NFC chip of electronic IDs & Passports and validating their authenticity
 
-By leveraging the NFC capability (Near Field Communication), our SDK can now read out the data of the NFC chips of electronic IDs & Passports which adds an extra layer of security to digital identity verification. This will speed boost the identity verification process and increase the level of fraud protection.
-We support ICAO 9303 documents (passports, ID cards, residence permits) : please reach out to IDnow for more information.
+By leveraging the NFC capability (Near Field Communication), our SDK can now read out the data of the NFC chips of electronic IDs & Passports which adds an extra layer of security to digital identity verification. This will boost the identity verification process and increase the level of fraud protection.
+We support ICAO 9303 documents (passports, ID cards, residence permits): please contact IDnow for more information.
 
-* Add swift package: `https://github.com/idnow/de.idnow.ios.sdk.spm` as dependency
+* Add swift package: `https://github.com/idnow/de.idnow.ios.sdk.spm` as a dependency
 * Put ReadID_UI.xcframework and ReadID.xcframework in the app folder (please reach out to IDnow to obtain the ReadID xcframeworks)
 * XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add ReadID_UI.xcframework and ReadID.xcframework and check Embed and Sign.
 * On the Signing & Capabilities configuration tab add the Capability ‘Near Field Communication Tag Reading’
@@ -96,7 +92,7 @@ The API to start an automated Ident is:
 public func start(token: String, preferredLanguage: String = default, fromViewController: UIViewController, listener: @escaping IDNowSDKResultListener)
 ```
 
-* The token needs to be all uppercase character only and should conform to the following regular expression  `.{3}-.{5}$`
+* The token needs to be all uppercase characters only and should conform to the following regular expression  `.{3}-.{5}$`
 * Setting the prefferedLanguage (optional) tells the SDK in which language the AutoIdent UI should be shown. If the language is not available the framework first tries the language of the device and if that is not available it falls back to English.
 
 **Language limitations:**
@@ -109,7 +105,7 @@ These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czec
 * the calling view controller
 * an IDnowResultListener which gets called once the SDK returns. The possible return codes are:
 ** FINISHED the ident was finished
-** CANCELLED the user cancelled the ident
+** CANCELLED The user canceled the ident
 ** ERROR an error occurred 
 
 
@@ -142,10 +138,10 @@ IDNowSDK.shared.start(token: token, preferredLanguage:"en", fromViewController: 
 ```
 ## SDK error codes
 
-In case of IDNowSDK.IdentResult.type.ERROR, the possible error codes are below.
+In the case of IDNowSDK.IdentResult.type.ERROR, the possible error codes are below.
 
 ```
-"EUnreachable" --> No tetwork connection
+"EUnreachable" --> No network connection
 "E10" --> General type of error
 "E100" --> Ident code syntax incorrect
 "E101" --> Ident code not found
@@ -174,7 +170,7 @@ In case of IDNowSDK.IdentResult.type.ERROR, the possible error codes are below.
 
 ## How to deal with errors
 
-* For E102 it is recommended to create another ident, and restart the process with the new ident code.
+* For E102 it is recommended to create another ident and restart the process with the new ident code.
 * For E103 it is recommended to show a screen to the user with the message that they have submitted all info needed and that they should wait for the final result.
 * For E170 it is recommended to notify the user that the ident process timed out or was started on a different device and ask them to try again.
 * For all other error codes it is recommended to show a generic error for the user and ask them to try again by restarting the process.
@@ -182,8 +178,8 @@ In case of IDNowSDK.IdentResult.type.ERROR, the possible error codes are below.
 
 ### Fat Framework Support
 
-In case you want to continue using fat framework, please get in touch with your IDnow representative.
+In case you want to continue using the fat framework, please get in touch with your IDnow representative.
 
 ### Compatibility Matrix
 
-Please refer to the following link to find information about compatibility, end-of-support (EOS) and end-of-life (EOL) dates pertaining to our products: [IDnow Compatibility Matrix: Browser & OS Compatibility guide](https://www.idnow.io/developers/compatibility-overview/)
+Please refer to the following link to find information about compatibility, end-of-support (EOS), and end-of-life (EOL) dates about our products: [IDnow Compatibility Matrix: Browser & OS Compatibility guide](https://www.idnow.io/developers/compatibility-overview/)
