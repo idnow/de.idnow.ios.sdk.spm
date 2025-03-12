@@ -5,17 +5,17 @@ import PackageDescription
 
 let package = Package(
     name: "IDNowSDKCore",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v14)],
     products: [
         .library(
             name: "IDNowSDKCore-with-NFC",
             targets: [
-                "IDNowSDKCore-with-NFC", "FaceTecSDK", "XS2AiOSNetService"
+                "IDNowSDKCore-with-NFC", "FaceTecSDK", "UnisseySdk", "XS2AiOSNetService"
             ]),
         .library(
             name: "IDNowSDKCore-without-NFC",
             targets: [
-                "IDNowSDKCore-without-NFC", "FaceTecSDK", "XS2AiOSNetService"
+                "IDNowSDKCore-without-NFC", "FaceTecSDK", "UnisseySdk", "XS2AiOSNetService"
             ])
     ],
     targets: [
@@ -30,6 +30,10 @@ let package = Package(
         .binaryTarget(
             name: "FaceTecSDK",
             path: "Frameworks/FaceTecSDK.xcframework"
+        ),
+        .binaryTarget(
+            name: "UnisseySdk",
+            path: "Frameworks/UnisseySdk.xcframework"
         ),
         .binaryTarget(
             name: "XS2AiOSNetService",
