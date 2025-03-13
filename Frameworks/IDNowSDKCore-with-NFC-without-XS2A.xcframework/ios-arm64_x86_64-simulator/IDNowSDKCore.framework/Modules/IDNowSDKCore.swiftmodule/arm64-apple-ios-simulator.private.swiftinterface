@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IDNowSDKCore
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IDNowSDKCore
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import Accelerate
@@ -18,7 +18,6 @@ import ImageIO
 import PDFKit
 import QuartzCore
 import QuickLook
-import ReadID
 import ReadID_UI
 import ReplayKit
 import Security
@@ -28,6 +27,7 @@ import SwiftUI
 import SystemConfiguration
 import UIKit
 import UniformTypeIdentifiers
+import UnisseySdk
 import WebKit
 import _Concurrency
 import _StringProcessing
@@ -149,6 +149,10 @@ extension UIKit.UIImage {
   public func toGrayScale() -> UIKit.UIImage
 }
 @_hasMissingDesignatedInitializers public class LookLeftFaceImageVerificationRequestPayload {
+  public func packed() -> Foundation.Data
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class UnisseyLivenessRequestPayload {
   public func packed() -> Foundation.Data
   @objc deinit
 }
@@ -341,6 +345,9 @@ public enum IDNowSDKFeature {
   public var shouldUseTensorFlow: Swift.Bool
   public var tensorFlowDetectionTimeOut: Swift.Int
   public var tensorFlowQualityCheckTimeOut: Swift.Double
+  public var shouldShowUnisseyInstruction: Swift.Bool
+  public var shouldShowUnisseyVideoButton: Swift.Bool
+  public var recordingDurationUnissey: Swift.Int
   public func setIntroData(_ data: [IDNowSDKCore.IntroItem])
   public func getIntroData() -> [IDNowSDKCore.IntroItem]
   public func isEnableIntro() -> Swift.Bool
