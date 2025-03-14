@@ -18,9 +18,11 @@ The IDnow framework can incorporate the IDnow AutoIdent platform into iOS apps.
 Since SDK version 4.15.0 (Xcode 13.2) we added support for the swift package manager by providing the corresponding xcframeworks as binary targets.
 To add the swift package to your project please refer to: https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app
 
-Currently, the two variants of IDNowSDKCore are available as xcframeworks:
+IDNowSDKCore variants are available as xcframeworks:
 * [without NFC](#using-the-sdk-and-run-your-project) :package:
 * [with NFC](#using-the-sdk-with-nfc-and-run-your-project) :package:
+
+You can also choose options without XS2A, but please make sure you don't need this feature before selecting.
 
 Note: 3rd Party components such as Video Selfies and NFC scanning do not support the dynamic runtime language customization using the preferredLanguage parameter. These components always use the device_language. 
 Hence, our recommended best practice for optimal user experience is to allow the SDK to use the device language instead of the preferredlanguage parameter.
@@ -36,19 +38,12 @@ Adding the library required:
 
 ![swift_package_manager_choose](https://github.com/idnow/de.idnow.ios.sdk.spm/blob/main/images/swift_package_manager.png)
 
-Embedded section:
-<br>
-![swift_package_manager_embedded](https://github.com/idnow/de.idnow.ios.sdk.spm/blob/main/images/swift_package_manager_2.png)
-
-<br>
-
-
 
 <br>
 
 ### Using the SDK and run your project 
 
-* Add swift package: `https://github.com/idnow/de.idnow.ios.sdk.spm` as dependency
+* Add swift package: `https://github.com/idnow/de.idnow.ios.sdk.spm` as a dependency
 * Insert SDK calling code in your app: [Code Example](#code-example)
 * Add NSCameraUsageDescription and NSPhotoLibraryUsageDescription keys in your app's .plist file 
 * Compile & Run
@@ -65,8 +60,8 @@ By leveraging the NFC capability (Near Field Communication), our SDK can now rea
 We support ICAO 9303 documents (passports, ID cards, residence permits): please contact IDnow for more information.
 
 * Add swift package: `https://github.com/idnow/de.idnow.ios.sdk.spm` as a dependency
-* Put ReadID_UI.xcframework and ReadID.xcframework in the app folder (please reach out to IDnow to obtain the ReadID xcframeworks)
-* XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add ReadID_UI.xcframework and ReadID.xcframework and check Embed and Sign.
+* Put ReadID_UI.xcframework in the app folder (please reach out to IDnow to obtain the ReadID xcframeworks)
+* XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add ReadID_UI.xcframework and and check Embed and Sign.
 * On the Signing & Capabilities configuration tab add the Capability ‘Near Field Communication Tag Reading’
 * Add ‘NFCReaderUsageDescription’ to your App’s Info.plist file 
 * Copy the snippet below into your App’s Info.plist file 
@@ -77,6 +72,11 @@ We support ICAO 9303 documents (passports, ID cards, residence permits): please 
 </array>
 
 ```
+
+* To support PACE-only French ID cards issued from 2020 onwards, on iOS 16+, your app needs to have the correct entitlement. In the project navigator, select the entitlement file for your application
+There should be an entry Near Field Communication Tag Reader Session Formats with one sub-item Item 0 (Near Field Communication Tag Reader Session Format) with a value of Tag-Specific Data Protocol (TAG). Select this line and click on the + icon. A new line should appear, starting with Item 1.
+Change the value of the new line to Password Authenticated Connection Establishment (PACE)
+
 * Add NSCameraUsageDescription and NSPhotoLibraryUsageDescription keys in your App's .plist file 
 * Insert SDK calling code in your app: [Code Example](#code-example)
 * Compile & Run
