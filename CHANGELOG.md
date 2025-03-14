@@ -1,5 +1,21 @@
 ## Changelog
 
+### 5.11.1
+- Updated Liveness detection component
+- Bug fixes
+
+### 5.10
+- Support for iOS 18
+- Fallback mechanism for quality detection checks
+- Usage analytics improvement with app identifier
+- Updated NFC scanning component
+- Removed dependency of old Xcode versions
+
+### 5.9.2
+- Added support for arm64 simulator architecture
+- Separate config to enable Finish Screen
+- Bug fixes
+
 ### 5.9.1
 - Critical hotfix for Ident token issue for IDnow Test environment. Due to a change in the Ident-ID schema for our Test environment, older SDK versions will no longer work with the Test environment. Please use this SDK version (and above) in order to continue using AutoIdent with the IDnow Test environment. There is no impact on the Prod environment.
 
@@ -69,7 +85,6 @@ Changes:
 - Updated liveness solution
 - Translations update for Turkish
 - Bug Fixes
-
 
 ### 5.0.1
 Changes:
