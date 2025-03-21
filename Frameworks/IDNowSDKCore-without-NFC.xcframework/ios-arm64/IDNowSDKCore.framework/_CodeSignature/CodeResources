@@ -22,7 +22,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		4vWW0sJrYPh+qjXdaE8K/ysqETo=
+		FWa8Lp5e9d2w8Qh0ydnSqfTIQ30=
 		</data>
 		<key>BANK_DOC_nocopy.json</key>
 		<data>
@@ -362,7 +362,7 @@
 		</data>
 		<key>IDNowOCRNewUserFeedbackOverlay.nib</key>
 		<data>
-		32YBTzNSzNrLKo33JuvY8BAaW8A=
+		2jmYGyRrSYsVzDHR0l0kPlkLBv8=
 		</data>
 		<key>IDNowOCRUserFeedbackOverlay.nib</key>
 		<data>
@@ -494,27 +494,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/+TyU3XxIk1lG/N5fwRBihs9LRA=
+		3hbL67tEtHE295qYk4Rm3eUi6MI=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		qfivwvzpg05Ho4AJiGCM124VKk0=
+		lUokw2sxw+tbCQ0K8R1+WotX778=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		7s2mRp2Lj3vOmZpvWLONoxo4uIQ=
+		OD//ltT//NM+cvpqMyLO9cEEcfw=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		egkCBZCAQ2ooO1R/BcPR9r896Uk=
+		er8urR5PedTNiGkw3ySw0AQe4S0=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		7s2mRp2Lj3vOmZpvWLONoxo4uIQ=
+		OD//ltT//NM+cvpqMyLO9cEEcfw=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8lq24KiwEp9xKqslzxGykyli+No=
+		f5mPNu2O+8gHq+xQKBhYb95RTUo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -522,7 +522,7 @@
 		</data>
 		<key>PVIDInformationViewController.nib</key>
 		<data>
-		fZCdyIeK5GRrPxWM88Ff0Nd+FzE=
+		Bfwqprr+puUhuT5slcxP3RAPchQ=
 		</data>
 		<key>PopupWithHeaderViewController.nib</key>
 		<data>
@@ -554,7 +554,7 @@
 		</data>
 		<key>UnisseyLoadingView.nib</key>
 		<data>
-		o78TfrKUUXtKz279uW6PIwu2tUE=
+		ay/uQ+Ewaqc72dyG4Ls1SIRUH5E=
 		</data>
 		<key>UploadVideoOverlay.nib</key>
 		<data>
@@ -2561,7 +2561,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MO9Ez1mjn7n3v8NIFmp9J72H4nGxwKLpYzva4W2b91M=
+			T28QUgkEcAhIkEsEzjcfWwcr9vQWhncwyiG+lizBjVc=
 			</data>
 		</dict>
 		<key>BANK_DOC_nocopy.json</key>
@@ -3156,7 +3156,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uL1XiB5dcuRuBMG6KKy4eL0TMeE+21T3ZDXez9WvMA8=
+			pLy93MD/9ux1+EktOAyQq8Lm98dAjo7pIFWc+8WuJCk=
 			</data>
 		</dict>
 		<key>IDNowOCRUserFeedbackOverlay.nib</key>
@@ -3387,35 +3387,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WJ+dOVKKXPhGN6r1QST3jAl34aedNWVv2izy+FZKGns=
+			y1R7WvT1P6k04O2OHhLEiwaoWHDJGW4k5yAgHX4Foks=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vOANkqH+j8xvAL3dSOXsMzYp8KkYGIqiOlFC3j4ZKyg=
+			r5Q6zzKRYlAbzb93daerlTIy76HG4O0TALlGO8IJjbk=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FARj/emLHAXtSGUVgnsislhH5yXpvPCiWLGKiPlbjIQ=
+			/OklS8w6MPTwq1w2DJQlkhukXXbo6WW91rI3BD7zl0g=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vOANkqH+j8xvAL3dSOXsMzYp8KkYGIqiOlFC3j4ZKyg=
+			r5Q6zzKRYlAbzb93daerlTIy76HG4O0TALlGO8IJjbk=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DiJ+xFMZ2epEA/HZuW3YZP8GaqqRukYF18BCL9xgpeQ=
+			9TSg3zCX6+evRc5SCMZB/5iToHotrynGS21FojtL4to=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3429,7 +3429,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pck7qGx1/2gW/OYSYXqHyUZH9VcE/+IJP0UofeK7svY=
+			oFjM7TzmH03lJMi1OwdHzRGht3wV8SLKTJETpXqFsRg=
 			</data>
 		</dict>
 		<key>PopupWithHeaderViewController.nib</key>
@@ -3485,7 +3485,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vUJlxZoQ4SEGuOCjbmkMOnIN6bcc9z4fT5bYWrMkE74=
+			bMob2Kwqer/ynRDJbSdlrGMmX0M6WBZFarLGlcp/q2E=
 			</data>
 		</dict>
 		<key>UploadVideoOverlay.nib</key>
