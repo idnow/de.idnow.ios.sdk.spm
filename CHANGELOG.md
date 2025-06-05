@@ -1,5 +1,35 @@
 ## Changelog
 
+
+### v5.12.2 Latest
+- fixing SDK variants
+
+### v5.12.1
+- Hotfix for an issue with recording the liveness session
+
+### v5.12.0
+- New passive liveness solution
+- Preview multiple contract documents in the Signing process
+- Updated NFC scanning component
+- Improved Document capture UX with Tensorflow
+- Bug fixes
+
+### v5.11.1
+- Updated Liveness detection component
+- Bug fixes
+
+### v5.10
+- Support for iOS 18
+- Fallback mechanism for quality detection checks
+- Usage analytics improvement with app identifier
+- Updated NFC scanning component
+- Removed dependency of old Xcode versions
+
+### v5.9.2
+- Added support for arm64 simulator architecture
+- Separate config to enable Finish Screen
+- Bug fixes
+
 ### 5.9.1
 - Critical hotfix for Ident token issue for IDnow Test environment. Due to a change in the Ident-ID schema for our Test environment, older SDK versions will no longer work with the Test environment. Please use this SDK version (and above) in order to continue using AutoIdent with the IDnow Test environment. There is no impact on the Prod environment.
 
