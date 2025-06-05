@@ -1,7 +1,7 @@
 ## Changelog
 
 
-### v5.12.2 Latest
+### v5.12.2
 - fixing SDK variants
 
 ### v5.12.1
