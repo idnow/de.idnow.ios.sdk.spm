@@ -2,7 +2,7 @@
 
 
 ### v5.12.2
-- fixing SDK variants
+- Fixing SDK variants
 
 ### v5.12.1
 - Hotfix for an issue with recording the liveness session
