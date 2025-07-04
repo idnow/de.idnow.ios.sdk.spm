@@ -1,5 +1,9 @@
 ## Changelog
 
+### v5.13.0
+- Option to capture image of passport signature page
+- Updated components - Liveness, NFC scanning
+- Text translation optimizations
 
 ### v5.12.2
 - Fixing SDK variants
