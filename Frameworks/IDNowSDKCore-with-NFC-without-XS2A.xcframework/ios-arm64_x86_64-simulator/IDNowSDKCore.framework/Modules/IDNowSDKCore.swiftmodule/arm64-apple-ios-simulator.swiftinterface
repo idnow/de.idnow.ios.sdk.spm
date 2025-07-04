@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IDNowSDKCore
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name IDNowSDKCore
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import AVFoundation
 import Accelerate
 import Combine
@@ -348,6 +348,8 @@ public enum IDNowSDKFeature {
   public var shouldShowUnisseyInstruction: Swift.Bool
   public var shouldShowUnisseyVideoButton: Swift.Bool
   public var recordingDurationUnissey: Swift.Int
+  public var shouldPassportSignature: Swift.Bool
+  public var removeSigningApprovalPhrasesCheckboxes: Swift.Bool
   public func setIntroData(_ data: [IDNowSDKCore.IntroItem])
   public func getIntroData() -> [IDNowSDKCore.IntroItem]
   public func isEnableIntro() -> Swift.Bool
@@ -377,6 +379,8 @@ public enum IDNowSDKFeature {
   public func setTensorFlowDetectionTimeOut(value: Swift.Int)
   public func getTensorFlowQualityCheckTimeOut() -> Swift.Double
   public func setTensorFlowQualityCheckTimeOut(value: Swift.Int)
+  public func setPassportSignature(value: Swift.Bool)
+  public func removeSigningApprovalPhrasesCheckboxes(value: Swift.Bool)
   public func reset()
   @objc override dynamic public init()
   @objc deinit

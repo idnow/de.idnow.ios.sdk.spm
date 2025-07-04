@@ -22,7 +22,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		FWa8Lp5e9d2w8Qh0ydnSqfTIQ30=
+		vE/AsY9nSiE6BFK35iiWTjT9OFU=
 		</data>
 		<key>BANK_DOC_nocopy.json</key>
 		<data>
@@ -494,47 +494,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JNqX0qRal8f77+G8zAbu+T8sCKk=
+		C31l0hqTFYfnBa/gGUSVIpTQ4ZQ=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		AmitGVe0MDwSK47VAnn5FYpQHF4=
+		jGyFQoyCb0D5B8sM73MzyiP6lJc=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		QO4QL9SrUXwtJL4U2qTRYmhKp6M=
+		TnEE6AgPgAI6aWaAsftL6RLtkRU=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		f4h1CHRMoYD7e868STpJ4dLD/9Y=
+		tYb5KooIHthFvKg/VZskDbLWa6g=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		QO4QL9SrUXwtJL4U2qTRYmhKp6M=
+		TnEE6AgPgAI6aWaAsftL6RLtkRU=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hmt4q4eebdY6Jg/Ji7YAG77Tmjo=
+		HOu8ntTFTb6chJV7XgOQOmqr0Io=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		AmitGVe0MDwSK47VAnn5FYpQHF4=
+		jGyFQoyCb0D5B8sM73MzyiP6lJc=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3YKDnahH1AHDNjhc4VMPUGkcORE=
+		Ot3vYRnCLEnJXIqTJ+UfHq9Y+XM=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		og1FGRg8dy+EMPMs58A7qLWBR5Q=
+		5WjKGqAD8vXGRPVZGHLvPUifpHo=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3YKDnahH1AHDNjhc4VMPUGkcORE=
+		Ot3vYRnCLEnJXIqTJ+UfHq9Y+XM=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		i+hoAjXPTZV2v0wTPQEfb+5cJfI=
+		5eZYALy7XrCsYLMuHZDLHV3P3Fk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2069,7 +2069,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HpE8MgKLF+KPkgihrSRAPC3Yz6I=
+			jg5jugZk4rFowjku9IvxD2rOjho=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2087,7 +2087,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z4tDBHjGt1FUuG45WlmvnvfNjgQ=
+			GJgczXfvmYHd3kbYvJzfvZrM0so=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2154,7 +2154,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SOclixti5k0TKgVFFIFt2y1lh28=
+			Fw6ChwVL6F5fIgWb5BH1B6tyqxo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2163,7 +2163,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JLzh2cyotFBFV6r9tp1snKMogLo=
+			tDLg1ySYosLQNqOak0fMkCwWWf8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2230,6 +2230,10 @@
 		<data>
 		QGHuDuIJz9KjcFRFXK1aVUCuhdc=
 		</data>
+		<key>idnow_passport_signature.json</key>
+		<data>
+		QvViD0Y2ePQO7IMHD2I6v/fIWQM=
+		</data>
 		<key>idnow_static_intro_Screen_Step_1.json</key>
 		<data>
 		hYK8RH1e4mI3sevbzFXwRDx2CKE=
@@ -2263,7 +2267,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CenYwf9L9jIloi0JikoiiZQFHlM=
+			Bsogpv69H0K+wr0k9FhdLPeXgWo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2581,7 +2585,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T28QUgkEcAhIkEsEzjcfWwcr9vQWhncwyiG+lizBjVc=
+			q0J8f0W7Z/HSRxI9F6iBfgaF5m9/yf55dy4trNW/t4o=
 			</data>
 		</dict>
 		<key>BANK_DOC_nocopy.json</key>
@@ -3407,70 +3411,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gByD9jRNzLjzBRvTZxaQ977mrFG2fijkPvpl41JEbco=
+			rCfzJFZHj20bQ00O9rFspZPlsvCL3fCM02nb2LiZgng=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hp4jtEN6011VJ0cLOicnvMbYxmBXe75T83aXrDqi9+A=
+			EGidx2r9z+6TTV3irFKKLj7rXBfrbqICc/QsfQ0CE7A=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QKnfOjR/GA8qVy4XpgRhCZ+a15HotO5YqB2LlHlIw6U=
+			xRbMV7spB3wwr/0TUB5NkmPdCJQdclHOFrN+iP4dp34=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hp4jtEN6011VJ0cLOicnvMbYxmBXe75T83aXrDqi9+A=
+			EGidx2r9z+6TTV3irFKKLj7rXBfrbqICc/QsfQ0CE7A=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KtpTq8L8Oa/9kH5DUwfybByvEQlSDJwF6PQSplpuK80=
+			a99bw0oLcdffjTXtVPmet/13ZtAj8a46h+qkRSoqC+o=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gByD9jRNzLjzBRvTZxaQ977mrFG2fijkPvpl41JEbco=
+			rCfzJFZHj20bQ00O9rFspZPlsvCL3fCM02nb2LiZgng=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/q5r63DEHvtl32V0oMIvt+XPPuOXhY3py9dKeQlhjus=
+			xyhE6KAc2x2P/H9Eaqsy0poGoEadeDTcQDw4guQpjfI=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CKJFMe+JQXu65fb5GFXxDlyo54F1c7+xcDfwXGzLwvg=
+			qTqUljYh5pvNIT1hjvcCapUV/NgOLzLpqkcCtodiEW4=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/q5r63DEHvtl32V0oMIvt+XPPuOXhY3py9dKeQlhjus=
+			xyhE6KAc2x2P/H9Eaqsy0poGoEadeDTcQDw4guQpjfI=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lrVezyMosi5rLsNiaCM/OeBLvNw2OOZDhQV5+3VmEGw=
+			re6BMVDIYjzhOKPfHYRRzuMm7Fczg98pql9+tmNjhOo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -6092,7 +6096,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MUbGsYAPr2l269gpY/E+r2fcClGDNXPwFOgEdCTsu3U=
+			npgjayP7AWnJ2SrnyfhndaM6izPn3Rk6bQ8fMehzeuw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6110,7 +6114,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sZwpkC3wV25Qs3s9+/+2gpJGyYi/V3rLLa1dv+3CFb0=
+			c5xFyGoaqw0f+Py6IZl1QIChQL/pMCM4UY1Sy2BCu+g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6180,7 +6184,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YIpr8Q37GCd/ejYDcjRmUgs1rp2IeBy0zZrokQZxOWU=
+			MjflfQ4ZERKamY6K2KRAQZjRl8U1O0mjK4gIWmgE++w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6189,7 +6193,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A1qvNPOqTQEt9dSvwgPZU/ql5rEl6K4DMX0OSPvvNbg=
+			aQT6RStgY1SsO97tclhT0TD2H6+7TgZQ4nsy2fpmgls=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6262,6 +6266,13 @@
 			E61Z2kq4b6gz71tgU5S/ZNXlqZsHeNmDabMIJQw9sMw=
 			</data>
 		</dict>
+		<key>idnow_passport_signature.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0P9gw3SyuOulA5WBgSgWKCLWpeOpWa1JPtZ9SRDmk+w=
+			</data>
+		</dict>
 		<key>idnow_static_intro_Screen_Step_1.json</key>
 		<dict>
 			<key>hash2</key>
@@ -6310,7 +6321,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5Q060+C2cOsHOPhG2gPtoUP6AKM1FigfEA2elmNMZEw=
+			bnOKHFsrsi+tkGsDsxr1s9KtVb5CHm8iYDc+PuylpfE=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -36,6 +36,7 @@ typedef NS_ENUM(NSInteger, FaceTecExitAnimationStyle) {
 typedef NS_ENUM(NSInteger, FaceTecSecurityWatermarkImage) {
     FaceTecSecurityWatermarkImageFaceTecZoom = 0,
     FaceTecSecurityWatermarkImageFaceTec = 1,
+    FaceTecSecurityWatermarkImageFaceTecPoweredBy = 2,
 };
 
 /** For setting FaceTec Vocal Guidance mode. */
@@ -236,7 +237,7 @@ __attribute__((visibility("default")))
 @property (nonatomic, strong) FaceTecFrameCustomization * _Nonnull frameCustomization;
 /** Customize the interface animations. */
 @property (nonatomic, strong) id<FaceTecCustomAnimationDelegate> _Nullable customAnimationDelegate;
-/** Customize the FaceTec Security Watermark Image by selecting from 1 of the 2 available FaceTec watermarks. */
+/** Customize the FaceTec Security Watermark Image by selecting from 1 of the 3 available FaceTec watermarks. */
 @property (nonatomic) enum FaceTecSecurityWatermarkImage securityWatermarkImage;
 /** Customize FaceTec Vocal Guidance feature like settings run mode or providing sound files.*/
 @property (nonatomic, strong) FaceTecVocalGuidanceCustomization * _Nonnull vocalGuidanceCustomization;
