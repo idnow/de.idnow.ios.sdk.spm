@@ -112,7 +112,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(recordingDurationMs:qualities:)",
+            "printedName": "init(recordingDurationMs:qualities:enableFaceChecker:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -157,11 +157,18 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10UnisseySdk15RecordingConfigV19recordingDurationMs9qualitiesACSiSg_SayAA12VideoQualityOGSgtcfc",
-            "mangledName": "$s10UnisseySdk15RecordingConfigV19recordingDurationMs9qualitiesACSiSg_SayAA12VideoQualityOGSgtcfc",
+            "usr": "s:10UnisseySdk15RecordingConfigV19recordingDurationMs9qualities17enableFaceCheckerACSiSg_SayAA12VideoQualityOGSgSbtcfc",
+            "mangledName": "$s10UnisseySdk15RecordingConfigV19recordingDurationMs9qualities17enableFaceCheckerACSiSg_SayAA12VideoQualityOGSgSbtcfc",
             "moduleName": "UnisseySdk",
             "declAttributes": [
               "AccessControl"
@@ -544,6 +551,13 @@
       },
       {
         "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
         "name": "Iad",
         "printedName": "Iad",
         "declKind": "Import",
@@ -781,46 +795,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "lowest",
-            "printedName": "lowest",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(UnisseySdk.VideoQuality.Type) -> UnisseySdk.VideoQuality",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoQuality",
-                    "printedName": "UnisseySdk.VideoQuality",
-                    "usr": "s:10UnisseySdk12VideoQualityO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "UnisseySdk.VideoQuality.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VideoQuality",
-                        "printedName": "UnisseySdk.VideoQuality",
-                        "usr": "s:10UnisseySdk12VideoQualityO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10UnisseySdk12VideoQualityO6lowestyA2CmF",
-            "mangledName": "$s10UnisseySdk12VideoQualityO6lowestyA2CmF",
-            "moduleName": "UnisseySdk",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "sd",
             "printedName": "sd",
             "children": [
@@ -894,126 +868,6 @@
             "declKind": "EnumElement",
             "usr": "s:10UnisseySdk12VideoQualityO2hdyA2CmF",
             "mangledName": "$s10UnisseySdk12VideoQualityO2hdyA2CmF",
-            "moduleName": "UnisseySdk",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "fhd",
-            "printedName": "fhd",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(UnisseySdk.VideoQuality.Type) -> UnisseySdk.VideoQuality",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoQuality",
-                    "printedName": "UnisseySdk.VideoQuality",
-                    "usr": "s:10UnisseySdk12VideoQualityO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "UnisseySdk.VideoQuality.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VideoQuality",
-                        "printedName": "UnisseySdk.VideoQuality",
-                        "usr": "s:10UnisseySdk12VideoQualityO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10UnisseySdk12VideoQualityO3fhdyA2CmF",
-            "mangledName": "$s10UnisseySdk12VideoQualityO3fhdyA2CmF",
-            "moduleName": "UnisseySdk",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "uhd",
-            "printedName": "uhd",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(UnisseySdk.VideoQuality.Type) -> UnisseySdk.VideoQuality",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoQuality",
-                    "printedName": "UnisseySdk.VideoQuality",
-                    "usr": "s:10UnisseySdk12VideoQualityO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "UnisseySdk.VideoQuality.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VideoQuality",
-                        "printedName": "UnisseySdk.VideoQuality",
-                        "usr": "s:10UnisseySdk12VideoQualityO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10UnisseySdk12VideoQualityO3uhdyA2CmF",
-            "mangledName": "$s10UnisseySdk12VideoQualityO3uhdyA2CmF",
-            "moduleName": "UnisseySdk",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "highest",
-            "printedName": "highest",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(UnisseySdk.VideoQuality.Type) -> UnisseySdk.VideoQuality",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoQuality",
-                    "printedName": "UnisseySdk.VideoQuality",
-                    "usr": "s:10UnisseySdk12VideoQualityO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "UnisseySdk.VideoQuality.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VideoQuality",
-                        "printedName": "UnisseySdk.VideoQuality",
-                        "usr": "s:10UnisseySdk12VideoQualityO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10UnisseySdk12VideoQualityO7highestyA2CmF",
-            "mangledName": "$s10UnisseySdk12VideoQualityO7highestyA2CmF",
             "moduleName": "UnisseySdk",
             "declAttributes": [
               "RawDocComment"
@@ -4113,189 +3967,189 @@
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3933,
+      "offset": 3949,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7409,
+      "offset": 7425,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10267,
+      "offset": 10283,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12863,
+      "offset": 12879,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12907,
+      "offset": 12923,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12955,
+      "offset": 12971,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "StringLiteral",
-      "offset": 17843,
+      "offset": 17859,
       "length": 18,
       "value": "\"VideoCaptureView\""
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "StringLiteral",
-      "offset": 18051,
+      "offset": 18067,
       "length": 64,
       "value": "\"Video record ended with file path: '\""
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "StringLiteral",
-      "offset": 18113,
+      "offset": 18129,
       "length": 3,
       "value": "\"'\""
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "StringLiteral",
-      "offset": 18153,
+      "offset": 18169,
       "length": 55,
       "value": "\"An error occurred while recording the video: \""
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "StringLiteral",
-      "offset": 18207,
+      "offset": 18223,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18273,
+      "offset": 18289,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "StringLiteral",
-      "offset": 18528,
+      "offset": 18544,
       "length": 26,
       "value": "\"VideoCaptureViewPortrait\""
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "FloatLiteral",
-      "offset": 18932,
+      "offset": 18948,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "FloatLiteral",
-      "offset": 18945,
+      "offset": 18961,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19022,
+      "offset": 19038,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19057,
+      "offset": 19073,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19087,
+      "offset": 19103,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "FloatLiteral",
-      "offset": 19120,
+      "offset": 19136,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "StringLiteral",
-      "offset": 19176,
+      "offset": 19192,
       "length": 27,
       "value": "\"VideoCaptureViewLandscape\""
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "FloatLiteral",
-      "offset": 19579,
+      "offset": 19595,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "FloatLiteral",
-      "offset": 19592,
+      "offset": 19608,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19667,
+      "offset": 19683,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19702,
+      "offset": 19718,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19732,
+      "offset": 19748,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "FloatLiteral",
-      "offset": 19765,
+      "offset": 19781,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
       "kind": "StringLiteral",
-      "offset": 19821,
+      "offset": 19837,
       "length": 15,
       "value": "\"CameraLoading\""
     },
@@ -4323,21 +4177,28 @@
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Model\/SessionConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1371,
+      "offset": 708,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Model\/SessionConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1424,
+      "offset": 1502,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Model\/SessionConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1492,
+      "offset": 1555,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Model\/SessionConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1623,
       "length": 4,
       "value": "true"
     },
@@ -4400,28 +4261,28 @@
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/VideoRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 16007,
+      "offset": 16311,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/VideoRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 16040,
+      "offset": 16344,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/IadHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 589,
+      "offset": 604,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/IadHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 662,
+      "offset": 677,
       "length": 4,
       "value": "1000"
     },
