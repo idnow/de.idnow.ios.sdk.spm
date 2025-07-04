@@ -108,7 +108,9 @@ These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czec
 ** CANCELLED The user canceled the ident
 ** ERROR an error occurred 
 
-Add the method call, how to send the parameter etc below the description:
+**Add the method call, how to send the parameter etc below the description**:
+
+
 BindingKey is an additional parameter that can be sent by customers when initializing the SDK. It can be used for device binding use cases and helps establish a correlation between a user's verified identity and their mobile device. It is particularly useful for device authentication and re-authentication scenarios when users change devices. The binding key for a completed identification can be fetched via an API endpoint and compared with the one that was used during SDK initialization
 
 
