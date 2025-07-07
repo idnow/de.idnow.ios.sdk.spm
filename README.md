@@ -1,22 +1,23 @@
+
 # Table of Contents
 - [Swift Package Manager](#swift-package-manager)
-  -  [Run project (without NFC)](#using-the-sdk-with-nfc-and-run-your-project)
-  -  [Run project (with NFC)](#using-the-sdk-and-run-your-project)
-- [Usage](#Usage)
+  - [Run project (without NFC)](#using-the-sdk-and-run-your-project)
+  - [Run project (with NFC)](#using-the-sdk-with-nfc-and-run-your-project)
+- [Usage](#usage)
 - [Code Example](#code-example)
 - [SDK error codes](#sdk-error-codes)
-  -  [How to deal with errors](#how-to-deal-with-errors)
+  - [How to deal with errors](#how-to-deal-with-errors)
 - [Fat Framework Support](#fat-framework-support)
 - [Compatibility, End of Support, End of Life](#compatibility-matrix)
 
 
 
-# :package: Swift Package Manager :package:
+# Swift Package Manager
 
 The IDnow framework can incorporate the IDnow AutoIdent platform into iOS apps.
 
 Since SDK version 4.15.0 (Xcode 13.2) we added support for the swift package manager by providing the corresponding xcframeworks as binary targets.
-To add the swift package to your project please refer to: https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app
+To add the swift package to your project please refer to: [Adding Package Dependencies to Your App](https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app)
 
 IDNowSDKCore variants are available as xcframeworks:
 * [without NFC](#using-the-sdk-and-run-your-project) :package:
@@ -29,7 +30,7 @@ Hence, our recommended best practice for optimal user experience is to allow the
 
 Please choose the corresponding setup required for your use cases. If you need NFC please reach out to IDnow to obtain the needed dependencies. (see: [Using the SDK with NFC and run your project](#using-the-sdk-with-nfc-and-run-your-project))
 
-Note: If you see improvements for the Swift Package please let us know in the issues section. Thank you for your support! :postbox: \
+Note: If you see improvements for the Swift Package please let us know in the issues section. Thank you for your support! :postbox:
 
 #### Example:
 
@@ -70,7 +71,6 @@ We support ICAO 9303 documents (passports, ID cards, residence permits): please 
 <string>A0000002471001</string>
 <string>A00000045645444C2D3031</string>
 </array>
-
 ```
 
 * To support PACE-only French ID cards issued from 2020 onwards, on iOS 16+, your app needs to have the correct entitlement. In the project navigator, select the entitlement file for your application
@@ -101,7 +101,7 @@ Hence, our recommended best practice for optimal user experience is to allow the
 
 **Supported Languages**
 These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czech), da (Danish), de (German), el (Greek), en (English), es (Spanish), et (Estonian), fi (Finnish), fr (French), hr (Croatian), hu (Hungarian), it (Italian), ja (Japanese), ka (Georgian), ko (Korean), lt (Lithuanian), lv (Latvian), nb (Norwegian), nl (Dutch), pl (Polish), pt (Portuguese), ro (Romanian), ru (Russian), sk (Slovak), sl (Slovenian), sr (Serbian-latin), sv (Swedish), tr (Turkish), zh (Chinese).
-  
+
 * the calling view controller
 * an IDnowResultListener which gets called once the SDK returns. The possible return codes are:
 ** FINISHED the ident was finished
@@ -109,21 +109,29 @@ These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czec
 ** ERROR an error occurred 
 
 
+### Binding Key
+
+BindingKey is an additional parameter that can be sent by customers when initializing the SDK. It can be used for device binding use cases and helps establish a correlation between a user's verified identity and their mobile device. It is particularly useful for device authentication and re-authentication scenarios when users change devices. BindingKey for a completed identification can be fetched via an API endpoint and compared with the one that was used during SDK initialization.
+
+**Usage:**
+```
+ // add the binding parameter during initialization if you want to use it. 
+ IDnowSDK.shared.start(bindingKey: YOUR_BINDING_KEY)
+```
+
+
 ### Code example
 
-
-
 ```
-
 IDNowSDK.shared.start(token: token, preferredLanguage:"en", fromViewController: self, listener:{(result: IDNowSDK.IdentResult.type, statusCode: IDNowSDK.IdentResult.statusCode, message: String) in
-            if result == .ERROR {
-                self.showAlert(text: statusCode.description)
-            } else if result == .FINISHED {
-                
-            }
-        })
+    if result == .ERROR {
+        self.showAlert(text: statusCode.description)
+    } else if result == .FINISHED {
 
+    }
+})
 ```
+
 Code example If you are using an SDK version lower than 5.0.0 
 
 ```
@@ -134,8 +142,8 @@ IDNowSDK.shared.start(token: token, preferredLanguage:"en", fromViewController: 
 
    }
 })
-
 ```
+
 ## SDK error codes
 
 In the case of IDNowSDK.IdentResult.type.ERROR, the possible error codes are below.
@@ -165,7 +173,6 @@ In the case of IDNowSDK.IdentResult.type.ERROR, the possible error codes are bel
 "E161" --> Get Emirates NFC resources failed; server reachability
 "E170" --> Socket connection force closed
 "E171" --> Process force closed
-
 ```
 
 ## How to deal with errors
@@ -175,7 +182,6 @@ In the case of IDNowSDK.IdentResult.type.ERROR, the possible error codes are bel
 * For E170 it is recommended to notify the user that the ident process timed out or was started on a different device and ask them to try again.
 * For all other error codes it is recommended to show a generic error for the user and ask them to try again by restarting the process.
 
-
 ### Fat Framework Support
 
 In case you want to continue using the fat framework, please get in touch with your IDnow representative.
@@ -183,3 +189,4 @@ In case you want to continue using the fat framework, please get in touch with y
 ### Compatibility Matrix
 
 Please refer to the following link to find information about compatibility, end-of-support (EOS), and end-of-life (EOL) dates about our products: [IDnow Compatibility Matrix: Browser & OS Compatibility guide](https://www.idnow.io/developers/compatibility-overview/)
+
