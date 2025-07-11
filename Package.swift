@@ -55,7 +55,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "XS2AiOSNetService",
-            url: "Frameworks/XS2AiOSNetService.xcframework"
+            path: "Frameworks/XS2AiOSNetService.xcframework"
         )
     ]
 )
