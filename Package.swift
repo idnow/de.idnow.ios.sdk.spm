@@ -55,8 +55,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "XS2AiOSNetService",
-            url: "https://github.com/FinTecSystems/xs2a-ios-netservice/releases/download/1.0.7/XS2AiOSNetService.xcframework.zip",
-            checksum: "987e1e075fc9ca8b2f22cb60b436b84cc1304bb7c03cbce967979b588e5e8868"
+            url: "Frameworks/XS2AiOSNetService.xcframework"
         )
     ],
     swiftLanguageVersions: [.v5]
