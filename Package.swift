@@ -57,6 +57,5 @@ let package = Package(
             name: "XS2AiOSNetService",
             url: "Frameworks/XS2AiOSNetService.xcframework"
         )
-    ],
-    swiftLanguageVersions: [.v5]
+    ]
 )
