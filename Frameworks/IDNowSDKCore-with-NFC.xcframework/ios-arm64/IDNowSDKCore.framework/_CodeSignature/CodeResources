@@ -390,7 +390,7 @@
 		</data>
 		<key>IDNowResultOverlay.nib</key>
 		<data>
-		bIHuTFzw9x6GC+dRcrKZEBaJckc=
+		34mydscYIVdRhhw8D7UhWW76B6Q=
 		</data>
 		<key>IDNowResultProgressOverlay.nib</key>
 		<data>
@@ -498,7 +498,7 @@
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		/hO9HEig9/LjW7yoLjmwfD24uzE=
+		W3jisjHj4w7Q1J/u1BGzsxtOP5U=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -514,7 +514,7 @@
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		rfxFMu35PlbHaXKv4Z1tsaF4oDc=
+		xC+1WSu1R+zSJY98EVqcKTULbn0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -3209,7 +3209,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hVioIDx44e/h44ymATFL6nHSVYSKmhzL2L67QOqik9o=
+			wFPeKNJ5sfoga+aUDYf8kkpwBjZscWVdkfotkHdjwWA=
 			</data>
 		</dict>
 		<key>IDNowResultProgressOverlay.nib</key>
@@ -3391,7 +3391,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0PcqObBja7lITwU5YfsGeyGc4LJpEetYZoFgGXEthYs=
+			kU6zEz/OTSwji6e3f+rqM+lGssCNCobdpb9OinpjQMA=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -3419,7 +3419,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Mh2V8nn5AlhaJcMeb4nPCIRcu8MiwgTfu2pe8Y4SsU=
+			MD5/SoguORkv3MwFMRPf02yvqfSUcjAJccHcbrIm5RM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
