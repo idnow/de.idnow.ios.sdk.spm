@@ -22,7 +22,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		vE/AsY9nSiE6BFK35iiWTjT9OFU=
+		DXTzw6NGiYGRzP0TreA70Q6XFAM=
 		</data>
 		<key>BANK_DOC_nocopy.json</key>
 		<data>
@@ -494,7 +494,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		C31l0hqTFYfnBa/gGUSVIpTQ4ZQ=
+		HNfm3LMhR+WpsO0DUzbTUolriIo=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -502,19 +502,19 @@
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		oTYspqil3tm2tr8i3v60da7ZIeg=
+		eGO5OiQ99BvrSyTKSHQy+shniu8=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		tYb5KooIHthFvKg/VZskDbLWa6g=
+		eDxu9XSFiFsO5EyLV59izWQBaQc=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		oTYspqil3tm2tr8i3v60da7ZIeg=
+		eGO5OiQ99BvrSyTKSHQy+shniu8=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4rRqRmFWjXuZ32BbJxWH+XIOg2g=
+		060/f+J22c+XvA+TxHTUyNNvXKk=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -522,19 +522,19 @@
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		1WOBSaVywvmIPCuLi7GpCBr+vxY=
+		miihgyQ1UKV7vKxD8ERamlpneik=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		5WjKGqAD8vXGRPVZGHLvPUifpHo=
+		b8XlXe+RwqsKFZZnv8ocE8uDjcI=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1WOBSaVywvmIPCuLi7GpCBr+vxY=
+		miihgyQ1UKV7vKxD8ERamlpneik=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		K23lKYwXO3CD96CuariWLlHXHkc=
+		juee5W+6jJ3rWAF5RtMsixuLO5o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2585,7 +2585,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q0J8f0W7Z/HSRxI9F6iBfgaF5m9/yf55dy4trNW/t4o=
+			Q9B44dqxlbzEj041ND4Jf4FR7bo9i5zUPy1HVkB9xf4=
 			</data>
 		</dict>
 		<key>BANK_DOC_nocopy.json</key>
@@ -3418,28 +3418,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			D8eOh82D2nvMgoilosRulEmRHh87o/GA9ijzcA1e9hA=
+			YVxJk4Ms+eg6M+po6NhFhI3KMfP+2jJZFaI+ajG6+08=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xRbMV7spB3wwr/0TUB5NkmPdCJQdclHOFrN+iP4dp34=
+			J1mUkTPCnF6uWF4555357lw8G9sHuRFmx/quTf3735U=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D8eOh82D2nvMgoilosRulEmRHh87o/GA9ijzcA1e9hA=
+			YVxJk4Ms+eg6M+po6NhFhI3KMfP+2jJZFaI+ajG6+08=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4jNKhnMf/BefkigOkmA5WwHYAW75Ir2n8sn7igPWlQE=
+			3ahTcAdHuPllePaCw5NxHZeg/wxuQbaaop1phImCR/I=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -3453,28 +3453,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iooulpXHIK4cyzUkNVXRTuUVjXcHLhyqoKg7lTwOq8I=
+			hf4GEGXgOwaGKjIGTVbhqWmzScldRzbWR8QLpKE/Up0=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qTqUljYh5pvNIT1hjvcCapUV/NgOLzLpqkcCtodiEW4=
+			/TSBE/nDaWH6h3plRHf5MeLhbuqcbVfJM/MFn8X0+7A=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iooulpXHIK4cyzUkNVXRTuUVjXcHLhyqoKg7lTwOq8I=
+			hf4GEGXgOwaGKjIGTVbhqWmzScldRzbWR8QLpKE/Up0=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lmSvvFuhVlQNLBGETxIl9sU4QVdltYy0ZzYCYN7c1dc=
+			b4dmox5QFBWRfjux283sBirCFvScqac4KikJ6ZWu28g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
