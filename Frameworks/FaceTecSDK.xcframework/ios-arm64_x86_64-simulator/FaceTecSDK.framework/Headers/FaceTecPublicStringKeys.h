@@ -103,3 +103,7 @@ extern NSString *const FaceTecStringKeyRetryInstructionMessage2;
 extern NSString *const FaceTecStringKeyRetryInstructionMessage3;
 extern NSString *const FaceTecStringKeyRetryYourImageLabel;
 extern NSString *const FaceTecStringKeyRetryIdealImageLabel;
+extern NSString *const FaceTecStringKeyRetryOfficialIdPhotoSubheaderMessage;
+extern NSString *const FaceTecStringKeyRetryOfficialIdPhotoInstructionMessage;
+extern NSString *const FaceTecStringKeyRetryOfficialIdPhotoYourImageLabel;
+extern NSString *const FaceTecStringKeyRetryOfficialIdPhotoIdealImageLabel;

@@ -289,6 +289,8 @@ __attribute__((visibility("default")))
 
 @property (nonatomic) NSDictionary* _Nullable featureFlagsMap;
 
+@property (nonatomic) BOOL enableOfficialIDPhoto;
+
 - (void) setGuidanceCustomization:(FaceTecGuidanceCustomization * _Nullable)guidanceCustomization;
 - (void) setOvalCustomization:(FaceTecOvalCustomization * _Nullable)ovalCustomization;
 - (void) setFeedbackCustomization:(FaceTecFeedbackCustomization * _Nullable)feedbackCustomization;
