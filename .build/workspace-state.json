@@ -9,11 +9,41 @@
           "location" : "/Users/skaya/de.idnow.ios.sdk.spm",
           "name" : "de.idnow.ios.sdk.spm"
         },
+        "path" : "/Users/skaya/de.idnow.ios.sdk.spm/.build/artifacts/de.idnow.ios.sdk.spm/XS2AiOSNetService/XS2AiOSNetService.xcframework",
+        "source" : {
+          "checksum" : "987e1e075fc9ca8b2f22cb60b436b84cc1304bb7c03cbce967979b588e5e8868",
+          "type" : "remote",
+          "url" : "https://github.com/FinTecSystems/xs2a-ios-netservice/releases/download/1.0.7/XS2AiOSNetService.xcframework.zip"
+        },
+        "targetName" : "XS2AiOSNetService"
+      },
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "de.idnow.ios.sdk.spm",
+          "kind" : "root",
+          "location" : "/Users/skaya/de.idnow.ios.sdk.spm",
+          "name" : "de.idnow.ios.sdk.spm"
+        },
         "path" : "/Users/skaya/de.idnow.ios.sdk.spm/Frameworks/FaceTecSDK.xcframework",
         "source" : {
           "type" : "local"
         },
         "targetName" : "FaceTecSDK"
+      },
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "de.idnow.ios.sdk.spm",
+          "kind" : "root",
+          "location" : "/Users/skaya/de.idnow.ios.sdk.spm",
+          "name" : "de.idnow.ios.sdk.spm"
+        },
+        "path" : "/Users/skaya/de.idnow.ios.sdk.spm/Frameworks/IDNowSDKCore-with-NFC.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "IDNowSDKCore-with-NFC"
       },
       {
         "kind" : "xcframework",
@@ -51,41 +81,11 @@
           "location" : "/Users/skaya/de.idnow.ios.sdk.spm",
           "name" : "de.idnow.ios.sdk.spm"
         },
-        "path" : "/Users/skaya/de.idnow.ios.sdk.spm/Frameworks/IDNowSDKCore-with-NFC.xcframework",
-        "source" : {
-          "type" : "local"
-        },
-        "targetName" : "IDNowSDKCore-with-NFC"
-      },
-      {
-        "kind" : "xcframework",
-        "packageRef" : {
-          "identity" : "de.idnow.ios.sdk.spm",
-          "kind" : "root",
-          "location" : "/Users/skaya/de.idnow.ios.sdk.spm",
-          "name" : "de.idnow.ios.sdk.spm"
-        },
         "path" : "/Users/skaya/de.idnow.ios.sdk.spm/Frameworks/IDNowSDKCore-without-NFC-without-XS2A.xcframework",
         "source" : {
           "type" : "local"
         },
         "targetName" : "IDNowSDKCore-without-NFC-without-XS2A"
-      },
-      {
-        "kind" : "xcframework",
-        "packageRef" : {
-          "identity" : "de.idnow.ios.sdk.spm",
-          "kind" : "root",
-          "location" : "/Users/skaya/de.idnow.ios.sdk.spm",
-          "name" : "de.idnow.ios.sdk.spm"
-        },
-        "path" : "/Users/skaya/de.idnow.ios.sdk.spm/.build/artifacts/de.idnow.ios.sdk.spm/XS2AiOSNetService/XS2AiOSNetService.xcframework",
-        "source" : {
-          "checksum" : "987e1e075fc9ca8b2f22cb60b436b84cc1304bb7c03cbce967979b588e5e8868",
-          "type" : "remote",
-          "url" : "https://github.com/FinTecSystems/xs2a-ios-netservice/releases/download/1.0.7/XS2AiOSNetService.xcframework.zip"
-        },
-        "targetName" : "XS2AiOSNetService"
       },
       {
         "kind" : "xcframework",
@@ -97,9 +97,9 @@
         },
         "path" : "/Users/skaya/de.idnow.ios.sdk.spm/.build/artifacts/sdk-ios/UnisseySdk/UnisseySdk.xcframework",
         "source" : {
-          "checksum" : "55a7042f234888344b9a048968bd491442f653b20054b0515074369e6f2381be",
+          "checksum" : "2ba6a59b0b011b511e2f562d1b3950e55eb6d3a2967583486d2e5764bf2ff51d",
           "type" : "remote",
-          "url" : "https://storage.googleapis.com/unissey-shared/sdk-ios/UnisseySdk-v3.4.0.xcframework.zip"
+          "url" : "https://storage.googleapis.com/unissey-shared/sdk-ios/UnisseySdk-v4.0.0.xcframework.zip"
         },
         "targetName" : "UnisseySdk"
       }
@@ -115,8 +115,8 @@
         },
         "state" : {
           "checkoutState" : {
-            "revision" : "49f38c711dcc9af4b5c606233adb517987d92a7e",
-            "version" : "3.4.0"
+            "revision" : "4b676e2a607977557129bae2da3062e57a1eb7e0",
+            "version" : "4.0.0"
           },
           "name" : "sourceControlCheckout"
         },
