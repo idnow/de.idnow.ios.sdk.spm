@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/skaya/de.idnow.ios.sdk.spm/.build/arm64-apple-macosx/debug/UnisseySDKWrapper.build/master.swiftdeps"
+  },
+  "/Users/skaya/de.idnow.ios.sdk.spm/Sources/UnisseySDKWrapper/UnisseySDKWrapper.swift": {
+    "dependencies": "/Users/skaya/de.idnow.ios.sdk.spm/.build/arm64-apple-macosx/debug/UnisseySDKWrapper.build/UnisseySDKWrapper.d",
+    "object": "/Users/skaya/de.idnow.ios.sdk.spm/.build/arm64-apple-macosx/debug/UnisseySDKWrapper.build/UnisseySDKWrapper.swift.o",
+    "swiftmodule": "/Users/skaya/de.idnow.ios.sdk.spm/.build/arm64-apple-macosx/debug/UnisseySDKWrapper.build/UnisseySDKWrapper~partial.swiftmodule",
+    "swift-dependencies": "/Users/skaya/de.idnow.ios.sdk.spm/.build/arm64-apple-macosx/debug/UnisseySDKWrapper.build/UnisseySDKWrapper.swiftdeps"
+  }
+}

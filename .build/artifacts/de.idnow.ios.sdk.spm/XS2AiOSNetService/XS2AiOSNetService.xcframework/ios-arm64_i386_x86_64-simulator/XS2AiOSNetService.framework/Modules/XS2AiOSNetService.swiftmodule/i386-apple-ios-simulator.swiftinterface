@@ -1,0 +1,657 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name XS2AiOSNetService
+import CommonCrypto
+import Foundation
+import Swift
+import _Concurrency
+public protocol CryptoDigest {
+  func digest(using algorithm: XS2AiOSNetService.Digest.Algorithm) -> Self
+}
+extension XS2AiOSNetService.CryptoDigest {
+  public var md2: Self {
+    get
+  }
+  public var md4: Self {
+    get
+  }
+  public var md5: Self {
+    get
+  }
+  public var sha1: Self {
+    get
+  }
+  public var sha224: Self {
+    get
+  }
+  public var sha256: Self {
+    get
+  }
+  public var sha384: Self {
+    get
+  }
+  public var sha512: Self {
+    get
+  }
+}
+extension Foundation.Data : XS2AiOSNetService.CryptoDigest {
+  public func digest(using algorithm: XS2AiOSNetService.Digest.Algorithm) -> Foundation.Data
+}
+extension Swift.String : XS2AiOSNetService.CryptoDigest {
+  public func digest(using algorithm: XS2AiOSNetService.Digest.Algorithm) -> Swift.String
+}
+@_inheritsConvenienceInitializers public class Cryptor : XS2AiOSNetService.StreamCryptor, XS2AiOSNetService.Updatable {
+  public func final() -> [Swift.UInt8]?
+  public func update(from buffer: Swift.UnsafeRawPointer, byteCount: Swift.Int) -> Self?
+  override public init(operation: XS2AiOSNetService.StreamCryptor.Operation, algorithm: XS2AiOSNetService.StreamCryptor.Algorithm, options: XS2AiOSNetService.StreamCryptor.Options, keyBuffer: [Swift.UInt8], keyByteCount: Swift.Int, ivBuffer: Swift.UnsafePointer<Swift.UInt8>, ivLength: Swift.Int = super) throws
+  @objc deinit
+}
+public class Digest : XS2AiOSNetService.Updatable {
+  public var status: XS2AiOSNetService.Status
+  public enum Algorithm {
+    case md2
+    case md4
+    case md5
+    case sha1
+    case sha224
+    case sha256
+    case sha384
+    case sha512
+    public static func == (a: XS2AiOSNetService.Digest.Algorithm, b: XS2AiOSNetService.Digest.Algorithm) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init(using algorithm: XS2AiOSNetService.Digest.Algorithm)
+  public func update(from buffer: Swift.UnsafeRawPointer, byteCount: Darwin.size_t) -> Self?
+  public func final() -> [Swift.UInt8]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class HMAC : XS2AiOSNetService.Updatable {
+  public enum Algorithm {
+    case md5
+    case sha1
+    case sha224
+    case sha256
+    case sha384
+    case sha512
+    public func digestLength() -> Swift.Int
+    public static func == (a: XS2AiOSNetService.HMAC.Algorithm, b: XS2AiOSNetService.HMAC.Algorithm) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var status: XS2AiOSNetService.Status {
+    get
+  }
+  public init(using algorithm: XS2AiOSNetService.HMAC.Algorithm, key: Foundation.Data)
+  public init(using algorithm: XS2AiOSNetService.HMAC.Algorithm, key: Foundation.NSData)
+  public init(using algorithm: XS2AiOSNetService.HMAC.Algorithm, key: [Swift.UInt8])
+  public init(using algorithm: XS2AiOSNetService.HMAC.Algorithm, key: Swift.String)
+  @objc deinit
+  public func update(from buffer: Swift.UnsafeRawPointer, byteCount: Darwin.size_t) -> Self?
+  public func final() -> [Swift.UInt8]
+}
+@_hasMissingDesignatedInitializers public class PBKDF {
+  public enum PseudoRandomAlgorithm {
+    case sha1
+    case sha224
+    case sha256
+    case sha384
+    case sha512
+    public static func == (a: XS2AiOSNetService.PBKDF.PseudoRandomAlgorithm, b: XS2AiOSNetService.PBKDF.PseudoRandomAlgorithm) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public class func calibrate(passwordLength: Swift.Int, saltLength: Swift.Int, algorithm: XS2AiOSNetService.PBKDF.PseudoRandomAlgorithm, derivedKeyLength: Swift.Int, msec: Swift.UInt32) -> Swift.UInt
+  public class func deriveKey(fromPassword password: Swift.String, salt: Swift.String, prf: XS2AiOSNetService.PBKDF.PseudoRandomAlgorithm, rounds: Darwin.uint, derivedKeyLength: Swift.UInt) throws -> [Swift.UInt8]
+  public class func deriveKey(fromPassword password: Swift.String, salt: [Swift.UInt8], prf: XS2AiOSNetService.PBKDF.PseudoRandomAlgorithm, rounds: Darwin.uint, derivedKeyLength: Swift.UInt) throws -> [Swift.UInt8]
+  public class func deriveKey(fromPassword password: Swift.UnsafePointer<Swift.Int8>, passwordLen: Swift.Int, salt: Swift.UnsafePointer<Swift.UInt8>, saltLen: Swift.Int, prf: XS2AiOSNetService.PBKDF.PseudoRandomAlgorithm, rounds: Darwin.uint, derivedKey: Swift.UnsafeMutablePointer<Swift.UInt8>, derivedKeyLen: Swift.Int) throws
+  @objc deinit
+}
+public typealias RNGStatus = XS2AiOSNetService.Status
+@_hasMissingDesignatedInitializers public class Random {
+  public class func generate(bytes: Swift.UnsafeMutablePointer<Swift.UInt8>, byteCount: Swift.Int) -> XS2AiOSNetService.RNGStatus
+  public class func generate(byteCount: Swift.Int) throws -> [Swift.UInt8]
+  public class func generateBytesThrow(byteCount: Swift.Int) throws -> [Swift.UInt8]
+  @objc deinit
+}
+public enum Status : CommonCrypto.CCCryptorStatus, Swift.Error, Swift.CustomStringConvertible {
+  case success
+  case paramError
+  case bufferTooSmall
+  case memoryFailure
+  case alignmentError
+  case decodeError
+  case unimplemented
+  case overflow
+  case rngFailure
+  public func toRaw() -> CommonCrypto.CCCryptorStatus
+  public var description: Swift.String {
+    get
+  }
+  public static func fromRaw(status: CommonCrypto.CCCryptorStatus) -> XS2AiOSNetService.Status?
+  public init?(rawValue: CommonCrypto.CCCryptorStatus)
+  public typealias RawValue = CommonCrypto.CCCryptorStatus
+  public var rawValue: CommonCrypto.CCCryptorStatus {
+    get
+  }
+}
+public enum CryptorError : Swift.Error, Swift.CustomStringConvertible {
+  case success
+  case invalidKeySize
+  case invalidIVSizeOrLength
+  case fail(Swift.Int32, Swift.String)
+  public var errCode: Swift.Int32 {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+}
+public class StreamCryptor {
+  public enum Operation {
+    case encrypt
+    case decrypt
+    public static func == (a: XS2AiOSNetService.StreamCryptor.Operation, b: XS2AiOSNetService.StreamCryptor.Operation) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum ValidKeySize {
+    case fixed(Swift.Int)
+    case discrete([Swift.Int])
+    case range(Swift.Int, Swift.Int)
+  }
+  public struct Options : Swift.OptionSet {
+    public typealias RawValue = Swift.Int
+    public let rawValue: XS2AiOSNetService.StreamCryptor.Options.RawValue
+    public init(rawValue: XS2AiOSNetService.StreamCryptor.Options.RawValue)
+    public init(_ rawValue: XS2AiOSNetService.StreamCryptor.Options.RawValue)
+    public static let none: XS2AiOSNetService.StreamCryptor.Options
+    public static var pkcs7Padding: XS2AiOSNetService.StreamCryptor.Options
+    public static var ecbMode: XS2AiOSNetService.StreamCryptor.Options
+    public typealias ArrayLiteralElement = XS2AiOSNetService.StreamCryptor.Options
+    public typealias Element = XS2AiOSNetService.StreamCryptor.Options
+  }
+  public enum Algorithm {
+    case aes, aes128, aes192, aes256
+    case des
+    case tripleDes
+    case cast
+    case rc2
+    case blowfish
+    public var blockSize: Swift.Int {
+      get
+    }
+    public var defaultKeySize: Swift.Int {
+      get
+    }
+    public static func == (a: XS2AiOSNetService.StreamCryptor.Algorithm, b: XS2AiOSNetService.StreamCryptor.Algorithm) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var status: XS2AiOSNetService.Status {
+    get
+  }
+  public init(operation: XS2AiOSNetService.StreamCryptor.Operation, algorithm: XS2AiOSNetService.StreamCryptor.Algorithm, options: XS2AiOSNetService.StreamCryptor.Options, keyBuffer: [Swift.UInt8], keyByteCount: Swift.Int, ivBuffer: Swift.UnsafePointer<Swift.UInt8>, ivLength: Swift.Int = 0) throws
+  convenience public init(operation: XS2AiOSNetService.StreamCryptor.Operation, algorithm: XS2AiOSNetService.StreamCryptor.Algorithm, options: XS2AiOSNetService.StreamCryptor.Options, key: [Swift.UInt8], iv: [Swift.UInt8]) throws
+  convenience public init(operation: XS2AiOSNetService.StreamCryptor.Operation, algorithm: XS2AiOSNetService.StreamCryptor.Algorithm, options: XS2AiOSNetService.StreamCryptor.Options, key: Swift.String, iv: Swift.String) throws
+  @objc deinit
+  public func update(dataIn: Foundation.Data, byteArrayOut: inout [Swift.UInt8]) -> (Swift.Int, XS2AiOSNetService.Status)
+  public func update(dataIn: Foundation.NSData, byteArrayOut: inout [Swift.UInt8]) -> (Swift.Int, XS2AiOSNetService.Status)
+  public func update(byteArrayIn: [Swift.UInt8], byteArrayOut: inout [Swift.UInt8]) -> (Swift.Int, XS2AiOSNetService.Status)
+  public func update(stringIn: Swift.String, byteArrayOut: inout [Swift.UInt8]) -> (Swift.Int, XS2AiOSNetService.Status)
+  public func final(byteArrayOut: inout [Swift.UInt8]) -> (Swift.Int, XS2AiOSNetService.Status)
+  public func update(bufferIn: Swift.UnsafeRawPointer, byteCountIn: Swift.Int, bufferOut: Swift.UnsafeMutablePointer<Swift.UInt8>, byteCapacityOut: Swift.Int, byteCountOut: inout Swift.Int) -> XS2AiOSNetService.Status
+  public func final(bufferOut: Swift.UnsafeMutablePointer<Swift.UInt8>, byteCapacityOut: Swift.Int, byteCountOut: inout Swift.Int) -> XS2AiOSNetService.Status
+  public func getOutputLength(inputByteCount: Swift.Int, isFinal: Swift.Bool = false) -> Swift.Int
+}
+public protocol Updatable {
+  var status: XS2AiOSNetService.Status { get }
+  func update(from buffer: Swift.UnsafeRawPointer, byteCount: Darwin.size_t) -> Self?
+}
+extension XS2AiOSNetService.Updatable {
+  public func update(data: Foundation.NSData) -> Self?
+  public func update(data: Foundation.Data) -> Self?
+  public func update(byteArray: [Swift.UInt8]) -> Self?
+  public func update(string: Swift.String) -> Self?
+}
+public struct CryptoUtils {
+  public static func byteArray(fromHex string: Swift.String) -> [Swift.UInt8]
+  public static func byteArray(from string: Swift.String) -> [Swift.UInt8]
+  public static func data(fromHex string: Swift.String) -> Foundation.NSData
+  public static func data(fromHex string: Swift.String) -> Foundation.Data
+  public static func data(from byteArray: [Swift.UInt8]) -> Foundation.NSData
+  public static func data(from byteArray: [Swift.UInt8]) -> Foundation.Data
+  public static func hexString(from byteArray: [Swift.UInt8], uppercase: Swift.Bool = false) -> Swift.String
+  public static func hexNSString(from byteArray: [Swift.UInt8], uppercase: Swift.Bool = false) -> Foundation.NSString
+  public static func hexList(from byteArray: [Swift.UInt8]) -> Swift.String
+  public static func zeroPad(byteArray: [Swift.UInt8], blockSize: Swift.Int) -> [Swift.UInt8]
+  public static func zeroPad(string: Swift.String, blockSize: Swift.Int) -> [Swift.UInt8]
+}
+@_hasMissingDesignatedInitializers open class SwKeyStore {
+  public enum SecError : Darwin.OSStatus, Swift.Error {
+    case unimplemented
+    case param
+    case allocate
+    case notAvailable
+    case authFailed
+    case duplicateItem
+    case itemNotFound
+    case interactionNotAllowed
+    case decode
+    case missingEntitlement
+    public static var debugLevel: Swift.Int
+    public init?(rawValue: Darwin.OSStatus)
+    public typealias RawValue = Darwin.OSStatus
+    public var rawValue: Darwin.OSStatus {
+      get
+    }
+  }
+  public static func upsertKey(_ pemKey: Swift.String, keyTag: Swift.String, options: [Foundation.NSString : Swift.AnyObject] = [:]) throws
+  public static func getKey(_ keyTag: Swift.String) throws -> Swift.String
+  public static func delKey(_ keyTag: Swift.String) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class SwKeyConvert {
+  public enum SwError : Swift.Error {
+    case invalidKey
+    case badPassphrase
+    case keyNotEncrypted
+    public static var debugLevel: Swift.Int
+    public static func == (a: XS2AiOSNetService.SwKeyConvert.SwError, b: XS2AiOSNetService.SwKeyConvert.SwError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_hasMissingDesignatedInitializers open class PrivateKey {
+    public static func pemToPKCS1DER(_ pemKey: Swift.String) throws -> Foundation.Data
+    public static func derToPKCS1PEM(_ derKey: Foundation.Data) -> Swift.String
+    public typealias EncMode = XS2AiOSNetService.PEM.EncryptedPrivateKey.EncMode
+    public static func encryptPEM(_ pemKey: Swift.String, passphrase: Swift.String, mode: XS2AiOSNetService.SwKeyConvert.PrivateKey.EncMode) throws -> Swift.String
+    public static func decryptPEM(_ pemKey: Swift.String, passphrase: Swift.String) throws -> Swift.String
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers open class PublicKey {
+    public static func pemToPKCS1DER(_ pemKey: Swift.String) throws -> Foundation.Data
+    public static func pemToPKCS8DER(_ pemKey: Swift.String) throws -> Foundation.Data
+    public static func derToPKCS1PEM(_ derKey: Foundation.Data) -> Swift.String
+    public static func derToPKCS8PEM(_ derKey: Foundation.Data) -> Swift.String
+    @objc deinit
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class PKCS8 {
+  @_hasMissingDesignatedInitializers open class PrivateKey {
+    public static func getPKCS1DEROffset(_ derKey: Foundation.Data) -> Swift.Int?
+    public static func stripHeaderIfAny(_ derKey: Foundation.Data) -> Foundation.Data?
+    public static func hasCorrectHeader(_ derKey: Foundation.Data) -> Swift.Bool
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers open class PublicKey {
+    public static func addHeader(_ derKey: Foundation.Data) -> Foundation.Data
+    public static func getPKCS1DEROffset(_ derKey: Foundation.Data) -> Swift.Int?
+    public static func stripHeaderIfAny(_ derKey: Foundation.Data) -> Foundation.Data?
+    public static func hasCorrectHeader(_ derKey: Foundation.Data) -> Swift.Bool
+    @objc deinit
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class PEM {
+  public enum SwError : Swift.Error {
+    case parse(Swift.String)
+    case badPassphrase
+    case keyNotEncrypted
+    public static var debugLevel: Swift.Int
+  }
+  @_hasMissingDesignatedInitializers open class PrivateKey {
+    public static func toDER(_ pemKey: Swift.String) throws -> Foundation.Data
+    public static func toPEM(_ derKey: Foundation.Data) -> Swift.String
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers open class PublicKey {
+    public static func toDER(_ pemKey: Swift.String) throws -> Foundation.Data
+    public static func toPEM(_ derKey: Foundation.Data) -> Swift.String
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers open class EncryptedPrivateKey {
+    public enum EncMode {
+      case aes128CBC, aes256CBC
+      public static func == (a: XS2AiOSNetService.PEM.EncryptedPrivateKey.EncMode, b: XS2AiOSNetService.PEM.EncryptedPrivateKey.EncMode) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public static func toDER(_ pemKey: Swift.String, passphrase: Swift.String) throws -> Foundation.Data
+    public static func toPEM(_ derKey: Foundation.Data, passphrase: Swift.String, mode: XS2AiOSNetService.PEM.EncryptedPrivateKey.EncMode) -> Swift.String
+    @objc deinit
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class CC {
+  public typealias CCCryptorStatus = Swift.Int32
+  public enum CCError : XS2AiOSNetService.CC.CCCryptorStatus, Swift.Error {
+    case paramError
+    case bufferTooSmall
+    case memoryFailure
+    case alignmentError
+    case decodeError
+    case unimplemented
+    case overflow
+    case rngFailure
+    case unspecifiedError
+    case callSequenceError
+    case keySizeError
+    case invalidKey
+    public static var debugLevel: Swift.Int
+    public init?(rawValue: XS2AiOSNetService.CC.CCCryptorStatus)
+    public typealias RawValue = XS2AiOSNetService.CC.CCCryptorStatus
+    public var rawValue: XS2AiOSNetService.CC.CCCryptorStatus {
+      get
+    }
+  }
+  public static func generateRandom(_ size: Swift.Int) -> Foundation.Data
+  public typealias CCDigestAlgorithm = Swift.UInt32
+  public enum DigestAlgorithm : XS2AiOSNetService.CC.CCDigestAlgorithm {
+    case none
+    case md5
+    case rmd128, rmd160, rmd256, rmd320
+    case sha1
+    case sha224, sha256, sha384, sha512
+    public init?(rawValue: XS2AiOSNetService.CC.CCDigestAlgorithm)
+    public typealias RawValue = XS2AiOSNetService.CC.CCDigestAlgorithm
+    public var rawValue: XS2AiOSNetService.CC.CCDigestAlgorithm {
+      get
+    }
+  }
+  public static func digest(_ data: Foundation.Data, alg: XS2AiOSNetService.CC.DigestAlgorithm) -> Foundation.Data
+  public typealias CCHmacAlgorithm = Swift.UInt32
+  public enum HMACAlg : XS2AiOSNetService.CC.CCHmacAlgorithm {
+    case sha1, md5, sha256, sha384, sha512, sha224
+    public init?(rawValue: XS2AiOSNetService.CC.CCHmacAlgorithm)
+    public typealias RawValue = XS2AiOSNetService.CC.CCHmacAlgorithm
+    public var rawValue: XS2AiOSNetService.CC.CCHmacAlgorithm {
+      get
+    }
+  }
+  public static func HMAC(_ data: Foundation.Data, alg: XS2AiOSNetService.CC.HMACAlg, key: Foundation.Data) -> Foundation.Data
+  public typealias CCOperation = Swift.UInt32
+  public enum OpMode : XS2AiOSNetService.CC.CCOperation {
+    case encrypt, decrypt
+    public init?(rawValue: XS2AiOSNetService.CC.CCOperation)
+    public typealias RawValue = XS2AiOSNetService.CC.CCOperation
+    public var rawValue: XS2AiOSNetService.CC.CCOperation {
+      get
+    }
+  }
+  public typealias CCMode = Swift.UInt32
+  public enum BlockMode : XS2AiOSNetService.CC.CCMode {
+    case ecb, cbc, cfb, ctr, f8, lrw, ofb, xts, rc4, cfb8
+    public init?(rawValue: XS2AiOSNetService.CC.CCMode)
+    public typealias RawValue = XS2AiOSNetService.CC.CCMode
+    public var rawValue: XS2AiOSNetService.CC.CCMode {
+      get
+    }
+  }
+  public enum AuthBlockMode : XS2AiOSNetService.CC.CCMode {
+    case gcm, ccm
+    public init?(rawValue: XS2AiOSNetService.CC.CCMode)
+    public typealias RawValue = XS2AiOSNetService.CC.CCMode
+    public var rawValue: XS2AiOSNetService.CC.CCMode {
+      get
+    }
+  }
+  public typealias CCAlgorithm = Swift.UInt32
+  public enum Algorithm : XS2AiOSNetService.CC.CCAlgorithm {
+    case aes, des, threeDES, cast, rc4, rc2, blowfish
+    public init?(rawValue: XS2AiOSNetService.CC.CCAlgorithm)
+    public typealias RawValue = XS2AiOSNetService.CC.CCAlgorithm
+    public var rawValue: XS2AiOSNetService.CC.CCAlgorithm {
+      get
+    }
+  }
+  public typealias CCPadding = Swift.UInt32
+  public enum Padding : XS2AiOSNetService.CC.CCPadding {
+    case noPadding, pkcs7Padding
+    public init?(rawValue: XS2AiOSNetService.CC.CCPadding)
+    public typealias RawValue = XS2AiOSNetService.CC.CCPadding
+    public var rawValue: XS2AiOSNetService.CC.CCPadding {
+      get
+    }
+  }
+  public static func crypt(_ opMode: XS2AiOSNetService.CC.OpMode, blockMode: XS2AiOSNetService.CC.BlockMode, algorithm: XS2AiOSNetService.CC.Algorithm, padding: XS2AiOSNetService.CC.Padding, data: Foundation.Data, key: Foundation.Data, iv: Foundation.Data) throws -> Foundation.Data
+  public static func cryptAuth(_ opMode: XS2AiOSNetService.CC.OpMode, blockMode: XS2AiOSNetService.CC.AuthBlockMode, algorithm: XS2AiOSNetService.CC.Algorithm, data: Foundation.Data, aData: Foundation.Data, key: Foundation.Data, iv: Foundation.Data, tagLength: Swift.Int) throws -> Foundation.Data
+  public static func digestAvailable() -> Swift.Bool
+  public static func randomAvailable() -> Swift.Bool
+  public static func hmacAvailable() -> Swift.Bool
+  public static func cryptorAvailable() -> Swift.Bool
+  public static func available() -> Swift.Bool
+  @_hasMissingDesignatedInitializers open class GCM {
+    public static func crypt(_ opMode: XS2AiOSNetService.CC.OpMode, algorithm: XS2AiOSNetService.CC.Algorithm, data: Foundation.Data, key: Foundation.Data, iv: Foundation.Data, aData: Foundation.Data, tagLength: Swift.Int) throws -> (Foundation.Data, Foundation.Data)
+    public static func available() -> Swift.Bool
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers open class CCM {
+    public static func crypt(_ opMode: XS2AiOSNetService.CC.OpMode, algorithm: XS2AiOSNetService.CC.Algorithm, data: Foundation.Data, key: Foundation.Data, iv: Foundation.Data, aData: Foundation.Data, tagLength: Swift.Int) throws -> (Foundation.Data, Foundation.Data)
+    public static func available() -> Swift.Bool
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers open class RSA {
+    public typealias CCAsymmetricPadding = Swift.UInt32
+    public enum AsymmetricPadding : XS2AiOSNetService.CC.RSA.CCAsymmetricPadding {
+      case pkcs1
+      case oaep
+      public init?(rawValue: XS2AiOSNetService.CC.RSA.CCAsymmetricPadding)
+      public typealias RawValue = XS2AiOSNetService.CC.RSA.CCAsymmetricPadding
+      public var rawValue: XS2AiOSNetService.CC.RSA.CCAsymmetricPadding {
+        get
+      }
+    }
+    public enum AsymmetricSAPadding : Swift.UInt32 {
+      case pkcs15
+      case pss
+      public init?(rawValue: Swift.UInt32)
+      public typealias RawValue = Swift.UInt32
+      public var rawValue: Swift.UInt32 {
+        get
+      }
+    }
+    public static func generateKeyPair(_ keySize: Swift.Int = 4096) throws -> (Foundation.Data, Foundation.Data)
+    public static func getPublicKeyFromPrivateKey(_ derKey: Foundation.Data) throws -> Foundation.Data
+    public static func encrypt(_ data: Foundation.Data, derKey: Foundation.Data, tag: Foundation.Data, padding: XS2AiOSNetService.CC.RSA.AsymmetricPadding, digest: XS2AiOSNetService.CC.DigestAlgorithm) throws -> Foundation.Data
+    public static func decrypt(_ data: Foundation.Data, derKey: Foundation.Data, tag: Foundation.Data, padding: XS2AiOSNetService.CC.RSA.AsymmetricPadding, digest: XS2AiOSNetService.CC.DigestAlgorithm) throws -> (Foundation.Data, Swift.Int)
+    public static func sign(_ message: Foundation.Data, derKey: Foundation.Data, padding: XS2AiOSNetService.CC.RSA.AsymmetricSAPadding, digest: XS2AiOSNetService.CC.DigestAlgorithm, saltLen: Swift.Int) throws -> Foundation.Data
+    public static func verify(_ message: Foundation.Data, derKey: Foundation.Data, padding: XS2AiOSNetService.CC.RSA.AsymmetricSAPadding, digest: XS2AiOSNetService.CC.DigestAlgorithm, saltLen: Swift.Int, signedData: Foundation.Data) throws -> Swift.Bool
+    public static func available() -> Swift.Bool
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers open class DH {
+    public enum DHParam {
+      case rfc3526Group5
+      case rfc2409Group2
+      public static func == (a: XS2AiOSNetService.CC.DH.DHParam, b: XS2AiOSNetService.CC.DH.DHParam) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    open class DH {
+      public init(dhParam: XS2AiOSNetService.CC.DH.DHParam) throws
+      open func generateKey() throws -> Foundation.Data
+      open func computeKey(_ peerKey: Foundation.Data) throws -> Foundation.Data
+      @objc deinit
+    }
+    public static func available() -> Swift.Bool
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers open class EC {
+    public static func generateKeyPair(_ keySize: Swift.Int) throws -> (Foundation.Data, Foundation.Data)
+    public static func getPublicKeyFromPrivateKey(_ privateKey: Foundation.Data) throws -> Foundation.Data
+    public static func signHash(_ privateKey: Foundation.Data, hash: Foundation.Data) throws -> Foundation.Data
+    public static func verifyHash(_ publicKey: Foundation.Data, hash: Foundation.Data, signedData: Foundation.Data) throws -> Swift.Bool
+    public static func computeSharedSecret(_ privateKey: Foundation.Data, publicKey: Foundation.Data) throws -> Foundation.Data
+    public struct KeyComponents {
+      public init(_ keySize: Swift.Int, _ x: Foundation.Data, _ y: Foundation.Data, _ d: Foundation.Data)
+      public var keySize: Swift.Int
+      public var x: Foundation.Data
+      public var y: Foundation.Data
+      public var d: Foundation.Data
+    }
+    public static func getPublicKeyComponents(_ keyData: Foundation.Data) throws -> XS2AiOSNetService.CC.EC.KeyComponents
+    public static func getPrivateKeyComponents(_ keyData: Foundation.Data) throws -> XS2AiOSNetService.CC.EC.KeyComponents
+    public static func createFromData(_ keySize: Darwin.size_t, _ x: Foundation.Data, _ y: Foundation.Data) throws -> Foundation.Data
+    public static func available() -> Swift.Bool
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers open class CRC {
+    public typealias CNcrc = Swift.UInt32
+    public enum Mode : XS2AiOSNetService.CC.CRC.CNcrc {
+      case crc8, crc8ICODE, crc8ITU, crc8ROHC, crc8WCDMA, crc16, crc16CCITTTrue, crc16CCITTFalse, crc16USB, crc16XMODEM, crc16DECTR, crc16DECTX, crc16ICODE, crc16VERIFONE, crc16A, crc16B, crc16Fletcher, crc32Adler, crc32, crc32CASTAGNOLI, crc32BZIP2, crc32MPEG2, crc32POSIX, crc32XFER, crc64ECMA182
+      public init?(rawValue: XS2AiOSNetService.CC.CRC.CNcrc)
+      public typealias RawValue = XS2AiOSNetService.CC.CRC.CNcrc
+      public var rawValue: XS2AiOSNetService.CC.CRC.CNcrc {
+        get
+      }
+    }
+    public static func crc(_ input: Foundation.Data, mode: XS2AiOSNetService.CC.CRC.Mode) throws -> Swift.UInt64
+    public static func available() -> Swift.Bool
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers open class CMAC {
+    public static func AESCMAC(_ data: Foundation.Data, key: Foundation.Data) -> Foundation.Data
+    public static func available() -> Swift.Bool
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers open class KeyDerivation {
+    public typealias CCPseudoRandomAlgorithm = Swift.UInt32
+    public enum PRFAlg : XS2AiOSNetService.CC.KeyDerivation.CCPseudoRandomAlgorithm {
+      case sha1, sha224, sha256, sha384, sha512
+      public init?(rawValue: XS2AiOSNetService.CC.KeyDerivation.CCPseudoRandomAlgorithm)
+      public typealias RawValue = XS2AiOSNetService.CC.KeyDerivation.CCPseudoRandomAlgorithm
+      public var rawValue: XS2AiOSNetService.CC.KeyDerivation.CCPseudoRandomAlgorithm {
+        get
+      }
+    }
+    public static func PBKDF2(_ password: Swift.String, salt: Foundation.Data, prf: XS2AiOSNetService.CC.KeyDerivation.PRFAlg, rounds: Swift.UInt32) throws -> Foundation.Data
+    public static func available() -> Swift.Bool
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers open class KeyWrap {
+    public static let rfc3394IV: Foundation.Data
+    public static func SymmetricKeyWrap(_ iv: Foundation.Data, kek: Foundation.Data, rawKey: Foundation.Data) throws -> Foundation.Data
+    public static func SymmetricKeyUnwrap(_ iv: Foundation.Data, kek: Foundation.Data, wrappedKey: Foundation.Data) throws -> Foundation.Data
+    public static func available() -> Swift.Bool
+    @objc deinit
+  }
+  @objc deinit
+}
+extension Foundation.Data {
+  public func hexadecimalString() -> Swift.String
+  public func arrayOfBytes() -> [Swift.UInt8]
+}
+extension Swift.String {
+  public func dataFromHexadecimalString() -> Foundation.Data?
+}
+public enum XS2ANetError : Swift.Error {
+  case networkError
+  public static func == (a: XS2AiOSNetService.XS2ANetError, b: XS2AiOSNetService.XS2ANetError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class XS2ANetService {
+  public init()
+  public func cancelTask()
+  public func post(body: Swift.Dictionary<Swift.String, Any>, sessionKey: Swift.String, completion: @escaping ((Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void))
+  public func postCustom(body: Swift.Dictionary<Swift.String, Any>, endpoint: Swift.String = "http://192.168.178.44:8080/jsonp", sessionKey: Swift.String, completion: @escaping ((Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void))
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class AES256 {
+  public static let SALTLEN: Swift.Int
+  public static let BLOCKLEN: Swift.Int
+  public static let KEYLEN: Swift.Int
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: XS2AiOSNetService.AES256.Error, b: XS2AiOSNetService.AES256.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func encrypt(input: Swift.String, passphrase: Swift.String) throws -> Swift.String
+  public static func decrypt(input: Swift.String, passphrase: Swift.String) throws -> Swift.String
+  @objc deinit
+}
+extension XS2AiOSNetService.Digest.Algorithm : Swift.Equatable {}
+extension XS2AiOSNetService.Digest.Algorithm : Swift.Hashable {}
+extension XS2AiOSNetService.HMAC.Algorithm : Swift.Equatable {}
+extension XS2AiOSNetService.HMAC.Algorithm : Swift.Hashable {}
+extension XS2AiOSNetService.PBKDF.PseudoRandomAlgorithm : Swift.Equatable {}
+extension XS2AiOSNetService.PBKDF.PseudoRandomAlgorithm : Swift.Hashable {}
+extension XS2AiOSNetService.Status : Swift.Equatable {}
+extension XS2AiOSNetService.Status : Swift.Hashable {}
+extension XS2AiOSNetService.Status : Swift.RawRepresentable {}
+extension XS2AiOSNetService.StreamCryptor.Operation : Swift.Equatable {}
+extension XS2AiOSNetService.StreamCryptor.Operation : Swift.Hashable {}
+extension XS2AiOSNetService.StreamCryptor.Algorithm : Swift.Equatable {}
+extension XS2AiOSNetService.StreamCryptor.Algorithm : Swift.Hashable {}
+extension XS2AiOSNetService.SwKeyStore.SecError : Swift.Equatable {}
+extension XS2AiOSNetService.SwKeyStore.SecError : Swift.Hashable {}
+extension XS2AiOSNetService.SwKeyStore.SecError : Swift.RawRepresentable {}
+extension XS2AiOSNetService.SwKeyConvert.SwError : Swift.Equatable {}
+extension XS2AiOSNetService.SwKeyConvert.SwError : Swift.Hashable {}
+extension XS2AiOSNetService.PEM.EncryptedPrivateKey.EncMode : Swift.Equatable {}
+extension XS2AiOSNetService.PEM.EncryptedPrivateKey.EncMode : Swift.Hashable {}
+extension XS2AiOSNetService.CC.CCError : Swift.Equatable {}
+extension XS2AiOSNetService.CC.CCError : Swift.Hashable {}
+extension XS2AiOSNetService.CC.CCError : Swift.RawRepresentable {}
+extension XS2AiOSNetService.CC.DigestAlgorithm : Swift.Equatable {}
+extension XS2AiOSNetService.CC.DigestAlgorithm : Swift.Hashable {}
+extension XS2AiOSNetService.CC.DigestAlgorithm : Swift.RawRepresentable {}
+extension XS2AiOSNetService.CC.HMACAlg : Swift.Equatable {}
+extension XS2AiOSNetService.CC.HMACAlg : Swift.Hashable {}
+extension XS2AiOSNetService.CC.HMACAlg : Swift.RawRepresentable {}
+extension XS2AiOSNetService.CC.OpMode : Swift.Equatable {}
+extension XS2AiOSNetService.CC.OpMode : Swift.Hashable {}
+extension XS2AiOSNetService.CC.OpMode : Swift.RawRepresentable {}
+extension XS2AiOSNetService.CC.BlockMode : Swift.Equatable {}
+extension XS2AiOSNetService.CC.BlockMode : Swift.Hashable {}
+extension XS2AiOSNetService.CC.BlockMode : Swift.RawRepresentable {}
+extension XS2AiOSNetService.CC.AuthBlockMode : Swift.Equatable {}
+extension XS2AiOSNetService.CC.AuthBlockMode : Swift.Hashable {}
+extension XS2AiOSNetService.CC.AuthBlockMode : Swift.RawRepresentable {}
+extension XS2AiOSNetService.CC.Algorithm : Swift.Equatable {}
+extension XS2AiOSNetService.CC.Algorithm : Swift.Hashable {}
+extension XS2AiOSNetService.CC.Algorithm : Swift.RawRepresentable {}
+extension XS2AiOSNetService.CC.Padding : Swift.Equatable {}
+extension XS2AiOSNetService.CC.Padding : Swift.Hashable {}
+extension XS2AiOSNetService.CC.Padding : Swift.RawRepresentable {}
+extension XS2AiOSNetService.CC.RSA.AsymmetricPadding : Swift.Equatable {}
+extension XS2AiOSNetService.CC.RSA.AsymmetricPadding : Swift.Hashable {}
+extension XS2AiOSNetService.CC.RSA.AsymmetricPadding : Swift.RawRepresentable {}
+extension XS2AiOSNetService.CC.RSA.AsymmetricSAPadding : Swift.Equatable {}
+extension XS2AiOSNetService.CC.RSA.AsymmetricSAPadding : Swift.Hashable {}
+extension XS2AiOSNetService.CC.RSA.AsymmetricSAPadding : Swift.RawRepresentable {}
+extension XS2AiOSNetService.CC.DH.DHParam : Swift.Equatable {}
+extension XS2AiOSNetService.CC.DH.DHParam : Swift.Hashable {}
+extension XS2AiOSNetService.CC.CRC.Mode : Swift.Equatable {}
+extension XS2AiOSNetService.CC.CRC.Mode : Swift.Hashable {}
+extension XS2AiOSNetService.CC.CRC.Mode : Swift.RawRepresentable {}
+extension XS2AiOSNetService.CC.KeyDerivation.PRFAlg : Swift.Equatable {}
+extension XS2AiOSNetService.CC.KeyDerivation.PRFAlg : Swift.Hashable {}
+extension XS2AiOSNetService.CC.KeyDerivation.PRFAlg : Swift.RawRepresentable {}
+extension XS2AiOSNetService.XS2ANetError : Swift.Equatable {}
+extension XS2AiOSNetService.XS2ANetError : Swift.Hashable {}
+extension XS2AiOSNetService.AES256.Error : Swift.Equatable {}
+extension XS2AiOSNetService.AES256.Error : Swift.Hashable {}
