@@ -1,0 +1,4 @@
+module UnisseySDKWrapper {
+    header "/Users/skaya/de.idnow.ios.sdk.spm/.build/arm64-apple-macosx/debug/UnisseySDKWrapper.build/UnisseySDKWrapper-Swift.h"
+    requires objc
+}
