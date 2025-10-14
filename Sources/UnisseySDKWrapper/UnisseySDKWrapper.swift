@@ -1,8 +1,3 @@
-//
-//  IDnowSDKWrapper.swift
-//
-//  Created by Seyit Kaya on 05.09.24.
-//
 
 import UIKit
 import SwiftUI
