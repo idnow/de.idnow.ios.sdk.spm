@@ -26,7 +26,7 @@ IDNowSDKCore variants are available as xcframeworks:
 You can also choose options without XS2A, but please make sure you don't need this feature before selecting.
 
 Note: 3rd Party components such as Video Selfies and NFC scanning do not support the dynamic runtime language customization using the preferredLanguage parameter. These components always use the device_language. 
-Hence, our recommended best practice for optimal user experience is to allow the SDK to use the device language instead of the preferredlanguage parameter.
+Hence, our recommended best practice for optimal user experience is to allow the SDK to use the device language instead of the preferredLanguage parameter.
 
 Please choose the corresponding setup required for your use cases. If you need NFC please reach out to IDnow to obtain the needed dependencies. (see: [Using the SDK with NFC and run your project](#using-the-sdk-with-nfc-and-run-your-project))
 
@@ -97,7 +97,7 @@ public func start(token: String, preferredLanguage: String = default, fromViewCo
 
 **Language limitations:**
 3rd Party components such as Video Selfie and NFC scanning do not support the dynamic runtime language customization using the preferredLanguage parameter. These components always use the device_language. 
-Hence, our recommended best practice for optimal user experience is to allow the SDK to use the device language instead of the preferredlanguage parameter.
+Hence, our recommended best practice for optimal user experience is to allow the SDK to use the device language instead of the preferredLanguage parameter.
 
 **Supported Languages**
 These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czech), da (Danish), de (German), el (Greek), en (English), es (Spanish), et (Estonian), fi (Finnish), fr (French), hr (Croatian), hu (Hungarian), it (Italian), ja (Japanese), ka (Georgian), ko (Korean), lt (Lithuanian), lv (Latvian), nb (Norwegian), nl (Dutch), pl (Polish), pt (Portuguese), ro (Romanian), ru (Russian), sk (Slovak), sl (Slovenian), sr (Serbian-latin), sv (Swedish), tr (Turkish), zh (Chinese).
