@@ -11,13 +11,13 @@ let package = Package(
         .library(
             name: "IDNowSDKCore-with-NFC",
             targets: [
-                "IDNowSDKCore-with-NFC", "FaceTecSDK", "UnisseySDKWrapper"
+                "IDNowSDKCore-with-NFC", "FaceTecSDK", "UnisseySDKWrapper", "XS2AiOSNetService"
             ]
         ),
         .library(
             name: "IDNowSDKCore-without-NFC",
             targets: [
-                "IDNowSDKCore-without-NFC", "FaceTecSDK", "UnisseySDKWrapper"
+                "IDNowSDKCore-without-NFC", "FaceTecSDK", "UnisseySDKWrapper", "XS2AiOSNetService"
             ]
         ),
         .library(
@@ -58,6 +58,13 @@ let package = Package(
             name: "FaceTecSDK",
             path: "Frameworks/FaceTecSDK.xcframework"
         ),
+        .binaryTarget(
+            name: "XS2AiOSNetService",
+            url: "https://github.com/FinTecSystems/xs2a-ios-netservice/releases/download/1.0.7/XS2AiOSNetService.xcframework.zip",
+            checksum: "987e1e075fc9ca8b2f22cb60b436b84cc1304bb7c03cbce967979b588e5e8868"
+        ),
+
+        // MARK: - Wrapper Target
         .target(
             name: "UnisseySDKWrapper",
             dependencies: [
