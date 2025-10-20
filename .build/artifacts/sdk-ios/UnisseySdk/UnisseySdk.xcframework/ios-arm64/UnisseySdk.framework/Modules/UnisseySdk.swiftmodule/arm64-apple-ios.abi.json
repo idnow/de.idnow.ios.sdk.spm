@@ -1,0 +1,4780 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "UnisseySdk",
+    "printedName": "UnisseySdk",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SessionConfig",
+        "printedName": "SessionConfig",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(recordingConfig:uiConfig:iadConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SessionConfig",
+                "printedName": "UnisseySdk.SessionConfig",
+                "usr": "s:10UnisseySdk13SessionConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RecordingConfig",
+                "printedName": "UnisseySdk.RecordingConfig",
+                "hasDefaultArg": true,
+                "usr": "s:10UnisseySdk15RecordingConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UiConfig",
+                "printedName": "UnisseySdk.UiConfig",
+                "hasDefaultArg": true,
+                "usr": "s:10UnisseySdk8UiConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IadConfig",
+                "printedName": "UnisseySdk.IadConfig",
+                "hasDefaultArg": true,
+                "usr": "s:10UnisseySdk9IadConfigV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10UnisseySdk13SessionConfigV09recordingD002uiD003iadD0AcA09RecordingD0V_AA02UiD0VAA03IadD0Vtcfc",
+            "mangledName": "$s10UnisseySdk13SessionConfigV09recordingD002uiD003iadD0AcA09RecordingD0V_AA02UiD0VAA03IadD0Vtcfc",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10UnisseySdk13SessionConfigV",
+        "mangledName": "$s10UnisseySdk13SessionConfigV",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RecordingConfig",
+        "printedName": "RecordingConfig",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(recordingDurationMs:qualities:enableFaceChecker:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecordingConfig",
+                "printedName": "UnisseySdk.RecordingConfig",
+                "usr": "s:10UnisseySdk15RecordingConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[UnisseySdk.VideoQuality]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UnisseySdk.VideoQuality]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoQuality",
+                        "printedName": "UnisseySdk.VideoQuality",
+                        "usr": "s:10UnisseySdk12VideoQualityO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10UnisseySdk15RecordingConfigV19recordingDurationMs9qualities17enableFaceCheckerACSiSg_SayAA12VideoQualityOGSgSbtcfc",
+            "mangledName": "$s10UnisseySdk15RecordingConfigV19recordingDurationMs9qualities17enableFaceCheckerACSiSg_SayAA12VideoQualityOGSgSbtcfc",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10UnisseySdk15RecordingConfigV",
+        "mangledName": "$s10UnisseySdk15RecordingConfigV",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UiConfig",
+        "printedName": "UiConfig",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(preferredLanguage:showInstructions:showVideoCaptureButton:showWideWindowPreviewInputsToTheRight:buttonCornerRadius:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UiConfig",
+                "printedName": "UnisseySdk.UiConfig",
+                "usr": "s:10UnisseySdk8UiConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10UnisseySdk8UiConfigV17preferredLanguage16showInstructions0G18VideoCaptureButton0G33WideWindowPreviewInputsToTheRight18buttonCornerRadiusACSSSg_S3bSfSgtcfc",
+            "mangledName": "$s10UnisseySdk8UiConfigV17preferredLanguage16showInstructions0G18VideoCaptureButton0G33WideWindowPreviewInputsToTheRight18buttonCornerRadiusACSSSg_S3bSfSgtcfc",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10UnisseySdk8UiConfigV",
+        "mangledName": "$s10UnisseySdk8UiConfigV",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IadConfig",
+        "printedName": "IadConfig",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IadConfig",
+                "printedName": "UnisseySdk.IadConfig",
+                "usr": "s:10UnisseySdk9IadConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10UnisseySdk9IadConfigV4dataACSSSg_tcfc",
+            "mangledName": "$s10UnisseySdk9IadConfigV4dataACSSSg_tcfc",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10UnisseySdk9IadConfigV",
+        "mangledName": "$s10UnisseySdk9IadConfigV",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SessionResponse",
+        "printedName": "SessionResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "videoFilePath",
+            "printedName": "videoFilePath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10UnisseySdk15SessionResponseV13videoFilePath10Foundation3URLVvp",
+            "mangledName": "$s10UnisseySdk15SessionResponseV13videoFilePath10Foundation3URLVvp",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10UnisseySdk15SessionResponseV13videoFilePath10Foundation3URLVvg",
+                "mangledName": "$s10UnisseySdk15SessionResponseV13videoFilePath10Foundation3URLVvg",
+                "moduleName": "UnisseySdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10UnisseySdk15SessionResponseV8metadataSSvp",
+            "mangledName": "$s10UnisseySdk15SessionResponseV8metadataSSvp",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10UnisseySdk15SessionResponseV8metadataSSvg",
+                "mangledName": "$s10UnisseySdk15SessionResponseV8metadataSSvg",
+                "moduleName": "UnisseySdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10UnisseySdk15SessionResponseV",
+        "mangledName": "$s10UnisseySdk15SessionResponseV",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Iad",
+        "printedName": "Iad",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AcquisitionPreset",
+        "printedName": "AcquisitionPreset",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "selfieFast",
+            "printedName": "selfieFast",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.AcquisitionPreset.Type) -> UnisseySdk.AcquisitionPreset",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AcquisitionPreset",
+                    "printedName": "UnisseySdk.AcquisitionPreset",
+                    "usr": "s:10UnisseySdk17AcquisitionPresetO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.AcquisitionPreset.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AcquisitionPreset",
+                        "printedName": "UnisseySdk.AcquisitionPreset",
+                        "usr": "s:10UnisseySdk17AcquisitionPresetO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk17AcquisitionPresetO10selfieFastyA2CmF",
+            "mangledName": "$s10UnisseySdk17AcquisitionPresetO10selfieFastyA2CmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Var",
+            "name": "selfieSubstantial",
+            "printedName": "selfieSubstantial",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.AcquisitionPreset.Type) -> UnisseySdk.AcquisitionPreset",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AcquisitionPreset",
+                    "printedName": "UnisseySdk.AcquisitionPreset",
+                    "usr": "s:10UnisseySdk17AcquisitionPresetO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.AcquisitionPreset.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AcquisitionPreset",
+                        "printedName": "UnisseySdk.AcquisitionPreset",
+                        "usr": "s:10UnisseySdk17AcquisitionPresetO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk17AcquisitionPresetO17selfieSubstantialyA2CmF",
+            "mangledName": "$s10UnisseySdk17AcquisitionPresetO17selfieSubstantialyA2CmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AcquisitionPreset",
+                "printedName": "UnisseySdk.AcquisitionPreset",
+                "usr": "s:10UnisseySdk17AcquisitionPresetO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AcquisitionPreset",
+                "printedName": "UnisseySdk.AcquisitionPreset",
+                "usr": "s:10UnisseySdk17AcquisitionPresetO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnisseySdk17AcquisitionPresetO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10UnisseySdk17AcquisitionPresetO2eeoiySbAC_ACtFZ",
+            "moduleName": "UnisseySdk",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10UnisseySdk17AcquisitionPresetO9hashValueSivp",
+            "mangledName": "$s10UnisseySdk17AcquisitionPresetO9hashValueSivp",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10UnisseySdk17AcquisitionPresetO9hashValueSivg",
+                "mangledName": "$s10UnisseySdk17AcquisitionPresetO9hashValueSivg",
+                "moduleName": "UnisseySdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnisseySdk17AcquisitionPresetO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10UnisseySdk17AcquisitionPresetO4hash4intoys6HasherVz_tF",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10UnisseySdk17AcquisitionPresetO",
+        "mangledName": "$s10UnisseySdk17AcquisitionPresetO",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VideoQuality",
+        "printedName": "VideoQuality",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sd",
+            "printedName": "sd",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.VideoQuality.Type) -> UnisseySdk.VideoQuality",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoQuality",
+                    "printedName": "UnisseySdk.VideoQuality",
+                    "usr": "s:10UnisseySdk12VideoQualityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.VideoQuality.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoQuality",
+                        "printedName": "UnisseySdk.VideoQuality",
+                        "usr": "s:10UnisseySdk12VideoQualityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk12VideoQualityO2sdyA2CmF",
+            "mangledName": "$s10UnisseySdk12VideoQualityO2sdyA2CmF",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hd",
+            "printedName": "hd",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.VideoQuality.Type) -> UnisseySdk.VideoQuality",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoQuality",
+                    "printedName": "UnisseySdk.VideoQuality",
+                    "usr": "s:10UnisseySdk12VideoQualityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.VideoQuality.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoQuality",
+                        "printedName": "UnisseySdk.VideoQuality",
+                        "usr": "s:10UnisseySdk12VideoQualityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk12VideoQualityO2hdyA2CmF",
+            "mangledName": "$s10UnisseySdk12VideoQualityO2hdyA2CmF",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoQuality",
+                "printedName": "UnisseySdk.VideoQuality",
+                "usr": "s:10UnisseySdk12VideoQualityO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoQuality",
+                "printedName": "UnisseySdk.VideoQuality",
+                "usr": "s:10UnisseySdk12VideoQualityO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnisseySdk12VideoQualityO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10UnisseySdk12VideoQualityO2eeoiySbAC_ACtFZ",
+            "moduleName": "UnisseySdk",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10UnisseySdk12VideoQualityO9hashValueSivp",
+            "mangledName": "$s10UnisseySdk12VideoQualityO9hashValueSivp",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10UnisseySdk12VideoQualityO9hashValueSivg",
+                "mangledName": "$s10UnisseySdk12VideoQualityO9hashValueSivg",
+                "moduleName": "UnisseySdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnisseySdk12VideoQualityO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10UnisseySdk12VideoQualityO4hash4intoys6HasherVz_tF",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10UnisseySdk12VideoQualityO",
+        "mangledName": "$s10UnisseySdk12VideoQualityO",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Var",
+        "name": "unisseyHeadline",
+        "printedName": "unisseyHeadline",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Font",
+            "printedName": "SwiftUI.Font",
+            "usr": "s:7SwiftUI4FontV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk15unisseyHeadline7SwiftUI4FontVvp",
+        "mangledName": "$s10UnisseySdk15unisseyHeadline7SwiftUI4FontVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk15unisseyHeadline7SwiftUI4FontVvg",
+            "mangledName": "$s10UnisseySdk15unisseyHeadline7SwiftUI4FontVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk15unisseyHeadline7SwiftUI4FontVvs",
+            "mangledName": "$s10UnisseySdk15unisseyHeadline7SwiftUI4FontVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk15unisseyHeadline7SwiftUI4FontVvM",
+            "mangledName": "$s10UnisseySdk15unisseyHeadline7SwiftUI4FontVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "unisseyTitle",
+        "printedName": "unisseyTitle",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Font",
+            "printedName": "SwiftUI.Font",
+            "usr": "s:7SwiftUI4FontV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk12unisseyTitle7SwiftUI4FontVvp",
+        "mangledName": "$s10UnisseySdk12unisseyTitle7SwiftUI4FontVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk12unisseyTitle7SwiftUI4FontVvg",
+            "mangledName": "$s10UnisseySdk12unisseyTitle7SwiftUI4FontVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk12unisseyTitle7SwiftUI4FontVvs",
+            "mangledName": "$s10UnisseySdk12unisseyTitle7SwiftUI4FontVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk12unisseyTitle7SwiftUI4FontVvM",
+            "mangledName": "$s10UnisseySdk12unisseyTitle7SwiftUI4FontVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "unisseyBody",
+        "printedName": "unisseyBody",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Font",
+            "printedName": "SwiftUI.Font",
+            "usr": "s:7SwiftUI4FontV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk11unisseyBody7SwiftUI4FontVvp",
+        "mangledName": "$s10UnisseySdk11unisseyBody7SwiftUI4FontVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk11unisseyBody7SwiftUI4FontVvg",
+            "mangledName": "$s10UnisseySdk11unisseyBody7SwiftUI4FontVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk11unisseyBody7SwiftUI4FontVvs",
+            "mangledName": "$s10UnisseySdk11unisseyBody7SwiftUI4FontVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk11unisseyBody7SwiftUI4FontVvM",
+            "mangledName": "$s10UnisseySdk11unisseyBody7SwiftUI4FontVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "unisseyLabel",
+        "printedName": "unisseyLabel",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Font",
+            "printedName": "SwiftUI.Font",
+            "usr": "s:7SwiftUI4FontV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk12unisseyLabel7SwiftUI4FontVvp",
+        "mangledName": "$s10UnisseySdk12unisseyLabel7SwiftUI4FontVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk12unisseyLabel7SwiftUI4FontVvg",
+            "mangledName": "$s10UnisseySdk12unisseyLabel7SwiftUI4FontVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk12unisseyLabel7SwiftUI4FontVvs",
+            "mangledName": "$s10UnisseySdk12unisseyLabel7SwiftUI4FontVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk12unisseyLabel7SwiftUI4FontVvM",
+            "mangledName": "$s10UnisseySdk12unisseyLabel7SwiftUI4FontVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnisseyPage",
+        "printedName": "UnisseyPage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "instructions",
+            "printedName": "instructions",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.UnisseyPage.Type) -> UnisseySdk.UnisseyPage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnisseyPage",
+                    "printedName": "UnisseySdk.UnisseyPage",
+                    "usr": "s:10UnisseySdk0A4PageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.UnisseyPage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyPage",
+                        "printedName": "UnisseySdk.UnisseyPage",
+                        "usr": "s:10UnisseySdk0A4PageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk0A4PageO12instructionsyA2CmF",
+            "mangledName": "$s10UnisseySdk0A4PageO12instructionsyA2CmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Var",
+            "name": "cameraPermission",
+            "printedName": "cameraPermission",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.UnisseyPage.Type) -> UnisseySdk.UnisseyPage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnisseyPage",
+                    "printedName": "UnisseySdk.UnisseyPage",
+                    "usr": "s:10UnisseySdk0A4PageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.UnisseyPage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyPage",
+                        "printedName": "UnisseySdk.UnisseyPage",
+                        "usr": "s:10UnisseySdk0A4PageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk0A4PageO16cameraPermissionyA2CmF",
+            "mangledName": "$s10UnisseySdk0A4PageO16cameraPermissionyA2CmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Var",
+            "name": "videoCapture",
+            "printedName": "videoCapture",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.UnisseyPage.Type) -> UnisseySdk.UnisseyPage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnisseyPage",
+                    "printedName": "UnisseySdk.UnisseyPage",
+                    "usr": "s:10UnisseySdk0A4PageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.UnisseyPage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyPage",
+                        "printedName": "UnisseySdk.UnisseyPage",
+                        "usr": "s:10UnisseySdk0A4PageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk0A4PageO12videoCaptureyA2CmF",
+            "mangledName": "$s10UnisseySdk0A4PageO12videoCaptureyA2CmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnisseyPage",
+                "printedName": "UnisseySdk.UnisseyPage",
+                "usr": "s:10UnisseySdk0A4PageO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnisseyPage",
+                "printedName": "UnisseySdk.UnisseyPage",
+                "usr": "s:10UnisseySdk0A4PageO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnisseySdk0A4PageO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10UnisseySdk0A4PageO2eeoiySbAC_ACtFZ",
+            "moduleName": "UnisseySdk",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10UnisseySdk0A4PageO9hashValueSivp",
+            "mangledName": "$s10UnisseySdk0A4PageO9hashValueSivp",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10UnisseySdk0A4PageO9hashValueSivg",
+                "mangledName": "$s10UnisseySdk0A4PageO9hashValueSivg",
+                "moduleName": "UnisseySdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnisseySdk0A4PageO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10UnisseySdk0A4PageO4hash4intoys6HasherVz_tF",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10UnisseySdk0A4PageO",
+        "mangledName": "$s10UnisseySdk0A4PageO",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnisseyEvent",
+        "printedName": "UnisseyEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "instructionsShown",
+            "printedName": "instructionsShown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.UnisseyEvent.Type) -> UnisseySdk.UnisseyEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnisseyEvent",
+                    "printedName": "UnisseySdk.UnisseyEvent",
+                    "usr": "s:10UnisseySdk0A5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.UnisseyEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyEvent",
+                        "printedName": "UnisseySdk.UnisseyEvent",
+                        "usr": "s:10UnisseySdk0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk0A5EventO17instructionsShownyA2CmF",
+            "mangledName": "$s10UnisseySdk0A5EventO17instructionsShownyA2CmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Var",
+            "name": "cameraPermissionShown",
+            "printedName": "cameraPermissionShown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.UnisseyEvent.Type) -> UnisseySdk.UnisseyEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnisseyEvent",
+                    "printedName": "UnisseySdk.UnisseyEvent",
+                    "usr": "s:10UnisseySdk0A5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.UnisseyEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyEvent",
+                        "printedName": "UnisseySdk.UnisseyEvent",
+                        "usr": "s:10UnisseySdk0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk0A5EventO21cameraPermissionShownyA2CmF",
+            "mangledName": "$s10UnisseySdk0A5EventO21cameraPermissionShownyA2CmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Var",
+            "name": "cameraPermissionRequested",
+            "printedName": "cameraPermissionRequested",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.UnisseyEvent.Type) -> UnisseySdk.UnisseyEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnisseyEvent",
+                    "printedName": "UnisseySdk.UnisseyEvent",
+                    "usr": "s:10UnisseySdk0A5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.UnisseyEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyEvent",
+                        "printedName": "UnisseySdk.UnisseyEvent",
+                        "usr": "s:10UnisseySdk0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk0A5EventO25cameraPermissionRequestedyA2CmF",
+            "mangledName": "$s10UnisseySdk0A5EventO25cameraPermissionRequestedyA2CmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Var",
+            "name": "cameraPermissionAccepted",
+            "printedName": "cameraPermissionAccepted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.UnisseyEvent.Type) -> UnisseySdk.UnisseyEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnisseyEvent",
+                    "printedName": "UnisseySdk.UnisseyEvent",
+                    "usr": "s:10UnisseySdk0A5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.UnisseyEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyEvent",
+                        "printedName": "UnisseySdk.UnisseyEvent",
+                        "usr": "s:10UnisseySdk0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk0A5EventO24cameraPermissionAcceptedyA2CmF",
+            "mangledName": "$s10UnisseySdk0A5EventO24cameraPermissionAcceptedyA2CmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Var",
+            "name": "cameraPermissionDenied",
+            "printedName": "cameraPermissionDenied",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.UnisseyEvent.Type) -> UnisseySdk.UnisseyEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnisseyEvent",
+                    "printedName": "UnisseySdk.UnisseyEvent",
+                    "usr": "s:10UnisseySdk0A5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.UnisseyEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyEvent",
+                        "printedName": "UnisseySdk.UnisseyEvent",
+                        "usr": "s:10UnisseySdk0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk0A5EventO22cameraPermissionDeniedyA2CmF",
+            "mangledName": "$s10UnisseySdk0A5EventO22cameraPermissionDeniedyA2CmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Var",
+            "name": "cameraPreviewShown",
+            "printedName": "cameraPreviewShown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.UnisseyEvent.Type) -> UnisseySdk.UnisseyEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnisseyEvent",
+                    "printedName": "UnisseySdk.UnisseyEvent",
+                    "usr": "s:10UnisseySdk0A5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.UnisseyEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyEvent",
+                        "printedName": "UnisseySdk.UnisseyEvent",
+                        "usr": "s:10UnisseySdk0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk0A5EventO18cameraPreviewShownyA2CmF",
+            "mangledName": "$s10UnisseySdk0A5EventO18cameraPreviewShownyA2CmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Var",
+            "name": "cameraReady",
+            "printedName": "cameraReady",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.UnisseyEvent.Type) -> UnisseySdk.UnisseyEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnisseyEvent",
+                    "printedName": "UnisseySdk.UnisseyEvent",
+                    "usr": "s:10UnisseySdk0A5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.UnisseyEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyEvent",
+                        "printedName": "UnisseySdk.UnisseyEvent",
+                        "usr": "s:10UnisseySdk0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk0A5EventO11cameraReadyyA2CmF",
+            "mangledName": "$s10UnisseySdk0A5EventO11cameraReadyyA2CmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Var",
+            "name": "videoCaptureStarted",
+            "printedName": "videoCaptureStarted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.UnisseyEvent.Type) -> UnisseySdk.UnisseyEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnisseyEvent",
+                    "printedName": "UnisseySdk.UnisseyEvent",
+                    "usr": "s:10UnisseySdk0A5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.UnisseyEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyEvent",
+                        "printedName": "UnisseySdk.UnisseyEvent",
+                        "usr": "s:10UnisseySdk0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk0A5EventO19videoCaptureStartedyA2CmF",
+            "mangledName": "$s10UnisseySdk0A5EventO19videoCaptureStartedyA2CmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Var",
+            "name": "videoRecordStarted",
+            "printedName": "videoRecordStarted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.UnisseyEvent.Type) -> UnisseySdk.UnisseyEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnisseyEvent",
+                    "printedName": "UnisseySdk.UnisseyEvent",
+                    "usr": "s:10UnisseySdk0A5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.UnisseyEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyEvent",
+                        "printedName": "UnisseySdk.UnisseyEvent",
+                        "usr": "s:10UnisseySdk0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk0A5EventO18videoRecordStartedyA2CmF",
+            "mangledName": "$s10UnisseySdk0A5EventO18videoRecordStartedyA2CmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Var",
+            "name": "videoRecordProgress",
+            "printedName": "videoRecordProgress",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.UnisseyEvent.Type) -> (Swift.Float) -> UnisseySdk.UnisseyEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Float) -> UnisseySdk.UnisseyEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyEvent",
+                        "printedName": "UnisseySdk.UnisseyEvent",
+                        "usr": "s:10UnisseySdk0A5EventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(progress: Swift.Float)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Float",
+                            "printedName": "Swift.Float",
+                            "usr": "s:Sf"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.UnisseyEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyEvent",
+                        "printedName": "UnisseySdk.UnisseyEvent",
+                        "usr": "s:10UnisseySdk0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk0A5EventO19videoRecordProgressyACSf_tcACmF",
+            "mangledName": "$s10UnisseySdk0A5EventO19videoRecordProgressyACSf_tcACmF",
+            "moduleName": "UnisseySdk"
+          },
+          {
+            "kind": "Var",
+            "name": "videoRecordEnded",
+            "printedName": "videoRecordEnded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnisseySdk.UnisseyEvent.Type) -> UnisseySdk.UnisseyEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnisseyEvent",
+                    "printedName": "UnisseySdk.UnisseyEvent",
+                    "usr": "s:10UnisseySdk0A5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnisseySdk.UnisseyEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyEvent",
+                        "printedName": "UnisseySdk.UnisseyEvent",
+                        "usr": "s:10UnisseySdk0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10UnisseySdk0A5EventO16videoRecordEndedyA2CmF",
+            "mangledName": "$s10UnisseySdk0A5EventO16videoRecordEndedyA2CmF",
+            "moduleName": "UnisseySdk"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10UnisseySdk0A5EventO",
+        "mangledName": "$s10UnisseySdk0A5EventO",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnisseyView",
+        "printedName": "UnisseyView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(unisseyViewModel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnisseyView",
+                "printedName": "UnisseySdk.UnisseyView",
+                "usr": "s:10UnisseySdk0A4ViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnisseyViewModel",
+                "printedName": "UnisseySdk.UnisseyViewModel",
+                "usr": "s:10UnisseySdk0A9ViewModelC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10UnisseySdk0A4ViewV07unisseyC5ModelAcA0acE0C_tcfc",
+            "mangledName": "$s10UnisseySdk0A4ViewV07unisseyC5ModelAcA0acE0C_tcfc",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10UnisseySdk0A4ViewV4bodyQrvp",
+            "mangledName": "$s10UnisseySdk0A4ViewV4bodyQrvp",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10UnisseySdk0A4ViewV4bodyQrvg",
+                "mangledName": "$s10UnisseySdk0A4ViewV4bodyQrvg",
+                "moduleName": "UnisseySdk",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10UnisseySdk0A4ViewV",
+        "mangledName": "$s10UnisseySdk0A4ViewV",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Var",
+        "name": "unisseyPrimary",
+        "printedName": "unisseyPrimary",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Color",
+            "printedName": "SwiftUI.Color",
+            "usr": "s:7SwiftUI5ColorV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk14unisseyPrimary7SwiftUI5ColorVvp",
+        "mangledName": "$s10UnisseySdk14unisseyPrimary7SwiftUI5ColorVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk14unisseyPrimary7SwiftUI5ColorVvg",
+            "mangledName": "$s10UnisseySdk14unisseyPrimary7SwiftUI5ColorVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk14unisseyPrimary7SwiftUI5ColorVvs",
+            "mangledName": "$s10UnisseySdk14unisseyPrimary7SwiftUI5ColorVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk14unisseyPrimary7SwiftUI5ColorVvM",
+            "mangledName": "$s10UnisseySdk14unisseyPrimary7SwiftUI5ColorVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "unisseyOnPrimary",
+        "printedName": "unisseyOnPrimary",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Color",
+            "printedName": "SwiftUI.Color",
+            "usr": "s:7SwiftUI5ColorV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk16unisseyOnPrimary7SwiftUI5ColorVvp",
+        "mangledName": "$s10UnisseySdk16unisseyOnPrimary7SwiftUI5ColorVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk16unisseyOnPrimary7SwiftUI5ColorVvg",
+            "mangledName": "$s10UnisseySdk16unisseyOnPrimary7SwiftUI5ColorVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk16unisseyOnPrimary7SwiftUI5ColorVvs",
+            "mangledName": "$s10UnisseySdk16unisseyOnPrimary7SwiftUI5ColorVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk16unisseyOnPrimary7SwiftUI5ColorVvM",
+            "mangledName": "$s10UnisseySdk16unisseyOnPrimary7SwiftUI5ColorVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "unisseySecondary",
+        "printedName": "unisseySecondary",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Color",
+            "printedName": "SwiftUI.Color",
+            "usr": "s:7SwiftUI5ColorV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk16unisseySecondary7SwiftUI5ColorVvp",
+        "mangledName": "$s10UnisseySdk16unisseySecondary7SwiftUI5ColorVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk16unisseySecondary7SwiftUI5ColorVvg",
+            "mangledName": "$s10UnisseySdk16unisseySecondary7SwiftUI5ColorVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk16unisseySecondary7SwiftUI5ColorVvs",
+            "mangledName": "$s10UnisseySdk16unisseySecondary7SwiftUI5ColorVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk16unisseySecondary7SwiftUI5ColorVvM",
+            "mangledName": "$s10UnisseySdk16unisseySecondary7SwiftUI5ColorVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "unisseyLoadingProgressBar",
+        "printedName": "unisseyLoadingProgressBar",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Color",
+            "printedName": "SwiftUI.Color",
+            "usr": "s:7SwiftUI5ColorV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk25unisseyLoadingProgressBar7SwiftUI5ColorVvp",
+        "mangledName": "$s10UnisseySdk25unisseyLoadingProgressBar7SwiftUI5ColorVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk25unisseyLoadingProgressBar7SwiftUI5ColorVvg",
+            "mangledName": "$s10UnisseySdk25unisseyLoadingProgressBar7SwiftUI5ColorVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk25unisseyLoadingProgressBar7SwiftUI5ColorVvs",
+            "mangledName": "$s10UnisseySdk25unisseyLoadingProgressBar7SwiftUI5ColorVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk25unisseyLoadingProgressBar7SwiftUI5ColorVvM",
+            "mangledName": "$s10UnisseySdk25unisseyLoadingProgressBar7SwiftUI5ColorVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "unisseyBackground",
+        "printedName": "unisseyBackground",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Color",
+            "printedName": "SwiftUI.Color",
+            "usr": "s:7SwiftUI5ColorV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk17unisseyBackground7SwiftUI5ColorVvp",
+        "mangledName": "$s10UnisseySdk17unisseyBackground7SwiftUI5ColorVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk17unisseyBackground7SwiftUI5ColorVvg",
+            "mangledName": "$s10UnisseySdk17unisseyBackground7SwiftUI5ColorVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk17unisseyBackground7SwiftUI5ColorVvs",
+            "mangledName": "$s10UnisseySdk17unisseyBackground7SwiftUI5ColorVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk17unisseyBackground7SwiftUI5ColorVvM",
+            "mangledName": "$s10UnisseySdk17unisseyBackground7SwiftUI5ColorVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "unisseyOnBackground",
+        "printedName": "unisseyOnBackground",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Color",
+            "printedName": "SwiftUI.Color",
+            "usr": "s:7SwiftUI5ColorV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk19unisseyOnBackground7SwiftUI5ColorVvp",
+        "mangledName": "$s10UnisseySdk19unisseyOnBackground7SwiftUI5ColorVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk19unisseyOnBackground7SwiftUI5ColorVvg",
+            "mangledName": "$s10UnisseySdk19unisseyOnBackground7SwiftUI5ColorVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk19unisseyOnBackground7SwiftUI5ColorVvs",
+            "mangledName": "$s10UnisseySdk19unisseyOnBackground7SwiftUI5ColorVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk19unisseyOnBackground7SwiftUI5ColorVvM",
+            "mangledName": "$s10UnisseySdk19unisseyOnBackground7SwiftUI5ColorVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "unisseySurface",
+        "printedName": "unisseySurface",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Color",
+            "printedName": "SwiftUI.Color",
+            "usr": "s:7SwiftUI5ColorV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk14unisseySurface7SwiftUI5ColorVvp",
+        "mangledName": "$s10UnisseySdk14unisseySurface7SwiftUI5ColorVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk14unisseySurface7SwiftUI5ColorVvg",
+            "mangledName": "$s10UnisseySdk14unisseySurface7SwiftUI5ColorVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk14unisseySurface7SwiftUI5ColorVvs",
+            "mangledName": "$s10UnisseySdk14unisseySurface7SwiftUI5ColorVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk14unisseySurface7SwiftUI5ColorVvM",
+            "mangledName": "$s10UnisseySdk14unisseySurface7SwiftUI5ColorVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "unisseyOnSurface",
+        "printedName": "unisseyOnSurface",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Color",
+            "printedName": "SwiftUI.Color",
+            "usr": "s:7SwiftUI5ColorV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk16unisseyOnSurface7SwiftUI5ColorVvp",
+        "mangledName": "$s10UnisseySdk16unisseyOnSurface7SwiftUI5ColorVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk16unisseyOnSurface7SwiftUI5ColorVvg",
+            "mangledName": "$s10UnisseySdk16unisseyOnSurface7SwiftUI5ColorVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk16unisseyOnSurface7SwiftUI5ColorVvs",
+            "mangledName": "$s10UnisseySdk16unisseyOnSurface7SwiftUI5ColorVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk16unisseyOnSurface7SwiftUI5ColorVvM",
+            "mangledName": "$s10UnisseySdk16unisseyOnSurface7SwiftUI5ColorVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "unisseySurfaceVariant",
+        "printedName": "unisseySurfaceVariant",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Color",
+            "printedName": "SwiftUI.Color",
+            "usr": "s:7SwiftUI5ColorV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk21unisseySurfaceVariant7SwiftUI5ColorVvp",
+        "mangledName": "$s10UnisseySdk21unisseySurfaceVariant7SwiftUI5ColorVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk21unisseySurfaceVariant7SwiftUI5ColorVvg",
+            "mangledName": "$s10UnisseySdk21unisseySurfaceVariant7SwiftUI5ColorVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk21unisseySurfaceVariant7SwiftUI5ColorVvs",
+            "mangledName": "$s10UnisseySdk21unisseySurfaceVariant7SwiftUI5ColorVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk21unisseySurfaceVariant7SwiftUI5ColorVvM",
+            "mangledName": "$s10UnisseySdk21unisseySurfaceVariant7SwiftUI5ColorVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "unisseyOnSurfaceVariant",
+        "printedName": "unisseyOnSurfaceVariant",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Color",
+            "printedName": "SwiftUI.Color",
+            "usr": "s:7SwiftUI5ColorV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk23unisseyOnSurfaceVariant7SwiftUI5ColorVvp",
+        "mangledName": "$s10UnisseySdk23unisseyOnSurfaceVariant7SwiftUI5ColorVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk23unisseyOnSurfaceVariant7SwiftUI5ColorVvg",
+            "mangledName": "$s10UnisseySdk23unisseyOnSurfaceVariant7SwiftUI5ColorVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk23unisseyOnSurfaceVariant7SwiftUI5ColorVvs",
+            "mangledName": "$s10UnisseySdk23unisseyOnSurfaceVariant7SwiftUI5ColorVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk23unisseyOnSurfaceVariant7SwiftUI5ColorVvM",
+            "mangledName": "$s10UnisseySdk23unisseyOnSurfaceVariant7SwiftUI5ColorVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "unisseyOverlayBackground",
+        "printedName": "unisseyOverlayBackground",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Color",
+            "printedName": "SwiftUI.Color",
+            "usr": "s:7SwiftUI5ColorV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10UnisseySdk24unisseyOverlayBackground7SwiftUI5ColorVvp",
+        "mangledName": "$s10UnisseySdk24unisseyOverlayBackground7SwiftUI5ColorVvp",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk24unisseyOverlayBackground7SwiftUI5ColorVvg",
+            "mangledName": "$s10UnisseySdk24unisseyOverlayBackground7SwiftUI5ColorVvg",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk24unisseyOverlayBackground7SwiftUI5ColorVvs",
+            "mangledName": "$s10UnisseySdk24unisseyOverlayBackground7SwiftUI5ColorVvs",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10UnisseySdk24unisseyOverlayBackground7SwiftUI5ColorVvM",
+            "mangledName": "$s10UnisseySdk24unisseyOverlayBackground7SwiftUI5ColorVvM",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "VideoToolbox",
+        "printedName": "VideoToolbox",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnisseyViewModel",
+        "printedName": "UnisseyViewModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "onStateChangedListener",
+            "printedName": "onStateChangedListener",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UnisseySdk.UnisseyEvent) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UnisseySdk.UnisseyEvent) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyEvent",
+                        "printedName": "UnisseySdk.UnisseyEvent",
+                        "usr": "s:10UnisseySdk0A5EventO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10UnisseySdk0A9ViewModelC22onStateChangedListeneryAA0A5EventOcSgvp",
+            "mangledName": "$s10UnisseySdk0A9ViewModelC22onStateChangedListeneryAA0A5EventOcSgvp",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UnisseySdk.UnisseyEvent) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UnisseySdk.UnisseyEvent) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnisseyEvent",
+                            "printedName": "UnisseySdk.UnisseyEvent",
+                            "usr": "s:10UnisseySdk0A5EventO"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10UnisseySdk0A9ViewModelC22onStateChangedListeneryAA0A5EventOcSgvg",
+                "mangledName": "$s10UnisseySdk0A9ViewModelC22onStateChangedListeneryAA0A5EventOcSgvg",
+                "moduleName": "UnisseySdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UnisseySdk.UnisseyEvent) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UnisseySdk.UnisseyEvent) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnisseyEvent",
+                            "printedName": "UnisseySdk.UnisseyEvent",
+                            "usr": "s:10UnisseySdk0A5EventO"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10UnisseySdk0A9ViewModelC22onStateChangedListeneryAA0A5EventOcSgvs",
+                "mangledName": "$s10UnisseySdk0A9ViewModelC22onStateChangedListeneryAA0A5EventOcSgvs",
+                "moduleName": "UnisseySdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10UnisseySdk0A9ViewModelC22onStateChangedListeneryAA0A5EventOcSgvM",
+                "mangledName": "$s10UnisseySdk0A9ViewModelC22onStateChangedListeneryAA0A5EventOcSgvM",
+                "moduleName": "UnisseySdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onRecordEndedListener",
+            "printedName": "onRecordEndedListener",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Result<UnisseySdk.SessionResponse, any Swift.Error>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Result<UnisseySdk.SessionResponse, any Swift.Error>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Swift.Result<UnisseySdk.SessionResponse, any Swift.Error>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SessionResponse",
+                            "printedName": "UnisseySdk.SessionResponse",
+                            "usr": "s:10UnisseySdk15SessionResponseV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10UnisseySdk0A9ViewModelC21onRecordEndedListenerys6ResultOyAA15SessionResponseVs5Error_pGcSgvp",
+            "mangledName": "$s10UnisseySdk0A9ViewModelC21onRecordEndedListenerys6ResultOyAA15SessionResponseVs5Error_pGcSgvp",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Result<UnisseySdk.SessionResponse, any Swift.Error>) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Result<UnisseySdk.SessionResponse, any Swift.Error>) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Result",
+                            "printedName": "Swift.Result<UnisseySdk.SessionResponse, any Swift.Error>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "SessionResponse",
+                                "printedName": "UnisseySdk.SessionResponse",
+                                "usr": "s:10UnisseySdk15SessionResponseV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:s6ResultO"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10UnisseySdk0A9ViewModelC21onRecordEndedListenerys6ResultOyAA15SessionResponseVs5Error_pGcSgvg",
+                "mangledName": "$s10UnisseySdk0A9ViewModelC21onRecordEndedListenerys6ResultOyAA15SessionResponseVs5Error_pGcSgvg",
+                "moduleName": "UnisseySdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Result<UnisseySdk.SessionResponse, any Swift.Error>) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Result<UnisseySdk.SessionResponse, any Swift.Error>) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Result",
+                            "printedName": "Swift.Result<UnisseySdk.SessionResponse, any Swift.Error>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "SessionResponse",
+                                "printedName": "UnisseySdk.SessionResponse",
+                                "usr": "s:10UnisseySdk15SessionResponseV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:s6ResultO"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10UnisseySdk0A9ViewModelC21onRecordEndedListenerys6ResultOyAA15SessionResponseVs5Error_pGcSgvs",
+                "mangledName": "$s10UnisseySdk0A9ViewModelC21onRecordEndedListenerys6ResultOyAA15SessionResponseVs5Error_pGcSgvs",
+                "moduleName": "UnisseySdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10UnisseySdk0A9ViewModelC21onRecordEndedListenerys6ResultOyAA15SessionResponseVs5Error_pGcSgvM",
+                "mangledName": "$s10UnisseySdk0A9ViewModelC21onRecordEndedListenerys6ResultOyAA15SessionResponseVs5Error_pGcSgvM",
+                "moduleName": "UnisseySdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currentPage",
+            "printedName": "currentPage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnisseyPage",
+                "printedName": "UnisseySdk.UnisseyPage",
+                "usr": "s:10UnisseySdk0A4PageO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10UnisseySdk0A9ViewModelC11currentPageAA0aF0Ovp",
+            "mangledName": "$s10UnisseySdk0A9ViewModelC11currentPageAA0aF0Ovp",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnisseyPage",
+                    "printedName": "UnisseySdk.UnisseyPage",
+                    "usr": "s:10UnisseySdk0A4PageO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10UnisseySdk0A9ViewModelC11currentPageAA0aF0Ovg",
+                "mangledName": "$s10UnisseySdk0A9ViewModelC11currentPageAA0aF0Ovg",
+                "moduleName": "UnisseySdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$currentPage",
+            "printedName": "$currentPage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<UnisseySdk.UnisseyPage>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10UnisseySdk0A9ViewModelC12$currentPage7Combine9PublishedV9PublisherVyAA0aF0O_Gvp",
+            "mangledName": "$s10UnisseySdk0A9ViewModelC12$currentPage7Combine9PublishedV9PublisherVyAA0aF0O_Gvp",
+            "moduleName": "UnisseySdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<UnisseySdk.UnisseyPage>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10UnisseySdk0A9ViewModelC12$currentPage7Combine9PublishedV9PublisherVyAA0aF0O_Gvg",
+                "mangledName": "$s10UnisseySdk0A9ViewModelC12$currentPage7Combine9PublishedV9PublisherVyAA0aF0O_Gvg",
+                "moduleName": "UnisseySdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(acquisitionPreset:sessionConfig:onStateChangedListener:onRecordEndedListener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnisseyViewModel",
+                "printedName": "UnisseySdk.UnisseyViewModel",
+                "usr": "s:10UnisseySdk0A9ViewModelC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AcquisitionPreset",
+                "printedName": "UnisseySdk.AcquisitionPreset",
+                "usr": "s:10UnisseySdk17AcquisitionPresetO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SessionConfig",
+                "printedName": "UnisseySdk.SessionConfig",
+                "hasDefaultArg": true,
+                "usr": "s:10UnisseySdk13SessionConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UnisseySdk.UnisseyEvent) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UnisseySdk.UnisseyEvent) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnisseyEvent",
+                        "printedName": "UnisseySdk.UnisseyEvent",
+                        "usr": "s:10UnisseySdk0A5EventO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Result<UnisseySdk.SessionResponse, any Swift.Error>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Result<UnisseySdk.SessionResponse, any Swift.Error>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Swift.Result<UnisseySdk.SessionResponse, any Swift.Error>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SessionResponse",
+                            "printedName": "UnisseySdk.SessionResponse",
+                            "usr": "s:10UnisseySdk15SessionResponseV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10UnisseySdk0A9ViewModelC17acquisitionPreset13sessionConfig22onStateChangedListener0i11RecordEndedL0AcA011AcquisitionF0O_AA07SessionH0VyAA0A5EventOcSgys6ResultOyAA0P8ResponseVs5Error_pGcSgtcfc",
+            "mangledName": "$s10UnisseySdk0A9ViewModelC17acquisitionPreset13sessionConfig22onStateChangedListener0i11RecordEndedL0AcA011AcquisitionF0O_AA07SessionH0VyAA0A5EventOcSgys6ResultOyAA0P8ResponseVs5Error_pGcSgtcfc",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "navigateUp",
+            "printedName": "navigateUp()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnisseySdk0A9ViewModelC10navigateUpyyF",
+            "mangledName": "$s10UnisseySdk0A9ViewModelC10navigateUpyyF",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startVideoCapture",
+            "printedName": "startVideoCapture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnisseySdk0A9ViewModelC17startVideoCaptureyyF",
+            "mangledName": "$s10UnisseySdk0A9ViewModelC17startVideoCaptureyyF",
+            "moduleName": "UnisseySdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10UnisseySdk0A9ViewModelC",
+        "mangledName": "$s10UnisseySdk0A9ViewModelC",
+        "moduleName": "UnisseySdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "UnisseySdk"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3949,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7425,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10283,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12879,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12923,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12971,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "StringLiteral",
+      "offset": 17859,
+      "length": 18,
+      "value": "\"VideoCaptureView\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "StringLiteral",
+      "offset": 18067,
+      "length": 64,
+      "value": "\"Video record ended with file path: '\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "StringLiteral",
+      "offset": 18129,
+      "length": 3,
+      "value": "\"'\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "StringLiteral",
+      "offset": 18169,
+      "length": 55,
+      "value": "\"An error occurred while recording the video: \""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "StringLiteral",
+      "offset": 18223,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18289,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "StringLiteral",
+      "offset": 18544,
+      "length": 26,
+      "value": "\"VideoCaptureViewPortrait\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "FloatLiteral",
+      "offset": 18948,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "FloatLiteral",
+      "offset": 18961,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 19038,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19073,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 19103,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "FloatLiteral",
+      "offset": 19136,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "StringLiteral",
+      "offset": 19192,
+      "length": 27,
+      "value": "\"VideoCaptureViewLandscape\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "FloatLiteral",
+      "offset": 19595,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "FloatLiteral",
+      "offset": 19608,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 19683,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19718,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 19748,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "FloatLiteral",
+      "offset": 19781,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/VideoCaptureView.swift",
+      "kind": "StringLiteral",
+      "offset": 19837,
+      "length": 15,
+      "value": "\"CameraLoading\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/FaceChecker.swift",
+      "kind": "FloatLiteral",
+      "offset": 1573,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/FaceChecker.swift",
+      "kind": "FloatLiteral",
+      "offset": 1778,
+      "length": 5,
+      "value": "-0.25"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/FaceChecker.swift",
+      "kind": "FloatLiteral",
+      "offset": 1985,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Model\/SessionConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 708,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Model\/SessionConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1502,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Model\/SessionConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1555,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Model\/SessionConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1623,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Components\/CircularLoadingBar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 132,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Components\/CircularLoadingBar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 626,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/VideoRecorder.swift",
+      "kind": "StringLiteral",
+      "offset": 230,
+      "length": 30,
+      "value": "\"com.unissey.sdk.SessionQueue\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/VideoRecorder.swift",
+      "kind": "StringLiteral",
+      "offset": 407,
+      "length": 41,
+      "value": "\"com.unissey.sdk.CaptureVideoOutputQueue\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/VideoRecorder.swift",
+      "kind": "Array",
+      "offset": 499,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/VideoRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1273,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/VideoRecorder.swift",
+      "kind": "FloatLiteral",
+      "offset": 1321,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/VideoRecorder.swift",
+      "kind": "FloatLiteral",
+      "offset": 1325,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/VideoRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16311,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/VideoRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16344,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/IadHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 604,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Domain\/IadHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 677,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/InstructionsView.swift",
+      "kind": "StringLiteral",
+      "offset": 2753,
+      "length": 25,
+      "value": "\"InstructionsViewEnglish\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/InstructionsView.swift",
+      "kind": "StringLiteral",
+      "offset": 2855,
+      "length": 24,
+      "value": "\"InstructionsViewFrench\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/InstructionsView.swift",
+      "kind": "StringLiteral",
+      "offset": 2993,
+      "length": 4,
+      "value": "\"fr\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/InstructionsView.swift",
+      "kind": "StringLiteral",
+      "offset": 3012,
+      "length": 17,
+      "value": "\"InstructionCard\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/InstructionsView.swift",
+      "kind": "StringLiteral",
+      "offset": 3088,
+      "length": 28,
+      "value": "\"UnisseyFaceExpressionPicto\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/InstructionsView.swift",
+      "kind": "StringLiteral",
+      "offset": 3131,
+      "length": 38,
+      "value": "\"unissey_instruction_plain_expression\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/InstructionsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3190,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Components\/Card.swift",
+      "kind": "IntegerLiteral",
+      "offset": 187,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Components\/Card.swift",
+      "kind": "BooleanLiteral",
+      "offset": 232,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Components\/Card.swift",
+      "kind": "BooleanLiteral",
+      "offset": 784,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Components\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 1014,
+      "length": 8,
+      "value": "\"Sample\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Components\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 1050,
+      "length": 6,
+      "value": "\"text\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Components\/Card.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1085,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/UnisseyView.swift",
+      "kind": "StringLiteral",
+      "offset": 4185,
+      "length": 64,
+      "value": "\"Video record ended with file path: '\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/UnisseyView.swift",
+      "kind": "StringLiteral",
+      "offset": 4247,
+      "length": 3,
+      "value": "\"'\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/UnisseyView.swift",
+      "kind": "StringLiteral",
+      "offset": 4287,
+      "length": 55,
+      "value": "\"An error occurred while recording the video: \""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/UnisseyView.swift",
+      "kind": "StringLiteral",
+      "offset": 4341,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/CameraPermissionView.swift",
+      "kind": "StringLiteral",
+      "offset": 2528,
+      "length": 29,
+      "value": "\"CameraPermissionViewEnglish\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/CameraPermissionView.swift",
+      "kind": "StringLiteral",
+      "offset": 2624,
+      "length": 28,
+      "value": "\"CameraPermissionViewFrench\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/CameraPermissionView.swift",
+      "kind": "StringLiteral",
+      "offset": 2756,
+      "length": 4,
+      "value": "\"fr\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Theme\/Color.swift",
+      "kind": "StringLiteral",
+      "offset": 50,
+      "length": 16,
+      "value": "\"UnisseyPrimary\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Theme\/Color.swift",
+      "kind": "StringLiteral",
+      "offset": 104,
+      "length": 18,
+      "value": "\"UnisseyOnPrimary\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Theme\/Color.swift",
+      "kind": "StringLiteral",
+      "offset": 160,
+      "length": 18,
+      "value": "\"UnisseySecondary\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Theme\/Color.swift",
+      "kind": "StringLiteral",
+      "offset": 225,
+      "length": 27,
+      "value": "\"UnisseyLoadingProgressBar\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Theme\/Color.swift",
+      "kind": "StringLiteral",
+      "offset": 291,
+      "length": 19,
+      "value": "\"UnisseyBackground\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Theme\/Color.swift",
+      "kind": "StringLiteral",
+      "offset": 351,
+      "length": 21,
+      "value": "\"UnisseyOnBackground\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Theme\/Color.swift",
+      "kind": "StringLiteral",
+      "offset": 408,
+      "length": 16,
+      "value": "\"UnisseySurface\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Theme\/Color.swift",
+      "kind": "StringLiteral",
+      "offset": 462,
+      "length": 18,
+      "value": "\"UnisseyOnSurface\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Theme\/Color.swift",
+      "kind": "StringLiteral",
+      "offset": 523,
+      "length": 23,
+      "value": "\"UnisseySurfaceVariant\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Theme\/Color.swift",
+      "kind": "StringLiteral",
+      "offset": 591,
+      "length": 25,
+      "value": "\"UnisseyOnSurfaceVariant\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Theme\/Color.swift",
+      "kind": "StringLiteral",
+      "offset": 662,
+      "length": 26,
+      "value": "\"UnisseyOverlayBackground\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Utils\/PreviewUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5715,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Utils\/PreviewUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5747,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Utils\/PreviewUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5777,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Model\/WindowInformation.swift",
+      "kind": "FloatLiteral",
+      "offset": 201,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Model\/WindowInformation.swift",
+      "kind": "FloatLiteral",
+      "offset": 205,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Model\/WindowInformation.swift",
+      "kind": "FloatLiteral",
+      "offset": 315,
+      "length": 4,
+      "value": "0.22"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Model\/WindowInformation.swift",
+      "kind": "FloatLiteral",
+      "offset": 416,
+      "length": 4,
+      "value": "0.09"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Model\/WindowInformation.swift",
+      "kind": "FloatLiteral",
+      "offset": 503,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Utils\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 103,
+      "length": 17,
+      "value": "\"com.unissey.sdk\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Utils\/Extensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7715,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Model\/VideoMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 475,
+      "length": 7,
+      "value": "\"Apple\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/UnisseyViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 805,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/UnisseyViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 854,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/UnisseyViewModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 913,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/UnisseyViewModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 926,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Views\/UnisseyViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 976,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Components\/LargeButton.swift",
+      "kind": "StringLiteral",
+      "offset": 760,
+      "length": 24,
+      "value": "\"unissey_continue_label\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Components\/LargeButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 817,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Components\/LocalizedText.swift",
+      "kind": "IntegerLiteral",
+      "offset": 169,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Components\/LocalizedText.swift",
+      "kind": "StringLiteral",
+      "offset": 371,
+      "length": 29,
+      "value": "\"unissey_video_capture_title\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Components\/LocalizedText.swift",
+      "kind": "IntegerLiteral",
+      "offset": 409,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Documents\/Git\/sdk-ios\/sdk\/sdk\/Ui\/Components\/LocalizedText.swift",
+      "kind": "IntegerLiteral",
+      "offset": 431,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 642,
+      "length": 19,
+      "value": "\"UnisseyBackground\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 821,
+      "length": 27,
+      "value": "\"UnisseyLoadingProgressBar\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 996,
+      "length": 21,
+      "value": "\"UnisseyOnBackground\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1159,
+      "length": 18,
+      "value": "\"UnisseyOnPrimary\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1319,
+      "length": 18,
+      "value": "\"UnisseyOnSurface\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1493,
+      "length": 25,
+      "value": "\"UnisseyOnSurfaceVariant\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1676,
+      "length": 26,
+      "value": "\"UnisseyOverlayBackground\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1840,
+      "length": 16,
+      "value": "\"UnisseyPrimary\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2012,
+      "length": 25,
+      "value": "\"UnisseyPrimaryContainer\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2179,
+      "length": 18,
+      "value": "\"UnisseySecondary\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2335,
+      "length": 16,
+      "value": "\"UnisseySurface\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2503,
+      "length": 23,
+      "value": "\"UnisseySurfaceVariant\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2793,
+      "length": 28,
+      "value": "\"UnisseyFaceExpressionPicto\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2973,
+      "length": 23,
+      "value": "\"UnisseyFaceLightPicto\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3154,
+      "length": 26,
+      "value": "\"UnisseyFacePositionPicto\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3302,
+      "length": 8,
+      "value": "\"ZoomIn\""
+    },
+    {
+      "filePath": "\/Users\/pfrancois\/Library\/Developer\/Xcode\/DerivedData\/sdk-gvfzzxdmkucxypcvfoqjostblyon\/Build\/Intermediates.noindex\/ArchiveIntermediates\/sdk\/IntermediateBuildFilesPath\/sdk.build\/Release-iphoneos\/UnisseySdk.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3434,
+      "length": 9,
+      "value": "\"ZoomOut\""
+    }
+  ]
+}

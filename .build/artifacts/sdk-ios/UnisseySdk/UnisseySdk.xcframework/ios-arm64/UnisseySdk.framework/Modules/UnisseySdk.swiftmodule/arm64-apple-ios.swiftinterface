@@ -1,0 +1,135 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature AccessLevelOnImport -enable-bare-slash-regex -module-name UnisseySdk
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AVFoundation
+import Combine
+import CoreGraphics
+import CoreMotion
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import VideoToolbox
+import Vision
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+
+
+
+
+public struct SessionConfig {
+  public init(recordingConfig: UnisseySdk.RecordingConfig = RecordingConfig(), uiConfig: UnisseySdk.UiConfig = UiConfig(), iadConfig: UnisseySdk.IadConfig = IadConfig())
+}
+public struct RecordingConfig {
+  public init(recordingDurationMs: Swift.Int? = nil, qualities: [UnisseySdk.VideoQuality]? = nil, enableFaceChecker: Swift.Bool = true)
+}
+public struct UiConfig {
+  public init(preferredLanguage: Swift.String? = nil, showInstructions: Swift.Bool = true, showVideoCaptureButton: Swift.Bool = true, showWideWindowPreviewInputsToTheRight: Swift.Bool = true, buttonCornerRadius: Swift.Float? = nil)
+}
+public struct IadConfig {
+  public init(data: Swift.String? = nil)
+}
+
+public struct SessionResponse {
+  public let videoFilePath: Foundation.URL
+  public let metadata: Swift.String
+}
+public enum AcquisitionPreset {
+  case selfieFast
+  case selfieSubstantial
+  public static func == (a: UnisseySdk.AcquisitionPreset, b: UnisseySdk.AcquisitionPreset) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum VideoQuality {
+  case sd
+  case hd
+  public static func == (a: UnisseySdk.VideoQuality, b: UnisseySdk.VideoQuality) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public var unisseyHeadline: SwiftUICore.Font
+public var unisseyTitle: SwiftUICore.Font
+public var unisseyBody: SwiftUICore.Font
+public var unisseyLabel: SwiftUICore.Font
+
+
+
+
+public enum UnisseyPage {
+  case instructions
+  case cameraPermission
+  case videoCapture
+  public static func == (a: UnisseySdk.UnisseyPage, b: UnisseySdk.UnisseyPage) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum UnisseyEvent {
+  case instructionsShown
+  case cameraPermissionShown
+  case cameraPermissionRequested
+  case cameraPermissionAccepted
+  case cameraPermissionDenied
+  case cameraPreviewShown
+  case cameraReady
+  case videoCaptureStarted
+  case videoRecordStarted
+  case videoRecordProgress(progress: Swift.Float)
+  case videoRecordEnded
+}
+@_Concurrency.MainActor @preconcurrency public struct UnisseyView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(unisseyViewModel: UnisseySdk.UnisseyViewModel)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10UnisseySdk0A4ViewV4bodyQrvp", 0) __
+}
+
+
+
+public var unisseyPrimary: SwiftUICore.Color
+public var unisseyOnPrimary: SwiftUICore.Color
+public var unisseySecondary: SwiftUICore.Color
+public var unisseyLoadingProgressBar: SwiftUICore.Color
+public var unisseyBackground: SwiftUICore.Color
+public var unisseyOnBackground: SwiftUICore.Color
+public var unisseySurface: SwiftUICore.Color
+public var unisseyOnSurface: SwiftUICore.Color
+public var unisseySurfaceVariant: SwiftUICore.Color
+public var unisseyOnSurfaceVariant: SwiftUICore.Color
+public var unisseyOverlayBackground: SwiftUICore.Color
+public typealias OnStateChangedListener = (UnisseySdk.UnisseyEvent) -> Swift.Void
+public typealias OnRecordEndedListener = (Swift.Result<UnisseySdk.SessionResponse, any Swift.Error>) -> Swift.Void
+public class UnisseyViewModel : Combine.ObservableObject {
+  public var onStateChangedListener: UnisseySdk.OnStateChangedListener?
+  public var onRecordEndedListener: UnisseySdk.OnRecordEndedListener?
+  @Combine.Published @_projectedValueProperty($currentPage) public var currentPage: UnisseySdk.UnisseyPage {
+    get
+  }
+  public var $currentPage: Combine.Published<UnisseySdk.UnisseyPage>.Publisher {
+    get
+  }
+  public init(acquisitionPreset: UnisseySdk.AcquisitionPreset, sessionConfig: UnisseySdk.SessionConfig = SessionConfig(), onStateChangedListener: UnisseySdk.OnStateChangedListener? = nil, onRecordEndedListener: UnisseySdk.OnRecordEndedListener? = nil)
+  public func navigateUp()
+  public func startVideoCapture()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+
+
+extension UnisseySdk.AcquisitionPreset : Swift.Equatable {}
+extension UnisseySdk.AcquisitionPreset : Swift.Hashable {}
+extension UnisseySdk.VideoQuality : Swift.Equatable {}
+extension UnisseySdk.VideoQuality : Swift.Hashable {}
+extension UnisseySdk.UnisseyPage : Swift.Equatable {}
+extension UnisseySdk.UnisseyPage : Swift.Hashable {}
+extension UnisseySdk.UnisseyView : Swift.Sendable {}
