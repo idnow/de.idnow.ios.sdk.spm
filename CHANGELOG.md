@@ -1,5 +1,12 @@
 ## Changelog
 
+### v5.15.0 Latest
+Updated bank transfer component
+
+### v5.14.0
+- iOS 26 compatibility improvements
+- Updated Liveness component
+
 ### v5.13.2
 - UI Bug fixes
 
