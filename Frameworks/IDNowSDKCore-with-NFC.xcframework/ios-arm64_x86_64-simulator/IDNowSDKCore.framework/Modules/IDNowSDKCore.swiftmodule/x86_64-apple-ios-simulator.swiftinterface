@@ -348,7 +348,6 @@ public enum IDNowSDKFeature {
   public var shouldShowUnisseyInstruction: Swift.Bool
   public var shouldShowUnisseyVideoButton: Swift.Bool
   public var recordingDurationUnissey: Swift.Int
-  public var shouldPassportSignature: Swift.Bool
   public var removeSigningApprovalPhrasesCheckboxes: Swift.Bool
   public func setIntroData(_ data: [IDNowSDKCore.IntroItem])
   public func getIntroData() -> [IDNowSDKCore.IntroItem]
@@ -379,7 +378,6 @@ public enum IDNowSDKFeature {
   public func setTensorFlowDetectionTimeOut(value: Swift.Int)
   public func getTensorFlowQualityCheckTimeOut() -> Swift.Double
   public func setTensorFlowQualityCheckTimeOut(value: Swift.Int)
-  public func setPassportSignature(value: Swift.Bool)
   public func removeSigningApprovalPhrasesCheckboxes(value: Swift.Bool)
   public func reset()
   @objc override dynamic public init()
