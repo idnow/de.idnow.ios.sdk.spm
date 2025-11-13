@@ -1,6 +1,11 @@
 ## Changelog
 
-### v5.15.0 Latest
+### v5.16.0 Latest
+- Manual capture mode for 2nd page Signature Capture feature (Frontend only)
+- Support for new config to remove checkboxes in Signing screen for IDnow QTSP
+- Compatibility with Xcode 26
+
+### v5.15.0
 - Updated bank transfer component
 
 ### v5.14.0
