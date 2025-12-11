@@ -382,7 +382,7 @@
 		</data>
 		<key>IDNowProgressbarTitleMessageBottomView.nib</key>
 		<data>
-		0PgBNsS69GRxWotzFlkdAcbN+Nc=
+		lMg2fExery33egPd+swOI97cZ10=
 		</data>
 		<key>IDNowQESApprovalPhrasesOverlayView.nib</key>
 		<data>
@@ -494,11 +494,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Bt/1sZ/q/pRs0g7zguQS3c0wBFE=
+		VNNsLQwUuks+sp9Z4KSxTK/SwTc=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		qZNohdgXDPUbRVNadm6hL2cVgL8=
+		Sf4kwXTMUoc3JgRG8fe7tv9Upqc=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -518,7 +518,7 @@
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		qZNohdgXDPUbRVNadm6hL2cVgL8=
+		Sf4kwXTMUoc3JgRG8fe7tv9Upqc=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -3215,7 +3215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g4zP6eBPF7GWQ+MPxs5GRstl8XIfOT41QB2XEF1NrD8=
+			AP0tO2jspJwnwfAzLgywlq8poJZfbDA7J81WgXFoPBY=
 			</data>
 		</dict>
 		<key>IDNowQESApprovalPhrasesOverlayView.nib</key>
@@ -3411,7 +3411,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w+ltYpcrxfb9qGX1DzAHc7209SrNoJeaUc7U3GP6Wy0=
+			yWhxfTABKzmqSLY8/nVWeZ9uC4mCCjfb5JBXO3yuhN8=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -3446,7 +3446,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w+ltYpcrxfb9qGX1DzAHc7209SrNoJeaUc7U3GP6Wy0=
+			yWhxfTABKzmqSLY8/nVWeZ9uC4mCCjfb5JBXO3yuhN8=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
