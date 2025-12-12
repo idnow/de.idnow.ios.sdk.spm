@@ -1,6 +1,13 @@
 ## Changelog
 
-### v5.16.0 Latest
+### v5.17.0 Latest
+- Improve logging for failed NFC sessions
+- Improvement to Passport 2nd page signature capture feature
+- Added progress bar in the Security Features step
+- Fixed issues with document manual capture
+- Bug fixes
+
+### v5.16.0
 - Manual capture mode for 2nd page Signature Capture feature (Frontend only)
 - Support for new config to remove checkboxes in Signing screen for IDnow QTSP
 - Compatibility with Xcode 26
