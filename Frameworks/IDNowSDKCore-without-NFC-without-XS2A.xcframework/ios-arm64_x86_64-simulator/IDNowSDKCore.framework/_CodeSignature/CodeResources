@@ -494,11 +494,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VNNsLQwUuks+sp9Z4KSxTK/SwTc=
+		s9vDxY2cvnjpiblYpYZ969d6Vw0=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Sf4kwXTMUoc3JgRG8fe7tv9Upqc=
+		lN9R7nTZvAmqvhAd2g8od+TaOLs=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -514,11 +514,11 @@
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JQrmObH0bld+WxfRT2PF4Hjp0KM=
+		bPbJgVfs1kJluw4PrsHg9Wp3QfM=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Sf4kwXTMUoc3JgRG8fe7tv9Upqc=
+		lN9R7nTZvAmqvhAd2g8od+TaOLs=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -534,7 +534,7 @@
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EYOlw/7knXeWZ/J+1oOBtjBMf78=
+		01VdampkM0HZjhhzlZEp1V3uWzA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -3411,7 +3411,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yWhxfTABKzmqSLY8/nVWeZ9uC4mCCjfb5JBXO3yuhN8=
+			rz+5mcFYp35im3WGMZgLedrEChn0UzvbhQPheRcpyfc=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -3439,14 +3439,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vrJSACXmg2KrT6V/q4EBfEXOEf6LLJ4ScYo/dLDnJf0=
+			A8eW8BoNZpnh04CgbUAU/BAFZ6hY8d6cDHN6P8AADDo=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yWhxfTABKzmqSLY8/nVWeZ9uC4mCCjfb5JBXO3yuhN8=
+			rz+5mcFYp35im3WGMZgLedrEChn0UzvbhQPheRcpyfc=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -3474,7 +3474,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LD9F7PlZiwS4jvjoX48qjWjqymZpP8fgJihdydK//T8=
+			M4VW8xokZJ6yXKd3rS21WYMMPeqSwzqyb03/nmfs/fk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
