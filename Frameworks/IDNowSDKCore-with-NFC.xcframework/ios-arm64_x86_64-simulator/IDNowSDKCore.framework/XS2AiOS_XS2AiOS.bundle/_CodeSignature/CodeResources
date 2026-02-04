@@ -12,15 +12,11 @@
 		<data>
 		AL1dh5ctObXBjoBiabSJ86M3HQs=
 		</data>
-		<key>ResultCell.nib</key>
-		<data>
-		Fp3TninDnucHqCxCcuDQAjmaiG8=
-		</data>
 		<key>de.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K2kx7GeJvxYD0gDplg8hpuUBnZo=
+			p+238rr7PAZAMwQzk8YwDpTZLJQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -29,7 +25,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y0+LaEO13pHytV+8Yxh3P3hJQo8=
+			Ok27bdfLHHLZDqzgviktZxm1HkM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -38,7 +34,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xyPzXs3o70PPlo9/JkpKToEWGjI=
+			Ir0tLk3mqGZyr7TG7cxxAQYn30c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -47,7 +43,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x0e5y4RgnsNJadBqQfSHDZBoAPk=
+			7g/ON2immoxpkoNhScWMsUgvv7Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -56,7 +52,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wXhEv71c7I8gJNB0np0J0ct9S/U=
+			48YjNS63gNsuG9SdkWO5KMDCKkM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -78,18 +74,11 @@
 			WpuPwM3bECAbtHzCgEs/AExyUUdmItJb/E61TtRuEIQ=
 			</data>
 		</dict>
-		<key>ResultCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			avk7CdXvtJvOi9Si3rsCwf3brjGELTseOBdR4y+Tre8=
-			</data>
-		</dict>
 		<key>de.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xCp8gDEzDb91DHLw4rY+VRkKvkmwAUXeNt45RJr3aBU=
+			iNX+vItEPXE710tOEi/BoGyl1SVJWoPvoeeO3OcAlsI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -98,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ePN8qQ5fYmuiiTujZDxnBbeoo822ueVGZKNRJEPaZGk=
+			VH8WRnjPlYug01dc01PHlx0sSBLUm84wlgfjI0SKE2o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -107,7 +96,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GpKJhLG4xwPI03KXPiOl9ZbmFAqQjctAOrnrNvB8mH0=
+			r3hqjiXpbGbiZu9xjDJKd8hrQEuaMHUkRH8oaItkdyQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -116,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nn5UOwW+UkyXCbgrZHJkfMllkyPsuviokzE+Vl0iGRo=
+			QGvIYYG9TebMtjXyoBap12EiFju5GIy9gS6NdYxCM6A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -125,7 +114,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x0sQsVq9jrdKoUZZy9//YtcfkjyKCSfqQhaCkdMrI7I=
+			oXWncOKFKX+YW4TamGc7zH1kEju08UBKivX0P14mjGw=
 			</data>
 			<key>optional</key>
 			<true/>
