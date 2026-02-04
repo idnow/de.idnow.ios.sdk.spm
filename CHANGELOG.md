@@ -1,6 +1,11 @@
 ## Changelog
 
-### v5.17.0 Latest
+### v5.18.0 Latest
+- Updated NFC scanning component
+- Fix for FR ID Card
+- Updated Bank Transfer component
+
+### v5.17.0
 - Improve logging for failed NFC sessions
 - Improvement to Passport 2nd page signature capture feature
 - Added progress bar in the Security Features step
