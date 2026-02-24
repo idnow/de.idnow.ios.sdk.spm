@@ -61,8 +61,8 @@ By leveraging the NFC capability (Near Field Communication), our SDK can now rea
 We support ICAO 9303 documents (passports, ID cards, residence permits): please contact IDnow for more information.
 
 * Add swift package: `https://github.com/idnow/de.idnow.ios.sdk.spm` as a dependency
-* Put ReadID_UI.xcframework in the app folder (please reach out to IDnow to obtain the ReadID xcframeworks)
-* XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add ReadID_UI.xcframework and and check Embed and Sign.
+* Put IDNowSDKCore-with-NFC.xcframework in the app folder (please reach out to IDnow to obtain the ReadID xcframeworks)
+* XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add IDNowSDKCore-with-NFC.xcframework and and check Embed and Sign.
 * On the Signing & Capabilities configuration tab add the Capability ‘Near Field Communication Tag Reading’
 * Add ‘NFCReaderUsageDescription’ to your App’s Info.plist file 
 * Copy the snippet below into your App’s Info.plist file 
