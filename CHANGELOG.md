@@ -1,6 +1,16 @@
 ## Changelog
 
-### v5.18.0 Latest
+### 5.19.1
+- Updated Bank Transfer component
+
+### 5.19.0
+- Greek (GR) language support for Liveness component
+- Updated FaceTec liveness component
+- Improved PDF handling in Signing step for in-app PDF viewer
+- UI consistency fixes across multiple screens
+- Layout/UI fixes for small-screen devices
+
+### v5.18.0
 - Updated NFC scanning component
 - Fix for FR ID Card
 - Updated Bank Transfer component
