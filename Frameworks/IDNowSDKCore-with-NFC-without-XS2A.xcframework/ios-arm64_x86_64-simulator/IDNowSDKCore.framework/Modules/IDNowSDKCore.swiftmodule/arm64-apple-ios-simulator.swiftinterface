@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name IDNowSDKCore
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name IDNowSDKCore
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
 import AVFoundation
 import Accelerate
 import Combine
@@ -27,6 +27,7 @@ import SwiftUI
 import SystemConfiguration
 import UIKit
 import UniformTypeIdentifiers
+import UnisseyHeadlessSdk
 import UnisseySdk
 import WebKit
 import _Concurrency
@@ -38,9 +39,7 @@ import zlib
 }
 public enum Platform : Swift.String, Swift.Codable {
   case UNKNOWN, IOS_IDNOW, IOS_SDK
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -55,9 +54,7 @@ extension IDNowSDKCore.Platform {
   @objc deinit
 }
 extension Swift.Dictionary where Key == Swift.AnyHashable, Value == Any? {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getObject(key: Swift.String) -> IDNowSDKCore.UnpackedObject?
-  #endif
 }
 extension Swift.Float {
   public mutating func map(from: IDNowSDKCore.UnpackedObject, key: Swift.String)
@@ -82,9 +79,7 @@ extension Swift.Int {
   @objc deinit
 }
 extension UIKit.UIFont {
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func register(from url: Foundation.URL) throws -> Swift.String?
-  #endif
 }
 infix operator +| : DefaultPrecedence
 infix operator +- : DefaultPrecedence
@@ -106,9 +101,7 @@ public typealias UnpackedObject = [Swift.AnyHashable : Any?]
 }
 public enum DocumentType : Swift.String, Swift.Codable, Swift.CaseIterable {
   case PASSPORT, IDCARD, DRIVERS_LICENSE, DRIVERS_LICENSE_PAPER, RESIDENCE_PERMIT, RESIDENCE_PERMIT_PAPER, IDCARD_PAPER, UNKNOWN
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias AllCases = [IDNowSDKCore.DocumentType]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [IDNowSDKCore.DocumentType] {
@@ -144,9 +137,7 @@ extension IDNowSDKCore.DocumentType {
 }
 public enum ServiceState : Swift.String, Swift.Codable {
   case INITIAL, STARTED, PREPARE_FOR_RUNNING, RUNNING, WAITING_FOR_INPUT, RESPONSE_RECEIVED, SUCCESS, ADDITIONAL_STEPS_REQUIRED, FAILURE, STOPPED
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -167,14 +158,10 @@ extension UIKit.UIImage {
   @objc deinit
 }
 extension Foundation.Data {
-  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public mutating func pack(_ objects: Any?...) throws -> Foundation.Data
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public mutating func pack(_ obj: Any?) throws -> Foundation.Data
-  #endif
   @discardableResult
   public mutating func pack(boolean bool: Swift.Bool) throws -> Foundation.Data
 }
@@ -187,22 +174,12 @@ extension UIKit.UIImageView {
   @_Concurrency.MainActor @preconcurrency public func loadGif(asset: Swift.String)
 }
 extension UIKit.UIImage {
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func loadGifInfo(data: Foundation.Data) -> (duration: Swift.Int, images: [UIKit.UIImage])?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func gif(data: Foundation.Data) -> UIKit.UIImage?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func gif(url: Swift.String) -> UIKit.UIImage?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func gif(name: Swift.String) -> UIKit.UIImage?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 9.0, *)
   public class func gif(asset: Swift.String) -> UIKit.UIImage?
-  #endif
 }
 @_hasMissingDesignatedInitializers public class ClassificationResponsePayload {
   @objc deinit
@@ -221,12 +198,8 @@ public protocol IDNowFinishDelegate {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class EsigningGetApprovalPhrasesResponsePayload {
@@ -268,7 +241,6 @@ public protocol IDNowSDKEventListener : AnyObject {
   public func packed() -> Foundation.Data
   @objc deinit
 }
-infix operator ~= : DefaultPrecedence
 @_hasMissingDesignatedInitializers public class FaceTecLivenessRequestPayload {
   public func packed() -> Foundation.Data
   @objc deinit
@@ -344,6 +316,7 @@ public enum MsgPackType : Swift.CustomStringConvertible {
   public func packed() -> Foundation.Data
   @objc deinit
 }
+infix operator ~= : DefaultPrecedence
 @_hasMissingDesignatedInitializers public class ManualClassificationResponsePayload {
   @objc deinit
 }
@@ -383,17 +356,11 @@ public enum IDNowSDKFeature {
   public func enableFeature(feature: IDNowSDKCore.IDNowSDKFeature)
   public func disableFeature(feature: IDNowSDKCore.IDNowSDKFeature)
   public func isEnabled(feature: IDNowSDKCore.IDNowSDKFeature) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getSuccessURL() -> Swift.String?
-  #endif
   public func setSuccessURL(url: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getFailureURL() -> Swift.String?
-  #endif
   public func setFailureURL(url: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getRedirectLink() -> Swift.String?
-  #endif
   public func setRedirectLink(url: Swift.String)
   public func getSessionTimeout() -> Swift.Int
   public func setSessionTimeout(value: Swift.Int)
@@ -435,9 +402,7 @@ public typealias IDNowSDKResultListener = (IDNowSDKCore.IDNowSDK.IdentResult.typ
   @_inheritsConvenienceInitializers @objc public class IdentResult : ObjectiveC.NSObject {
     @objc public enum type : Swift.Int {
       case FINISHED, CANCELLED, ERROR
-      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: Swift.Int)
-      #endif
       public typealias RawValue = Swift.Int
       public var rawValue: Swift.Int {
         get
@@ -448,9 +413,7 @@ public typealias IDNowSDKResultListener = (IDNowSDKCore.IDNowSDK.IdentResult.typ
       public var description: Swift.String {
         get
       }
-      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: Swift.Int)
-      #endif
       public typealias RawValue = Swift.Int
       public var rawValue: Swift.Int {
         get
@@ -461,9 +424,7 @@ public typealias IDNowSDKResultListener = (IDNowSDKCore.IDNowSDK.IdentResult.typ
   }
   @objc public static let shared: IDNowSDKCore.IDNowSDK
   weak public var eventListener: (any IDNowSDKCore.IDNowSDKEventListener)?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func start(token: Swift.String, isUnified: Swift.Bool = false, isRoutedSession: Swift.Bool = false, preferredLanguage: Swift.String = "", bindingKey: Swift.String? = nil, fromViewController: UIKit.UIViewController, listener: @escaping IDNowSDKCore.IDNowSDKResultListener)
-  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -522,9 +483,7 @@ extension Foundation.NSData {
   @objc deinit
 }
 extension Foundation.Data {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func unpack() throws -> Any?
-  #endif
 }
 @_hasMissingDesignatedInitializers public class DocumentSupportsNfcRequestPayload {
   public func packed() -> Foundation.Data

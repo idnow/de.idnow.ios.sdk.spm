@@ -27,6 +27,7 @@ import SwiftUI
 import SystemConfiguration
 import UIKit
 import UniformTypeIdentifiers
+import UnisseyHeadlessSdk
 import UnisseySdk
 import WebKit
 import _Concurrency
