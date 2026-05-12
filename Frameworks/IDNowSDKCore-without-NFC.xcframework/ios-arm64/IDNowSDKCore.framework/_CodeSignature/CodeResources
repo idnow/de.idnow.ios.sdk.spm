@@ -22,7 +22,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		XJnbCY/FYr+FZ3RU9Otn/TyxE8Y=
+		iDUvu8IQoXyM8kCc8dF1B3iCAnw=
 		</data>
 		<key>BANK_DOC_nocopy.json</key>
 		<data>
@@ -302,7 +302,7 @@
 		</data>
 		<key>IDNowIntroViewController.nib</key>
 		<data>
-		3/iiCoga3YIfy73LHaXSqDRmsiY=
+		QeGWEoTAFyJwXI4Wo31JLHunTyI=
 		</data>
 		<key>IDNowLivenessFaceMaskOverlay.nib</key>
 		<data>
@@ -386,7 +386,7 @@
 		</data>
 		<key>IDNowQESApprovalPhrasesOverlayView.nib</key>
 		<data>
-		5586lMgLgOpYM0JYE8s65TvhPVw=
+		qCWBfznmpLX4aEtranABGh1IQnE=
 		</data>
 		<key>IDNowResultOverlay.nib</key>
 		<data>
@@ -412,7 +412,7 @@
 		<data>
 		MFgnvRv730XIYrIstQyZq28KEMI=
 		</data>
-		<key>IDNowStageInstructionsOverlay.nib</key>
+		<key>IDNowStageINstructionsOverlay.nib</key>
 		<data>
 		WOL1z9C5sKUUOiHeNKKE8yALe6Q=
 		</data>
@@ -494,27 +494,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nOnbBxmgH9gXnk5J0DD+l8OuNn8=
+		71xw5iD97RXSQfHoLkogI1ImW+8=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		hSQ0heJx8/FyTbvhHHCrj8+q1Iw=
+		asxO7nCZeuLWLu5YQbGvYn/SS+E=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		w8wRZnnU/LtkEMmzsS1CngSfQV4=
+		vWIaByIkEcqgpwcB/HI4tXOTIDI=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		74TbHOiRAJRZx9LZ3T+xFAfnMh8=
+		pnYKn2ep6PeysmVSGIv/rmdaJtM=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		w8wRZnnU/LtkEMmzsS1CngSfQV4=
+		vWIaByIkEcqgpwcB/HI4tXOTIDI=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		OI0GnikTfroeo/ycTgw+ZK7Kk3g=
+		k7vs6CM+k9px/7bzZ7jwpmOP3XM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2574,7 +2574,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z5lSAJo3fa5WGK+I9T9gJm9nxROPd8gQJQqEsqtJ+FY=
+			ZAyx/qeECzMQRUa75WFfO9A32IOcpBrgwRs3U+qYXEA=
 			</data>
 		</dict>
 		<key>BANK_DOC_nocopy.json</key>
@@ -3064,7 +3064,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h/kGRxn+NsDGm6pl+78ydJF7yPLE1wFN9Cg3uMPQJ0A=
+			DLVJ8GBa9U0/uJJ60nY5/7h4tIq7RI3IJLmatecgA00=
 			</data>
 		</dict>
 		<key>IDNowLivenessFaceMaskOverlay.nib</key>
@@ -3211,7 +3211,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YPMM7SKYCdY5Yq/X21rNHRsvIupMHbFOcUL7ljena94=
+			gnJGZdHjQFNixcmf4yUEsZfUc7XaGlJkoicbLF36D5M=
 			</data>
 		</dict>
 		<key>IDNowResultOverlay.nib</key>
@@ -3256,7 +3256,7 @@
 			MU7NXvrPu3MD4vjV+GJZiwSIjx7PoX0UhJKw2qzDzIk=
 			</data>
 		</dict>
-		<key>IDNowStageInstructionsOverlay.nib</key>
+		<key>IDNowStageINstructionsOverlay.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -3400,35 +3400,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bxSAAo+1tOzSftwcWA/5dII1sBTw+X1+bt6nebQGtYA=
+			xBh0pTBI7XeN2yXEDGZvr6UtAqI+Iipa0x8CokDxVVE=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			liSnqij+8YXlj/IDnbko+yfBliYp2yC06manHkLTxvk=
+			Yxmqesjj6uV75D6XlZP6E3JAib3/eavsDrMsbNXZr9k=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r33XPgWg4usUjfmzFeVETvVF75eDhgpzDAkW9mQo5Fc=
+			RU6wNh3dLeudrN4J4yXlVqDAVTDhPvUlM+wHB096oXY=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			liSnqij+8YXlj/IDnbko+yfBliYp2yC06manHkLTxvk=
+			Yxmqesjj6uV75D6XlZP6E3JAib3/eavsDrMsbNXZr9k=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hmnzWBg5N0QEMEnG/Qlibo7BaSfEDu9XfNroS1LzA5U=
+			S9HQJd7q+ifMGX4oq+h/lNfcF1sBCxy+PUN8zYnQPe0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

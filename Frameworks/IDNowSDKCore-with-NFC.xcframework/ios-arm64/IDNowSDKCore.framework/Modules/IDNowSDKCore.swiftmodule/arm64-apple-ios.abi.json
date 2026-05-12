@@ -1949,6 +1949,13 @@
       },
       {
         "kind": "Import",
+        "name": "UnisseyHeadlessSdk",
+        "printedName": "UnisseyHeadlessSdk",
+        "declKind": "Import",
+        "moduleName": "IDNowSDKCore"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -5086,6 +5093,13 @@
       },
       {
         "kind": "Import",
+        "name": "UnisseyHeadlessSdk",
+        "printedName": "UnisseyHeadlessSdk",
+        "declKind": "Import",
+        "moduleName": "IDNowSDKCore"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -5130,8 +5144,22 @@
       },
       {
         "kind": "Import",
+        "name": "UnisseyHeadlessSdk",
+        "printedName": "UnisseyHeadlessSdk",
+        "declKind": "Import",
+        "moduleName": "IDNowSDKCore"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "IDNowSDKCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "IDNowSDKCore"
       },
@@ -5154,6 +5182,13 @@
       },
       {
         "kind": "Import",
+        "name": "UnisseyHeadlessSdk",
+        "printedName": "UnisseyHeadlessSdk",
+        "declKind": "Import",
+        "moduleName": "IDNowSDKCore"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -5171,8 +5206,22 @@
       },
       {
         "kind": "Import",
+        "name": "UnisseyHeadlessSdk",
+        "printedName": "UnisseyHeadlessSdk",
+        "declKind": "Import",
+        "moduleName": "IDNowSDKCore"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "IDNowSDKCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "IDNowSDKCore"
       },
@@ -30600,42 +30649,42 @@
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/Unissey\/IDNowUnisseyInstructionsOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 377,
+      "offset": 322,
       "length": 37,
       "value": "\"IDNowUnisseyInstructionsOverlayView\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/Unissey\/IDNowUnisseyInstructionsOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 1399,
+      "offset": 1385,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/Unissey\/IDNowUnisseyInstructionsOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 1452,
+      "offset": 1447,
       "length": 12,
       "value": "\"videoQueue\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/Unissey\/IDNowUnisseyInstructionsOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 10629,
+      "offset": 10211,
       "length": 13,
       "value": "\"generateiAD\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/Unissey\/IDNowUnisseyInstructionsOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 10691,
+      "offset": 10273,
       "length": 13,
       "value": "\"initUnissey\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/Unissey\/IDNowUnisseyInstructionsOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 10761,
+      "offset": 10343,
       "length": 21,
       "value": "\"initUnisseyDirectly\""
     },
@@ -38422,6 +38471,20 @@
       "offset": 660,
       "length": 12,
       "value": "\".{3}-.{5}$\""
+    },
+    {
+      "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Networking\/IDNowEndpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 707,
+      "length": 17,
+      "value": "\".{3}-.{7}-.{3}$\""
+    },
+    {
+      "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Networking\/IDNowEndpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 757,
+      "length": 17,
+      "value": "\".{3}-.{6}-.{2}$\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/lottie-ios\/Private\/Model\/Objects\/Mask.swift",

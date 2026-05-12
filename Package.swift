@@ -34,7 +34,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/unissey/sdk-ios.git", "4.0.0" ..< "4.0.1")
+        .package(url: "https://github.com/unissey/sdk-ios.git", "5.0.0" ..< "5.0.1")
     ],
     targets: [
         // MARK: - Binary SDKs
