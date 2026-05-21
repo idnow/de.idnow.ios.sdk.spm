@@ -182,6 +182,17 @@ In the case of IDNowSDK.IdentResult.type.ERROR, the possible error codes are bel
 * For E170 it is recommended to notify the user that the ident process timed out or was started on a different device and ask them to try again.
 * For all other error codes it is recommended to show a generic error for the user and ask them to try again by restarting the process.
 
+### Debug Mode Usage
+
+Starting from version **5.18.0**, due to the integration of the FaceTec SDK, the `FaceTecSDKForDevelopment.xcframework` must be included **only in Debug builds**.
+
+If you use this facetec- liveness feauture and require this framework for debugging purposes, please contact **IDnow** to obtain the necessary access.
+
+For optimal security and compliance, the **FaceTec SDK Development-Only Framework** must **not** be used in a Production environment.
+
+Applications that include the FaceTec SDK Development-Only Framework must **not** be submitted to the App Store.
+
+
 ### Fat Framework Support
 
 In case you want to continue using the fat framework, please get in touch with your IDnow representative.
