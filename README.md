@@ -182,6 +182,69 @@ In the case of IDNowSDK.IdentResult.type.ERROR, the possible error codes are bel
 * For E170 it is recommended to notify the user that the ident process timed out or was started on a different device and ask them to try again.
 * For all other error codes it is recommended to show a generic error for the user and ask them to try again by restarting the process.
 
+# Debug Mode
+
+> **Available from version 5.18.0**
+
+Due to security protections introduced in the latest FaceTec iOS SDK, the Production Framework (`FaceTecSDK.xcframework`) **cannot initialize when a debugger is attached**. This is an iOS framework behaviour, not a FaceTec limitation.
+
+To support debugging FaceTec API functionalities while attached to Xcode, a Development-Only Framework is available:
+
+> 📩 Contact **IDnow** to obtain access to `FaceTecSDKForDevelopment.xcframework`.
+
+---
+
+## Framework Setup for Debug Builds
+
+Replace `FaceTecSDK.xcframework` with `FaceTecSDKForDevelopment.xcframework` when needed.
+
+> ⚠️ `FaceTecSDKForDevelopment.xcframework` must **never be used in production builds**.
+
+---
+
+## When Is the Development Framework Actually Needed?
+
+The Development Framework is only required in **one specific scenario** — when a developer is running or debugging the app from Xcode **with the debugger attached** and **actively calling FaceTec API functionalities**.
+
+In all other cases, the Production Framework can be used:
+
+
+| Scenario                                                            | Production Framework |
+| ------------------------------------------------------------------- | -------------------- |
+| Debugging from Xcode **with** FaceTec API calls + debugger attached | ❌ Use Dev Framework  |
+| Debugging from Xcode **without** calling FaceTec APIs               | ✅                    |
+| Running from Xcode **without** debugger attached                    | ✅                    |
+| Test IPA distributed to devices                                     | ✅                    |
+| QA testing via IPA                                                  | ✅                    |
+| Automated tests (no debugger, no FaceTec API calls)                 | ✅                    |
+| Pre-release / App Store IPA testing                                 | ✅                    |
+| TestFlight                                                          | ✅                    |
+
+
+The recommended approach is to configure your build environment so that `FaceTecSDKForDevelopment.xcframework` is **only swapped in** for the one scenario that requires it, while all release and distribution builds ship with the Production Framework.
+
+Starting from version **5.18.0**, and due to the integration of the FaceTec SDK, `FaceTecSDKForDevelopment.xcframework` must **only be used in Debug builds**.
+
+If you are using the FaceTec liveness feature and require the development framework for debugging purposes, please contact **IDnow** to obtain access to `FaceTecSDKForDevelopment.xcframework`.
+
+For **Debug builds**, the framework reference remains the same in the project:
+
+`FaceTecSDK.xcframework`
+
+but its content must be replaced with:
+
+`FaceTecSDKForDevelopment.xcframework`
+
+This development framework includes the following supported slices:
+
+- ios-arm64
+- ios-arm64_x86_64-simulator
+- Info.plist
+
+For security and compliance reasons:
+
+- `FaceTecSDKForDevelopment.xcframework` must **never be used in production**
+
 ### Fat Framework Support
 
 In case you want to continue using the fat framework, please get in touch with your IDnow representative.
