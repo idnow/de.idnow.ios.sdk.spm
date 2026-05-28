@@ -1,5 +1,8 @@
 ## Changelog
 
+### 5.20.0
+- Fix for NFC scanning issue for some document types (AT RP, FR ID)
+
 ### 5.19.1
 - Updated Bank Transfer component
 
