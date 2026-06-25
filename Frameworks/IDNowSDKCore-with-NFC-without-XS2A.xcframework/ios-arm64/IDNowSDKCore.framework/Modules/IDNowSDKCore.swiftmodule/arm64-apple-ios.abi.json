@@ -28822,69 +28822,69 @@
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
       "offset": 335,
-      "length": 200,
-      "value": "\"appId      = *\nexpiryDate = 2020-06-05\nkey        = 003044022026229c30f24617cb736b6a413d398d0731220592543c6f0987874744daa1a26f0220393b730dc5f934bc5f1a888118288ec1b1137742dd132c3e21ab8a9694f62fbc\n\""
+      "length": 202,
+      "value": "\"appId      = *\nexpiryDate = 2026-08-10\nkey        = 00304502201456cf73bfb7a402d3d609c932d1ffcb8479d290a668962bc06713e9d9ae3762022100b3bcbf7736a274c8162c2296498bafdc2e82ca1dc7e4a958b580f6e647f86f23\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 589,
+      "offset": 591,
       "length": 30,
       "value": "\"-----BEGIN PUBLIC KEY-----\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 630,
+      "offset": 632,
       "length": 68,
       "value": "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzcFx8OHVd\/ENfL43ImQj\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 709,
+      "offset": 711,
       "length": 68,
       "value": "\"yKWGWtcLXg4JM3qH9G1Z0OHUkQrDaAasH2v1\/nZOEA0fwguy+VsYckXhCSeUIl\/c\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 788,
+      "offset": 790,
       "length": 68,
       "value": "\"hSwmGe\/xghE594WJck++PSqOhlR3I3fIEOxgIaNlVD9bopp7dhOaZPwWHWFkZC5s\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 867,
+      "offset": 869,
       "length": 68,
       "value": "\"7OoaplUJfIOfNcgagkZvzaeflN7lyTBVY9br6rpgZKQIsn87SxOw7LyMSESo7F93\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 946,
+      "offset": 948,
       "length": 68,
       "value": "\"FgA2o9VmffsHAwSzdzPYlsntbCuQpzoEb6erlIYWl8EP6by3Eqq\/7m1BbfpV7DML\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 1025,
+      "offset": 1027,
       "length": 68,
       "value": "\"iGIVSfytqr0nJNYSamGx68LRO2p0NDRXYGozIb1IyJawJiYCv11CVJcyKpP5Qijp\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 1104,
+      "offset": 1106,
       "length": 12,
       "value": "\"swIDAQAB\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 1127,
+      "offset": 1129,
       "length": 26,
       "value": "\"-----END PUBLIC KEY-----\""
     },
