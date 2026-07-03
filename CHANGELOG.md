@@ -1,5 +1,14 @@
 ## Changelog
 
+### 5.21.0
+- Fixed security video recording anomalies
+- Fixed app freeze when camera permission is denied during signing flow
+- Fixed infinite loading when navigating back from "My country/document is not listed"
+- Fixed unexpected OTP/SMS screen appearing momentarily during signing flow
+- Improved document feedback navigation for expired or age-restricted documents
+- Added "My country/document is not listed" option to additional feedback screens
+- Added Greek language support for NFC and liveness detection components
+
 ### 5.20.0
 - Fix for NFC scanning issue for some document types (AT RP, FR ID)
 
