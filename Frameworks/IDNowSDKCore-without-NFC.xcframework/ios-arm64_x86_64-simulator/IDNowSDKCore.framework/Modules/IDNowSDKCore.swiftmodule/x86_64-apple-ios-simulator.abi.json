@@ -12204,6 +12204,92 @@
           },
           {
             "kind": "Var",
+            "name": "noCornersForSecurityFeature",
+            "printedName": "noCornersForSecurityFeature",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12IDNowSDKCore0A9SDKConfigC27noCornersForSecurityFeatureSbvp",
+            "mangledName": "$s12IDNowSDKCore0A9SDKConfigC27noCornersForSecurityFeatureSbvp",
+            "moduleName": "IDNowSDKCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12IDNowSDKCore0A9SDKConfigC27noCornersForSecurityFeatureSbvg",
+                "mangledName": "$s12IDNowSDKCore0A9SDKConfigC27noCornersForSecurityFeatureSbvg",
+                "moduleName": "IDNowSDKCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12IDNowSDKCore0A9SDKConfigC27noCornersForSecurityFeatureSbvs",
+                "mangledName": "$s12IDNowSDKCore0A9SDKConfigC27noCornersForSecurityFeatureSbvs",
+                "moduleName": "IDNowSDKCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12IDNowSDKCore0A9SDKConfigC27noCornersForSecurityFeatureSbvM",
+                "mangledName": "$s12IDNowSDKCore0A9SDKConfigC27noCornersForSecurityFeatureSbvM",
+                "moduleName": "IDNowSDKCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "shouldSelfieSelectByUser",
             "printedName": "shouldSelfieSelectByUser",
             "children": [
@@ -28012,7 +28098,7 @@
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/IDNowSecurityService.swift",
       "kind": "BooleanLiteral",
-      "offset": 16401,
+      "offset": 17139,
       "length": 5,
       "value": "false"
     },
@@ -28720,69 +28806,69 @@
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
       "offset": 335,
-      "length": 200,
-      "value": "\"appId      = *\nexpiryDate = 2020-06-05\nkey        = 003044022026229c30f24617cb736b6a413d398d0731220592543c6f0987874744daa1a26f0220393b730dc5f934bc5f1a888118288ec1b1137742dd132c3e21ab8a9694f62fbc\n\""
+      "length": 202,
+      "value": "\"appId      = *\nexpiryDate = 2026-08-10\nkey        = 00304502201456cf73bfb7a402d3d609c932d1ffcb8479d290a668962bc06713e9d9ae3762022100b3bcbf7736a274c8162c2296498bafdc2e82ca1dc7e4a958b580f6e647f86f23\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 589,
+      "offset": 591,
       "length": 30,
       "value": "\"-----BEGIN PUBLIC KEY-----\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 630,
+      "offset": 632,
       "length": 68,
       "value": "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzcFx8OHVd\/ENfL43ImQj\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 709,
+      "offset": 711,
       "length": 68,
       "value": "\"yKWGWtcLXg4JM3qH9G1Z0OHUkQrDaAasH2v1\/nZOEA0fwguy+VsYckXhCSeUIl\/c\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 788,
+      "offset": 790,
       "length": 68,
       "value": "\"hSwmGe\/xghE594WJck++PSqOhlR3I3fIEOxgIaNlVD9bopp7dhOaZPwWHWFkZC5s\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 867,
+      "offset": 869,
       "length": 68,
       "value": "\"7OoaplUJfIOfNcgagkZvzaeflN7lyTBVY9br6rpgZKQIsn87SxOw7LyMSESo7F93\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 946,
+      "offset": 948,
       "length": 68,
       "value": "\"FgA2o9VmffsHAwSzdzPYlsntbCuQpzoEb6erlIYWl8EP6by3Eqq\/7m1BbfpV7DML\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 1025,
+      "offset": 1027,
       "length": 68,
       "value": "\"iGIVSfytqr0nJNYSamGx68LRO2p0NDRXYGozIb1IyJawJiYCv11CVJcyKpP5Qijp\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 1104,
+      "offset": 1106,
       "length": 12,
       "value": "\"swIDAQAB\n\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/Libraries\/FaceTecGlobalState.swift",
       "kind": "StringLiteral",
-      "offset": 1127,
+      "offset": 1129,
       "length": 26,
       "value": "\"-----END PUBLIC KEY-----\""
     },
@@ -31540,56 +31626,56 @@
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IdentView\/ManualClassification\/IDNowClassificationV2Overlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 14351,
+      "offset": 14946,
       "length": 3,
       "value": "216"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IdentView\/ManualClassification\/IDNowClassificationV2Overlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 14355,
+      "offset": 14950,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IdentView\/ManualClassification\/IDNowClassificationV2Overlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 14367,
+      "offset": 14962,
       "length": 3,
       "value": "216"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IdentView\/ManualClassification\/IDNowClassificationV2Overlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 14371,
+      "offset": 14966,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IdentView\/ManualClassification\/IDNowClassificationV2Overlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 14382,
+      "offset": 14977,
       "length": 3,
       "value": "216"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IdentView\/ManualClassification\/IDNowClassificationV2Overlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 14386,
+      "offset": 14981,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IdentView\/ManualClassification\/IDNowClassificationV2Overlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 14398,
+      "offset": 14993,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IdentView\/ManualClassification\/IDNowClassificationV2Overlay.swift",
       "kind": "StringLiteral",
-      "offset": 15121,
+      "offset": 15716,
       "length": 13,
       "value": "\"arrow-right\""
     },
@@ -38316,497 +38402,504 @@
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 1438,
+      "offset": 1441,
+      "length": 62,
+      "value": "\"public.idnow.platform.isFullFrameForSecurityFeatureNoCorners\""
+    },
+    {
+      "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
+      "kind": "StringLiteral",
+      "offset": 1562,
       "length": 48,
       "value": "\"public.idnow.platform.shouldSelfieSelectByUser\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 1542,
+      "offset": 1666,
       "length": 46,
       "value": "\"public.idnow.platform.enableManualCaptureApp\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 1648,
+      "offset": 1772,
       "length": 45,
       "value": "\"public.idnow.platform.app.NameConfirmScreen\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 1745,
+      "offset": 1869,
       "length": 44,
       "value": "\"public.idnow.platform.button.corner.radius\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 1868,
+      "offset": 1992,
       "length": 59,
       "value": "\"public.idnow.platform.security.feature.disable.flashlight\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 1978,
+      "offset": 2102,
       "length": 12,
       "value": "\"animations\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 2036,
+      "offset": 2160,
       "length": 7,
       "value": "\"fonts\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 2095,
+      "offset": 2219,
       "length": 47,
       "value": "\"public.idnow.platform.app.autoHideInstruction\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 2194,
+      "offset": 2318,
       "length": 47,
       "value": "\"public.idnow.platform.app.instructionShowTime\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 2292,
+      "offset": 2416,
       "length": 46,
       "value": "\"public.idnow.platform.ios.tensorflow.enabled\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 2397,
+      "offset": 2521,
       "length": 55,
       "value": "\"public.idnow.platform.ios.tensorflow.detectionTimeout\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2515,
+      "offset": 2639,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2519,
+      "offset": 2643,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 2586,
+      "offset": 2710,
       "length": 54,
       "value": "\"public.idnow.platform.tensorflow.qualityCheckTimeout\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 2695,
+      "offset": 2819,
       "length": 52,
       "value": "\"public.idnow.platform.app.unissey.showInstructions\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 2801,
+      "offset": 2925,
       "length": 58,
       "value": "\"public.idnow.platform.app.unissey.showVideoCaptureButton\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 2915,
+      "offset": 3039,
       "length": 53,
       "value": "\"public.idnow.platform.app.unissey.recordingDuration\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 3038,
+      "offset": 3162,
       "length": 51,
       "value": "\"idnow.autoident.ocr.passportSignatureImageCapture\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 3150,
+      "offset": 3274,
       "length": 62,
       "value": "\"public.idnow.platform.removeSigningApprovalPhrasesCheckboxes\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 3301,
+      "offset": 3425,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 3347,
+      "offset": 3471,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 3387,
+      "offset": 3511,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 3424,
+      "offset": 3548,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 3459,
+      "offset": 3583,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 3552,
+      "offset": 3676,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 3592,
+      "offset": 3716,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 3634,
+      "offset": 3758,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 3683,
+      "offset": 3807,
       "length": 13,
       "value": "\"SDK Version\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3729,
+      "offset": 3853,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3766,
+      "offset": 3890,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3841,
+      "offset": 3965,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 26622,
+      "offset": 26746,
       "length": 49,
       "value": "\"public.idnow.platform.customColors.primaryColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 26691,
+      "offset": 26815,
       "length": 56,
       "value": "\"public.idnow.platform.customColors.primaryVariantColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 26767,
+      "offset": 26891,
       "length": 51,
       "value": "\"public.idnow.platform.customColors.secondaryColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 26840,
+      "offset": 26964,
       "length": 49,
       "value": "\"public.idnow.platform.customColors.teriaryColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 26909,
+      "offset": 27033,
       "length": 48,
       "value": "\"public.idnow.platform.customColors.accentColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 26976,
+      "offset": 27100,
       "length": 52,
       "value": "\"public.idnow.platform.customColors.backgroundColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27051,
+      "offset": 27175,
       "length": 46,
       "value": "\"public.idnow.platform.customColors.grayColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27114,
+      "offset": 27238,
       "length": 47,
       "value": "\"public.idnow.platform.customColors.grayColor1\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27179,
+      "offset": 27303,
       "length": 47,
       "value": "\"public.idnow.platform.customColors.grayColor2\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27244,
+      "offset": 27368,
       "length": 47,
       "value": "\"public.idnow.platform.customColors.grayColor3\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27309,
+      "offset": 27433,
       "length": 54,
       "value": "\"public.idnow.platform.customColors.confirmationColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27388,
+      "offset": 27512,
       "length": 49,
       "value": "\"public.idnow.platform.customColors.successColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27457,
+      "offset": 27581,
       "length": 47,
       "value": "\"public.idnow.platform.customColors.whiteColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27522,
+      "offset": 27646,
       "length": 47,
       "value": "\"public.idnow.platform.customColors.errorColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27587,
+      "offset": 27711,
       "length": 46,
       "value": "\"public.idnow.platform.customColors.textColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27650,
+      "offset": 27774,
       "length": 53,
       "value": "\"public.idnow.platform.customColors.checkboxSelected\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27768,
+      "offset": 27892,
       "length": 55,
       "value": "\"public.idnow.platform.customColors.primaryHeaderColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27850,
+      "offset": 27974,
       "length": 55,
       "value": "\"public.idnow.platform.customColors.primaryButtonColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27932,
+      "offset": 28056,
       "length": 59,
       "value": "\"public.idnow.platform.customColors.primaryButtonTextColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28023,
+      "offset": 28147,
       "length": 62,
       "value": "\"public.idnow.platform.customColors.primaryButtonPressedColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28120,
+      "offset": 28244,
       "length": 55,
       "value": "\"public.idnow.platform.customColors.outlineFramesColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28202,
+      "offset": 28326,
       "length": 57,
       "value": "\"public.idnow.platform.customColors.outerfillFramesColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28288,
+      "offset": 28412,
       "length": 57,
       "value": "\"public.idnow.platform.customColors.primaryTrackingColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28374,
+      "offset": 28498,
       "length": 62,
       "value": "\"public.idnow.platform.customColors.primaryIllustrationsColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28470,
+      "offset": 28594,
       "length": 64,
       "value": "\"public.idnow.platform.customColors.secondaryButtonOutlineColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28571,
+      "offset": 28695,
       "length": 61,
       "value": "\"public.idnow.platform.customColors.secondaryButtonTextColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28666,
+      "offset": 28790,
       "length": 56,
       "value": "\"public.idnow.platform.customColors.buttonDisabledColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28750,
+      "offset": 28874,
       "length": 57,
       "value": "\"public.idnow.platform.customColors.secondaryButtonColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28837,
+      "offset": 28961,
       "length": 51,
       "value": "\"public.idnow.platform.customColors.textColorError\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28911,
+      "offset": 29035,
       "length": 50,
       "value": "\"public.idnow.platform.customColors.textColorInfo\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28983,
+      "offset": 29107,
       "length": 53,
       "value": "\"public.idnow.platform.customColors.textColorWarning\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 29062,
+      "offset": 29186,
       "length": 57,
       "value": "\"public.idnow.platform.customColors.idcard.border.normal\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 29180,
+      "offset": 29304,
       "length": 72,
       "value": "\"public.idnow.platform.customColors.unissey.start.instruction.iconColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 29285,
+      "offset": 29409,
       "length": 72,
       "value": "\"public.idnow.platform.customColors.unissey.retry.instruction.iconColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 29452,
+      "offset": 29576,
       "length": 37,
       "value": "\"public.idnow.platform.consentScreen\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 29516,
+      "offset": 29640,
       "length": 42,
       "value": "\"public.idnow.platform.ratingAfterSuccess\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 29591,
+      "offset": 29715,
       "length": 41,
       "value": "\"public.idnow.platform.enableIntroScreen\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "IntegerLiteral",
-      "offset": 46881,
+      "offset": 47208,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "IntegerLiteral",
-      "offset": 49860,
+      "offset": 50187,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "IntegerLiteral",
-      "offset": 50605,
+      "offset": 50932,
       "length": 1,
       "value": "3"
     },
@@ -39044,161 +39137,168 @@
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1461,
+      "offset": 1464,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1526,
+      "offset": 1532,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1599,
+      "offset": 1597,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1671,
+      "offset": 1670,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1751,
+      "offset": 1742,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1820,
+      "offset": 1822,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1891,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1895,
+      "offset": 1966,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1963,
+      "offset": 2034,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1967,
+      "offset": 2038,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2038,
+      "offset": 2109,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2042,
+      "offset": 2113,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2115,
+      "offset": 2186,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2174,
+      "offset": 2245,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2235,
+      "offset": 2306,
       "length": 5,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2302,
+      "offset": 2373,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2378,
+      "offset": 2449,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 2664,
+      "offset": 2735,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2786,
+      "offset": 2857,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2835,
+      "offset": 2906,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3871,
+      "offset": 4033,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 4298,
+      "offset": 4460,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4342,
+      "offset": 4504,
       "length": 4,
       "value": "2000"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/IDNowSDKConfig.swift",
       "kind": "Array",
-      "offset": 4451,
+      "offset": 4613,
       "length": 2,
       "value": "[]"
     },
@@ -39345,28 +39445,28 @@
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IDNowUIRouter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3474,
+      "offset": 3877,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IDNowUIRouter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3653,
+      "offset": 4056,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IDNowUIRouter.swift",
       "kind": "BooleanLiteral",
-      "offset": 4291,
+      "offset": 4694,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IDNowUIRouter.swift",
       "kind": "FloatLiteral",
-      "offset": 14190,
+      "offset": 15230,
       "length": 3,
       "value": "0.0"
     },
