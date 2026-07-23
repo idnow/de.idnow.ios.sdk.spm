@@ -490,6 +490,9 @@ extension Foundation.Data {
   public func packed() -> Foundation.Data
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class UserFeedbackResponsePayload {
+  @objc deinit
+}
 extension IDNowSDKCore.Platform : Swift.Equatable {}
 extension IDNowSDKCore.Platform : Swift.Hashable {}
 extension IDNowSDKCore.Platform : Swift.RawRepresentable {}
