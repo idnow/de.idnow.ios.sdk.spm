@@ -18987,6 +18987,146 @@
           },
           {
             "kind": "Conformance",
+            "name": "ResultsCollection",
+            "printedName": "ResultsCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Result",
+                "printedName": "Result",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10AppIntents17ResultsCollectionP",
+            "mangledName": "$s10AppIntents17ResultsCollectionP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_IntentValue",
+            "printedName": "_IntentValue",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ValueType",
+                "printedName": "ValueType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UnwrappedType",
+                "printedName": "UnwrappedType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Specification",
+                "printedName": "Specification",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmptyResolverSpecification",
+                    "printedName": "AppIntents.EmptyResolverSpecification<[τ_0_0]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[τ_0_0]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:10AppIntents26EmptyResolverSpecificationV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10AppIntents12_IntentValueP",
+            "mangledName": "$s10AppIntents12_IntentValueP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_SequenceIntentValue",
+            "printedName": "_SequenceIntentValue",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UnderlyingSequence",
+                "printedName": "UnderlyingSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10AppIntents20_SequenceIntentValueP",
+            "mangledName": "$s10AppIntents20_SequenceIntentValueP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IntentValueConvertible",
+            "printedName": "IntentValueConvertible",
+            "usr": "s:21AppIntentsTypeSupport22IntentValueConvertibleP",
+            "mangledName": "$s21AppIntentsTypeSupport22IntentValueConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IntentValueExpressing",
+            "printedName": "IntentValueExpressing",
+            "usr": "s:21AppIntentsTypeSupport21IntentValueExpressingP",
+            "mangledName": "$s21AppIntentsTypeSupport21IntentValueExpressingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "AppExtensionScene",
             "printedName": "AppExtensionScene",
             "children": [
@@ -19773,6 +19913,89 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "CustomURLRepresentationParameterConvertible",
+            "printedName": "CustomURLRepresentationParameterConvertible",
+            "usr": "s:10AppIntents43CustomURLRepresentationParameterConvertibleP",
+            "mangledName": "$s10AppIntents43CustomURLRepresentationParameterConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "EntityIdentifierConvertible",
+            "printedName": "EntityIdentifierConvertible",
+            "usr": "s:10AppIntents27EntityIdentifierConvertibleP",
+            "mangledName": "$s10AppIntents27EntityIdentifierConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_IntentValue",
+            "printedName": "_IntentValue",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ValueType",
+                "printedName": "ValueType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UnwrappedType",
+                "printedName": "UnwrappedType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Specification",
+                "printedName": "Specification",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some AppIntents.ResolverSpecification",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResolverSpecification",
+                        "printedName": "AppIntents.ResolverSpecification",
+                        "usr": "s:10AppIntents21ResolverSpecificationP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10AppIntents12_IntentValueP",
+            "mangledName": "$s10AppIntents12_IntentValueP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IntentValueConvertible",
+            "printedName": "IntentValueConvertible",
+            "usr": "s:21AppIntentsTypeSupport22IntentValueConvertibleP",
+            "mangledName": "$s21AppIntentsTypeSupport22IntentValueConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IntentValueExpressing",
+            "printedName": "IntentValueExpressing",
+            "usr": "s:21AppIntentsTypeSupport21IntentValueExpressingP",
+            "mangledName": "$s21AppIntentsTypeSupport21IntentValueExpressingP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Transferable",
             "printedName": "Transferable",
             "children": [
@@ -19799,6 +20022,13 @@
             ],
             "usr": "s:16CoreTransferable0B0P",
             "mangledName": "$s16CoreTransferable0B0P"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
           },
           {
             "kind": "Conformance",
@@ -20573,6 +20803,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ContiguousBytes",
             "printedName": "ContiguousBytes",
             "usr": "s:10Foundation15ContiguousBytesP",
@@ -21208,6 +21445,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "CVarArg",
             "printedName": "CVarArg",
             "usr": "s:s7CVarArgP",
@@ -21684,6 +21928,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "EntityIdentifierConvertible",
+            "printedName": "EntityIdentifierConvertible",
+            "usr": "s:10AppIntents27EntityIdentifierConvertibleP",
+            "mangledName": "$s10AppIntents27EntityIdentifierConvertibleP"
+          },
+          {
+            "kind": "Conformance",
             "name": "MLShapedArrayScalar",
             "printedName": "MLShapedArrayScalar",
             "usr": "s:6CoreML19MLShapedArrayScalarP",
@@ -21695,6 +21946,13 @@
             "printedName": "MLTensorScalar",
             "usr": "s:6CoreML14MLTensorScalarP",
             "mangledName": "$s6CoreML14MLTensorScalarP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
           },
           {
             "kind": "Conformance",
@@ -21780,6 +22038,20 @@
             "printedName": "Comparable",
             "usr": "s:SL",
             "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConvertibleFromBytes",
+            "printedName": "ConvertibleFromBytes",
+            "usr": "s:s20ConvertibleFromBytesP",
+            "mangledName": "$ss20ConvertibleFromBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConvertibleToBytes",
+            "printedName": "ConvertibleToBytes",
+            "usr": "s:s18ConvertibleToBytesP",
+            "mangledName": "$ss18ConvertibleToBytesP"
           },
           {
             "kind": "Conformance",
@@ -22380,10 +22652,93 @@
           },
           {
             "kind": "Conformance",
+            "name": "RangeComparableProperty",
+            "printedName": "RangeComparableProperty",
+            "usr": "s:10AppIntents23RangeComparablePropertyP",
+            "mangledName": "$s10AppIntents23RangeComparablePropertyP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_IntentValue",
+            "printedName": "_IntentValue",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ValueType",
+                "printedName": "ValueType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UnwrappedType",
+                "printedName": "UnwrappedType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Specification",
+                "printedName": "Specification",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some AppIntents.ResolverSpecification",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResolverSpecification",
+                        "printedName": "AppIntents.ResolverSpecification",
+                        "usr": "s:10AppIntents21ResolverSpecificationP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10AppIntents12_IntentValueP",
+            "mangledName": "$s10AppIntents12_IntentValueP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IntentValueConvertible",
+            "printedName": "IntentValueConvertible",
+            "usr": "s:21AppIntentsTypeSupport22IntentValueConvertibleP",
+            "mangledName": "$s21AppIntentsTypeSupport22IntentValueConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IntentValueExpressing",
+            "printedName": "IntentValueExpressing",
+            "usr": "s:21AppIntentsTypeSupport21IntentValueExpressingP",
+            "mangledName": "$s21AppIntentsTypeSupport21IntentValueExpressingP"
+          },
+          {
+            "kind": "Conformance",
             "name": "MLShapedArrayScalar",
             "printedName": "MLShapedArrayScalar",
             "usr": "s:6CoreML19MLShapedArrayScalarP",
             "mangledName": "$s6CoreML19MLShapedArrayScalarP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
           },
           {
             "kind": "Conformance",
@@ -22469,6 +22824,20 @@
             "printedName": "Comparable",
             "usr": "s:SL",
             "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConvertibleFromBytes",
+            "printedName": "ConvertibleFromBytes",
+            "usr": "s:s20ConvertibleFromBytesP",
+            "mangledName": "$ss20ConvertibleFromBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConvertibleToBytes",
+            "printedName": "ConvertibleToBytes",
+            "usr": "s:s18ConvertibleToBytesP",
+            "mangledName": "$ss18ConvertibleToBytesP"
           },
           {
             "kind": "Conformance",
@@ -22996,10 +23365,86 @@
           },
           {
             "kind": "Conformance",
+            "name": "_IntentValue",
+            "printedName": "_IntentValue",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ValueType",
+                "printedName": "ValueType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UnwrappedType",
+                "printedName": "UnwrappedType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Specification",
+                "printedName": "Specification",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some AppIntents.ResolverSpecification",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResolverSpecification",
+                        "printedName": "AppIntents.ResolverSpecification",
+                        "usr": "s:10AppIntents21ResolverSpecificationP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10AppIntents12_IntentValueP",
+            "mangledName": "$s10AppIntents12_IntentValueP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IntentValueConvertible",
+            "printedName": "IntentValueConvertible",
+            "usr": "s:21AppIntentsTypeSupport22IntentValueConvertibleP",
+            "mangledName": "$s21AppIntentsTypeSupport22IntentValueConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IntentValueExpressing",
+            "printedName": "IntentValueExpressing",
+            "usr": "s:21AppIntentsTypeSupport21IntentValueExpressingP",
+            "mangledName": "$s21AppIntentsTypeSupport21IntentValueExpressingP"
+          },
+          {
+            "kind": "Conformance",
             "name": "MLTensorScalar",
             "printedName": "MLTensorScalar",
             "usr": "s:6CoreML14MLTensorScalarP",
             "mangledName": "$s6CoreML14MLTensorScalarP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
           },
           {
             "kind": "Conformance",
@@ -23014,6 +23459,13 @@
             "printedName": "CVarArg",
             "usr": "s:s7CVarArgP",
             "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConvertibleToBytes",
+            "printedName": "ConvertibleToBytes",
+            "usr": "s:s18ConvertibleToBytesP",
+            "mangledName": "$ss18ConvertibleToBytesP"
           },
           {
             "kind": "Conformance",
@@ -23246,10 +23698,107 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "CustomURLRepresentationParameterConvertible",
+            "printedName": "CustomURLRepresentationParameterConvertible",
+            "usr": "s:10AppIntents43CustomURLRepresentationParameterConvertibleP",
+            "mangledName": "$s10AppIntents43CustomURLRepresentationParameterConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "EntityIdentifierConvertible",
+            "printedName": "EntityIdentifierConvertible",
+            "usr": "s:10AppIntents27EntityIdentifierConvertibleP",
+            "mangledName": "$s10AppIntents27EntityIdentifierConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RangeComparableProperty",
+            "printedName": "RangeComparableProperty",
+            "usr": "s:10AppIntents23RangeComparablePropertyP",
+            "mangledName": "$s10AppIntents23RangeComparablePropertyP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_IntentValue",
+            "printedName": "_IntentValue",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ValueType",
+                "printedName": "ValueType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UnwrappedType",
+                "printedName": "UnwrappedType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Specification",
+                "printedName": "Specification",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some AppIntents.ResolverSpecification",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResolverSpecification",
+                        "printedName": "AppIntents.ResolverSpecification",
+                        "usr": "s:10AppIntents21ResolverSpecificationP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10AppIntents12_IntentValueP",
+            "mangledName": "$s10AppIntents12_IntentValueP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IntentValueConvertible",
+            "printedName": "IntentValueConvertible",
+            "usr": "s:21AppIntentsTypeSupport22IntentValueConvertibleP",
+            "mangledName": "$s21AppIntentsTypeSupport22IntentValueConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IntentValueExpressing",
+            "printedName": "IntentValueExpressing",
+            "usr": "s:21AppIntentsTypeSupport21IntentValueExpressingP",
+            "mangledName": "$s21AppIntentsTypeSupport21IntentValueExpressingP"
+          },
+          {
+            "kind": "Conformance",
             "name": "MLTensorRangeExpression",
             "printedName": "MLTensorRangeExpression",
             "usr": "s:6CoreML23MLTensorRangeExpressionP",
             "mangledName": "$s6CoreML23MLTensorRangeExpressionP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
           },
           {
             "kind": "Conformance",
@@ -23329,6 +23878,20 @@
             "printedName": "Comparable",
             "usr": "s:SL",
             "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConvertibleFromBytes",
+            "printedName": "ConvertibleFromBytes",
+            "usr": "s:s20ConvertibleFromBytesP",
+            "mangledName": "$ss20ConvertibleFromBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConvertibleToBytes",
+            "printedName": "ConvertibleToBytes",
+            "usr": "s:s18ConvertibleToBytesP",
+            "mangledName": "$ss18ConvertibleToBytesP"
           },
           {
             "kind": "Conformance",
@@ -23725,6 +24288,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "AppEntityAnnotatable",
+            "printedName": "AppEntityAnnotatable",
+            "usr": "s:10AppIntents0A17EntityAnnotatableP",
+            "mangledName": "$s10AppIntents0A17EntityAnnotatableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_KeyValueCodingAndObserving",
             "printedName": "_KeyValueCodingAndObserving",
             "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
@@ -23810,11 +24380,17 @@
         "usr": "c:@S@CGSize",
         "moduleName": "CoreFoundation",
         "declAttributes": [
-          "SynthesizedProtocol",
-          "Sendable"
+          "SynthesizedProtocol"
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
+          },
           {
             "kind": "Conformance",
             "name": "BitwiseCopyable",
@@ -24014,7 +24590,6 @@
           "ObjC",
           "SynthesizedProtocol",
           "NonSendable",
-          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -24194,6 +24769,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "AppEntityAnnotatable",
+            "printedName": "AppEntityAnnotatable",
+            "usr": "s:10AppIntents0A17EntityAnnotatableP",
+            "mangledName": "$s10AppIntents0A17EntityAnnotatableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_KeyValueCodingAndObserving",
             "printedName": "_KeyValueCodingAndObserving",
             "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
@@ -24279,8 +24861,7 @@
         "usr": "c:@S@CGPoint",
         "moduleName": "CoreFoundation",
         "declAttributes": [
-          "SynthesizedProtocol",
-          "Sendable"
+          "SynthesizedProtocol"
         ],
         "isExternal": true,
         "conformances": [
@@ -24455,6 +25036,13 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
+          },
           {
             "kind": "Conformance",
             "name": "_FormatSpecifiable",
@@ -24824,11 +25412,17 @@
         "usr": "c:@S@CGRect",
         "moduleName": "CoreFoundation",
         "declAttributes": [
-          "SynthesizedProtocol",
-          "Sendable"
+          "SynthesizedProtocol"
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -24887,17 +25481,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "SendableMetatype",
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -25269,7 +25863,6 @@
           "ObjC",
           "SynthesizedProtocol",
           "NonSendable",
-          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -25378,7 +25971,6 @@
           "ObjC",
           "SynthesizedProtocol",
           "NonSendable",
-          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -25480,7 +26072,6 @@
           "ObjC",
           "SynthesizedProtocol",
           "NonSendable",
-          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -38945,280 +39536,280 @@
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 26746,
+      "offset": 26943,
       "length": 49,
       "value": "\"public.idnow.platform.customColors.primaryColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 26815,
+      "offset": 27012,
       "length": 56,
       "value": "\"public.idnow.platform.customColors.primaryVariantColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 26891,
+      "offset": 27088,
       "length": 51,
       "value": "\"public.idnow.platform.customColors.secondaryColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 26964,
+      "offset": 27161,
       "length": 49,
       "value": "\"public.idnow.platform.customColors.teriaryColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27033,
+      "offset": 27230,
       "length": 48,
       "value": "\"public.idnow.platform.customColors.accentColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27100,
+      "offset": 27297,
       "length": 52,
       "value": "\"public.idnow.platform.customColors.backgroundColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27175,
+      "offset": 27372,
       "length": 46,
       "value": "\"public.idnow.platform.customColors.grayColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27238,
+      "offset": 27435,
       "length": 47,
       "value": "\"public.idnow.platform.customColors.grayColor1\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27303,
+      "offset": 27500,
       "length": 47,
       "value": "\"public.idnow.platform.customColors.grayColor2\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27368,
+      "offset": 27565,
       "length": 47,
       "value": "\"public.idnow.platform.customColors.grayColor3\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27433,
+      "offset": 27630,
       "length": 54,
       "value": "\"public.idnow.platform.customColors.confirmationColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27512,
+      "offset": 27709,
       "length": 49,
       "value": "\"public.idnow.platform.customColors.successColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27581,
+      "offset": 27778,
       "length": 47,
       "value": "\"public.idnow.platform.customColors.whiteColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27646,
+      "offset": 27843,
       "length": 47,
       "value": "\"public.idnow.platform.customColors.errorColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27711,
+      "offset": 27908,
       "length": 46,
       "value": "\"public.idnow.platform.customColors.textColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27774,
+      "offset": 27971,
       "length": 53,
       "value": "\"public.idnow.platform.customColors.checkboxSelected\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27892,
+      "offset": 28089,
       "length": 55,
       "value": "\"public.idnow.platform.customColors.primaryHeaderColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 27974,
+      "offset": 28171,
       "length": 55,
       "value": "\"public.idnow.platform.customColors.primaryButtonColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28056,
+      "offset": 28253,
       "length": 59,
       "value": "\"public.idnow.platform.customColors.primaryButtonTextColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28147,
+      "offset": 28344,
       "length": 62,
       "value": "\"public.idnow.platform.customColors.primaryButtonPressedColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28244,
+      "offset": 28441,
       "length": 55,
       "value": "\"public.idnow.platform.customColors.outlineFramesColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28326,
+      "offset": 28523,
       "length": 57,
       "value": "\"public.idnow.platform.customColors.outerfillFramesColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28412,
+      "offset": 28609,
       "length": 57,
       "value": "\"public.idnow.platform.customColors.primaryTrackingColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28498,
+      "offset": 28695,
       "length": 62,
       "value": "\"public.idnow.platform.customColors.primaryIllustrationsColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28594,
+      "offset": 28791,
       "length": 64,
       "value": "\"public.idnow.platform.customColors.secondaryButtonOutlineColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28695,
+      "offset": 28892,
       "length": 61,
       "value": "\"public.idnow.platform.customColors.secondaryButtonTextColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28790,
+      "offset": 28987,
       "length": 56,
       "value": "\"public.idnow.platform.customColors.buttonDisabledColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28874,
+      "offset": 29071,
       "length": 57,
       "value": "\"public.idnow.platform.customColors.secondaryButtonColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 28961,
+      "offset": 29158,
       "length": 51,
       "value": "\"public.idnow.platform.customColors.textColorError\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 29035,
+      "offset": 29232,
       "length": 50,
       "value": "\"public.idnow.platform.customColors.textColorInfo\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 29107,
+      "offset": 29304,
       "length": 53,
       "value": "\"public.idnow.platform.customColors.textColorWarning\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 29186,
+      "offset": 29383,
       "length": 57,
       "value": "\"public.idnow.platform.customColors.idcard.border.normal\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 29304,
+      "offset": 29501,
       "length": 72,
       "value": "\"public.idnow.platform.customColors.unissey.start.instruction.iconColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 29409,
+      "offset": 29606,
       "length": 72,
       "value": "\"public.idnow.platform.customColors.unissey.retry.instruction.iconColor\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 29576,
+      "offset": 29773,
       "length": 37,
       "value": "\"public.idnow.platform.consentScreen\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 29640,
+      "offset": 29837,
       "length": 42,
       "value": "\"public.idnow.platform.ratingAfterSuccess\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 29715,
+      "offset": 29912,
       "length": 41,
       "value": "\"public.idnow.platform.enableIntroScreen\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "IntegerLiteral",
-      "offset": 47209,
+      "offset": 47406,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "IntegerLiteral",
-      "offset": 50188,
+      "offset": 50385,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Services\/Orchestrator\/IDNowIdentOrchestrator.swift",
       "kind": "IntegerLiteral",
-      "offset": 50933,
+      "offset": 51130,
       "length": 1,
       "value": "3"
     },
