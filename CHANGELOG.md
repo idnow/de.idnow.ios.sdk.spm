@@ -1,5 +1,14 @@
 ## Changelog
 
+### 5.23.0
+- Resolved KeychainAccess library conflicts with host apps.
+- Fixed customer configuration nfcRetryCount not being applied during NFC retry flows.
+- Updated Liveness component to the latest version.
+- Updated the minimum supported iOS version to iOS 15
+
+### 5.22.0
+- Improved user feedback messaging for disallowed documents
+
 ### 5.21.0
 - Fixed security video recording anomalies
 - Fixed app freeze when camera permission is denied during signing flow
