@@ -760,6 +760,12 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic, strong) UIImage * _Nullable inactiveTorchButtonImage;
 /**
+ * The frame of the Torch button within the current screen's bounds.
+ * Note: To use the default location for the Torch button,  set this value to CGRect(0, 0, 0, 0)
+ * Default is a CGRect at origin 0,0 with a size of 0 by 0.
+ */
+@property (nonatomic) CGRect torchButtonCustomLocation;
+/**
  * Color of the Additional Review Screen background.
  * Default is white.
  */

@@ -61,6 +61,13 @@ extern NSString *const FaceTecStringKeyIdscanNfcCardStatusFinishedWithErrorMessa
 extern NSString *const FaceTecStringKeyIdscanNfcStatusSkippedMessage;
 extern NSString *const FaceTecStringKeyIdscanAdditionalReviewMessage;
 extern NSString *const FaceTecStringKeyIdscanFeedbackFlipIdToBackMessage;
+extern NSString *const FaceTecStringKeyIdscanTypeSelectionHeaderAlt1;
+extern NSString *const FaceTecStringKeyIdscanTypeSelectionSubheaderAlt1;
+extern NSString *const FaceTecStringKeyIdscanTypeSelectionTooltipAlt1;
+extern NSString *const FaceTecStringKeyIdscanCaptureIdFrontInstructionMessageAlt1;
+extern NSString *const FaceTecStringKeyIdscanCaptureIdBackInstructionMessageAlt1;
+extern NSString *const FaceTecStringKeyIdscanReviewIdFrontInstructionMessageAlt1;
+extern NSString *const FaceTecStringKeyIdscanReviewIdBackInstructionMessageAlt1;
 extern NSString *const FaceTecStringKeyInitializingCamera;
 extern NSString *const FaceTecStringKeyInstructionsHeaderReady1;
 extern NSString *const FaceTecStringKeyInstructionsHeaderReady2;
