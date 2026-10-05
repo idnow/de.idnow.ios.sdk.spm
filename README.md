@@ -83,17 +83,21 @@ Change the value of the new line to Password Authenticated Connection Establishm
 
 <br>
 
-### Using the SDK with an external FaceTec (FacetecExternal variants)
+### Using the SDK with an external FaceTec (FacetecExternal variant)
 
+Use this variant if your app **already integrates FaceTec through another IDV
+provider**. The standard products embed IDnow's FaceTec v9; if your app also
+embeds a different FaceTec version through another provider, iOS cannot ship two
+`FaceTecSDK.framework` bundles and the build fails with a duplicate-framework
+conflict.
 
-Each standard product has a `-FacetecExternal` counterpart that is **identical
-except that it does not bundle FaceTec** — FaceTec is weak-linked, so your app
-supplies exactly **one** `FaceTecSDK.framework` itself:
+There is a single full-featured (NFC + bank transfer) product that is
+**identical to `IDNowSDKCore-with-NFC` except that it does not bundle FaceTec** —
+FaceTec is weak-linked, so your app supplies exactly **one**
+`FaceTecSDK.framework` itself:
 
 * `IDNowSDKCore-with-NFC-FacetecExternal`
-* `IDNowSDKCore-without-NFC-FacetecExternal`
-* `IDNowSDKCore-with-NFC-without-XS2A-FacetecExternal`
-* `IDNowSDKCore-without-NFC-without-XS2A-FacetecExternal`
+
 
 
 ## Usage
