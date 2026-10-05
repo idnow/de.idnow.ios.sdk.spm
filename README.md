@@ -91,12 +91,12 @@ embeds a different FaceTec version through another provider, iOS cannot ship two
 `FaceTecSDK.framework` bundles and the build fails with a duplicate-framework
 conflict.
 
-There is a single full-featured (NFC + bank transfer) product that is
-**identical to `IDNowSDKCore-with-NFC` except that it does not bundle FaceTec** —
+There is a single product (NFC, without bank transfer) that is **identical to
+`IDNowSDKCore-with-NFC-without-XS2A` except that it does not bundle FaceTec** —
 FaceTec is weak-linked, so your app supplies exactly **one**
 `FaceTecSDK.framework` itself:
 
-* `IDNowSDKCore-with-NFC-FacetecExternal`
+* `IDNowSDKCore-with-NFC-without-XS2A-FacetecExternal`
 
 
 
