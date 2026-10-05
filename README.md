@@ -83,6 +83,19 @@ Change the value of the new line to Password Authenticated Connection Establishm
 
 <br>
 
+### Using the SDK with an external FaceTec (FacetecExternal variants)
+
+
+Each standard product has a `-FacetecExternal` counterpart that is **identical
+except that it does not bundle FaceTec** — FaceTec is weak-linked, so your app
+supplies exactly **one** `FaceTecSDK.framework` itself:
+
+* `IDNowSDKCore-with-NFC-FacetecExternal`
+* `IDNowSDKCore-without-NFC-FacetecExternal`
+* `IDNowSDKCore-with-NFC-without-XS2A-FacetecExternal`
+* `IDNowSDKCore-without-NFC-without-XS2A-FacetecExternal`
+
+
 ## Usage
 
 ### Starting an automated ident
