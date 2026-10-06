@@ -1,9 +1,12 @@
 ## Changelog
 
+### 5.23.1
+- Added an SDK variant without embedding the Facetec Liveness dependency. Allows customers the flexibility to integrate by excluding Facetec Liveness component and avoiding conflicts.
+
 ### 5.23.0
-- Resolved KeychainAccess library conflicts with host apps.
-- Fixed customer configuration nfcRetryCount not being applied during NFC retry flows.
-- Updated Liveness component to the latest version.
+- Resolved KeychainAccess library conflicts with host apps
+- Fixed customer configuration nfcRetryCount not being applied during NFC retry flows
+- Updated Liveness component to the latest version
 - Updated the minimum supported iOS version to iOS 15
 
 ### 5.22.0
