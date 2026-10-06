@@ -31,6 +31,21 @@ let package = Package(
             targets: [
                 "IDNowSDKCore-without-NFC-without-XS2A", "FaceTecSDK", "UnisseySDKWrapper"
             ]
+        ),
+
+        // MARK: - FaceTec-external product
+        .library(
+            name: "IDNowSDKCore-with-NFC-without-XS2A-FacetecExternal",
+            targets: [
+                "IDNowSDKCore-with-NFC-without-XS2A-FacetecExternal", "UnisseySDKWrapper"
+            ]
+        ),
+
+        // Standalone FaceTec v9, for customers who want to supply our copy
+        // alongside the FacetecExternal product instead of their own.
+        .library(
+            name: "FaceTecSDK",
+            targets: ["FaceTecSDK"]
         )
     ],
     dependencies: [
@@ -57,6 +72,12 @@ let package = Package(
         .binaryTarget(
             name: "FaceTecSDK",
             path: "Frameworks/FaceTecSDK.xcframework"
+        ),
+
+        // MARK: - FaceTec-external binary SDK (FaceTec weak-linked)
+        .binaryTarget(
+            name: "IDNowSDKCore-with-NFC-without-XS2A-FacetecExternal",
+            path: "Frameworks/IDNowSDKCore-with-NFC-without-XS2A-FacetecExternal.xcframework"
         ),
         .target(
             name: "UnisseySDKWrapper",
