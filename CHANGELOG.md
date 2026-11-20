@@ -1,7 +1,7 @@
 ## Changelog
 
 ### 5.24.0
-- Updated NFC component to version M131.
+- Updated NFC component version to M131.
 - Updated French translations for the NFC scanning flow.
 - Replaced the default font with Red Hat Display.
 
