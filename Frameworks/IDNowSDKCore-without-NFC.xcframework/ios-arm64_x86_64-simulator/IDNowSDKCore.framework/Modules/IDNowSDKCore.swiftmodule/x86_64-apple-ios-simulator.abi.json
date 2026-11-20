@@ -41856,42 +41856,42 @@
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IDNowFontAssets.swift",
       "kind": "StringLiteral",
-      "offset": 1114,
-      "length": 17,
-      "value": "\"Wotfard-Regular\""
+      "offset": 1179,
+      "length": 23,
+      "value": "\"RedHatDisplay-Regular\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IDNowFontAssets.swift",
       "kind": "StringLiteral",
-      "offset": 1156,
-      "length": 14,
-      "value": "\"Wotfard-Thin\""
+      "offset": 1227,
+      "length": 21,
+      "value": "\"RedHatDisplay-Light\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IDNowFontAssets.swift",
       "kind": "StringLiteral",
-      "offset": 1195,
-      "length": 16,
-      "value": "\"Wotfard-Medium\""
+      "offset": 1273,
+      "length": 22,
+      "value": "\"RedHatDisplay-Medium\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IDNowFontAssets.swift",
       "kind": "StringLiteral",
-      "offset": 1236,
-      "length": 14,
-      "value": "\"Wotfard-Bold\""
+      "offset": 1320,
+      "length": 20,
+      "value": "\"RedHatDisplay-Bold\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IDNowFontAssets.swift",
       "kind": "StringLiteral",
-      "offset": 1275,
-      "length": 15,
-      "value": "\"Wotfard-Light\""
+      "offset": 1365,
+      "length": 21,
+      "value": "\"RedHatDisplay-Light\""
     },
     {
       "filePath": "\/Users\/skaya\/Desktop\/autoident-old-nfc-demo app\/SDK\/IDNowSDKCore\/Presentation\/IDNowFontAssets.swift",
       "kind": "Dictionary",
-      "offset": 1849,
+      "offset": 1945,
       "length": 3,
       "value": "[]"
     },
