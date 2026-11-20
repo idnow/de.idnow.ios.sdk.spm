@@ -1,5 +1,10 @@
 ## Changelog
 
+### 5.24.0
+- Upgraded ReadID NFC SDK to version M131.
+- Updated French translations for the ReadID NFC flow.
+- Replaced default SDK font with Red Hat Display.
+
 ### 5.23.1
 - Added an SDK variant without embedding the Facetec Liveness dependency. Allows customers the flexibility to integrate by excluding Facetec Liveness component and avoiding conflicts.
 
